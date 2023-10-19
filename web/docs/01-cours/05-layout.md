@@ -10,7 +10,7 @@ hide_table_of_contents: true
 
 <Column>
 
-:::danger Avant la séance (2h)
+:::tip Avant la séance (2h)
 
 Vous devez vous familiariser avec le projet Layouts dans le repo du cours
 

@@ -10,7 +10,7 @@ hide_table_of_contents: true
 
 <Column>
 
-:::danger Avant la séance (2h)
+:::tip Avant la séance (2h)
 
 Vous devez pensez à la mise en page des différents écrans de votre application
 

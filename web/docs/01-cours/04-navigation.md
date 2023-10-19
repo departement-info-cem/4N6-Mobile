@@ -10,7 +10,7 @@ hide_table_of_contents: true
 
 <Column>
 
-:::danger Avant la séance (2h)
+:::tip Avant la séance (2h)
 
 Regardez les vidéos suivantes sur la programmation d'un tiroir de navigation
 

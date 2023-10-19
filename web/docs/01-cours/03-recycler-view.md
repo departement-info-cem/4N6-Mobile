@@ -10,7 +10,7 @@ hide_table_of_contents: true
 
 <Column>
 
-:::danger Avant la séance
+:::tip Avant la séance
 
 Vidéos de révision :
 

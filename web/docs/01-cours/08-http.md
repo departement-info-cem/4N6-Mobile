@@ -10,7 +10,7 @@ hide_table_of_contents: true
 
 <Column>
 
-:::danger Avant la séance : théorie (2h)
+:::tip Avant la séance : théorie (2h)
 
 Vous devez regarder les videos suivantes:
 

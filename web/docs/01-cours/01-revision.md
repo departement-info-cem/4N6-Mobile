@@ -11,7 +11,7 @@ hide_table_of_contents: true
 
 <Column>
 
-:::danger Avant la séance
+:::tip Avant la séance
 
 C'est la première séance, pas de travail avant.
 

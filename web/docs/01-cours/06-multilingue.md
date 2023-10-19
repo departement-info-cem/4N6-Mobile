@@ -10,7 +10,7 @@ hide_table_of_contents: true
 
 <Column>
 
-:::danger Avant la séance (2h)
+:::tip Avant la séance (2h)
 
 <Video url="https://www.youtube.com/watch?v=kP1o8F9qWfs" />
 
