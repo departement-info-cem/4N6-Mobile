@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 <Row>
 
-<Column>
+<Column> 
 
 :::tip Avant la séance (2h)
 
