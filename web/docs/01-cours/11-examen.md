@@ -4,13 +4,21 @@ description: Examen Intra
 hide_table_of_contents: true
 ---
 
-# Examen Intra
+# Examen
+
+<Row>
+
+<Column>
 
 :::danger Évaluation
 
-Examen intra cette semaine.
+Examen cette semaine.
 
 :::
+
+</Column>
+
+<Column>
 
 :::tip Avant l'examen
 
@@ -22,4 +30,8 @@ L'examen porte sur l'ensemble du contenu vu depuis le début de la session. Afin
 Si vous avez droit à du temps supplémentaire, vous devez aviser votre professeur de votre intention de l'utiliser.
 
 :::
+
+</Column>
+
+</Row>
 
