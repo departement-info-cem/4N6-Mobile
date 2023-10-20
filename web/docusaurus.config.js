@@ -70,6 +70,17 @@ const config = {
             sidebarId: "tp",
             label: "Travaux Pratiques",
           },
+          {
+            type: "doc",
+            docId: "problemes-frequents",
+            position: "right",
+            label: "Problèmes fréquents",
+          },
+          {
+            label: "Script Installation",
+            href: `https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1`,
+            position: "right",
+          },
         ],
       },
       footer: {
