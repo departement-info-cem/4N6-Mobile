@@ -150,7 +150,7 @@ const sidebars = {
     {
       type: "doc",
       label: "15.1 - Correction TP3",
-      id: "cours/integration",
+      id: "cours/correction-tp3",
       className: "remise-tp3",
     },
     {
