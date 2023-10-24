@@ -16,15 +16,15 @@ Vous devez regarder les videos suivantes:
 
 <Video url="https://www.youtube.com/watch?v=wsF3t33jN8Y" />
 
-**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/Retrofit/01-Depart)**
+**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/01-Depart)**
 
 <Video url="https://www.youtube.com/watch?v=rs8aSam5FT8" />
 
-**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/Retrofit/02-GuiAsync)**
+**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/02-GuiAsync)**
 
 <Video url="https://www.youtube.com/watch?v=CQo8CPBvlvw" />
 
-**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/Retrofit/03-Deboguage)**
+**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/03-Deboguage)**
 
 <Video url="https://www.youtube.com/watch?v=DbB5Ja33jic" />
 

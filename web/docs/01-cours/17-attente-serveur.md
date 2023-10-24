@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-Vous devrez regarder l'exemple d'application fournie pour les indicateurs de progression **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/Progress)**. Il s'agit du projet Progress dans le repository du cours.
+Vous devrez regarder l'exemple d'application fournie pour les indicateurs de progression **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Progress)**. Il s'agit du projet Progress dans le repository du cours.
 
 OPTIONNEL : Regardez l'exemple de Google concernant les listes avec [swipe to refresh](https://developer.android.com/training/swipe/add-swipe-interface) **[ici](https://github.com/android/views-widgets-samples/tree/main/SwipeRefreshLayoutBasic)**. Vous pouvez le lancer dans Android Studio, aller à `File > New > Import sample` et taper "swipe" dans le champ de recherche.
 
@@ -28,7 +28,7 @@ On discutera du besoin d'indiquer à l'utilisateur qu'un accès réseau est en c
 
 On discutera les besoins d'avoir une action de rafraîchissement, en particulier si les informations d'une page peuvent être modifiées par un tiers.
 
-On regardera le code des exemples **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SwipeRefresh)** en cours. En particulier, on prendra l'exemple  et on identifiera les éléments importants pour un swipe to refresh.
+On regardera le code des exemples **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SwipeRefresh)** en cours. En particulier, on prendra l'exemple  et on identifiera les éléments importants pour un swipe to refresh.
 
 :::
 

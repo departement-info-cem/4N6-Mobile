@@ -16,7 +16,7 @@ Vous pouvez lire la doc d'Android sur les différents moyens d'afficher des erre
 
 Vous pouvez également regarder la doc technique sur les [snackbars](https://material.io/components/snackbars/android#using-snackbars) et les [dialogues](https://material.io/components/dialogs#behavior).
 
-Vous vous familiariserez avec les démos de la semaine [affichage d'erreurs](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/AffichageErreur) et [erreurs dans retrofit](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/ErreurRetrofit).
+Vous vous familiariserez avec les démos de la semaine [affichage d'erreurs](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/AffichageErreur) et [erreurs dans retrofit](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofit).
 
 :::
 
@@ -50,7 +50,7 @@ Vous devez modifier votre application pour afficher soit le résultat si ça a f
 
 ### Exercice un errorBody mais pas deux
 
-En reprenant l'exemple [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/ErreurRetrofit), Essaie d'afficher deux fois le résultat de la méthode `response.errorBody().string()` dans logcat.
+En reprenant l'exemple [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofit), Essaie d'afficher deux fois le résultat de la méthode `response.errorBody().string()` dans logcat.
 
 Il devrait y avoir un comportement bizarre, discute avec ton prof pour expliquer/comprendre ce qui se passe.
 

@@ -48,6 +48,6 @@ Votre application doit avoir un logo différent de celui par défaut
 
 ### Exercice de logo
 
-Vous devez ajouter le logo [suivant](https://info.cegepmontpetit.ca/4N6-Mobile/images/logo.jpg) à votre projet ci-dessus. On voudrait un logo rond.
+Vous devez ajouter le logo [suivant](_06-multilingue/logo.jpeg) à votre projet ci-dessus. On voudrait un logo rond.
 
 :::

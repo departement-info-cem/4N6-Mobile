@@ -16,9 +16,9 @@ Les injections (SQL et javascript) sont souvent les failles de sécurité qui vi
 
 <Video url="https://www.youtube.com/watch?v=je2xjYPOqZU" />
 
-Code avec les vulnérabilités en mode passoire **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootInjection/02-Passoire)**.
+Code avec les vulnérabilités en mode passoire **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/02-Passoire)**.
 
-Code avec les correctifs **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootInjection/03-SansInjection)**.
+Code avec les correctifs **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/03-SansInjection)**.
 
 :::
 
@@ -57,7 +57,7 @@ Entrainez-vous à décrire dans un fichier texte, la FAILLE que vous avez décou
 
 ### Omnisus (Optionnel) (Avancé)
 
-Ouvrez le projet [suivant](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/Omnisus) et prenez le temps de lire le README.
+Ouvrez le projet [suivant](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Omnisus) et prenez le temps de lire le README.
 
 Votre enseignant va exécuter le serveur sur son poste. Votre mission sera de pirater le serveur qui est sur le poste de votre enseignant pour modifier la note qui vous a été attribuée sur la plateforme de gestion de note Omnisus.
 

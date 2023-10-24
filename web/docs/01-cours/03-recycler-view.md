@@ -16,11 +16,11 @@ Vidéos de révision :
 
 <Video url="https://www.youtube.com/watch?v=nkGseYC3QAw" />
 
-**[Code après la vidéo 1](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/RecyclerView/01-Depart)**
+**[Code après la vidéo 1](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/RecyclerView/01-Depart)**
 
 <Video url="https://www.youtube.com/watch?v=gtHix80YUx0" />
 
-**[Code après la vidéo 2](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/RecyclerView/02-Deboguage)**
+**[Code après la vidéo 2](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/RecyclerView/02-Deboguage)**
 
 :::
 

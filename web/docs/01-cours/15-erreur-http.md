@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-Vous trouverez [plusieurs exemples](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/HTTPResponse) de serveur qui utilisent des éléments différents d'HTTP pour représenter les erreurs.
+Vous trouverez [plusieurs exemples](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/HTTPResponse) de serveur qui utilisent des éléments différents d'HTTP pour représenter les erreurs.
 
 :::
 

@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-Déboguer un serveur (ou confirmer qu'il fonctionne bien) vous aidera à préciser davantage d'où provient une erreur. Dans ce cours, nous allons exécuter le [serveur fourni](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/DebugServer) et nous montrerons les étapes pour déboguer la première erreur.
+Déboguer un serveur (ou confirmer qu'il fonctionne bien) vous aidera à préciser davantage d'où provient une erreur. Dans ce cours, nous allons exécuter le [serveur fourni](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/DebugServer) et nous montrerons les étapes pour déboguer la première erreur.
 
 :::
 

@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 Vous devez vous familiariser avec le projet Layouts dans le repo du cours
 
-[Code du projet](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/Layouts)
+[Code du projet](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Layouts)
 
 Regardez la vidéo ci-dessous sur l'ordre des layout pour le tiroir de navigation
 

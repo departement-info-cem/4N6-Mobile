@@ -22,10 +22,10 @@ La raison principale est que le contrôle d'accès nécessite souvent du travail
 
 Vous trouverez ici les différentes branches du code du serveur de démo ici:
 
-- Aucun contrôle d'accès [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootAccessControl/01-OpenBar)
-- Spring Security et authentification [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootAccessControl/02-SpringSecurityBasic)
-- Spring Security, authentification et extraction de l'utilisateur authentifié courant [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootAccessControl/03-SpringSecurityAuth)
-- Spring Security, authentification et extraction de l'utilisateur authentifié courant et test de propriété [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootAccessControl/04-TestProprio)
+- Aucun contrôle d'accès [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar)
+- Spring Security et authentification [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic)
+- Spring Security, authentification et extraction de l'utilisateur authentifié courant [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth)
+- Spring Security, authentification et extraction de l'utilisateur authentifié courant et test de propriété [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/04-TestProprio)
 
 :::
 
@@ -37,7 +37,7 @@ Vous trouverez ici les différentes branches du code du serveur de démo ici:
 
 Nous discuterons des différences entre les différents projets.
 
-Nous verrons également comment rédiger une FAILLE, un EXPLOIT et un CORRECTIF sur l'exemple [aucune sécurité](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootAccessControl/01-OpenBar).
+Nous verrons également comment rédiger une FAILLE, un EXPLOIT et un CORRECTIF sur l'exemple [aucune sécurité](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar).
 
 - Vérifier si l'utilisateur est authentifié, si ce n'est pas le cas exception
 - Si c'est une lecture, il faut ensuite vérifier que l'utilisateur est le propriétaire (ou a le droit d'accès) sur l'objet demandé
@@ -57,10 +57,10 @@ Vous devez rédiger FAILLE EXPLOIT et CORRECTIF pour la branche [Authentificatio
 
 ### (Optionnel) Exercice 2
 
-Vous devez rédiger FAILLE EXPLOIT et CORRECTIF pour la branche [Extraction de l'usager authentifié](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootAccessControl/03-SpringSecurityAuth).
+Vous devez rédiger FAILLE EXPLOIT et CORRECTIF pour la branche [Extraction de l'usager authentifié](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth).
 
 Attention, deux failles existent dans le projet ci-dessus.
 
 ### (Bonus) Pour les pros hax0rs
 
-Trouvez la faille restante dans la branche [Test de propriété](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootAccessControl/04-TestProprio).
+Trouvez la faille restante dans la branche [Test de propriété](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/04-TestProprio).

@@ -20,7 +20,7 @@ URl de la video mise à jour : https://4n6.azurewebsites.net/exos/cookie/echo
 
 <Video url="https://www.youtube.com/watch?v=81456M4v1eI" />
 
-**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/Retrofit/05-Cookies)**
+**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/05-Cookies)**
 
 :::
 
