@@ -24,7 +24,7 @@ Tu peux déjà commencer à regarder les vidéos du cours 1 et prendre connaissa
 
 :::tip Avant chaque séance :
 
-Tu as du travail préparatoire pour découvrir la matière par toi-même. Il s'agira d'une page Web à lire, d'une video à suivre et/ou d'exercices à faire. Cela représente environ 2 heures de travail.
+Tu as du travail préparatoire pour découvrir la matière par toi-même. Il s'agira d'une page web à lire, d'une video à suivre et/ou d'exercices à faire. Cela représente environ 2 heures de travail.
 
 :::
 
