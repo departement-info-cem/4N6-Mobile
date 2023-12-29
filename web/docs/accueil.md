@@ -47,3 +47,37 @@ Ensuite, travail sur :
 </Column>
 
 </Row>
+
+
+| Semaine                                   | Séquence des cours                    | Travaux pratiques  |
+|-------------------------------------------|---------------------------------------|--------------------|
+| [1.1 →](cours/revision)                   | Plan de cours, révisions | --                 |
+| [1.2 →](cours/mise-en-page)               | Mise en page                          | --                 |
+| [2.1 →](cours/recycler-view)              | RecyclerView                          | Projet créé        |
+| [2.2 →](cours/navigation)                 | Navigation                            | 10%                |
+| [3.1 →](cours/navigation)                 | Navigation                            | 25%                |
+| [3.2 →](cours/layout)                     | Layout(s)                          | 50%                |
+| [4.1 →](cours/multilingue)                | Multilingue                           | 75%                |
+| [4.2 →](cours/integration)                | Intégration                           | 100% remise        |
+| [5.1 →](cours/http)                       | Accès réseau                          | TP2 : Images       |
+| [5.2 →](cours/http)                       | Accès réseau                          | 10%                |
+| [6.1 →](cours/spring)                     | Serveur Spring Boot                   | 20%                |
+| [6.2 →](cours/formatif-intra)             | Formatif                              | 35%                |
+| [7.1 →](cours/examen)                     | **Examen Intra**                      | 35%                |
+| [7.2 →](cours/cookies)                    | Cookies                               | --                 |
+| [8.1 →](cours/image-serveur)              | Débogage serveur                         | 60%                |
+| [8.2 →](cours/image-client)               | Image client                          | 80%                |
+| [9.1 →](cours/integration)                | Intégration                           | 100% remise        |
+| [9.2 →](cours/firebase-intro)             | Intro Firebase                        | TP3 : sans serveur |
+| [10.1 →](cours/firebase-authentification) | Firebase authentification             | 10%                |
+| [10.2 →](cours/firebase-datastore)        | Firebase datastore                    | 20%                |
+| [11.1 →](cours/firebase-access-control) | Firebase contrôle d'accès             | 30%                |
+| [11.2 →](cours/firebase-access-control) | Firebase contrôle d'accès             | 40%                |
+| [12.1 →](cours/firebase-storage)        | Firebase fichiers images              | 50%                |
+| [12.2 →](cours/firebase-stream)         | Firebase Stream                       | 60%                |
+| [13.1 →](cours/springboot-delete)                   | Spring Boot                           | 70%                |
+| [13.2 →](cours/springboot-delete)                   | Spring Boot                           | 80%                |
+| [14.1 →](cours/integration)             | Intégration                           | 90%                |
+| [14.2 →](cours/integration)             | Intégration                           | 100% remise        |
+| [15.1 →](cours/formatif-final)          | Formatif final                        |                    |
+| [15.2 →](cours/examen)                  | **Examen final**                      |                    |
