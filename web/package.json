@@ -1,6 +1,6 @@
 {
-  "name": "depinfo-template",
-  "version": "0.0.0",
+  "name": "cem-4n6",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
