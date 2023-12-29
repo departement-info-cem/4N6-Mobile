@@ -18,9 +18,6 @@ Tu peux déjà commencer à regarder les vidéos du cours 1 et prendre connaissa
 
 À chaque cours, exécute le script d'installation (repo). Pour le moment, le script est fait pour être uniquement exécuté sur les postes du CÉGEP.
 
-</Column>
-
-<Column>
 
 :::tip Avant chaque séance :
 
@@ -46,7 +43,9 @@ Ensuite, travail sur :
 
 </Column>
 
-</Row>
+<Column>
+
+
 
 
 | Semaine                            | Séquence des cours       | Travaux pratiques           |
@@ -81,3 +80,9 @@ Ensuite, travail sur :
 | [14.2 →](cours/http)               | Correction TP3           | 100% remise                 |
 | [15.1 →](cours/formatif-final)     | Formatif final           |                             |
 | [15.2 →](cours/examen)             | **Examen final**         |                             |
+
+
+
+</Column>
+
+</Row>
