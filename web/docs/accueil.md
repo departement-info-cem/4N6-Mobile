@@ -65,19 +65,19 @@ Ensuite, travail sur :
 | [6.2 →](cours/formatif-intra)             | Formatif                              | 35%                |
 | [7.1 →](cours/examen)                     | **Examen Intra**                      | 35%                |
 | [7.2 →](cours/cookies)                    | Cookies                               | --                 |
-| [8.1 →](cours/image-serveur)              | TODO                         | 60%                |
-| [8.2 →](cours/image-client)               | TODO                           | 80%                |
-| [9.1 →](cours/integration)                | TODO                           | 100% remise        |
-| [9.2 →](cours/firebase-intro)             | TODO                        | TP3 : sans serveur |
-| [10.1 →](cours/firebase-authentification) | TODO             | 10%                |
-| [10.2 →](cours/firebase-datastore)        | TODO                    | 20%                |
-| [11.1 →](cours/firebase-access-control) | TODO             | 30%                |
-| [11.2 →](cours/firebase-access-control) | TODO            | 40%                |
-| [12.1 →](cours/firebase-storage)        | TODO              | 50%                |
-| [12.2 →](cours/firebase-stream)         | TODO                     | 60%                |
-| [13.1 →](cours/springboot-delete)                   | TODO                           | 70%                |
-| [13.2 →](cours/springboot-delete)                   | TODO                          | 80%                |
-| [14.1 →](cours/integration)             | TODO                           | 90%                |
-| [14.2 →](cours/integration)             | TODO                           | 100% remise        |
+| [8.1 →](cours/http)              | TODO                         | 60%                |
+| [8.2 →](cours/http)               | TODO                           | 80%                |
+| [9.1 →](cours/http)                | TODO                           | 100% remise        |
+| [9.2 →](cours/http)             | TODO                        | TP3 : sans serveur |
+| [10.1 →](cours/http) | TODO             | 10%                |
+| [10.2 →](cours/http)        | TODO                    | 20%                |
+| [11.1 →](cours/http) | TODO             | 30%                |
+| [11.2 →](cours/http) | TODO            | 40%                |
+| [12.1 →](cours/http)        | TODO              | 50%                |
+| [12.2 →](cours/http)         | TODO                     | 60%                |
+| [13.1 →](cours/http)                   | TODO                           | 70%                |
+| [13.2 →](cours/http)                   | TODO                          | 80%                |
+| [14.1 →](cours/http)             | TODO                           | 90%                |
+| [14.2 →](cours/http)             | TODO                           | 100% remise        |
 | [15.1 →](cours/formatif-final)          | TODO                        |                    |
 | [15.2 →](cours/examen)                  | **Examen final**                      |                    |
