@@ -75,7 +75,7 @@ Ensuite, travail sur :
 | [11.2 →](cours/controle-acces)     | Cybersec: access control | 40%                         |
 | [12.1 →](cours/cryptographie)      | Cybersec: crypto         | 50%                         |
 | [12.2 →](cours/orientation-taille) | Portrait/paysage         | 60%                         |
-| [13.1 →](cours/compatibilite-api)  | TODO                     | 70%                         |
+| [13.1 →](cours/compatibilite-api)  | Compatibilité et API     | 70%                         |
 | [13.2 →](cours/ctf)                | Capture the flag         | 80%                         |
 | [14.1 →](cours/http)               | Intégration              | 90%                         |
 | [14.2 →](cours/http)               | Correction TP3           | 100% remise                 |
