@@ -28,7 +28,7 @@ Tu as du travail préparatoire pour découvrir la matière par toi-même. Il s'a
 :::info Séance
 
 - Un rappel sur le calendrier et les remises
-- Un causerie sur ce qui a été vu, sur ce qui n'a pas été compris
+- Une causerie sur ce qui a été vu, sur ce qui n'a pas été compris
 - Un retour individuel sur les exercices commencés
 - Parfois des capsules de contenu supplémentaire
 - Des exemples ou exercices corrigés en groupe
