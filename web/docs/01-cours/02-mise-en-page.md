@@ -46,7 +46,7 @@ Vous devrez compléter les mises en page de vos différentes activités.
 
 ### Exercice A
 
-Créez un projet appelé **SigninSignup** contenant une activité. Faites un layout avec un champ de saisie pour le courriel, un pour le mot de passe un bouton d'inscription et un bouton de connexion.
+Créez un projet appelé **SigninSignup** contenant une activité. Faites un layout avec un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
 
 La password doit être caché (avec des points), l'interface doit être claire : on sait quoi taper à quel endroit.
 
