@@ -56,21 +56,20 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "6.1 - Serveur Spring Boot",
-      id: "cours/spring",
-    },
-    {
-      type: "doc",
-      label: "6.2 - Formatif",
+      label: "6.1 - Formatif",
       id: "cours/formatif-intra",
     },
     {
       type: "doc",
-      label: "7.1 - Examen Intra (20%)",
+      label: "6.2 - Examen Intra (20%)",
       id: "cours/examen",
       className: "examen",
     },
-
+    {
+      type: "doc",
+      label: "7.1 - Serveur Spring Boot",
+      id: "cours/spring",
+    },
     {
       type: "doc",
       label: "7.2 - Cookies 🍪",

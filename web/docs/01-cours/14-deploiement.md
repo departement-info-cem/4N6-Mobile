@@ -1,5 +1,5 @@
 ---
-title: Déploiement Azure
+title: Déploiement Render
 description: Déploiement du serveur fourni sur Cloud
 hide_table_of_contents: true
 ---
