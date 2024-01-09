@@ -60,9 +60,9 @@ Ensuite, travail sur :
 | [4.2 →](cours/integration)         | Intégration              | 100% remise                 |
 | [5.1 →](cours/http)                | Accès réseau             | TP2 : communication serveur |
 | [5.2 →](cours/http)                | Accès réseau             | 10%                         |
-| [6.1 →](cours/spring)              | Serveur Spring Boot      | 20%                         |
-| [6.2 →](cours/formatif-intra)      | Formatif                 | 35%                         |
-| [7.1 →](cours/examen)              | **Examen Intra**         | 35%                         |
+| [6.1 →](cours/formatif-intra)      | Formatif                 | 35%                         |
+| [6.2 →](cours/examen)              | **Examen Intra**         | 35%                         |
+| [7.1 →](cours/spring)              | Serveur Spring Boot      | 20%                         |
 | [7.2 →](cours/cookies)             | Cookies                  | --                          |
 | [8.1 →](cours/debogage)            | Débogage                 | 60%                         |
 | [8.2 →](cours/deploiement)         | Déploiement serveur      | 80%                         |
