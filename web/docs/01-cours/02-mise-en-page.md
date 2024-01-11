@@ -41,7 +41,7 @@ Vous devrez compléter les mises en page de vos différentes activités.
 </Column>
 
 </Row>
-
+ 
 :::note Exercices de la semaine
 
 ### 🤖 Exercice A
