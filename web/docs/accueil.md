@@ -41,6 +41,18 @@ Ensuite, travail sur :
 
 :::
 
+:::warning IA - Intelligence artificielle (*ChatGPT*, ...)
+
+Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA pour faire un exercice :
+
+🧑‍🎓
+: This is the definition of the first term.
+
+🤖
+: This is one definition of the second term.
+
+:::
+
 </Column>
 
 <Column>
