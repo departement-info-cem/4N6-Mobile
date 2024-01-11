@@ -44,7 +44,7 @@ Vous devrez compléter les mises en page de vos différentes activités.
 
 :::note Exercices de la semaine
 
-### 🧑‍🎓 Exercice A
+### 🤖 Exercice A
 
 Créez un projet appelé **SigninSignup** contenant une activité. Faites un layout avec un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
 
