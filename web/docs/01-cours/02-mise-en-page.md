@@ -63,8 +63,21 @@ Assurez-vous de bien comprendre ce qui se passe, par exemple pourquoi les 2 Text
 
 ### Exercice C
 
-Créez un projet appelé **MiseEnPage** contenant 1 seule activité. reproduisez la mise en page suivante en mode portrait (en dessous de l'actionbar):
+Créez un projet appelé **MiseEnPage** contenant 1 seule activité.
+Reproduisez la mise en page suivante en mode paysage : (N'utilisez pas de valeurs absolues, sauf pour du *padding* et des *margins*)
 
-![Mise en page](_02-mise-en-page/miseenpage.png)
+![Mise en page](_02-mise-en-page/miseenpage1.png)
+
+### Exercice D
+
+Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
+
+![Mise en page](_02-mise-en-page/miseenpage2.png)
+
+### Exercice E
+
+Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
+
+![Mise en page](_02-mise-en-page/miseenpage3.png)
 
 :::
