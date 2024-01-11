@@ -45,11 +45,12 @@ Ensuite, travail sur :
 
 Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, ...) pour faire un exercice :
 
-🧑‍🎓
-: Vous devriez faire cet exercice sans utiliser l'IA, en réfléchissant par vous-même et en expérimentant. C'est ainsi que vous apprendrez.
-
-🤖
-: Vous pouvez utiliser l'IA pour vous aider à faire cet exercice.
+<dl>
+  <dt>🧑‍🎓</dt>
+  <dd>Vous devriez faire cet exercice sans utiliser l'IA, en réfléchissant par vous-même et en expérimentant. C'est ainsi que vous apprendrez.</dd>
+  <dt>🤖</dt>
+  <dd>Vous pouvez utiliser l'IA pour vous aider à faire cet exercice!</dd>
+</dl>
 
 :::
 
