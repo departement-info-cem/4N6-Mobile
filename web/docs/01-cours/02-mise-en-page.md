@@ -64,7 +64,7 @@ Assurez-vous de bien comprendre ce qui se passe, par exemple pourquoi les 2 Text
 ### Exercice C
 
 Créez un projet appelé **MiseEnPage** contenant 1 seule activité.
-Reproduisez la mise en page suivante en mode paysage : (N'utilisez pas de valeurs absolues, sauf pour du *padding* et des *margins*)
+Reproduisez la mise en page suivante en mode paysage : (n'utilisez pas de valeurs absolues, sauf pour du *padding* et des *margins*)
 
 ![Mise en page](_02-mise-en-page/miseenpage1.png)
 
