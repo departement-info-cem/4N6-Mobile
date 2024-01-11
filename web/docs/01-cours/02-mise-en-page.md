@@ -53,7 +53,6 @@ La password doit être caché (avec des points), l'interface doit être claire :
 ### Exercice B
 
 Téléchargez et roulez ce [projet](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Proportions).
-
 Nous voulons générer 2 TextViews côte-à-côte, où celui de gauche occupe 100/392 de la largeur de l'écran et celui de droite, 292/392 (environ 1/4 et 3/4).
 
 En utilisant le débogeur graphique (*Layout Inspector*, en bas à droite), inspectez les largeurs de tous les TextViews.
