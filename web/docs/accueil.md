@@ -52,7 +52,7 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 :::
 
 </Column>
-
+ 
 <Column>
 
 
