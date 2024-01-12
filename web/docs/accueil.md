@@ -47,9 +47,9 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 
 | | |
 | --- | --- |
-| <h1>🧑‍🎓&thinsp;🧑‍🎓</h1> | Vous devriez faire cet exercice sans utiliser l'IA, en réfléchissant par vous-même et en expérimentant. C'est ainsi que vous apprendrez. |
-| <h1>🧑‍🎓&thinsp;🤖</h1> | Vous pouvez vous aider de l'IA en posant des questions spécifiques, par exemple : "comment fait-on pour centrer du texte dans un textview?" Mais ne lui donnez pas l'énoncé, sinon aussi bien ne pas faire l'exercice! |
-| <h1>🤖&thinsp;🤖</h1> | Vous pouvez utiliser l'IA sans réserve pour faire cet exercice! |
+| <h1>🧑‍🎓&nbsp;🧑‍🎓</h1> | Vous devriez faire cet exercice sans utiliser l'IA, en réfléchissant par vous-même et en expérimentant. C'est ainsi que vous apprendrez. |
+| <h1>🧑‍🎓&nbsp;🤖</h1> | Vous pouvez vous aider de l'IA en posant des questions spécifiques, par exemple : "comment fait-on pour centrer du texte dans un textview?" Mais ne lui donnez pas l'énoncé, sinon aussi bien ne pas faire l'exercice! |
+| <h1>🤖&nbsp;🤖</h1> | Vous pouvez utiliser l'IA sans réserve pour faire cet exercice! |
 
 :::
 
