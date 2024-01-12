@@ -1,0 +1,32 @@
+config:
+  blackAndWhite: false
+  withTickBox: true
+skills:
+  - name: android recyclerView
+    sequels:
+      - recyclerView vers autre activité
+      - recyclerView avec layout complexe
+      - débogage recyclerView
+  - name: exécuter un serveur Spring Boot en local
+    sequels:
+      - déployer un serveur sur Render
+  - name: android linear layout
+    sequels:
+      - android weight + 0dp
+      - android layout imbriqués
+  - name: android tiroir navigation
+  - name: android mise en page
+    sequels:
+      - messages d'erreur
+      - indicateurs d'attente
+  - name: retrofit simple
+    sequels:
+      - retrofit avec cookie
+      - retrofit avec JSON
+      - gestion des erreurs retrofit
+      - débogage appels retrofit
+  - name: Multilingue XML
+  - name: cybersec injection SQL
+  - name: cybersec contrôle d'accès
+    sequels:
+      - documenter un exploit
