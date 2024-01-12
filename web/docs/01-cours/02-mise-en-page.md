@@ -44,13 +44,13 @@ Vous devrez compléter les mises en page de vos différentes activités.
 
 :::note Exercices de la semaine
 
-### 🧑‍🎓🤖 Exercice A
+## 🧑‍🎓🤖 Exercice A
 
 Créez un projet appelé **SigninSignup** contenant une activité. Faites un layout avec un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
 
 La password doit être caché (avec des points), l'interface doit être claire : on sait quoi taper à quel endroit.
 
-### 🧑‍🎓🧑‍🎓 Exercice B
+## 🧑‍🎓🧑‍🎓 Exercice B
 
 Téléchargez et roulez ce [projet](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Proportions).
 Nous voulons générer 2 TextViews côte-à-côte, où celui de gauche occupe 100/392 de la largeur de l'écran et celui de droite, 292/392 (environ 1/4 et 3/4).
@@ -61,20 +61,20 @@ Lesquels ont les proportions voulues?
 Quelles sont les différences entre les 3 méthodes utilisées (les 3 couleurs)?
 Assurez-vous de bien comprendre ce qui se passe, par exemple pourquoi les 2 TextViews ont les bonnes proportions sur certaines lignes et pas sur d'autres.
 
-### 🧑‍🎓🤖 Exercice C
+## 🧑‍🎓🤖 Exercice C
 
 Créez un projet appelé **MiseEnPage** contenant 1 seule activité.
 Reproduisez la mise en page suivante en mode paysage : (n'utilisez pas de valeurs absolues, sauf pour du *padding* et des *margins*)
 
 ![Mise en page](_02-mise-en-page/miseenpage1.png)
 
-### 🧑‍🎓🤖 Exercice D
+## 🧑‍🎓🤖 Exercice D
 
 Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
 
 ![Mise en page](_02-mise-en-page/miseenpage2.png)
 
-### 🧑‍🎓🤖 Exercice E
+## 🧑‍🎓🤖 Exercice E
 
 Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
 
