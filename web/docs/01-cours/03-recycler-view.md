@@ -48,7 +48,7 @@ Vous devrez commencer la programmation du recyclerView du TP1
 
 Créez un projet appelé **SuperRecycler** qui affiche un recyclerView contenant 1000 objets que vous générerez avec une liste.
 
-Pour créer ces objets, vous devez d'abord créer une classe appelée **Secret** qui contient
+Pour créer ces objets, vous devez d'abord créer une classe appelée **Secret** qui contient :
 
 - Un champ **nom** de type String
 - Un champ **date** de type java.time.LocalDateTime
