@@ -44,7 +44,7 @@ Vous devrez commencer la programmation du recyclerView du TP1
 
 :::note Exercices de la semaine
 
-### Exercice A
+## 🧑‍🎓🧑‍🎓 Exercice A
 
 Créez un projet appelé **SuperRecycler** qui affiche un recyclerView contenant 1000 objets que vous générerez avec une liste.
 
