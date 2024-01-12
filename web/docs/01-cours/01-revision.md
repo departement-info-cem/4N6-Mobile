@@ -51,6 +51,9 @@ Vous complétez quelques exercices de révisions.
 :::note Exercices de la semaine
 
 ### 🧑‍🎓🤖 Exercice A
+<h3>🧑‍🎓🤖&nbsp;Exercice A</h3>
+<h2>🧑‍🎓🤖&nbsp;Exercice A</h2>
+<h3><h2>🧑‍🎓🤖</h2>&nbsp;Exercice A</h3>
 
 Créez un projet appelé **MultiMulti** contenant 3 activités. Ajoutez un menu d'options dans le ActionBar (révision) permettant d'accéder à chacune des activités depuis chacune des activités.
 
