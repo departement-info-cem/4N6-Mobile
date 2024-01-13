@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-Regardez les vidéos suivantes sur la programmation d'un tiroir de navigation
+Regardez les vidéos suivantes sur la programmation d'un tiroir de navigation :
 
 <Video url="https://www.youtube.com/watch?v=T2upKap9Jic" />
 
