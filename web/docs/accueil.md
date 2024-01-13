@@ -41,7 +41,7 @@ Ensuite, travail sur :
 
 :::
 
-:::warning IA - Intelligence artificielle
+:::caution IA - Intelligence artificielle
 
 Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, ...) pour faire un exercice :
 
