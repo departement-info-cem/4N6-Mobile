@@ -44,7 +44,7 @@ Vous devez compléter l'intégration du drawer dans les activités appropriées 
 
 :::note Exercices de la semaine
 
-## 🧑‍🎓🧑‍🎓 Exercice A
+## 🧑‍🎓🤖 Exercice A
 
 Créez un projet appelé **TiroirSimple** contenant une activité. Ajoutez un tiroir de navigation avec les items et comportements suivants :
 
