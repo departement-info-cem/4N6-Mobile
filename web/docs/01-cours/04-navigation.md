@@ -54,6 +54,6 @@ Créez un projet appelé **TiroirSimple** contenant une activité. Ajoutez un ti
 
 ## 🧑‍🎓🤖 Exercice B
 
-Faites en sorte que le tiroir de l'Exercice A s'ouvre et se ferme en appuyant sur le hamburger de l'*Action Bar*.
+Faites en sorte que le tiroir de l'Exercice A s'ouvre et se ferme en appuyant sur le hamburger de l'*ActionBar*.
 
 :::
