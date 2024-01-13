@@ -52,4 +52,8 @@ Créez un projet appelé **TiroirSimple** contenant une activité. Ajoutez un ti
 - Profil (affiche un Toast avec votre prénom)
 - Déconnexion (affiche un log)
 
+## 🧑‍🎓🤖 Exercice B
+
+Faites en sorte que le tiroir de l'Exercice A s'ouvre et se ferme en appuyant sur le hamburger de l'*Action Bar*.
+
 :::
