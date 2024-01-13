@@ -24,7 +24,7 @@ hide_table_of_contents: true
 
 :::info Multilingue, locales
 
-On parlera de stratégie pour déterminer quelle sera la langue locale par défaut, comment fournir une traduction complète (français) ou une traduction partielle (québécois).
+On parlera de stratégie pour déterminer quelle sera la locale par défaut, comment fournir une traduction complète (français) ou une traduction partielle (québécois).
 
 On parlera de la possibilité d'ajouter un logo ou des images pour distinguer son application des autres.
 
