@@ -24,7 +24,7 @@ hide_table_of_contents: true
 
 :::info Multilingue, locales
 
-On parlera de stratégie pour déterminer quelle sera la locale par défaut, comment fournir une traduction complète (français) ou un traduction partielle (québécois).
+On parlera de stratégie pour déterminer quelle sera la langue locale par défaut, comment fournir une traduction complète (français) ou une traduction partielle (québécois).
 
 On parlera de la possibilité d'ajouter un logo ou des images pour distinguer son application des autres.
 
@@ -44,7 +44,7 @@ Vous devez faire une application avec un titre (dans le ActionBar) et un TextVie
 - En français, le titre est "App en français" et le TextView est "cher"
 - En québécois, le titre est "App en français" et le TextView est "dispendieux"
 
-Votre application doit avoir un logo différent de celui par défaut
+Votre application doit avoir un logo différent de celui par défaut.
 
 ### Exercice de logo
 
