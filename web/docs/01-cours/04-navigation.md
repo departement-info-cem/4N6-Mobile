@@ -46,7 +46,7 @@ Vous devez compléter l'intégration du drawer dans les activités appropriées 
 
 ### Exercice A
 
-Créez un projet appelé **TiroirSimple** contenant une activité. Ajouter un tiroir de navigation avec les items suivants avec les comportements indiqués:
+Créez un projet appelé **TiroirSimple** contenant une activité. Ajoutez un tiroir de navigation avec les items et comportements suivants :
 
 - Accueil (ferme l'application quand on appuie dessus)
 - Profil (affiche un Toast avec votre prénom)
