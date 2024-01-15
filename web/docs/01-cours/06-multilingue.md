@@ -34,7 +34,7 @@ On parlera de la possibilité d'ajouter un logo ou des images pour distinguer so
 
 </Row>
 
-:::note
+:::note Exercices de la semaine
 
 ## 🧑‍🎓🧑‍🎓 Exercice multilingue
 
