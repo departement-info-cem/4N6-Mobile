@@ -66,7 +66,7 @@ On expliquera à quoi servent les différentes classes de transfert dans la **[l
 
 Créez un projet appelé **Simple**. Le web service [ici](https://4n6.azurewebsites.net/exos/long/double/4) prend un nombre et retourne son double.
 
-Tu dois démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
+Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
 Par exemple, une activité avec un EditText pour le nombre et un bouton pour déclencher l'appel. Au retour de la valeur (doublée), celle-ci est affichée dans un Toast.
 
@@ -74,7 +74,7 @@ Par exemple, une activité avec un EditText pour le nombre et un bouton pour dé
 
 Créez un projet appelé **Complexe**. Le web service [ici](https://4n6.azurewebsites.net/exos/truc/complexe?name=whippsie) prend un nom et retourne un objet complexe (remplacez whippsie par votre prénom dans l'URL).
 
-Tu dois démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
+Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
 Par exemple, une activité avec un TextView qui affiche les données retournées par l'appel.
 
