@@ -62,34 +62,34 @@ On expliquera à quoi servent les différentes classes de transfert dans la **[l
 
 :::note Exercices de la semaine
 
-### Retrofit - Exercice simple
+## 🧑‍🎓🧑‍🎓 Retrofit - Exercice simple
 
 Créez un projet appelé **Simple**. Le web service [ici](https://4n6.azurewebsites.net/exos/long/double/4) prend un nombre et retourne son double.
 
-Tu dois démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
+Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
 Par exemple, une activité avec un EditText pour le nombre et un bouton pour déclencher l'appel. Au retour de la valeur (doublée), celle-ci est affichée dans un Toast.
 
-### Retrofit - Exercice Objet complexe
+## 🧑‍🎓🤖 Retrofit - Exercice Objet complexe
 
 Créez un projet appelé **Complexe**. Le web service [ici](https://4n6.azurewebsites.net/exos/truc/complexe?name=whippsie) prend un nom et retourne un objet complexe (remplacez whippsie par votre prénom dans l'URL).
 
-Tu dois démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
+Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
 Par exemple, une activité avec un TextView qui affiche les données retournées par l'appel.
 
-### Retrofit - Exercice Listes
+## Retrofit - Exercice Listes
 
 Créez un projet appelé **Listes**. Le projet doit partir une activité coupée en 2 dans le sense de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplée par des appels suivants:
 
 - Webservice [1](https://4n6.azurewebsites.net/exos/long/list) Renvoie une liste de Long, chaque élément dans le recyclerView est un simple champ text où vous affichez la valeur du nombre
 - Webservice [2](https://4n6.azurewebsites.net/exos/truc/list) Renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simple ainsi que la taille de la liste
 
-### Retrofit - Exercice Github API
+## Retrofit - Exercice Github API
 
 Créez un projet appelé **Repos** dans lequel vous créerez un service simple en GET sur l'URL [https://api.github.com/users/departement-info-cem/repos](https://api.github.com/users/departement-info-cem/repos)
 
-### DTO - Exercice de compréhension
+## DTO - Exercice de compréhension
 
 Dans cet exercice, on vous donne la classe de modèle et on cherche les champs qu'on va mettre dans la classe de transfert (**PersonneDTO**)
 
@@ -113,7 +113,7 @@ Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire 
 
 </Row>
 
-### DTO - Exercice de compréhension 2
+## DTO - Exercice de compréhension 2
 
 On reprend l'exercice précédent mais avec maintenant deux classes modèles. On cherche les champs qu'on va mettre dans la classe de transfert (**CompteDTO**) toujours avec la même interface.
 
