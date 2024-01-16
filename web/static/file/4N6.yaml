@@ -1,5 +1,5 @@
 config:
-  blackAndWhite: false
+  blackAndWhite: true
   withTickBox: true
 skills:
   - name: android recyclerView

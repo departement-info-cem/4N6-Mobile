@@ -82,6 +82,11 @@ const config = {
             href: `https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1`,
             position: "right",
           },
+          {
+            label: "Skill Tree",
+            href: `https://info.cegepmontpetit.ca/4N6-Mobile/file/4N6.html`,
+            position: "right",
+          },
         ],
       },
       footer: {
