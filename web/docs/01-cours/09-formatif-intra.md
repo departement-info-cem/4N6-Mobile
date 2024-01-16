@@ -34,6 +34,10 @@ Pas de nouveau contenu. Révisions. Examen imminent!
 :::note Examens passés
 
 
+### Examen intra 2023
+
+L'examen intra de 2023 pour se pratiquer **[ici](pathname:///file/intra2023)**
+
 ### Examen intra 2022
 
 L'examen intra de 2022 pour se pratiquer **[ici](pathname:///file/intra2022)**

@@ -33,6 +33,11 @@ Pas de nouveau contenu. Révisions. Examen imminent!
 
 :::note Examens passés
 
+
+### Examen final 2023
+
+L'examen final de 2023 pour se pratiquer [ici](pathname:///file/final2023).
+
 ### Examen final 2022
 
 L'examen final de 2022 pour se pratiquer [ici](pathname:///file/final2022).
