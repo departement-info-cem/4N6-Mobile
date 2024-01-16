@@ -62,7 +62,7 @@ On expliquera à quoi servent les différentes classes de transfert dans la **[l
 
 :::note Exercices de la semaine
 
-### Retrofit - Exercice simple
+## 🧑‍🎓🧑‍🎓 Retrofit - Exercice simple
 
 Créez un projet appelé **Simple**. Le web service [ici](https://4n6.azurewebsites.net/exos/long/double/4) prend un nombre et retourne son double.
 
