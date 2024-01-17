@@ -87,7 +87,9 @@ Créez un projet appelé **RetrofitListes**. Le projet doit partir une activité
 
 ## ‍🧑‍🎓🤖 Exercice RetrofitGithub
 
-Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service simple en GET sur l'URL [https://api.github.com/users/departement-info-cem/repos](https://api.github.com/users/departement-info-cem/repos)
+Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service simple en GET sur l'URL [https://api.github.com/users/departement-info-cem/repos](https://api.github.com/users/departement-info-cem/repos).
+
+Chaque élément du recyclerView doit afficher les champs "name" et "description" ainsi qu'un bouton qui mène à l'"html_url" (doit fonctionner).
 
 ## 🧑‍🎓🧑‍🎓 DTO - Exercice de compréhension
 
