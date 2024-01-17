@@ -89,7 +89,7 @@ Créez un projet appelé **RetrofitListes**. Le projet doit partir une activité
 
 Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service simple en GET sur l'URL [https://api.github.com/users/departement-info-cem/repos](https://api.github.com/users/departement-info-cem/repos)
 
-## DTO - Exercice de compréhension
+## 🧑‍🎓🧑‍🎓 DTO - Exercice de compréhension
 
 Dans cet exercice, on vous donne la classe de modèle et on cherche les champs qu'on va mettre dans la classe de transfert (**PersonneDTO**).
 
@@ -113,7 +113,7 @@ Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire 
 
 </Row>
 
-## DTO - Exercice de compréhension 2
+## 🧑‍🎓🧑‍🎓 DTO - Exercice de compréhension 2
 
 On reprend l'exercice précédent mais avec maintenant deux classes modèles. On cherche les champs qu'on va mettre dans la classe de transfert (**CompteDTO**) toujours avec la même interface graphique.
 
