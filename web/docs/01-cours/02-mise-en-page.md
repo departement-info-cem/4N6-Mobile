@@ -55,7 +55,7 @@ La password doit être caché (avec des points), l'interface doit être claire :
 Téléchargez et roulez ce [projet](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Proportions).
 Nous voulons générer 2 TextViews côte-à-côte, où celui de gauche occupe 1/4 et celui de droite 3/4 de la largeur de l'écran.
 
-En utilisant le débogeur graphique (dans View > Tool Windows > Layout Inspector, -ou raccourci en bas à droite-), inspectez les largeurs de tous les TextViews.
+En utilisant le débogeur graphique (dans View > Tool Windows > Layout Inspector), inspectez les largeurs de tous les TextViews.
 Lesquels ont les proportions voulues?
 
 Quelles sont les différences entre les 3 méthodes utilisées (les 3 couleurs)?
