@@ -36,7 +36,7 @@ On parlera de la possibilité d'ajouter un logo ou des images pour distinguer so
 
 :::note Exercices de la semaine
 
-## 🧑‍🎓🧑‍🎓 Exercice multilingue
+## 🧑‍🎓🧑‍🎓 Exercice Multilingue
 
 Vous devez faire une application avec un titre (dans le ActionBar) et un TextView dans l'activité.
 
@@ -46,7 +46,7 @@ Vous devez faire une application avec un titre (dans le ActionBar) et un TextVie
 
 Votre application doit avoir un logo différent de celui par défaut.
 
-## 🧑‍🎓🧑‍🎓 Exercice de logo
+## 🧑‍🎓🧑‍🎓 Exercice Logo
 
 Vous devez ajouter le logo [suivant](_06-multilingue/logo.jpeg) à votre projet ci-dessus.
 
