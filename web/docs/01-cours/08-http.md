@@ -91,11 +91,11 @@ Créez un projet appelé **Repos** dans lequel vous créerez un service simple e
 
 ## DTO - Exercice de compréhension
 
-Dans cet exercice, on vous donne la classe de modèle et on cherche les champs qu'on va mettre dans la classe de transfert (**PersonneDTO**)
+Dans cet exercice, on vous donne la classe de modèle et on cherche les champs qu'on va mettre dans la classe de transfert (**PersonneDTO**).
 
-L'interface à droite montre les informations nécessaires à l'application.
+L'interface graphique à droite montre les informations nécessaires à l'application.
 
-Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire de faire l'interface
+Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire de faire l'interface graphique.
 
 <Row>
 
@@ -115,9 +115,9 @@ Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire 
 
 ## DTO - Exercice de compréhension 2
 
-On reprend l'exercice précédent mais avec maintenant deux classes modèles. On cherche les champs qu'on va mettre dans la classe de transfert (**CompteDTO**) toujours avec la même interface.
+On reprend l'exercice précédent mais avec maintenant deux classes modèles. On cherche les champs qu'on va mettre dans la classe de transfert (**CompteDTO**) toujours avec la même interface graphique.
 
-Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire de faire l'interface
+Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire de faire l'interface graphique.
 
 <Row>
 
