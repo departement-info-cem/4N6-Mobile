@@ -97,7 +97,13 @@ Dans cet exercice, on vous donne la classe de modèle et on cherche les champs q
 
 L'interface graphique à droite montre les informations nécessaires à l'application.
 
-Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire de faire l'interface graphique.
+Créez un fichier **dto.md** dans ton repo exercice pour garder ta réponse avec le format suivant:
+```md
+# PersonneDTO
+- ID: Long
+- pipo: String (justification de pourquoi le champ est dans le DTO)
+- etc.
+```
 
 <Row>
 
@@ -119,7 +125,14 @@ Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire 
 
 On reprend l'exercice précédent mais avec maintenant deux classes modèles. On cherche les champs qu'on va mettre dans la classe de transfert (**CompteDTO**) toujours avec la même interface graphique.
 
-Créez la classe de transfert avec les champs choisis. Il n'est pas nécessaire de faire l'interface graphique.
+
+Créez un fichier **dto2.md** dans ton repo pour garder ta réponse avec le format suivant:
+```md
+# PersonneDTO
+- ID: Long
+- pipo: String (justification de pourquoi le champ est dans le DTO)
+- etc.
+```
 
 <Row>
 
