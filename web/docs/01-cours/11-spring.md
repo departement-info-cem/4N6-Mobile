@@ -50,10 +50,10 @@ Nous allons voir également comment envoyer des requêtes au serveur avec le log
 
 Le projet [suivant](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ChicType) a un problème. Votre mission sera de trouver le problème et de le corriger.
 
-Lorsqu'on appuie sur le bouton "Obtenir un nombre aléatoire", l'application Android fourni effectue un appel réseau au web service qui se trouve à l'adresse suivante : [https://4n6.azurewebsites.net/exos/chic/type/](https://4n6.azurewebsites.net/exos/chic/type/). Le nombre aléatoire retourné par le web service devrait s'afficher dans un champ texte.
+Lorsqu'on appuie sur le bouton "Obtenir un nombre aléatoire", l'application Android fournie effectue un appel réseau au web service qui se trouve à l'adresse suivante : [https://4n6.azurewebsites.net/exos/chic/type/](https://4n6.azurewebsites.net/exos/chic/type/). Le nombre aléatoire retourné par le web service devrait s'afficher dans un champ texte.
 
 1. Dans postman, effectuez une requête vers le web service. Notez le type de donnée qui est dans le corps de la réponse.
-2. Ouvrez l'application Android fourni dans Android Studio. Essayez d'appuyer sur le bouton.
+2. Ouvrez l'application Android fournie dans Android Studio. Essayez d'appuyer sur le bouton.
 3. Mettez des breakpoint et consultez le logcat pour tenter de comprendre pourquoi votre application n'arrive pas à traiter le nombre retourné par le web service.
 4. Effectuez un correctif pour que l'application fonctionne correctement. Montrez votre correctif à votre enseignant.
 
