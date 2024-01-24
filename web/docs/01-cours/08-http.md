@@ -78,7 +78,7 @@ Vous devez démontrer un appel avec succès à ce web service dans une applicati
 
 Par exemple, une activité avec un TextView qui affiche les données retournées par l'appel.
 
-## 👨‍🎓 Exercice RetrofitListes
+## 👨‍🎓👨‍🎓 Exercice RetrofitListes
 
 Créez un projet appelé **RetrofitListes**. Le projet doit partir une activité coupée en 2 dans le sens de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplé par les appels suivants :
 
