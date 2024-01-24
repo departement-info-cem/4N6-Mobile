@@ -85,7 +85,7 @@ Créez un projet appelé **RetrofitListes**. Le projet doit partir une activité
 - Webservice [1](https://4n6.azurewebsites.net/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
 - Webservice [2](https://4n6.azurewebsites.net/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
 
-##👨‍🎓🤖 Exercice RetrofitGithub
+## 👨‍🎓🤖 Exercice RetrofitGithub
 
 Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service simple en GET sur l'URL [https://api.github.com/users/departement-info-cem/repos](https://api.github.com/users/departement-info-cem/repos).
 
