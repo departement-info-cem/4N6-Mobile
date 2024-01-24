@@ -46,7 +46,7 @@ Vous devez compléter l'intégration du drawer dans les activités appropriées 
 
 :::note Exercices de la semaine
 
-## 🧑‍🎓🤖 Exercice TiroirA
+## 👨‍🎓🤖 Exercice TiroirA
 
 Créez un projet appelé **TiroirA** contenant une activité. Ajoutez un tiroir de navigation avec les items et comportements suivants :
 
@@ -54,7 +54,7 @@ Créez un projet appelé **TiroirA** contenant une activité. Ajoutez un tiroir 
 - Profil (affiche un Toast avec votre prénom)
 - Déconnexion (affiche un log)
 
-## 🧑‍🎓🤖 Exercice TiroirB
+## 👨‍🎓🤖 Exercice TiroirB
 
 Copiez le projet **TiroirA** dans un projet **TiroirB**.
 
