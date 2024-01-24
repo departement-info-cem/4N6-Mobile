@@ -50,11 +50,11 @@ Vous complétez quelques exercices de révisions.
 
 :::note Exercices de la semaine
 
-## 🧑‍🎓🤖 Exercice ActivitesA
+## 👨‍🎓🤖 Exercice ActivitesA
 
 Créez un projet appelé **ActivitesA** contenant 3 activités. Ajoutez un menu d'options dans le ActionBar (révision) permettant d'accéder à chacune des activités depuis chacune des activités.
 
-## 🧑‍🎓🤖 Exercice ActivitesB
+## 👨‍🎓🤖 Exercice ActivitesB
 
 Créez un projet appelé **ActivitesB** contenant 2 activités.
 
