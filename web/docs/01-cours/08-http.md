@@ -62,7 +62,7 @@ On expliquera à quoi servent les différentes classes de transfert dans la **[l
 
 :::note Exercices de la semaine
 
-## 🧑‍🎓🧑‍🎓 Exercice RetrofitSimple
+## 👨‍🎓👨‍🎓 Exercice RetrofitSimple
 
 Créez un projet appelé **RetrofitSimple**. Le web service [ici](https://4n6.azurewebsites.net/exos/long/double/4) prend un nombre et retourne son double.
 
@@ -70,7 +70,7 @@ Vous devez démontrer un appel avec succès à ce web service dans une applicati
 
 Par exemple, une activité avec un EditText pour le nombre et un bouton pour déclencher l'appel. Au retour de la valeur (doublée), celle-ci est affichée dans un Toast.
 
-## 🧑‍🎓🤖 Exercice RetrofitComplexe
+## 👨‍🎓🤖 Exercice RetrofitComplexe
 
 Créez un projet appelé **RetrofitComplexe**. Le web service [ici](https://4n6.azurewebsites.net/exos/truc/complexe?name=whippsie) prend un nom et retourne un objet complexe (remplacez whippsie par votre prénom dans l'URL).
 
@@ -78,20 +78,20 @@ Vous devez démontrer un appel avec succès à ce web service dans une applicati
 
 Par exemple, une activité avec un TextView qui affiche les données retournées par l'appel.
 
-## 🧑‍🎓🧑‍🎓 Exercice RetrofitListes
+## 👨‍🎓 Exercice RetrofitListes
 
 Créez un projet appelé **RetrofitListes**. Le projet doit partir une activité coupée en 2 dans le sens de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplé par les appels suivants :
 
 - Webservice [1](https://4n6.azurewebsites.net/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
 - Webservice [2](https://4n6.azurewebsites.net/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
 
-## ‍🧑‍🎓🤖 Exercice RetrofitGithub
+##👨‍🎓🤖 Exercice RetrofitGithub
 
 Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service simple en GET sur l'URL [https://api.github.com/users/departement-info-cem/repos](https://api.github.com/users/departement-info-cem/repos).
 
 Chaque élément du recyclerView doit afficher les champs "name" et "description" ainsi qu'un bouton qui mène à l'"html_url" (doit fonctionner).
 
-## 🧑‍🎓🧑‍🎓 DTO - Exercice de compréhension
+## 👨‍🎓👨‍🎓 DTO - Exercice de compréhension
 
 Dans cet exercice, on vous donne la classe de modèle et on cherche les champs qu'on va mettre dans la classe de transfert (**PersonneDTO**).
 
@@ -121,7 +121,7 @@ Créez un fichier **dto.md** dans ton repo exercice pour garder ta réponse avec
 
 </Row>
 
-## 🧑‍🎓🧑‍🎓 DTO - Exercice de compréhension 2
+## 👨‍🎓👨‍🎓 DTO - Exercice de compréhension 2
 
 On reprend l'exercice précédent mais avec maintenant deux classes modèles. On cherche les champs qu'on va mettre dans la classe de transfert (**CompteDTO**) toujours avec la même interface graphique.
 
