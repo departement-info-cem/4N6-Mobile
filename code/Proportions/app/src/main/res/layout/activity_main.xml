@@ -11,7 +11,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="100"
+            android:layout_weight="1"
             android:background="@color/vert1"
             android:text="Ce"
             android:textColor="@color/black"
@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="292"
+            android:layout_weight="3"
             android:background="@color/vert2"
             android:text="Ce"
             android:textColor="@color/white"
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="100"
+            android:layout_weight="1"
             android:background="@color/vert1"
             android:text="Ce texte prend de l'espace."
             android:textColor="@color/black"
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="292"
+            android:layout_weight="3"
             android:background="@color/vert2"
             android:text="Ce texte prend de l'espace."
             android:textColor="@color/white"
@@ -49,7 +49,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="100"
+            android:layout_weight="1"
             android:background="@color/bleu1"
             android:text=""
             android:textColor="@color/white"
@@ -57,7 +57,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="292"
+            android:layout_weight="3"
             android:background="@color/bleu2"
             android:text=""
             android:textColor="@color/white"
@@ -68,7 +68,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="100"
+            android:layout_weight="1"
             android:background="@color/bleu1"
             android:text="Ce"
             android:textColor="@color/white"
@@ -76,7 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="292"
+            android:layout_weight="3"
             android:background="@color/bleu2"
             android:text="Ce"
             android:textColor="@color/white"
@@ -87,7 +87,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="100"
+            android:layout_weight="1"
             android:background="@color/bleu1"
             android:text="Ce texte prend"
             android:textColor="@color/white"
@@ -95,7 +95,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="292"
+            android:layout_weight="3"
             android:background="@color/bleu2"
             android:text="Ce texte prend"
             android:textColor="@color/white"
@@ -106,7 +106,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="100"
+            android:layout_weight="1"
             android:background="@color/bleu1"
             android:text="Ce texte prend de l'espace."
             android:textColor="@color/white"
@@ -114,7 +114,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="292"
+            android:layout_weight="3"
             android:background="@color/bleu2"
             android:text="Ce texte prend de l'espace."
             android:textColor="@color/white"
@@ -125,7 +125,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="100"
+            android:layout_weight="1"
             android:background="@color/rouge1"
             android:text="Ce"
             android:textColor="@color/white"
@@ -133,7 +133,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="292"
+            android:layout_weight="3"
             android:background="@color/rouge2"
             android:text="Ce"
             android:textColor="@color/white"
@@ -144,7 +144,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="100"
+            android:layout_weight="1"
             android:background="@color/rouge1"
             android:text="Ce texte prend de l'espace."
             android:textColor="@color/white"
@@ -152,7 +152,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="292"
+            android:layout_weight="3"
             android:background="@color/rouge2"
             android:text="Ce texte prend de l'espace."
             android:textColor="@color/white"
