@@ -69,6 +69,6 @@ Lorsqu'on appuie sur le bouton "Obtenir un nombre aléatoire", l'application And
 
 ### Exercice Postman
 
-Vous devez préparer un ensemble de requêtes avec postman pour créer un compte, accéder à la liste des tâches de l'utilisateur, créer une tâche et mettre à jour une tâche.
+En roulant le serveur [KickMyB](https://github.com/departement-info-cem/KickMyB-Server), vous devez préparer un ensemble de requêtes avec postman pour créer un compte, accéder à la liste des tâches de l'utilisateur, créer une tâche et mettre à jour une tâche.
 
 :::
