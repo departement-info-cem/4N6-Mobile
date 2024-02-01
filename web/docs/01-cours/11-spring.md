@@ -42,7 +42,7 @@ Nous allons voir également comment envoyer des requêtes au serveur avec le log
 
 :::note Exercices de la semaine
 
-### Exercice Chic Type
+## 👨‍🎓👨‍🎓 Exercice Chic Type
 
 <Row>
 
@@ -67,7 +67,7 @@ Lorsqu'on appuie sur le bouton "Obtenir un nombre aléatoire", l'application And
 
 </Row>
 
-### Exercice Postman
+## 👨‍🎓👨‍🎓 Exercice Postman
 
 En roulant le serveur [KickMyB](https://github.com/departement-info-cem/KickMyB-Server), vous devez préparer un ensemble de requêtes avec postman pour créer un compte, accéder à la liste des tâches de l'utilisateur, créer une tâche et mettre à jour une tâche.
 
