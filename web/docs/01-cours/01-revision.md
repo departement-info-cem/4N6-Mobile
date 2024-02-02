@@ -4,7 +4,7 @@ description: Premier cours, révisions activités, intent, extras
 hide_table_of_contents: true
 ---
 
-# Semaine 1 : Premier cours, révisions activités, intent, extras
+# Premier cours, révisions activités, intent, extras
 
 
 <Row>
@@ -50,13 +50,13 @@ Vous complétez quelques exercices de révisions.
 
 :::note Exercices de la semaine
 
-### Exercice A
+## 👨‍🎓🤖 Exercice ActivitesA
 
-Créez un projet appelé **MultiMulti** contenant 3 activités. Ajoutez un menu d'options dans le ActionBar (révision) permettant d'accéder à chacune des activités depuis chacune des activités.
+Créez un projet appelé **ActivitesA** contenant 3 activités. Ajoutez un menu d'options dans le ActionBar (révision) permettant d'accéder à chacune des activités depuis chacune des activités.
 
-### Exercice B
+## 👨‍🎓🤖 Exercice ActivitesB
 
-Créez un projet appelé **CommunicationActivite** contenant 2 activités.
+Créez un projet appelé **ActivitesB** contenant 2 activités.
 
 - La première activité contient un EditText et un bouton
 - Quand on appuie sur le bouton, le texte du EditText est envoyé dans un extra de l'Intent à la deuxième activité

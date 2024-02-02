@@ -20,8 +20,6 @@ Regardez la vidéo ci-dessous sur l'ordre des layout pour le tiroir de navigatio
 
 <Video url="https://www.youtube.com/watch?v=bmIs1LAYfCc" />
 
-TODO EXEMPLE DE BOUTONS CUSTOM
-
 :::
 
 </Column>

@@ -50,8 +50,22 @@ Vous devez modifier votre application pour afficher soit le résultat si ça a f
 
 ### Exercice un errorBody mais pas deux
 
-En reprenant l'exemple [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofit), Essaie d'afficher deux fois le résultat de la méthode `response.errorBody().string()` dans logcat.
+En ouvrant l'exemple [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofit), vous devez:
+- partir le projet
+- regarder la trace d'exécution dans LogCat
+- on devrait trouver une ligne qui commence par "le corps encore "
+- selon le code cela devrait afficher le corps de la réponse HTTP (`response.errorBody().string()`)
 
-Il devrait y avoir un comportement bizarre, discute avec ton prof pour expliquer/comprendre ce qui se passe.
+Dans un fichier **double-errorBody.md**, indique ce que tu observes, ce que tu comprends et en quoi il faut faire attention:
+```md
+# comportement observé du code
+bli bla blo
+# ce que je comprends de ce qui se passe
+bli bla blo
+# comment faire pour éviter ce problème (comment accéder 2 fois au corps de la réponse d'erreur)
+bli bla blo
+```
+
+Valide avec ton prof ce qui se passe et comment réagir.
 
 :::

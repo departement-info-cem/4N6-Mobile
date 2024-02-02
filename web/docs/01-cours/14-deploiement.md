@@ -12,9 +12,13 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-- Crééez votre compte sur [Render](https://render.com/). Nous vous recommendons d'utiliser l'option pour se connecter avec Github.
-- Forkez le serveur [KickMyB](https://docs.github.com/fr/get-started/quickstart/fork-a-repo) sur votre compte personnel
-- Lisez 20 minutes sur la documentation sur le [déploiement de web services](https://render.com/docs/web-services#deploying-from-a-git-repository) 
+(optionnel) Lisez 20 minutes sur la documentation sur le [déploiement de web services](https://render.com/docs/web-services#deploying-from-a-git-repository) 
+
+Sur le repo du serveur vous tombez sur la page d'[accueil](https://github.com/departement-info-cem/KickMyB-Server).
+
+Vous y trouverez un lien vers la 
+**[notice de déploiement sur Render](https://github.com/departement-info-cem/KickMyB-Server/blob/main/deploiement-render.md)**
+qui contient les étapes à réaliser pour obtenir votre propre serveur déployé.
 
 :::
 
@@ -44,6 +48,6 @@ Nous regarderons ensemble comment observer les logs de notre application déploy
 
 :::note Exercice
 
-Vous devez faire le déploiement du serveur fourni par les profs sur votre compte Render.
+Vous devez faire le déploiement du serveur fourni par les profs sur votre compte Render (connexion via GitHub).
 
 :::

@@ -41,14 +41,26 @@ Ensuite, travail sur :
 
 :::
 
-</Column>
+:::caution IA - Intelligence artificielle
 
+Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, ...) pour faire un exercice :
+
+| | |
+| --- | --- |
+| <h1>👨‍🎓&nbsp;👨‍🎓</h1> | Vous devriez faire cet exercice sans utiliser l'IA, en réfléchissant par vous-même et en expérimentant. C'est ainsi que vous apprendrez. |
+| <h1>👨‍🎓&nbsp;🤖</h1> | Vous pouvez vous aider de l'IA en posant des questions spécifiques, par exemple : "comment fait-on pour centrer du texte dans un *TextView*?" Mais ne lui donnez pas l'énoncé, sinon aussi bien ne pas faire l'exercice! |
+| <h1>🤖&nbsp;🤖</h1> | Vous pouvez utiliser l'IA sans réserve pour faire cet exercice! |
+
+:::
+
+</Column>
+ 
 <Column>
 
 
 
 
-| Semaine                            | Séquence des cours       | Travaux pratiques           |
+| Semaine                            | Séquence des cours       | Avancement des TP           |
 |------------------------------------|--------------------------|-----------------------------|
 | [1.1 →](cours/revision)            | Plan de cours, révisions | --                          |
 | [1.2 →](cours/mise-en-page)        | Mise en page             | --                          |
@@ -59,11 +71,11 @@ Ensuite, travail sur :
 | [4.1 →](cours/multilingue)         | Multilingue              | 75%                         |
 | [4.2 →](cours/integration)         | Intégration              | 100% remise                 |
 | [5.1 →](cours/http)                | Accès réseau             | TP2 : communication serveur |
-| [5.2 →](cours/http)                | Accès réseau             | 10%                         |
-| [6.1 →](cours/formatif-intra)      | Formatif                 | 35%                         |
-| [6.2 →](cours/examen)              | **Examen Intra**         | 35%                         |
-| [7.1 →](cours/spring)              | Serveur Spring Boot      | 20%                         |
-| [7.2 →](cours/cookies)             | Cookies                  | --                          |
+| [5.2 →](cours/http)                | Accès réseau             | 20%                         |
+| [6.1 →](cours/formatif-intra)      | Formatif                 | --                          |
+| [6.2 →](cours/examen)              | **Examen Intra** (20%)   | --                          |
+| [7.1 →](cours/spring)              | Serveur Spring Boot      | 40%                         |
+| [7.2 →](cours/cookies)             | Cookies                  | 50%                         |
 | [8.1 →](cours/debogage)            | Débogage                 | 60%                         |
 | [8.2 →](cours/deploiement)         | Déploiement serveur      | 80%                         |
 | [9.1 →](cours/integration)         | Intégration              | 100% remise                 |
@@ -79,7 +91,7 @@ Ensuite, travail sur :
 | [14.1 →](cours/http)               | Intégration              | 90%                         |
 | [14.2 →](cours/http)               | Correction TP3           | 100% remise                 |
 | [15.1 →](cours/formatif-final)     | Formatif final           |                             |
-| [15.2 →](cours/examen)             | **Examen final**         |                             |
+| [15.2 →](cours/examen)             | **Examen final** (30%)   |                             |
 
 
 

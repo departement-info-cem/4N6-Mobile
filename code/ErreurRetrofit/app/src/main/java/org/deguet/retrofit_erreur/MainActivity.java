@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                                 Log.i("RETROFIT", "le code " + response.code());
                                 Log.i("RETROFIT", "le message " + response.message());
                                 Log.i("RETROFIT", "le corps " + corpsErreur);
+                                Log.i("RETROFIT", "le corps encore " + response.errorBody().string());
                                 if (corpsErreur.contains("TropCourt")) {
                                     // TODO remplacer par un objet graphique mieux qu'un toast
                                     Toast.makeText(MainActivity.this, "Ce message est trop court", Toast.LENGTH_SHORT).show();
