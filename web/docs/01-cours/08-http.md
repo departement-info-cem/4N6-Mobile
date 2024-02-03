@@ -97,7 +97,7 @@ Dans cet exercice, on vous donne la classe de modèle et on cherche les champs q
 
 L'interface graphique à droite montre les informations nécessaires à l'application.
 
-Créez un fichier **dto.md** dans ton repo exercice pour garder ta réponse avec le format suivant:
+Créez un fichier **dto.md** dans votre repo exercice pour garder votre réponse avec le format suivant :
 ```md
 # PersonneDTO
 - ID: Long
@@ -126,7 +126,7 @@ Créez un fichier **dto.md** dans ton repo exercice pour garder ta réponse avec
 On reprend l'exercice précédent mais avec maintenant deux classes modèles. On cherche les champs qu'on va mettre dans la classe de transfert (**CompteDTO**) toujours avec la même interface graphique.
 
 
-Créez un fichier **dto2.md** dans ton repo pour garder ta réponse avec le format suivant:
+Créez un fichier **dto2.md** dans votre repo pour garder votre réponse avec le format suivant :
 ```md
 # PersonneDTO
 - ID: Long
