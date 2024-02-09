@@ -3,8 +3,9 @@ Un mantra, c'est une phrase qu'on répète souvent pour s'améliorer mais surtou
 Tout d'abord, comme tout cours de programmation, regarde les mantras de programmation, 
 ils sont toujours valides.
 
-
 ### "Dans ton activité, un seul setContentView tu auras"
+
+### "Quand ton layout déconneras, le Layout Inspector tu utiliseras"
 
 ## Retrofit
 
@@ -25,6 +26,10 @@ Il faut :
 
 Si on l'appelle plus d'une fois, il rend un résultat vide. Stocke le résultat dans une variable pour
 y accéder plusieurs fois.
+
+### "Quand rien tu ne comprendras, le NetworkInterceptor tu ouvriras"
+
+Afin de voir le traffic réseau, on doit ouvrir l'onglet Network Inspector dans la vue App Inspection
 
 ## LinearLayout
 
