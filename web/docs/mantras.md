@@ -5,7 +5,7 @@ ils sont toujours valides.
 
 ### "Dans ton activité, un seul setContentView tu auras"
 
-### "Quand ton layout déconneras, le Layout Inspector tu utiliseras"
+### "Quand ton layout déconnera, le Layout Inspector tu utiliseras"
 
 ## Retrofit
 
