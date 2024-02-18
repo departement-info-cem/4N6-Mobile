@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance : théorie (2h)
 
-Vous devez regarder les videos suivantes:
+Vous devez regarder les videos suivantes :
 
 <Video url="https://www.youtube.com/watch?v=wsF3t33jN8Y" />
 
