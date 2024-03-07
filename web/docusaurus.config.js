@@ -73,12 +73,18 @@ const config = {
           },
           {
             type: "doc",
-            docId: "problemes-frequents",
+            docId: "mantras",
             position: "right",
-            label: "Problèmes fréquents",
+            label: "Mantras",
           },
           {
-            label: "Script Installation",
+            type: "doc",
+            docId: "problemes-frequents",
+            position: "right",
+            label: "Problèmes",
+          },
+          {
+            label: "Script",
             href: `https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1`,
             position: "right",
           },
