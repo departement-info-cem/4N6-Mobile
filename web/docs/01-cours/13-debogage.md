@@ -27,6 +27,7 @@ Nous allons discuter des différents cas où on a utilisé des outils de déboga
 - App Inspection > Network Inspector 
 - Point d'arrêt / "evaluate expression" 
 - 3 points d'arrêts pour appel asynchrone
+- h2-console
 - Postman
 - log et traces 
 
