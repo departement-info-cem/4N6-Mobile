@@ -22,7 +22,15 @@ Déboguer un serveur (ou confirmer qu'il fonctionne bien) vous aidera à précis
 
 :::info Séance
 
-On va voir Postman comme notre principal outil pour envoyer des requêtes au serveur que ce soit GET ou POST.
+Nous allons discuter des différents cas où on a utilisé des outils de débogage et pourquoi:
+- Layout Inspector
+- App Inspection > Network Inspector 
+- Point d'arrêt / "evaluate expression" 
+- 3 points d'arrêts pour appel asynchrone
+- Postman
+- log et traces 
+
+En démo, on va voir Postman comme notre principal outil pour envoyer des requêtes au serveur que ce soit GET ou POST.
 
 On va voir que les logs (System.out.println, logcat) servent à suivre des sessions de travail de voir les valeurs quand on ne veut pas arrêter l'exécution avec des breakpoints.
 
