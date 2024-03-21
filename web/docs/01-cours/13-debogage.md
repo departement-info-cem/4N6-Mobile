@@ -35,7 +35,7 @@ Nous allons discuter des différents cas où on a utilisé des outils de déboga
 
 En démo, on va voir Postman comme notre principal outil pour envoyer des requêtes au serveur que ce soit GET ou POST.
 
-On va voir que les logs (System.out.println, logcat) servent à suivre des sessions de travail de voir les valeurs quand on ne veut pas arrêter l'exécution avec des breakpoints.
+On va voir que les logs (System.out.println, logcat) servent à suivre des sessions de travail et à voir les valeurs quand on ne veut pas arrêter l'exécution avec des breakpoints.
 
 Nous allons déboguer le premier problème dans le projet Serveur ensemble. Le reste en exercice
 
