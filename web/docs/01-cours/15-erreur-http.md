@@ -40,4 +40,4 @@ On expliquera la stratégie utilisée par le serveur fourni dans le cours.
 
 ### Exercice (optionnel bonus)
 
-Vous devez faire une copie du projet serveur des profs et voir comment construire une réponse d'erreur HTTP en y indiquant un code 499 et un corps avec la String "Ayoye".
+Vous devez faire une copie du projet serveur KickMyB et voir comment construire une réponse d'erreur HTTP en y indiquant un code 499 et un corps avec la String "Ayoye".
