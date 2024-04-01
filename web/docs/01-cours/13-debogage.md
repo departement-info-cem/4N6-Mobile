@@ -14,6 +14,8 @@ hide_table_of_contents: true
 
 Déboguer un serveur (ou confirmer qu'il fonctionne bien) vous aidera à préciser davantage d'où provient une erreur. Dans ce cours, nous allons exécuter le [serveur fourni](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/DebugServer) et nous montrerons les étapes pour déboguer la première erreur.
 
+<Video url="https://www.youtube.com/watch?v=O4KVfoFoxAg" />
+
 :::
 
 </Column>
@@ -22,9 +24,18 @@ Déboguer un serveur (ou confirmer qu'il fonctionne bien) vous aidera à précis
 
 :::info Séance
 
-On va voir Postman comme notre principal outil pour envoyer des requêtes au serveur que ce soit GET ou POST.
+Nous allons discuter des différents cas où on a utilisé des outils de débogage et pourquoi:
+- Layout Inspector
+- App Inspection > Network Inspector 
+- Point d'arrêt / "evaluate expression" 
+- 3 points d'arrêts pour appel asynchrone
+- h2-console
+- Postman
+- log et traces 
 
-On va voir que les logs (System.out.println, logcat) servent à suivre des sessions de travail de voir les valeurs quand on ne veut pas arrêter l'exécution avec des breakpoints.
+En démo, on va voir Postman comme notre principal outil pour envoyer des requêtes au serveur que ce soit GET ou POST.
+
+On va voir que les logs (System.out.println, logcat) servent à suivre des sessions de travail et à voir les valeurs quand on ne veut pas arrêter l'exécution avec des breakpoints.
 
 Nous allons déboguer le premier problème dans le projet Serveur ensemble. Le reste en exercice
 

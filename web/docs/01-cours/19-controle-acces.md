@@ -53,7 +53,7 @@ Nous verrons également comment rédiger une FAILLE, un EXPLOIT et un CORRECTIF 
 
 ### Exercice 1
 
-Vous devez rédiger FAILLE EXPLOIT et CORRECTIF pour la branche [Authentification](https://github.com/departement-info-cem/4N6-Mobile/tree/master/Demonstrations/SpringBootAccessControl/02-SpringSecurityBasic).
+Vous devez rédiger FAILLE EXPLOIT et CORRECTIF pour la branche [Authentification](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic).
 
 ### (Optionnel) Exercice 2
 

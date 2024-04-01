@@ -82,8 +82,8 @@ Par exemple, une activité avec un TextView qui affiche les données retournées
 
 Créez un projet appelé **RetrofitListes**. Le projet doit partir une activité coupée en 2 dans le sens de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplé par les appels suivants :
 
-- Webservice [1](https://4n6.azurewebsites.net/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
-- Webservice [2](https://4n6.azurewebsites.net/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
+- [Webservice 1](https://4n6.azurewebsites.net/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
+- [Webservice 2](https://4n6.azurewebsites.net/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
 
 ## 👨‍🎓🤖 Exercice RetrofitGithub
 
