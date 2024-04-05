@@ -46,7 +46,7 @@ On discutera du cas où l'erreur vient de l'absence de signal ou de réseau dans
 
 Copier un de vos exercices qui envoyait une requête à un web service.
 
-Vous devez modifier votre application pour afficher soit le résultat si ça a fonctionné dans un **Snackbar** soit une erreur si il n'y a pas de réseau (vous testerez avec l'appareil en mode avion) dans un **Toast**.
+Vous devez modifier votre application pour afficher soit le résultat si ça a fonctionné dans un **Snackbar** soit une erreur si le serveur est inaccessible (vous testerez avec l'appareil en mode avion) dans un **Toast**.
 
 ### Exercice un errorBody mais pas deux
 
