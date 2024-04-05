@@ -42,7 +42,6 @@ const sidebars = {
       type: "doc",
       label: "4.2 - Intégration client",
       id: "cours/integration",
-      //className: "remise-tp1",
     },
     {
       type: "doc",
@@ -99,7 +98,6 @@ const sidebars = {
       type: "doc",
       label: "10.1 - Erreur GUI",
       id: "cours/erreur-gui",
-      //className: "remise-tp2",
     },
     {
       type: "doc",
@@ -143,18 +141,12 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "14.2 - Formatif",
-      id: "cours/formatif-final",
-    },
-    {
-      type: "doc",
-      label: "15.1 - Correction TP3",
+      label: "14.2 - Correction TP3",
       id: "cours/correction-tp3",
-      //className: "remise-tp3",
     },
     {
       type: "doc",
-      label: "15.2 - Formatif",
+      label: "15.1 - Formatif",
       id: "cours/formatif-final",
     },
     {
