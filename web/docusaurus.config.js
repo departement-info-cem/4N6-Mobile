@@ -61,7 +61,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "cours/rencontre1.1",
+            docId: "cours/revision",
             position: "left",
             label: "Cours",
           },
@@ -70,6 +70,28 @@ const config = {
             position: "left",
             sidebarId: "tp",
             label: "Travaux Pratiques",
+          },
+          {
+            type: "doc",
+            docId: "mantras",
+            position: "right",
+            label: "Mantras",
+          },
+          {
+            type: "doc",
+            docId: "problemes-frequents",
+            position: "right",
+            label: "Problèmes",
+          },
+          {
+            label: "Script",
+            href: `https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1`,
+            position: "right",
+          },
+          {
+            label: "Skill Tree",
+            href: `https://info.cegepmontpetit.ca/4N6-Mobile/file/4N6.html`,
+            position: "right",
           },
         ],
       },
