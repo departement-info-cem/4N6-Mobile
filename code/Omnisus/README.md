@@ -48,8 +48,8 @@ Pour générer un fichier sous le bon format :
 - Liste des étudiants -> Paramètres d'affichage
 - Sélectionner les options suivantes
   - Cocher "Pour Excel" et sélectionner le séparateur ";"
-  - Liste truée par: "Numéro d'étudiant"
-  - Taille de la police: "Petite"
+  - Liste triée par : "Numéro d'étudiant"
+  - Taille de la police : "Petite"
   - Sous les éléments à inclure dans la liste, cocher uniquement "Numéro d'étudiant"
 
 Dans un terminal, la commande ressemble donc à `python generate_users.py ListeEtudiants_cours4204N6EM_gr1030.csv`
