@@ -6,26 +6,46 @@ on:
       - main
 
 jobs:
-  deploy:
-    name: Deploy to GitHub Pages
+  build:
+    name: Build le site
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          cache-dependency-path: '**/package-lock.json'
-          node-version: 18
+          cache-dependency-path: "**/package-lock.json"
+          node-version: 20
           cache: npm
 
-      - name: Install dependencies
+      - name: Installer les dépendances
         working-directory: ./web
-        run:  npm ci
-      - name: Build website
+        run: npm ci
+      - name: Build du site
         working-directory: ./web
         run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Corriger les permissions
+        working-directory: ./web/build
+        run: |
+          chmod -c -R +rX "./" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+      - name: Téléverser l'artéfact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./web/build
+          path: ./web/build
+  deploy:
+    name: Déployer le site
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Déploiement
+        id: deployment
+        uses: actions/deploy-pages@v4

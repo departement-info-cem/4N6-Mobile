@@ -1,4 +1,4 @@
-name: Test deployment
+name: Tester le build
 
 on:
   pull_request:
@@ -6,21 +6,21 @@ on:
       - main
 
 jobs:
-  test-deploy:
-    name: Test deployment
+  test-build:
+    name: Tester le build
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ./web
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: npm
-      - name: Install dependencies
+      - name: Installer les dépendances
         working-directory: ./web
         run: npm ci
-      - name: Test build website
+      - name: Build du site
         working-directory: ./web
         run: npm run build
