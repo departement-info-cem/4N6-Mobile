@@ -51,7 +51,7 @@ Les systèmes exposés sont habituellement:
 
 ### Injection Javascript
 
-Essayez d'injecter du javascript dans la base de données et regarder si vous pouvez la déclencher sur le /index du serveur KickMyB.
+Essayez d'injecter du javascript dans la base de données du serveur KickMyB et regardez si vous pouvez le déclencher sur le /index.
 
 Entrainez-vous à décrire dans un fichier texte, la FAILLE que vous avez découvert, décrivez étape par étape comment en tirer partie dans une session EXPLOIT et dans CORRECTIF, expliquez comment vous avez combler la faille.
 
