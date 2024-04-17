@@ -17,10 +17,8 @@ Un compte a été créé pour vous dans le système. Si vous n’avez pas reçu 
 
 - Explorez l’application : connectez-vous, explorer les pages.
 - Trouvez l’URL du serveur déployé.
-- Créez un environnement Postman qui définit une variable d'environnement `addr` qui a pour valeur l'url du serveur déployé
 - Familiarisez-vous avec les différentes requêtes Postman. Pas la peine d’essayer d’utiliser les requêtes Admin, elles sont pour la mise en place de l’exercice, ce n’est pas là que la vulnérabilité est située.
 - Essayez d’identifier l’endroit dans le code du serveur qui vous semble vulnérable (vous pouvez confirmer avec votre enseignant quand vous pensez avoir trouvé).
-- 
 
 **Si vous bloquez pendant plus de 5-10 minutes, demandez de l’aide à votre enseignant.**
 
