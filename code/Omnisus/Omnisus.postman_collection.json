@@ -22,7 +22,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n    {\"username\" : \"2056006\", \"password\" : \"U8@Gh34x\"},\n    {\"username\" : \"2184803\", \"password\" : \"&3Y=m$Ng\"},\n    {\"username\" : \"2151688\", \"password\" : \"YEkN_7sF\"},\n    {\"username\" : \"2045396\", \"password\" : \"C4d9fB*R\"},\n    {\"username\" : \"1946724\", \"password\" : \"J$*S[8$r\"},\n    {\"username\" : \"2167686\", \"password\" : \"{X+du3bX\"},\n    {\"username\" : \"2035282\", \"password\" : \"Z5.>CNyv\"},\n    {\"username\" : \"1857439\", \"password\" : \"Z6m4Vg=n\"},\n    {\"username\" : \"2026275\", \"password\" : \"DB&de9Fy\"},\n    {\"username\" : \"2032422\", \"password\" : \"H^w3P[g6\"},\n    {\"username\" : \"1947602\", \"password\" : \"n4GQ+2y9\"},\n    {\"username\" : \"6153760\", \"password\" : \"4U(^ybYs\"},\n    {\"username\" : \"2052724\", \"password\" : \"w=B4zf@r\"},\n    {\"username\" : \"2129970\", \"password\" : \"2vPG)_)2\"},\n    {\"username\" : \"1876469\", \"password\" : \"YwQ${4u[\"},\n    {\"username\" : \"1924552\", \"password\" : \"r3fyJ%qm\"},\n    {\"username\" : \"1741104\", \"password\" : \"6{zBKc=D\"},\n    {\"username\" : \"2139752\", \"password\" : \"L>+jv_56\"}\n]",
+							"raw": "[\n    {\"username\" : \"\", \"password\" : \"Passw0rd!\"}\n]",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -229,7 +229,7 @@
 	"variable": [
 		{
 			"key": "server_url",
-			"value": "http://localhost:8080",
+			"value": "http://localhost",
 			"type": "string"
 		}
 	]
