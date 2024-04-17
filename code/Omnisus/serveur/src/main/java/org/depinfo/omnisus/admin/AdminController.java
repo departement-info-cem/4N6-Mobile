@@ -26,7 +26,6 @@ public class AdminController {
 
         userService.deleteAll();
         for (SignupRequest student : students) {
-            System.out.println("ID : SIGNUP request " + student.username);
             userService.signup(student);
         }
         return "ok!";

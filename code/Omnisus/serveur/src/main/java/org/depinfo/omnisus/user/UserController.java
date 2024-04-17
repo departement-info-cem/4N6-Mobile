@@ -21,13 +21,11 @@ public class UserController {
     private UserService userService;
     @PostMapping("/api/id/signin")
     public @ResponseBody SigninResponse signin(@RequestBody SigninRequest s) throws BadCredentialsException {
-        System.out.println("ID : SIGNIN request " + s);
         s.username = s.username.trim().toLowerCase();
         try {
             Authentication auth = new UsernamePasswordAuthenticationToken(s.username, s.password);
             authManager.authenticate(auth);
             SecurityContextHolder.getContext().setAuthentication(auth);
-            System.out.println("Logged as " + s.username);
             SigninResponse resp = new SigninResponse();
             MUser loggedUser = userService.studentFromUsername(s.username);
             resp.id = loggedUser.id;
@@ -47,6 +45,7 @@ public class UserController {
     @PutMapping("/api/student")
     public @ResponseBody String updateUser(@RequestBody String publicName) {
         MUser student = currentStudent();
+        System.out.println(publicName);
         this.userService.updateUser(student.id, publicName);
         return "Ok!";
     }
