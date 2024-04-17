@@ -45,7 +45,7 @@ public class UserController {
     @PutMapping("/api/student")
     public @ResponseBody String updateUser(@RequestBody String publicName) {
         MUser student = currentStudent();
-        System.out.println(publicName);
+        System.out.println(student.username + " : " + publicName);
         this.userService.updateUser(student.id, publicName);
         return "Ok!";
     }
