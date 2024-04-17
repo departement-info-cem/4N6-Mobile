@@ -60,7 +60,3 @@ Vous devez rédiger FAILLE EXPLOIT et CORRECTIF pour la branche [Authentificatio
 Vous devez rédiger FAILLE EXPLOIT et CORRECTIF pour la branche [Extraction de l'usager authentifié](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth).
 
 Attention, deux failles existent dans le projet ci-dessus.
-
-### (Bonus) Pour les pros hax0rs
-
-Trouvez la faille restante dans la branche [Test de propriété](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/04-TestProprio).
