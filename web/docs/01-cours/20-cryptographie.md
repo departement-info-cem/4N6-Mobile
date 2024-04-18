@@ -37,7 +37,7 @@ On discutera de différentes possibilités cryptographiques et de leurs cas d'ut
 - Encryption symétrique et champs de données sensibles (NAS, carte de crédit)
 - Fonction de hash et mode de passe
 
-Les solutions de crypto sont en général diffiles à coder et très sensibles aux erreurs. Il s'agit donc ici de les utiliser correctement, en comprenant ce qu'on fait.
+Les solutions de crypto sont en général difficiles à coder et très sensibles aux erreurs. Il s'agit donc ici de les utiliser correctement, en comprenant ce qu'on fait.
 
 :::
 
