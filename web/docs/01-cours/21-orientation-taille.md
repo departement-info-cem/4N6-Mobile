@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 Le but de cette séance est de voir si votre application est utilisable sur plusieurs tailles de périphériques et plusieurs orientations.
 
-Vous pouvez essayer une tablette de 10 pouces en portrait et en paysage ainsi qu'un petit téléphone en portrait paysage.
+Vous pouvez essayer une tablette de 10 pouces en portrait/paysage ainsi qu'un petit téléphone en portrait/paysage.
 
 - Est-ce que tous les éléments d'interface sont accessibles ou visibles?
 - Si c'est trop petit, comment rendre l'activité scrollable?
