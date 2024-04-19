@@ -48,19 +48,19 @@ Les solutions de crypto sont en général difficiles à coder et très sensibles
 :::note Exercices
 
 ### Exercice A
-Sur votre serveur en utilisant l'url `http://localhost:8080/h2-console` vous pouvez ouvrir une console qui permet d'explorer la base de données.
+Sur votre serveur KickMyB, en utilisant l'url `http://localhost:8080/h2-console` dans un navigateur, vous pouvez ouvrir une console qui permet d'explorer la base de données.
 
-Vous devez trouver le champ encrypté symétrique. Tu dois créer un fichier Symetrique.txt à la racine de ton projet où tu expliqueras :
+Vous devez trouver le champ encrypté symétrique. Vous devez créer un fichier Symetrique.txt à la racine du projet, dans lequel vous expliquerez :
 
-- Quel champ dans quelle classe a été encrypté ?
-- Est-ce que c'était nécessaire d'encrypter ?
-- Est-ce qu'il y a un ou plusieurs champ(s) dans le projet qui devraient être encryptés?
+- Quel champ dans quelle classe a été encrypté?
+- Est-ce que c'était nécessaire d'encrypter?
+- Est-ce qu'il y a un ou plusieurs champ(s) dans le projet qui devrai(en)t être encrypté(s)?
 
 ### Exercice B
-En cherchant dans le projet, vous devez trouver où se trouve la configuration du "password encoder". Tu dois créer un fichier EncodageMotDePasse.txt à la racine de ton projet où tu expliqueras :
+En cherchant dans le projet KickMyB, vous devez trouver où se trouve la configuration du "password encoder". Vous devez créer un fichier EncodageMotDePasse.txt à la racine du projet, où vous expliquerez :
 
-- Où se trouvait la configuration à modifier ?
-- Qu'est-ce que ça change dans l'application ?
-- Comment en pratique tu peux voir la différence, avec quel outil?
+- Où se trouvait la configuration à modifier?
+- Qu'est-ce que ça change dans l'application?
+- Comment en pratique on peut voir la différence, avec quel outil?
 
 :::
