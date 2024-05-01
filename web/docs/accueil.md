@@ -88,7 +88,7 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 | [12.2 →](cours/orientation-taille) | Portrait/paysage         | 60%                         |
 | [13.1 →](cours/compatibilite-api)  | Compatibilité et API     | 70%                         |
 | [13.2 →](cours/ctf)                | Capture the flag         | 80%                         |
-| [14.1 →](cours/http)               | Intégration              | 90%                         |
+| [14.1 →](cours/causerie-dto-cookie)| Causerie - DTO et Cookies| 90%                         |
 | [14.2 →](cours/http)               | Correction TP3           | 100% remise                 |
 | [15.1 →](cours/formatif-final)     | Formatif final           |                             |
 | [15.2 →](cours/examen)             | **Examen final** (30%)   |                             |
