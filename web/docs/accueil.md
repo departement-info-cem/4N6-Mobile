@@ -58,7 +58,7 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 <Column>
 
 
-
+## H24 (en Java)
 
 | Semaine                            | Séquence des cours       | Avancement des TP           |
 |------------------------------------|--------------------------|-----------------------------|
@@ -92,6 +92,48 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 | [14.2 →](cours/correction-tp3)               | Correction TP3           | 100% remise                 |
 | [15.1 →](cours/formatif-final)     | Formatif final           |                             |
 | [15.2 →](cours/examen)             | **Examen final** (30%)   |                             |
+
+
+
+</Column>
+
+<Column>
+
+## H25 (en kotlin)
+
+
+| Semaine                             | Séquence des cours        | Avancement des TP              |
+|-------------------------------------|---------------------------|--------------------------------|
+| [1.1 →](cours/revision)             | Plan de cours, révisions  | --                             |
+| [1.2 →](cours/mise-en-page)         | Mise en page              | --                             |
+| [2.1 →](cours/recycler-view)        | RecyclerView              | Projet créé TP1                |
+| [2.2 →](cours/navigation)           | Navigation    (1 séance)  | 25%                            |
+| [3.1 →](cours/layout)               | Layout(s)                 | 50%                            |
+| [3.2 →](cours/multilingue)          | Multilingue               | 75%                            |
+| [4.1 →](cours/integration)          | Intégration               | 100% remise                    |
+| [4.2 →](cours/http)                 | Accès réseau              | TP2 : communication serveur    |
+| [5.1 →](cours/http)                 | Accès réseau              | 20%                            |
+| [5.2 →](cours/formatif-intra)       | Formatif                  | --                             |
+| [6.1 →](cours/examen)               | **Examen Intra** (20%)    | --                             |
+| [6.2 →](cours/spring)               | Serveur Spring Boot       | 40%                            |
+| [7.1 →](cours/cookies)              | Cookies                   | 50%                            |
+| [7.2 →](cours/debogage)             | Débogage                  | 60%                            |
+| [8.1 →](cours/deploiement)          | Déploiement serveur       | 80%                            |
+| [8.2 →](cours/integration)          | Intégration               | 100% remise                    |
+| [9.1 →](cours/erreur-http)          | Erreurs: HTTP             | TP3 : erreurs et attente       |
+| [9.2 →](cours/erreur-gui)           | Erreurs: GUI              | 10%                            |
+| [10.1 →](cours/attente-serveur)     | Attente serveur           | 20%                            |
+| [10.2 →](cours/injection)           | Cybersec: injections      | 30%                            |
+| [11.1 →](cours/controle-acces)      | Cybersec: access control  | 40%                            |
+| [11.2 →](cours/cryptographie)       | Cybersec: crypto          | 50%                            |
+| [12.1 →](cours/orientation-taille)  | Portrait/paysage          | 60%                            |
+| [12.2 →](cours/compatibilite-api)   | Compatibilité et API      | 70%                            |
+| [13.1 →](cours/ctf)                 | Capture the flag          | 80%                            |
+| [13.2 →](cours/causerie-dto-cookie) | Causerie - DTO et Cookies | 90%                            |
+| [14.1 →](cours/correction-tp3)      | Correction TP3            | 100% remise                    |
+| [14.2 →](cours/correction-tp3)      | Loose                     | TODO utiliser pour autre chose |
+| [14.1 →](cours/formatif-final)      | Formatif final            |                                |
+| [15.2 →](cours/examen)              | **Examen final** (30%)    |                                |
 
 
 

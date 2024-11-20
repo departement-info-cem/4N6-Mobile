@@ -84,15 +84,15 @@ const config = {
             label: "Problèmes",
           },
           {
-            label: "Script",
-            href: `https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1`,
+            label: "Installator 🆕",
+            href: `https://github.com/departement-info-cem/scripts-mobile/releases/download/Script/ScriptSharp.exe`,
             position: "right",
           },
-          {
-            label: "Skill Tree",
-            href: `https://info.cegepmontpetit.ca/4N6-Mobile/file/4N6.html`,
-            position: "right",
-          },
+//          {
+//            label: "Skill Tree",
+//            href: `https://info.cegepmontpetit.ca/4N6-Mobile/file/4N6.html`,
+//            position: "right",
+//          },
         ],
       },
       footer: {
