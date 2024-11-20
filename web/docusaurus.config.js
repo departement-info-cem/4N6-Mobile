@@ -72,6 +72,12 @@ const config = {
             label: "Travaux Pratiques",
           },
           {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "recettes",
+            label: "Recettes",
+          },
+          {
             type: "doc",
             docId: "mantras",
             position: "right",
