@@ -50,13 +50,13 @@ Vous complétez quelques exercices de révisions.
 
 :::note Exercices de la semaine
 
-## 👨‍🎓🤖 Exercice ActivitesA
+## 👨‍🎓🤖 Exercice ActionBar
 
-Créez un projet appelé **ActivitesA** contenant 3 activités. Ajoutez un menu d'options dans le ActionBar (révision) permettant d'accéder à chacune des activités depuis chacune des activités.
+Créez un projet appelé **ActionBar** contenant 3 activités. Ajoutez un menu d'options dans le ActionBar (révision) permettant d'accéder à chacune des activités depuis chacune des activités.
 
-## 👨‍🎓🤖 Exercice ActivitesB
+## 👨‍🎓🤖 Exercice Navigation
 
-Créez un projet appelé **ActivitesB** contenant 2 activités.
+Créez un projet appelé **Navigation** contenant 2 activités.
 
 - La première activité contient un EditText et un bouton
 - Quand on appuie sur le bouton, le texte du EditText est envoyé dans un extra de l'Intent à la deuxième activité
