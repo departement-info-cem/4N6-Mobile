@@ -1,10 +1,11 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
     namespace 'org.depinfo.chictype'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "org.depinfo.chictype"
@@ -30,6 +31,9 @@ android {
     buildFeatures {
         viewBinding true
     }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
@@ -39,4 +43,5 @@ dependencies {
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'androidx.core:core-ktx:1.15.0'
 }
