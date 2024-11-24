@@ -1,18 +1,20 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    compileSdkVersion 32
 
     buildFeatures {
         viewBinding true
     }
 
+    namespace 'org.deguet.erreurs'
+    compileSdk 35
     defaultConfig {
         applicationId "org.deguet.erreurs"
-        minSdkVersion 16
-        targetSdkVersion 32
+        minSdkVersion 21
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 
@@ -30,8 +32,12 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'org.deguet.erreurs'
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
     implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.core:core-ktx:1.15.0'
 }
