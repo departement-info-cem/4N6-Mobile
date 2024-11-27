@@ -10,7 +10,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Assez long message"
+        android:hint="Assez long message"
         android:id="@+id/et"
         />
 
