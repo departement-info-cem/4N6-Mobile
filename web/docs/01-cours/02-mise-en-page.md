@@ -20,10 +20,8 @@ Vous devez pensez à la mise en page des différents écrans de votre applicatio
 - Création d'une nouvelle tâche
 - Consultation du détail d'une tâche
 
-Vidéo de révision :
-
-<Video url="https://www.youtube.com/watch?v=x-dQ5Sa0Ns0" />
-
+Pour les révisions, vous pouvez vous référer à la séance du cours 3N5:
+[Mise en page](https://info.cegepmontpetit.ca/3N5-Prog3/cours/6.1-intro-android)
 :::
 
 </Column>

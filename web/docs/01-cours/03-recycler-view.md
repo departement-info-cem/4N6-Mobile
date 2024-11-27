@@ -12,15 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance
 
-Vidéos de révision :
-
-<Video url="https://www.youtube.com/watch?v=nkGseYC3QAw" />
-
-**[Code après la vidéo 1](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/RecyclerView/01-Depart)**
-
-<Video url="https://www.youtube.com/watch?v=gtHix80YUx0" />
-
-**[Code après la vidéo 2](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/RecyclerView/02-Deboguage)**
+Revoir le contenu de 3N5 pour les [recycler view](https://info.cegepmontpetit.ca/3N5-Prog3/cours/6.1-intro-android) et la [mise en page](https://info.cegepmontpetit.ca/3N5-Prog3/cours/7.1-recycler).
 
 :::
 
