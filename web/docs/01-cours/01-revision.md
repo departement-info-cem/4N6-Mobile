@@ -15,11 +15,11 @@ hide_table_of_contents: true
 
 C'est la première séance, pas de travail avant.
 
-Videos de révisions:
-
-<Video url="https://www.youtube.com/watch?v=qvty1jwEj-4" />
-
-<Video url="https://www.youtube.com/watch?v=Zu2pd6vOxMM" />
+Révisions:
+- La base : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/cours/6.1-intro-android)
+- View Binding : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/view-binding)
+- RecyclerView : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/cours/7.1-recycler)
+- Multilingue : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/cours/13.2-multilingue)
 
 :::
 
