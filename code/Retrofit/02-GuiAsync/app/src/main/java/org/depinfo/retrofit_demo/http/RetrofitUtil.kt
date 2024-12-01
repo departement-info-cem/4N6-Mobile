@@ -9,7 +9,6 @@ object RetrofitUtil {
     fun get(): Service {
         val retrofit = Retrofit.Builder()
             .addConverterFactory(ScalarsConverterFactory.create())
-            .addConverterFactory(GsonConverterFactory.create())
             .baseUrl("https://api.github.com/")
             .build()
 
