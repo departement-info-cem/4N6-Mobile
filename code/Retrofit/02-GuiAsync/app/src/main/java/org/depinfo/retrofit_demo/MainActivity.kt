@@ -1,13 +1,9 @@
 package org.depinfo.retrofit_demo
 
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import org.depinfo.retrofit_demo.databinding.ActivityMainBinding
-import org.depinfo.retrofit_demo.http.RetrofitUtil.get
+import org.depinfo.retrofit_demo.http.RetrofitUtil
 import org.depinfo.retrofit_demo.http.Service
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,16 +14,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(getLayoutInflater())
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.getRoot())
 
         // appeler un service de liste et afficher dans le textview
         binding.btn.setOnClickListener({
-            val service: Service = get()
+            val service: Service = RetrofitUtil.get()
             val nom: String = binding.et.text.toString()
-            service.listReposString(nom).enqueue(object : Callback<String> {
+            val call: Call<String> = service.listReposString(nom)
+            call.enqueue(object : Callback<String> {
                 override fun onResponse(call: Call<String>, response: Response<String>) {
-                    if (response.isSuccessful()) {
+                    if (response.isSuccessful) {
                         // http 200 http tout s'est bien passé
                         val resultat = response.body()
                         binding.tv.text = resultat
