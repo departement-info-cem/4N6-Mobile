@@ -16,7 +16,7 @@ Le contenu des cours ainsi que les énoncés de TP sont disponibles dans les ong
 
 Tu peux déjà commencer à regarder les vidéos du cours 1 et prendre connaissance des informations.
 
-À chaque cours, exécute le script d'installation (repo). Pour le moment, le script est fait pour être uniquement exécuté sur les postes du CÉGEP.
+À chaque cours, exécute Installator. Cela ne fonctionne qu'au collège.
 
 
 :::tip Avant chaque séance :
