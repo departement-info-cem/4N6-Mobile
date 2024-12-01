@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Retrofit - Appels HTTP de base
+# Retrofit 1 - Appels HTTP de base
 
 ATTENTION : L'outil principal de débogage pour les appels réseaux est le network inspector dans Android Studio.
 1. Cliquer sur Fichier / File ou le symbole  ☰ en haut à gauche
@@ -14,7 +14,7 @@ ATTENTION : L'outil principal de débogage pour les appels réseaux est le netwo
 
 Elle est recommandée par la doc standard d'Android pour faire des appels réseaux [source](https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet?hl=fr#0).
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Applis-Mobile/tree/main/code/RecetteRetrofitSimple).
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/01-Depart/).
 
 <Tabs queryString="recette-string">
   <TabItem value="AndroidManifest.xml" label="AndroidManifest.xml">
@@ -23,76 +23,64 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     Cela se fait en ajoutant la balise suivante entre les balises `<manifest>` et `<application>` dans le fichier `AndroidManifest.xml`.
 
-    ```xml
-    <manifest ...
-       <uses-permission android:name="android.permission.INTERNET"/>
-       <application ...
-    ```
+    <GHCode
+              repo="4N6-Mobile"
+              filePath="code/Retrofit/01-Depart/app/src/main/AndroidManifest.xml"
+              startLine="2"
+              endLine="7"
+             />
+
   </TabItem>
-  <TabItem value="build.gradle.kts" label="build.gradle.kts">
+  <TabItem value="build.gradle" label="build.gradle">
 
     Il va falloir ajouter les dépendances permettant d'utiliser Retrofit dans le  `build.gradle.kts`.
 
-    ```kts
-        implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-        implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.9.0'
-        implementation group: 'com.squareup.retrofit2', name: 'converter-scalars', version: '2.9.0'
-    ```
+    <GHCode
+          repo="4N6-Mobile"
+          filePath="code/Retrofit/01-Depart/app/build.gradle"
+          startLine="43"
+          endLine="46"
+         />
 
   </TabItem>
-  <TabItem value="WebService.kt" label="WebService.kt">
-    L'interface graphique de chaque item à afficher dans la liste est définie dans un fichier `xml`, comme c'est le cas pour les fichiers `xml` qui sont utilisés pour définir l'interface graphique.
-
+  <TabItem value="Service.kt" label="Service.kt">
+    Le service indique à retrofit quelles actions on souhaite permettre:
     <GHCode
       repo="4N6-Mobile"
-      filePath="code/RecetteRecyclerViewString/app/src/main/res/layout/mon_item.xml"
+      filePath="code/Retrofit/01-Depart/app/src/main/java/org/depinfo/retrofit_demo/http/Service.kt"
      />
 
+     Regardons en détail:
+
+1. L'annotation `@GET` indique que c'est une requête de type GET.
+2. "users/\{utilisateur\}/repos" indique l'url qui sera envoyée.
+3. Le paramètre **utilisateur** va être inséré dans l'URL.
+4. Le **Call\<String\>** indique que la réponse sera lue comme un String.
+
   </TabItem>
-  <TabItem value="UtilitaireRetrofit.kt" label="UtilitaireRetrofit.kt">
+  <TabItem value="RetrofitUtil.kt" label="RetrofitUtil.kt">
 
     La prochaine étape est de construire un objet pour envoyer les requêtes concrètes de Retrofit:
 
-    ```kotlin
-    TODO ici on GHCode
-
-    ```
-
-
     <GHCode
-      repo="3N5-Prog3"
-      filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-      ignore="10:17-10:90,19-28"
-      startLine="10"
-      endLine="29"
-     />
+          repo="4N6-Mobile"
+          filePath="code/Retrofit/01-Depart/app/src/main/java/org/depinfo/retrofit_demo//http/RetrofitUtil.kt"
+         />
 
-    <details>
-      <summary>Résultat</summary>
 
-      Votre fichier MonAdapter.kt devrait maintenant ressembler à ceci :
-
-      <GHCode
-        repo="3N5-Prog3"
-        startLine="10"
-        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-      />
-    </details>
+    Ici on va surtout s'assurer d'avoir l'url de départ qui pointe sur le bon serveur.
+    Dans l'exemple, on pointe vers l'API de Github.
 
   </TabItem>
-  <TabItem value="ActivityMain.kt" label="ActivityMain.kt">
+  <TabItem value="TestsHTTP.kt" label="TestsHTTP.kt">
 
-    Une fois qu'on a tout ça on peut appeler notre service web dans notre activité principale.
+    Une fois qu'on a tout ça on peut appeler notre fonction.
 
-    Ici on montre un appel depuis l'activité principale de la démo mais la technique est la même depuis
-    un autre objet (Adapter etc.)
+    Le plus simple pour s'assurer du bon fonctionnement est de faire un test automatique avec **execute**
 
-    ```kotlin
-
-    ```
     <GHCode
-      repo="3N5-Prog3"
-      filePath="code/RecetteRecyclerViewString/app/src/main/res/layout/activity_main.xml"
+      repo="4N6-Mobile"
+      filePath="code/Retrofit/01-Depart/app/src/androidTest/java/org/depinfo/retrofit_demo/TestsHTTP.kt"
     />
 
   </TabItem>
