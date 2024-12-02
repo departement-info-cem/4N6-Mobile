@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Retrofit - Appels HTTP avec une liste
+# Retrofit 3 - HTTP avec une liste d'objets
 
 ATTENTION : L'outil principal de débogage pour les appels réseaux est le network inspector dans Android Studio.
 1. Cliquer sur Fichier / File ou le symbole  ☰ en haut à gauche
@@ -10,21 +10,97 @@ ATTENTION : L'outil principal de débogage pour les appels réseaux est le netwo
 3. Dans la fenêtre AppInspection, choisir l'onglet **Network Inspector**
 4. Tu devrais voir apparaître les appels réseaux de ton application
 
+Regarder la recette de base pour les étapes:
+- [AndroidManifest.xml](retrofit-01-base?recette-string=AndroidManifest.xml)
+- [build.gradle](retrofit-01-base?recette-string=build.gradle)
 
 Dans cette recette, nous allons voir comment :
 
-- Réagir à un clic sur un élément d'une liste dans un `RecyclerView`.
-- Démarrer une nouvelle activité à partir d'un `ListAdapter`.
+- Récupérer une liste d'objets complexes depuis un service web.
+- L'afficher dans un RecyclerView.
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/3N5-Prog3/tree/main/code/RecetteRecyclerViewContexte).
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/03-ListeObjets).
 
 <Tabs queryString="recette-activite">
-    <TabItem value="SecondActivity.kt" label="SecondActivity.kt et activity_second.xml">
-        Ajoutez une nouvelle activité dans votre application comme ça a été montré précédement.
 
-        Dans notre cas, nous allons assumer que la nouvelle activité s'appelle `SecondActivity`.
+
+    <TabItem value="transfer" label="transfer">
+
+        Dans le package transfer, nous allons créer des classes pour facilement accéder aux données.
+
+
+        Si on récupères du JSON, on va avoir les correspondances suivantes:
+        - si le JSON commence avec `{` on veut récupérer un objet et on aura besoin d'une classe. On aura un **Call\<Pipo\>** et il faudra définir une classe Pipo
+        - si le JSON commence avec `[` on veut récupérer une liste et on pourra directement utiliser List. On aura alors un **Call\<List\<Xxxxx\>\>**.
+        - si le JSON commence par `"` on va avoir un **Call\<String\>**
+        - si le JSON commence par  une suite de chiffes on va avoir un **Call\<Long\>**
+        - etc.
+
+        #### Premier exemple
+
+        Si on ouvre la page
+        [https://api.github.com/users/octocat](https://api.github.com/users/octocat)
+
+        - le JSON commence par `{` donc on va créer une classe Utilisateur
+        - dans l'objet dans le JSON, on voit la clé **"login"**, on ajoute dans la classe Utilisateur un champ login
+        - il faut que le nom soit exactement le même pour que Retrofit / Gson puisse faire la correspondance
+        - il est conseillé d'ajouter un champ à la fois et de tester le fonctionnement
+
+        <GHCode
+            repo="4N6-Mobile"
+            filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/transfer/Utilisateur.kt"
+        />
+
+        #### Exemple 2
+        [https://api.github.com/users/octocat/repos](https://api.github.com/users/octocat/repos)
+
+        - on voit que le JSON classe avec `[` donc on veut récupérer une liste d'objets.
+        - on va donc récupérer une liste de Repo et on crée la classe Repo.
+        - pour voir quels champs mettre dedans, on regarde le premier élément de la liste avec le premier `{`
+
+        <GHCode
+            repo="4N6-Mobile"
+            filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/transfer/Repo.kt"
+        />
+
+        On veut récupérer une liste d'objets complexes.
+
+        Retrofit va automatiquement
+
+        Exemples de JSON et types correspondant:
+
+
     </TabItem>
-    <TabItem value="mon_item.xml" label="mon_item.xml">
+
+    <TabItem value="Service.kt" label="Service.kt">
+
+        Au niveau du service, nous allons modifier les signatures des méthodes:
+        - un accès récupère un objet complexe
+        - un accès récupère une liste d'objets complexes
+
+        <GHCode
+              repo="4N6-Mobile"
+              filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/http/Service.kt"
+             />
+
+
+    </TabItem>
+    <TabItem value="RetrofitUtil.kt" label="RetrofitUtil.kt">
+
+        Nous allons modifier notre Retrofit pour utiliser une librairie:
+        - Gson est une librairie codée par Google
+        - Gson gère la traduction entre un objet Kotlin et un objet JSON dans les 2 sens
+        - on indique à Retrofit de s'en servir en ajoutant `GsonConverterFactory.create()`
+
+        <GHCode
+          repo="4N6-Mobile"
+          filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/http/RetrofitUtil.kt"
+         />
+
+
+
+    </TabItem>
+    <TabItem value="appels_gui" label="Appel depuis l'interface graphique">
         Nous allons ajouter un bouton simple dans notre élément de liste `mon_item.xml` pour pouvoir réagir à un clic sur un élément de la liste.
     
         <GHCode
@@ -34,36 +110,12 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     </TabItem>
     
-    <TabItem value="MonAdapteur.kt" label="MonAdapteur.kt">
-        Pour réagir à un clic sur le bouton, nous allons ajouter un `OnClickListener` dans la méthode `bind` de la classe interne `MonItemViewHolder`.
-
+    <TabItem value="appels_tests" label="Appel dans les tests">
+        On montre ici comment appeler les 2 nouvelles méthodes depuis des tests automatiques
         <GHCode
-            repo="3N5-Prog3"
-            filePath="code/RecetteRecyclerViewContexte/app/src/main/java/org/depinfo/recetterecyclerviewcontexte/adapters/MonAdapter.kt"
-            startLine="13"
-            ignore="31-41-    // Reste du code...,44-52-// Reste du code..."
+            repo="4N6-Mobile"
+            filePath="code/Retrofit/03-ListeObjets/app/src/androidTest/java/org/depinfo/retrofit_demo/TestsHTTP.kt"
         />
-
-:::tip Pour les curieux
-
-    <Row>
-
-        <Column size="8">
-            La méthode `startActivity` nécessite un `Context` pour être capable de démarrer une nouvelle activité. Alors pourquoi est-ce que, quand on utilise `startActivity` dans la classe `Activity`, on n'a pas besoin de spécifier `binding.root.context`?
-
-            C'est parce que la classe `Activity` hérite de la classe `Context`. C'est pour ça qu'on peut utiliser `startActivity` directement dans une `Activity`.
-
-            Voici un schéma de classe pour mieux comprendre :
-
-        </Column>
-        <Column size="4">
-            TODO
-        </Column>
-
-    </Row>
-
-
-:::
 
     </TabItem>
 </Tabs>
