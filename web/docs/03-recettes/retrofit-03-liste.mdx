@@ -4,11 +4,13 @@ hide_table_of_contents: true
 
 # Retrofit 3 - HTTP avec une liste d'objets
 
+:::tip
 ATTENTION : L'outil principal de débogage pour les appels réseaux est le network inspector dans Android Studio.
 1. Cliquer sur Fichier / File ou le symbole  ☰ en haut à gauche
 2. Choisir View / Tool Windows / AppInspection
 3. Dans la fenêtre AppInspection, choisir l'onglet **Network Inspector**
 4. Tu devrais voir apparaître les appels réseaux de ton application
+:::
 
 Regarder la recette de base pour les étapes:
 - [AndroidManifest.xml](retrofit-01-base?recette-string=AndroidManifest.xml)
@@ -57,18 +59,12 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - on voit que le JSON classe avec `[` donc on veut récupérer une liste d'objets.
         - on va donc récupérer une liste de Repo et on crée la classe Repo.
         - pour voir quels champs mettre dedans, on regarde le premier élément de la liste avec le premier `{`
+        - pour la demo, on a ajouté le **name** et le **id**
 
         <GHCode
             repo="4N6-Mobile"
             filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/transfer/Repo.kt"
         />
-
-        On veut récupérer une liste d'objets complexes.
-
-        Retrofit va automatiquement
-
-        Exemples de JSON et types correspondant:
-
 
     </TabItem>
 
@@ -101,11 +97,16 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     </TabItem>
     <TabItem value="appels_gui" label="Appel depuis l'interface graphique">
-        Nous allons ajouter un bouton simple dans notre élément de liste `mon_item.xml` pour pouvoir réagir à un clic sur un élément de la liste.
-    
+        Dans l'interface graphique:
+         1. on va toujours avoir un appel à **enqueue**
+         2. le Callback est adapté au nouveau type ici **List\<Repo\>**
+         3. ici on envoie la liste au recyclerView pour affichage
+
         <GHCode
-            repo="3N5-Prog3"
-            filePath="code/RecetteRecyclerViewContexte/app/src/main/res/layout/mon_item.xml"
+            repo="4N6-Mobile"
+            filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/MainActivity.kt"
+            startLine="30"
+            endLine="39"
         />
 
     </TabItem>
