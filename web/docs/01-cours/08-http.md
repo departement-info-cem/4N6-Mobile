@@ -63,8 +63,7 @@ On expliquera à quoi servent les différentes classes de transfert dans la **[l
 :::note Exercices de la semaine
 
 ## 👨‍🎓👨‍🎓 Exercice RetrofitSimple
-
-Créez un projet appelé **RetrofitSimple**. Le web service [ici](https://4n6.azurewebsites.net/exos/long/double/4) prend un nombre et retourne son double.
+Créez un projet appelé **RetrofitSimple**. Le web service [ici](https://fourn6-mobile-prof.onrender.com/exos/long/double/4) prend un nombre et retourne son double.
 
 Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
@@ -72,7 +71,7 @@ Par exemple, une activité avec un EditText pour le nombre et un bouton pour dé
 
 ## 👨‍🎓🤖 Exercice RetrofitComplexe
 
-Créez un projet appelé **RetrofitComplexe**. Le web service [ici](https://4n6.azurewebsites.net/exos/truc/complexe?name=whippsie) prend un nom et retourne un objet complexe (remplacez whippsie par votre prénom dans l'URL).
+Créez un projet appelé **RetrofitComplexe**. Le web service [ici](https://fourn6-mobile-prof.onrender.com/exos/truc/complexe?name=whippsie) prend un nom et retourne un objet complexe (remplacez whippsie par votre prénom dans l'URL).
 
 Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
@@ -82,8 +81,8 @@ Par exemple, une activité avec un TextView qui affiche les données retournées
 
 Créez un projet appelé **RetrofitListes**. Le projet doit partir une activité coupée en 2 dans le sens de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplé par les appels suivants :
 
-- [Webservice 1](https://4n6.azurewebsites.net/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
-- [Webservice 2](https://4n6.azurewebsites.net/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
+- [Webservice 1](https://fourn6-mobile-prof.onrender.com/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
+- [Webservice 2](https://fourn6-mobile-prof.onrender.com/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
 
 ## 👨‍🎓🤖 Exercice RetrofitGithub
 
