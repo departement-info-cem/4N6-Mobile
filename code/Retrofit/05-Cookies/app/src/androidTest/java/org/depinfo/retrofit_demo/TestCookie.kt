@@ -26,4 +26,31 @@ class TestCookie {
         val resultat = response.body()
         assert(resultat!!.contains("joris@pipo.org"))
     }
+
+    // Lancer ce test seulement
+    @Test
+    fun testSignupPuisHome() {
+        val service = UtilitaireRetrofit.get()
+        val request = SignupRequest()
+        request.username = "joris@pipo.org"
+        request.password = "123456"
+        val call: Call<String> = service.signup(request)
+        val response = call.execute()
+        val resultat = response.body()
+
+        val callHome: Call<String> = service.home()
+        val responseHome = callHome.execute()
+        val resultatHome = responseHome.body()
+        assert(resultatHome != null)
+    }
+
+    // Lancer ce test seulement
+    @Test
+    fun testHomeSansSignup() {
+        val service = UtilitaireRetrofit.get()
+        val callHome: Call<String> = service.home()
+        val responseHome = callHome.execute()
+        val resultatHome = responseHome.body()
+        assert(resultatHome != null)
+    }
 }

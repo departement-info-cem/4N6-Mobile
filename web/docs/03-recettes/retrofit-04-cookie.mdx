@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# HTTP 4 - cookies / sessions
+# HTTP 4 - cookies et Post
 
 ATTENTION : L'outil principal de débogage pour les appels réseaux est le network inspector dans Android Studio.
 1. Cliquer sur Fichier / File ou le symbole  ☰ en haut à gauche
@@ -10,21 +10,6 @@ ATTENTION : L'outil principal de débogage pour les appels réseaux est le netwo
 3. Dans la fenêtre AppInspection, choisir l'onglet **Network Inspector**
 4. Tu devrais voir apparaître les appels réseaux de ton application
 
-
-<details>
-    <summary>Je ne vois qu'un seul élément dans ma liste</summary>
-
-    <Row>
-    <Column size="3" >
-        TODO
-    </Column>
-    </Row>
-
-    <details>
-    <summary>Solution</summary>
-    <div>
-        Si vous ne voyez qu'un seul élément dans votre liste, c'est probablement parce que la hauteur de chaque élément est définie à `match_parent`. Cela signifie que chaque élément de la liste aura une hauteur égale à la hauteur de son contenu.
-        Assurez-vous que la hauteur de chaque élément est définie dans le fichier `xml` de l'élément.
-    </div>
-    </details>
-</details>
+Nous allons voir 2 éléments:
+- comment envoyer des données en Post avec une classe de transfert
+- comment implanter les cookies pour relier 2 appels ensemble
