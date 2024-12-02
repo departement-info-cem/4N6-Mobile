@@ -12,7 +12,9 @@ hide_table_of_contents: true
 
 :::tip Avant la séance
 
-Revoir le contenu de 3N5 pour les [recycler view](https://info.cegepmontpetit.ca/3N5-Prog3/cours/6.1-intro-android) et la [mise en page](https://info.cegepmontpetit.ca/3N5-Prog3/cours/7.1-recycler).
+Revoir le contenu de 3N5 pour 
+- les [recycler view](https://info.cegepmontpetit.ca/3N5-Prog3/cours/7.1-recycler) 
+- les [recettes correspondantes](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/recycler-view-01-string) .
 
 :::
 
