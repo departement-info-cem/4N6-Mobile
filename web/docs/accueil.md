@@ -120,10 +120,10 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 | [7.2 →](cours/deploiement)          | Déploiement serveur           | 80%                              |
 | [8.1 →](cours/integration)          | Intégration                   | 100% remise                      |
 | [8.2 →](cours/erreur-http)          | Erreurs: HTTP                 | TP3 : serveur erreurs et attente |
-| [9.1 →](cours/erreur-gui)           | Erreurs: GUI                  | 10%                              |
-| [9.2 →](cours/erreur-gui)           | Spring Boot Java              | 10%                              |
-| [10.1 →](cours/erreur-gui)          | Spring Boot Java              | 10%                              |
-| [10.2 →](cours/erreur-gui)          | Spring Boot Java              | 10%                              |
+| [9.1 →](cours/spring-java)          | Erreurs: GUI                  | 10%                              |
+| [9.2 →](cours/spring-java)           | Spring Boot Java              | 10%                              |
+| [10.1 →](cours/spring-java)          | Spring Boot Java              | 10%                              |
+| [10.2 →](cours/spring-java)          | Spring Boot Java              | 10%                              |
 | [11.1 →](cours/erreur-gui)          | Spring Boot Java              | 10%                              |
 | [11.2 →](cours/attente-serveur)     | Attente serveur               | 20%                              |
 | [12.1 →](cours/injection)           | Cybersec: injections et crypto | 30%                              |
