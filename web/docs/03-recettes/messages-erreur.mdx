@@ -6,215 +6,41 @@ hide_table_of_contents: true
 
 ## Messages d'erreur dans l'interface graphique
 
+Dans l'interface graphique, nous avons plusieurs options pour afficher un message d'erreur à l'utilisateur:
+- un Toast mais ça reste une option principalement pour le développeur donc dans l'idéal on peut faire sans avec les Log.i()
+- un Snackbar qui est un message qui apparaît en bas de l'écran et qui disparaît après un certain temps
+- un Dialog qui est une fenêtre qui apparaît au-dessus de l'interface graphique et qui demande une action de l'utilisateur pour disparaître
+
+On peut aussi avoir un message d'erreur sous un champ texte pour y indiquer que la valeur n'est pas valide.
+
 
 
 ## Messages d'erreur sur un appel Retrofit
 
-Étapes de mise en place d'un `RecyclerView` qui gère une liste de `String` sur un projet existant.
+Lors d'un appel réseau avec Retrofit, il y a 2 cas d'erreur:
+- on a reçu une réponse du serveur qui indique un problème dans le traitement de la requête
+- on n'a pas reçu de réponse du serveur
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Applis-Mobile/tree/main/code/RecetteRecyclerViewString).
+### Détecter quels cas arrivent
 
-<Tabs queryString="recette-string">
-  <TabItem value="build.gradle.kts" label="build.gradle.kts">
+On va utiliser le network inspector
 
-    Nous allons utiliser le [ViewBinding](https://developer.android.com/topic/libraries/view-binding#kts) pour la suite des choses. Assurez-vous qu'il est activé dans votre fichier `build.gradle.kts`.
+### Structure du code d'un appel asynchrone
 
-    ```kotlin
-    android {
-      ...
-      buildFeatures {
-        viewBinding = true
-      }
+```kotlin
+val call = service.getSomething()
+call.enqueue(object : Callback<SomeObject> {
+    override fun onResponse(call: Call<SomeObject>, response: Response<SomeObject>) {
+        if (response.isSuccessful) {
+            // Traitement de la réponse
+        } else {
+            // Traitement de l'erreur avec réponse
+        }
     }
-    ```
 
-  </TabItem>
-  <TabItem value="mon_item.xml" label="mon_item.xml">
-    L'interface graphique de chaque item à afficher dans la liste est définie dans un fichier `xml`, comme c'est le cas pour les fichiers `xml` qui sont utilisés pour définir l'interface graphique.
+    override fun onFailure(call: Call<SomeObject>, t: Throwable) {
+        // Traitement de l'erreur sans réponse
+    }
+})
+```
 
-    <Row>
-
-    <Column size="7" >
-
-    Dans l'explorateur de projet, créez un nouveau fichier `Layout Resource File` dans le dossier `res/layout`.
-
-    </Column>
-
-    <Column size="5" >
-
-    Nommez le fichier `mon_item.xml`. Dans `Root element`, choisissez `LinearLayout`.
-
-    </Column>
-
-    </Row>
-
-    Il faudra personnaliser votre fichier en fonction de ce que vous voulez afficher sur chaque élément de liste.
-
-    - Assignez des `id` aux éléments avec lesquels vous allez interagir.
-    - Attention à la hauteur de chaque élément. Ils doivent tous avoir une hauteur fixe ou une hauteur définie en fonction de leur contenu (`wrap_content`).
-
-    Voici un exemple de fichier `mon_item.xml` si on souhaite afficher une `String` dans un `TextView` :
-
-    <GHCode
-      repo="3N5-Prog3"
-      filePath="code/RecetteRecyclerViewString/app/src/main/res/layout/mon_item.xml"
-     />
-
-  </TabItem>
-  <TabItem value="MonAdapter.kt" label="MonAdapter.kt">
-
-    Vous allez créer une classe qui est responsable de la gestion de **TOUS** les éléments de la liste et de leur mise à jour.
-    En Android, ce type de classe est appelé un **[Adapter](https://developer.android.com/reference/kotlin/android/widget/Adapter)**.
-
-    Créez une nouvelle classe `MonAdapter.kt` dans un package `adapters` que vous devez aussi créer dans votre projet.
-
-
-    <details>
-      <summary>ViewHolder</summary>
-
-      Dans la classe `MonAdapter`, vous devez définir une classe interne, qui sera responsable de gérer le contenu affiché dans **UN SEUL** élément de la liste.
-      Cette classe est appelée un **[ViewHolder](https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder)**.
-      Cette classe ressemble en quelque sorte à une classe d'**Activité**.
-
-    <GHCode
-      repo="3N5-Prog3"
-      filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-      ignore="10:17-10:90,19-28"
-      startLine="10"
-      endLine="29"
-     />
-    </details>
-
-    <details>
-      <summary>DiffCallback</summary>
-
-      Pour que l'`Adapter` sache quels éléments d'une liste doivent être affichés lorsqu'on la modifie, on doit définir un objet qui implémente la classe abstraite **[DiffUtil.ItemCallback](https://developer.android.com/reference/androidx/recyclerview/widget/DiffUtil.ItemCallback)**.
-
-      Nous vous recommandons de définir cet objet dans le même fichier que votre `Adapter`, mais à l'extérieur de la classe `MonItemAdapter`.
-
-    <GHCode
-      repo="3N5-Prog3"
-      filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-      startLine="10"
-      ignore="10:17-10:90,12-28-    // Reste du code..."
-     />
-
-    </details>
-
-    <details>
-      <summary>ListAdapter</summary>
-
-      Afin d'accéder aux outils de gestion de liste fournis par Android, vous devez étendre la classe **[ListAdapter](https://developer.android.com/reference/androidx/recyclerview/widget/ListAdapter)**.
-
-      La classe a besoin du **ViewHolder** et du **DiffCallback** que vous avez défini précédemment.
-
-    <GHCode
-      repo="3N5-Prog3"
-      filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-      startLine="10"
-      endLine="10"
-     />
-
-      À ce point-ci, votre environnement de développement devrait vous indiquer des erreurs.
-      C'est normal, car vous n'avez pas encore implémenté les méthodes requises par la classe ListAdapter.
-
-      Pour corriger une erreur, vous pouvez placer votre curseur sur l'erreur, et cliquer sur "Implement members", ce qui va générer les méthodes.
-      Dans la prochaine étape, nous allons remplir ces méthodes.
-
-    </details>
-
-    <details>
-      <summary>onCreateViewHolder</summary>
-
-      La méthode `onCreateViewHolder` est appelée lorsqu'un nouvel élément de la liste doit être affiché.
-
-      <GHCode
-        repo="3N5-Prog3"
-        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-        startLine="19"
-        endLine="22"
-      />
-    </details>
-
-    <details>
-      <summary>onBindViewHolder</summary>
-
-      La méthode `onBindViewHolder` est appelée lorsqu'un élément de la liste doit être mis à jour.
-
-      <GHCode
-        repo="3N5-Prog3"
-        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-        startLine="24"
-        endLine="27"
-      />
-    </details>
-
-    <details>
-      <summary>Résultat</summary>
-
-      Votre fichier MonAdapter.kt devrait maintenant ressembler à ceci :
-
-      <GHCode
-        repo="3N5-Prog3"
-        startLine="10"
-        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-      />
-    </details>
-
-  </TabItem>
-  <TabItem value="ActivityMain.xml" label="ActivityMain.xml">
-
-    On ajoute le `RecyclerView` dans le fichier `xml` de l'activité.
-
-    <GHCode
-      repo="3N5-Prog3"
-      filePath="code/RecetteRecyclerViewString/app/src/main/res/layout/activity_main.xml"
-    />
-
-  </TabItem>
-  <TabItem value="MainActivity.kt" label="MainActivity.kt">
-
-    <details>
-      <summary>ViewBinding</summary>
-
-      Commencez par mettre en place le ViewBinding dans votre activité.
-
-      <GHCode
-        repo="3N5-Prog3"
-        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/MainActivity.kt"
-        startLine="9"
-        ignore="12-12,18-20,22-40"
-      />
-    </details>
-
-    <details>
-      <summary>Configurer le RecyclerView</summary>
-
-      Créez une méthode pour lier l'`Adapteur` que nous venons de créer au `RecyclerView`.
-
-      N'oubliez pas d'appeler cette méthode dans le `onCreate` **APRÈS** avoir mis en place le **ViewBinding**.
-
-      <GHCode
-        repo="3N5-Prog3"
-        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/MainActivity.kt"
-        startLine="9"
-        ignore="15-17-        // Reste du code...,20-20,33-40"
-      />
-    </details>
-
-    <details>
-      <summary>Remplir le RecyclerView</summary>
-
-      Remplissez le recycler view avec 10 000 éléments.
-
-      <GHCode
-        repo="3N5-Prog3"
-        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/MainActivity.kt"
-        startLine="9"
-        ignore="15-17-        // Reste du code...,23-32-    // Reste du code..."
-      />
-
-    </details>
-
-  </TabItem>
-</Tabs>

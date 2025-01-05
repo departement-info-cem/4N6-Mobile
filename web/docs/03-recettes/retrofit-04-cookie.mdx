@@ -4,12 +4,72 @@ hide_table_of_contents: true
 
 # HTTP 4 - cookies et Post
 
+:::tip
 ATTENTION : L'outil principal de débogage pour les appels réseaux est le network inspector dans Android Studio.
 1. Cliquer sur Fichier / File ou le symbole  ☰ en haut à gauche
 2. Choisir View / Tool Windows / AppInspection
 3. Dans la fenêtre AppInspection, choisir l'onglet **Network Inspector**
 4. Tu devrais voir apparaître les appels réseaux de ton application
+:::
 
 Nous allons voir 2 éléments:
 - comment envoyer des données en Post avec une classe de transfert
 - comment implanter les cookies pour relier 2 appels ensemble
+
+
+Les cookies servent à relier plusieurs requêtes dans une session HTTP.
+
+Nous allons donc voir comment enchaîner un signup et un appel à un accueil.
+
+
+<Tabs queryString="recette-activite">
+
+
+    <TabItem value="RetrofitUtil.kt" label="RetrofitUtil.kt">
+
+        Au niveau de la configuration de Retrofit, on va ajouter la gestion des cookies.
+        <GHCode
+            repo="4N6-Mobile"
+            filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/transfer/Repo.kt"
+        />
+
+    </TabItem>
+
+    <TabItem value="Service.kt" label="Service.kt">
+
+        Au niveau du service, nous allons modifier les signatures des méthodes:
+        - un appel de **signup** qui envoie en Post un objet
+        - un appel au **home** qui récupère une liste (qui sera vide pour un nouveau compte)
+
+        <GHCode
+              repo="4N6-Mobile"
+              filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/http/Service.kt"
+             />
+
+
+    </TabItem>
+    <TabItem value="TestsHTTP.kt" label="TestsHTTP.kt">
+
+        On va illustrer le fonctionnement avec 3 tests différents
+        - Un signup simple
+        - Un signup puis un appel à l'accueil
+        - Un appel à l'accueil sans signup préalable
+
+        <GHCode
+          repo="4N6-Mobile"
+          filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/http/RetrofitUtil.kt"
+         />
+
+
+
+    </TabItem>
+    <TabItem value="debogage" label="débogage">
+        On va pouvoir regarder les différentes appels dans le network inspector et regarder les cookies dans
+        les entêtes.
+
+
+
+    </TabItem>
+
+
+</Tabs>
