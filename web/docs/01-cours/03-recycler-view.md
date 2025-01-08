@@ -4,7 +4,7 @@ description: Mise en page, RecyclerView
 hide_table_of_contents: true
 ---
 
-# Révisions : liste et RecyclerView
+# Révisions : RecyclerView Multilingue et Navigation
 
 <Row>
 
@@ -14,7 +14,11 @@ hide_table_of_contents: true
 
 Revoir le contenu de 3N5 pour 
 - les [recycler view](https://info.cegepmontpetit.ca/3N5-Prog3/cours/7.1-recycler) 
-- les [recettes correspondantes](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/recycler-view-01-string) .
+- les [recettes correspondantes](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/recycler-view-01-string)
+- le [tiroir de navigation](https://info.cegepmontpetit.ca/3N5-Prog3/cours/11.1-tiroir)
+- la [recette correspondante](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/tiroir)
+- la [traduction](https://info.cegepmontpetit.ca/3N5-Prog3/cours/13.2-multilingue)
+- la [recette correspondante](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/multilingue) 
 
 :::
 
@@ -37,6 +41,10 @@ Vous devrez commencer la programmation du recyclerView du TP1
 </Row>
 
 :::note Exercices de la semaine
+
+## Exercices de 3N5
+
+Nous vous conseillons de valider que vous êtes capables de refaire quelques exercices de 3N5.
 
 ## 👨‍🎓👨‍🎓 Exercice RecyclerViewA
 
