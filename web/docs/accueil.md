@@ -62,13 +62,13 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 ## H25 (en kotlin)
 
 
-| Semaine                             | Séquence des cours            | Avancement des TP                |
+| Semaine                             | Séquence des cours             | Avancement des TP                |
 |-------------------------------------|-------------------------------|----------------------------------|
 | [1.1 →](cours/revision)             | Plan de cours, révisions      | Projet créé TP1                                |
-| [1.2 →](cours/mise-en-page)         | Mise en page / tiroir / navigation | 10%                  |
-| [2.1 →](cours/recycler-view)        | RecyclerView                  | 30%                              |
-| [2.2 →](cours/layout)               | Layout(s)                     | 50%                              |
-| [3.1 →](cours/multilingue)          | Multilingue                   | 75%                              |
+| [1.2 →](cours/mise-en-page)         | Mise en page (révisions)      | 10%                  |
+| [2.1 →](cours/recycler-view)        | Navigation / RecyclerView / Multilingue    | 30%                              |
+| [2.2 →](cours/recycler-view)        | Navigation / RecyclerView / Multilingue    | 50%                           |
+| [3.1 →](cours/layout)               | Layouts CL DL APL LL SV       | 75%                              |
 | [3.2 →](cours/integration)          | Intégration                   | 100% remise                      |
 | [4.1 →](cours/http)                 | Accès réseau                  | TP2 : communication serveur      |
 | [4.2 →](cours/http)                 | Accès réseau                  | 20%                              |
