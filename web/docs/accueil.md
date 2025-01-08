@@ -104,9 +104,9 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 
 | Semaine                             | Séquence des cours            | Avancement des TP                |
 |-------------------------------------|-------------------------------|----------------------------------|
-| [1.1 →](cours/revision)             | Plan de cours, révisions      | --                               |
-| [1.2 →](cours/mise-en-page)         | Mise en page / tiroir / navigation | Projet créé TP1                  |
-| [2.1 →](cours/recycler-view)        | RecyclerView                  | 10%                              |
+| [1.1 →](cours/revision)             | Plan de cours, révisions      | Projet créé TP1                                |
+| [1.2 →](cours/mise-en-page)         | Mise en page / tiroir / navigation | 10%                  |
+| [2.1 →](cours/recycler-view)        | RecyclerView                  | 30%                              |
 | [2.2 →](cours/layout)               | Layout(s)                     | 50%                              |
 | [3.1 →](cours/multilingue)          | Multilingue                   | 75%                              |
 | [3.2 →](cours/integration)          | Intégration                   | 100% remise                      |
