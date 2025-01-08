@@ -19,7 +19,6 @@ Nous allons utiliser les recettes suivantes :
 - [Envoi d'objet en POST et cookies](../recettes/retrofit-04-cookie)
 
 
-
 :::
 
 </Column>
@@ -75,6 +74,31 @@ Créez un projet appelé **RetrofitListes**. Le projet doit partir une activité
 
 - [Webservice 1](https://fourn6-mobile-prof.onrender.com/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
 - [Webservice 2](https://fourn6-mobile-prof.onrender.com/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
+
+## 👨‍🎓👨‍🎓 Exercice RetrofitEnvoiPost
+
+Créez un projet appelé **RetrofitEnvoiPost**.
+
+Tu vas envoyer une requête 
+- en méthode POST 
+- à l'URL [https://fourn6-mobile-prof.onrender.com/exos/truc/doubler](https://fourn6-mobile-prof.onrender.com/exos/truc/doubler) 
+- avec comme corps de la requête un objet du format suivant
+```json
+{
+  "a": 100,
+  "b": "gndsadsa",
+  "c": [
+    8,
+    12,
+    14,
+    18,
+    1998
+  ]
+}
+```
+- le type de retour sera le même format que celui envoyé.
+
+Il n'est pas nécessaire de créer une interface graphique pour cet exercice. Tu peux afficher le résultat dans le logcat ou programmer directement un test unitaire synchrone.
 
 ## 👨‍🎓🤖 Exercice RetrofitGithub
 
