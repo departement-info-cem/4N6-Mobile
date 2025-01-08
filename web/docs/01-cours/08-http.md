@@ -12,21 +12,13 @@ hide_table_of_contents: true
 
 :::tip Avant la séance : théorie (2h)
 
-Vous devez regarder les videos suivantes :
+Nous allons utiliser les recettes suivantes :
+- [Appel de base](../recettes/retrofit-01-base)
+- [Appel dans l'interface graphique](../recettes/retrofit-02-interface)
+- [Appel avec liste d'objets](../recettes/retrofit-03-liste)
+- [Envoi d'objet en POST et cookies](../recettes/retrofit-04-post)
 
-<Video url="https://www.youtube.com/watch?v=wsF3t33jN8Y" />
 
-**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/01-Depart)**
-
-<Video url="https://www.youtube.com/watch?v=rs8aSam5FT8" />
-
-**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/02-GuiAsync)**
-
-<Video url="https://www.youtube.com/watch?v=CQo8CPBvlvw" />
-
-**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/03-Deboguage)**
-
-<Video url="https://www.youtube.com/watch?v=DbB5Ja33jic" />
 
 :::
 
