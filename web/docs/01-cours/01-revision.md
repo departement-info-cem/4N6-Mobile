@@ -38,7 +38,7 @@ Nous discuterons de l'ensemble de l'application et de comment nous allons procé
 - Vous programmerez l'interface graphique
 - Vous programmerez les appels réseaux pour envoyer / recevoir les infos du serveur
 
-Nous passerons à travers les énoncés des 3 phases du projet.
+Nous passerons à travers les énoncés des 3 phases du projet et nous expliquerons la phase 1 en détails.
 
 Vous complétez quelques exercices de révisions.
 
