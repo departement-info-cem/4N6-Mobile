@@ -4,7 +4,7 @@ description: Premier cours, révisions activités, intent, extras
 hide_table_of_contents: true
 ---
 
-# Premier cours, révisions activités, intent, extras
+# Premier cours, révisions activités
 
 
 <Row>
