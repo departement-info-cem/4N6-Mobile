@@ -39,7 +39,7 @@ Souvent, les classes de modèle ont beaucoup de champs, car la base de données 
 
 On utilise alors des classes de transfert (**DTO**) qui permettent de transférer seulement l'information utile entre le client et le serveur.
 
-On expliquera à quoi servent les différentes classes de transfert dans la **[librairie de DTO ou classes de transfert](https://github.com/departement-info-cem/KickMyB-Library)** .On montrera comment inclure la librairie dans votre projet:
+On expliquera à quoi servent les différentes classes de transfert dans la **[librairie de DTO ou classes de transfert](https://github.com/departement-info-cem/KickMyB-Library)**. On montrera comment inclure la librairie dans votre projet:
 
 - Ajout du repository [Jitpack](https://jitpack.io/) (permet d'accéder à un projet Github sans qu'il soit déployé sur un repo Maven)
 - Ajout de la librairie et format de la dépendance : 'com.github.**compte-github**:**repo-github:hash-du-commit**'
