@@ -30,8 +30,15 @@ Nous allons donc voir comment enchaîner un signup et un appel à un accueil.
         Au niveau de la configuration de Retrofit, on va ajouter la gestion des cookies.
         <GHCode
             repo="4N6-Mobile"
-            filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/transfer/Repo.kt"
+            filePath="code/Retrofit/05-Cookies/app/src/main/java/org/depinfo/retrofit_demo/http/UtilitaireRetrofit.kt"
         />
+
+        Les points importants ici:
+        - on a ajouté un cookie jar (un pot à cookies) pour que le client HTTP puisse stocker les cookies d'un appel à l'autre
+        - on a tranformé l'utilitaire en singleton pour s'assurer que ce sera
+          - toujours le même utilitaire
+          - avec le même client
+          - avec le même cookie jar.
 
     </TabItem>
 
@@ -43,12 +50,15 @@ Nous allons donc voir comment enchaîner un signup et un appel à un accueil.
 
         <GHCode
               repo="4N6-Mobile"
-              filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/http/Service.kt"
+              filePath="code/Retrofit/05-Cookies/app/src/main/java/org/depinfo/retrofit_demo/http/Service.kt"
              />
 
 
     </TabItem>
     <TabItem value="TestsHTTP.kt" label="TestsHTTP.kt">
+
+        **IMPORTANT** il faut envoyer au moins une requête à https://kickmyb-server.onrender.com/ avant le rouler
+        le test pour "réveiller" le serveur.
 
         On va illustrer le fonctionnement avec 3 tests différents
         - Un signup simple
@@ -57,19 +67,15 @@ Nous allons donc voir comment enchaîner un signup et un appel à un accueil.
 
         <GHCode
           repo="4N6-Mobile"
-          filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/http/RetrofitUtil.kt"
+          filePath="code/Retrofit/05-Cookies/app/src/androidTest/java/org/depinfo/retrofit_demo/TestCookie.kt"
+          startLine="33"
+          endLine="48"
          />
 
-
-
+        Ce qu'on va observer ici:
+        - si on fait un signup, cela marche une fois, la deuxième fois le nom est déjà pris
+        - si on fait un signup puis un appel à l'accueil, cela fonctionne car le signup nous a connecté (on a récupéré un cookie), du coup le serveur sait qui on est à la requête 2
+        - si on appelle l'accueil sans signup, on n'est pas connecté, cela échoue.
     </TabItem>
-    <TabItem value="debogage" label="débogage">
-        On va pouvoir regarder les différentes appels dans le network inspector et regarder les cookies dans
-        les entêtes.
-
-
-
-    </TabItem>
-
 
 </Tabs>
