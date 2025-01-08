@@ -55,47 +55,7 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 
 </Column>
  
-<Column>
 
-
-## H24 (en Java)
-
-| Semaine                            | Séquence des cours       | Avancement des TP           |
-|------------------------------------|--------------------------|-----------------------------|
-| [1.1 →](cours/revision)            | Plan de cours, révisions | --                          |
-| [1.2 →](cours/mise-en-page)        | Mise en page             | --                          |
-| [2.1 →](cours/recycler-view)       | RecyclerView             | Projet créé TP1             |
-| [2.2 →](cours/navigation)          | Navigation               | 10%                         |
-| [3.1 →](cours/navigation)          | Navigation               | 25%                         |
-| [3.2 →](cours/layout)              | Layout(s)                | 50%                         |
-| [4.1 →](cours/multilingue)         | Multilingue              | 75%                         |
-| [4.2 →](cours/integration)         | Intégration              | 100% remise                 |
-| [5.1 →](cours/http)                | Accès réseau             | TP2 : communication serveur |
-| [5.2 →](cours/http)                | Accès réseau             | 20%                         |
-| [6.1 →](cours/formatif-intra)      | Formatif                 | --                          |
-| [6.2 →](cours/examen)              | **Examen Intra** (20%)   | --                          |
-| [7.1 →](cours/spring)              | Serveur Spring Boot      | 40%                         |
-| [7.2 →](cours/cookies)             | Cookies                  | 50%                         |
-| [8.1 →](cours/debogage)            | Débogage                 | 60%                         |
-| [8.2 →](cours/deploiement)         | Déploiement serveur      | 80%                         |
-| [9.1 →](cours/integration)         | Intégration              | 100% remise                 |
-| [9.2 →](cours/erreur-http)         | Erreurs: HTTP            | TP3 : erreurs et attente    |
-| [10.1 →](cours/erreur-gui)         | Erreurs: GUI             | 10%                         |
-| [10.2 →](cours/attente-serveur)    | Attente serveur          | 20%                         |
-| [11.1 →](cours/injection)          | Cybersec: injections     | 30%                         |
-| [11.2 →](cours/controle-acces)     | Cybersec: access control | 40%                         |
-| [12.1 →](cours/cryptographie)      | Cybersec: crypto         | 50%                         |
-| [12.2 →](cours/orientation-taille) | Portrait/paysage         | 60%                         |
-| [13.1 →](cours/compatibilite-api)  | Compatibilité et API     | 70%                         |
-| [13.2 →](cours/ctf)                | Capture the flag         | 80%                         |
-| [14.1 →](cours/causerie-dto-cookie)| Causerie - DTO et Cookies| 90%                         |
-| [14.2 →](cours/correction-tp3)               | Correction TP3           | 100% remise                 |
-| [15.1 →](cours/formatif-final)     | Formatif final           |                             |
-| [15.2 →](cours/examen)             | **Examen final** (30%)   |                             |
-
-
-
-</Column>
 
 <Column>
 
