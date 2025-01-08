@@ -14,9 +14,9 @@ hide_table_of_contents: true
 
 Nous allons utiliser les recettes suivantes :
 - [Appel de base](../recettes/retrofit-01-base)
-- [Appel dans l'interface graphique](../recettes/retrofit-02-interface)
+- [Appel dans l'interface graphique](../recettes/retrofit-02-objet)
 - [Appel avec liste d'objets](../recettes/retrofit-03-liste)
-- [Envoi d'objet en POST et cookies](../recettes/retrofit-04-post)
+- [Envoi d'objet en POST et cookies](../recettes/retrofit-04-cookie)
 
 
 
