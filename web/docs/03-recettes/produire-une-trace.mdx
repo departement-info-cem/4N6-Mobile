@@ -1,0 +1,116 @@
+---
+hide_table_of_contents: true
+---
+
+# Produire une trace d'exécution
+
+Si un as un morceau de code, on peut souhaiter savoir dans quel ordre les instructions sont exécutées. 
+
+Pour cela, on peut utiliser un outil de traçage.
+
+## Principe
+
+On veut accomplir 2 éléments principaux:
+1. indiquer quelles lignes de code s'exécutent dans quel ordre
+2. indiquer les effets de chaque ligne de code
+
+## Exemple simple
+
+Si on a le code suivant:
+```kotlin  showLineNumbers
+val a = 3 + 4
+val b = a * 2
+println("salut " + b)
+```
+
+### Trace
+On aura la trace suivante:
+
+| ligne exécutée | effet                             |
+|-----------------|-----------------------------------|
+| val a = 3 + 4       | a: 7                             |
+| val b = a * 2       | a: 7, b: 14                     |
+| println("salut " + b) | a: 7, b: 14, affiche "salut 14" |
+
+Dans le cas d'une séquence d'instructions, on peut voir que les instructions sont exécutées dans
+l'ordre de lecture du code. Simple!
+
+## Exemple avec boucle
+
+Si on a le code suivant:
+```kotlin showLineNumbers
+for (i in 1..3){
+    if (i % 2 == 0) {
+        println("c'est pair " + i)
+    }
+    else {
+        println("ah ben ah ben, c'est impair " + i)
+    }
+}
+```
+
+### Trace
+On aura la trace suivante:
+
+| ligne exécutée | effet                         |
+|-----------------|-------------------------------|
+| for (i in 1..3) | i parcourt l'interval 1, 2, 3 |
+| if (i % 2 == 0) | i: 1 <br /> i%2 vaut 1        |
+| println("ah ben ah ben, c'est impair " + i) | i: 1 <br /> affiche "ah ben ah ben, c'est impair 1" |
+| if (i % 2 == 0) | i: 2  <br /> i%2 vaut 0        |
+| println("c'est pair " + i) | i: 2 <br /> affiche "c'est pair 2" |
+| if (i % 2 == 0) | i: 3 <br /> i%2 vaut 1        |
+| println("ah ben ah ben, c'est impair " + i) | i: 3 <br /> affiche "ah ben ah ben, c'est impair 3" |
+
+On voit que:
+- on n'indique que les lignes qui s'exécutent en vrai
+- certaines lignes s'exécutent plusieurs fois, c'est le principe de la
+- on appelle ce cheminement le flot de contrôle
+
+## Exemple avec une fonction
+
+Si on a le code suivant:
+```kotlin showLineNumbers
+fun ma_fonction(a : Int, b: Int) : Int {
+    val c = a + b
+    return c
+}
+
+fun main() {
+    var mavariable = 3
+    var tavariable = 5
+    var z = ma_fonction(mavariable, tavariable)
+    var y = ma_fonction(4, 9)
+    print("z vaut " + z + " et y vaut " + y)
+}
+```
+
+### Trace
+
+S'il y a des fonctions dans le code, on ajouter la pile d'appels pour indiquer quelles fonctions
+ont été commencées mais pas finies.
+
+| ligne exécutée           | effet                                                      | pile d'appels |
+|--------------------------|------------------------------------------------------------|---------------|
+| var mavariable = 3                    | mavariable: 3                                                    | __main__      |
+| var tavariable = 5                    | mavariable: 3 <br /> tavariable: 5                                               | __main__      |
+| var z = ma_fonction(mavariable, tavariable) | mavariable: 3 <br /> tavariable: 5 <br /> appelle ma_fonction avec a→3 et b→5       | __main__      |
+| val c = a + b                | a: 3 <br /> b: 5 <br /> c: 8                                        | __ma_fonction__ <br /> main |
+| return c                 | a: 3 <br /> b: 5 <br /> c: 8, retourne 8, z = 8                     | __ma_fonction__ <br /> main |
+| var y = ma_fonction(4, 9) | mavariable: 3 <br /> tavariable: 5 <br /> z: 8 <br />appelle ma_fonction avec a→4 et b→9 | __main__      |
+| val c = a + b                | a: 4 <br /> b: 9 <br /> c: 13                                       | __ma_fonction__ <br /> main |
+| return c                 | a: 4 <br /> b: 9 <br /> c: 13 <br /> retourne 13, y = 13                  | __ma_fonction__ <br /> main |
+| println("z vaut " + z + " et y vaut " + y) | mavariable: 3 <br /> tavariable: 5 <br /> z: 8 <br /> y = 13 <br /> affiche "z vaut 8 et y vaut 13" | __main__     |
+
+
+Dans ce cas, on doit ajouter la pile d'appels pour indiquer quelles fonctions ont été commencées mais pas finies.
+
+## Valider ta trace
+
+Afin de valider ta trace, tu vas utiliser le débogueur de ton IDE préféré.
+1. place un point d'arrêt sur la première ligne qui s'exécute
+2. lance l'exécution en mode débogage
+3. saute d'une ligne en une ligne pour voir si ta trace est correcte
+
+Si tu te rends à la fin de l'exécution et que toutes tes valeurs étaient bonnes, tu as bien compris ce que fait le code.
+
