@@ -101,6 +101,59 @@ public BigInteger fibonacci(int n){}
 - que tu testes ton contrôleur avec Postman
 - l'url doit être **/fibo/10** pour 10 par exemple
 
+## Exercice toutes les méthodes
+
+Dans cet exercice, on veut:
+- que tu montes un serveur dans un dossier **CalculMethodes**
+- que tu implantes une méthode dans ton contrôleur pour chaque méthode HTTP
+  - un GET sur l'url "/api/chose" qui renvoit une liste de 10 choses (10 string)
+  - un POST sur l'url "/api/chose" qui ajoute une chose à la liste
+  - un PUT sur l'url "/api/chose/\{id\}" qui ne fait rien
+  - un DELETE sur l'url "/api/chose" qui vide la liste
+- Valide que chaque appel est fonctionnel avec POSTMAN
+
+## Exercice de compréhension
+
+Etant donné le code suivant pour un contrôleur Spring Boot
+
+```java
+
+@Controller
+public class ComprehensionController {
+
+  int i = 0;
+  static int j = 0;
+
+  @GetMapping(value = "/incremente")
+  public @ResponseBody String incremente() {
+    i++;
+    j++;
+    return i + " " + j;
+  }
+
+  @GetMapping(value = "/incremente/{valeur}")
+  public @ResponseBody String incremente(@PathVariable int valeur) {
+    i = i + valeur;
+    j = j + valeur;
+    return i + " " + j;
+  }
+
+  @GetMapping(value = "/consulte")
+  public @ResponseBody String consulte() {
+    return i + " " + j;
+  }
+}
+```
+
+Dans un fichier **HTTP-comprehension.md** et sans lancer le serveur, indiquez ce qui sera affiché dans le navigateur après chaque requête si on appelle les URLs suivantes:
+- http://localhost:8080/incremente
+- http://localhost:8080/incremente
+- http://localhost:8080/incremente/3
+- http://localhost:8080/consulte
+
+Ensuite tu peux programmer un serveur avec ce contrôleur pour valider tes réponses. S'il y a des différences, n'hésite pas à:
+- explorer avec le débogueur côté serveur pour mieux voir ce qui se passe
+- demander au prof s'il reste des éléments mystérieux
 
 ## 👨‍🎓👨‍🎓 Exercice Chic Type (interaction avec Android et Retrofit)
 
