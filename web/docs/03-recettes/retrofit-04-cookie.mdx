@@ -21,6 +21,7 @@ Les cookies servent à relier plusieurs requêtes dans une session HTTP.
 
 Nous allons donc voir comment enchaîner un signup et un appel à un accueil.
 
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/05-Cookies/).
 
 <Tabs queryString="recette-activite">
 
@@ -55,6 +56,17 @@ Nous allons donc voir comment enchaîner un signup et un appel à un accueil.
 
 
     </TabItem>
+    
+    <TabItem value="SignupRequest.kt" label="SignupRequest.kt">
+        On aura besoin de cette classe pour envoyer une requête *signup* :
+        <GHCode
+          repo="4N6-Mobile"
+          filePath="code/Retrofit/05-Cookies/app/src/main/java/org/depinfo/retrofit_demo/transfer/SignupRequest.kt"
+          startLine="3"
+          endLine="7"
+         />
+    </TabItem>
+    
     <TabItem value="TestsHTTP.kt" label="TestsHTTP.kt">
 
         **IMPORTANT** il faut envoyer au moins une requête à https://kickmyb-server.onrender.com/ avant le rouler
@@ -68,7 +80,7 @@ Nous allons donc voir comment enchaîner un signup et un appel à un accueil.
         <GHCode
           repo="4N6-Mobile"
           filePath="code/Retrofit/05-Cookies/app/src/androidTest/java/org/depinfo/retrofit_demo/TestCookie.kt"
-          startLine="33"
+          startLine="32"
           endLine="48"
          />
 
