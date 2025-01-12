@@ -59,7 +59,7 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*ChatGPT*, 
 
 <Column>
 
-## H25 (en kotlin)
+## Calendrier des séances
 
 
 | Semaine                             | Séquence des cours             | Avancement des TP                |
