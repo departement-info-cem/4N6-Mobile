@@ -1,0 +1,66 @@
+---
+hide_table_of_contents: true
+---
+
+# Spring Boot 1 - Mon premier serveur
+
+
+[Retrofit](https://square.github.io/retrofit/) est une librairie qui permet de faire des appels HTTP de manière simple et efficace.
+
+Elle est recommandée par la doc standard d'Android pour faire des appels réseaux [source](https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet?hl=fr#0).
+
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/01-Depart/).
+
+<Tabs queryString="recette-spring-base">
+  <TabItem value="Spring-Initializr" label="Spring Initializr">
+
+    https://start.spring.io
+
+    Voici les choix que nous recommandons:
+    - Langage : Java
+    - Système de build : Gradle Kotlin
+    - Version de Spring Boot : 3.4.1
+    - packaging : Jar
+    - version de java 17
+
+    Ce sont les paramètres qui ont été utilisés pour le projet serveur des profs.1
+
+    En plus de ces paramètres, tu peux ajouter les dépendances suivantes (on peut toujours les rajouter plus tard):
+    - Spring Web : pour les contrôleurs REST (semblable à  WebAPI)
+    - Spring Security : pour la sécurité (semblable à IdentityServer)
+
+    En cliquant sur "Generate", tu vas télécharger un fichier zip qui contient ton projet.
+
+  </TabItem>
+  <TabItem value="ide" label="Ouvrir le projet dans un IDE">
+
+    Un fois décompressé, tu as un projet Gradle:
+    1. repère le fichier `build.gradle.kts`
+    2. identifie le dossier qui contient ce fichier
+    3. lance Intellij IDEA
+    4. choisis File / Open
+    5. sélectionne le dossier qui contient le fichier `build.gradle.kts`
+    6. clique sur Open
+
+    IntelliJ IDEA va maintenant charger ton projet.
+
+
+
+  </TabItem>
+  <TabItem value="PartirProjet" label="Partir le projet">
+
+    Pour partir le projet, tu as plusieurs options:
+    - tu peux cliquer sur le bouton ▶ vert que tu trouveras dans la classe DemoApplication
+    - tu peux ouvrir le terminal et taper `./gradlew bootRun`
+
+    Le serveur une fois démarré est accessible sur http://localhost:8080
+
+  </TabItem>
+  <TabItem value="PremierePage" label="Voir ma première page">
+
+    Le serveur une fois démarré est accessible sur http://localhost:8080
+
+    Notre serveur actuel ne contient aucun code. Reporte-toi à la recette suivante pour ajouter un contrôleur.
+
+  </TabItem>
+</Tabs>
