@@ -46,12 +46,12 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "5.1 - formatif",
+      label: "5.1 - Formatif (intra)",
       id: "cours/formatif-intra",
     },
     {
       type: "doc",
-      label: "5.2 - Intra (20%)",
+      label: "5.2 - Examen intra (20%)",
       id: "cours/examen",
       className: "examen",
     },
@@ -149,12 +149,12 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "15.1 - Formatif",
+      label: "15.1 - Formatif (final)",
       id: "cours/formatif-final",
     },
     {
       type: "doc",
-      label: "15.2 - Examen Final (30%)",
+      label: "15.2 - Examen final (30%)",
       id: "cours/examen",
       className: "examen",
     },
