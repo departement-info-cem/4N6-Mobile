@@ -32,6 +32,7 @@ const sidebars = {
       type: "doc",
       label: "3.2 - Intégration / remise TP1",
       id: "cours/integration",
+      className: "remise-tp1",
     },
     {
       type: "doc",
@@ -50,7 +51,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "5.2 - Intra",
+      label: "5.2 - Intra (20%)",
       id: "cours/examen",
       className: "examen",
     },
@@ -61,33 +62,34 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "6.2 - Cookies",
+      label: "6.2 - Cookies 🍪",
       id: "cours/cookies",
     },
     {
       type: "doc",
-      label: "7.1 - Serveur Spring Boot",
-      id: "cours/spring",
-    },
-    {
-      type: "doc",
-      label: "7.2 - Cookies 🍪",
-      id: "cours/cookies",
-    },
-    {
-      type: "doc",
-      label: "8.1 - Débogage serveur",
+      label: "7.1 - Débogage serveur",
       id: "cours/debogage",
     },
     {
       type: "doc",
-      label: "8.2 - Déploiement",
+      label: "7.2 - Déploiement serveur",
       id: "cours/deploiement",
     },
     {
       type: "doc",
-      label: "9.1 - Intégration client-server",
+      label: "8.1 - Intégration client-server",
       id: "cours/integration",
+      className: "remise-tp2",
+    },
+    {
+      type: "doc",
+      label: "8.2 - Erreurs: HTTP",
+      id: "cours/erreur-http",
+    },
+    {
+      type: "doc",
+      label: "9.1 - Erreurs: GUI",
+      id: "cours/erreur-gui",
     },
     {
       type: "doc",
@@ -116,12 +118,12 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.1 - Sécurité - injections et crypto",
+      label: "12.1 - Sécurité - inject., crypto",
       id: "cours/injection",
     },
     {
       type: "doc",
-      label: "12.2 - Cybersec - contrôle d'accès",
+      label: "12.2 - Cybersec - cont. d'accès",
       id: "cours/controle-acces",
     },
     {
@@ -136,13 +138,14 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "14.1 - Causerie - DTO et Cookies",
+      label: "14.1 - Causerie - DTO / Cookies",
       id: "cours/causerie-dto-cookie",
     },
     {
       type: "doc",
       label: "14.2 - Correction TP3",
       id: "cours/correction-tp3",
+      className: "remise-tp3",
     },
     {
       type: "doc",
