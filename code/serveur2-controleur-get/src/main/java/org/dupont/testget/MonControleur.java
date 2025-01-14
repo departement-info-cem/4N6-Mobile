@@ -12,8 +12,8 @@ public class MonControleur {
     // on testera avec une requête http://localhost:8080/test/99/test?id=2
     // ou http://localhost:8080/test/77/test
     @GetMapping(value = "/test/{coucou}/test")
-    public @ResponseBody String signout(@PathVariable Long coucou, @RequestParam String id) {
-        System.out.println("Requête reçue : " + coucou + " " + id);
+    public @ResponseBody String test(@PathVariable Long coucou,@RequestParam(required = false, name = "id") String monSuperID) {
+        System.out.println("Requête reçue : " + coucou + " " + monSuperID);
         return (coucou / 2) + "";
     }
 
