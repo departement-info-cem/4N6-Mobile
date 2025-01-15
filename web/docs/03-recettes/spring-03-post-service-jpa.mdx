@@ -1,0 +1,55 @@
+---
+hide_table_of_contents: true
+---
+
+# Spring Boot 3 - POST service et JPA
+
+On va montrer comment implanter un CRUD en Spring Boot avec JPA et une couche de service.
+
+<Tabs queryString="recette-spring-controler-get">
+  <TabItem value="Spring-Initializr" label="Initialiser le projet">
+
+    https://start.spring.io
+
+    Voici les choix que nous recommandons:
+    - Langage : Java
+    - Système de build : Gradle Kotlin
+    - Version de Spring Boot : 3.4.1
+    - packaging : Jar
+    - version de java 17
+    - Metadata
+      - Group : org.nomprenom
+      - Artifact : testget
+      - Name : testget
+    - ajouter dans dependencies:
+      - Spring Web
+      - Spring Data JPA
+      - H2 Database
+
+    En cliquant sur "Generate", tu vas télécharger un fichier zip qui contient ton projet.
+
+  </TabItem>
+  <TabItem value="ide" label="Créer un contrôleur">
+
+    Un fois décompressé, dans ton projet:
+    1. on va créer un fichier appelé `MonControleur.java` dans le dossier `src/main/java/org/nomprenom/testget` TODO valider
+    2. dans ce fichier on va ajouter le code suivant:
+<GHCode
+            repo="4N6-Mobile"
+            filePath="code/serveur3-service-jpa/src/main/java/org/dupont/testget/MonControleur.java"
+            startLine="11"
+            endLine="24"
+          />
+
+  </TabItem>
+
+  <TabItem value="PremierePage" label="Exécution et points d'arrêt">
+
+    Pour voir comment exécuter ton code en débogage:
+    1. place un point d'arrêt sur les premières lignes des fonctions **test** et **bonjour** dans le fichier MonControleur.java
+    2. pars ton serveur en mode débogage avec le bouton de débogage
+    3. ouvre un navigateur et tape l'adresse http://localhost:8080/bonjour
+    4. tu devrais voir ton point d'arrêt se déclencher
+
+  </TabItem>
+</Tabs>
