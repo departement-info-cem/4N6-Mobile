@@ -70,10 +70,12 @@ En suivant les instructions de la recette sur les [traces d'exécution](../recet
 produis la trace d'exécution du code suivant sans exécuter le code.
 
 ```kotlin
-val a = 5 + 2 * 2
-for (i in 1..2){
-    for (j in 4..6) {
-        print( (i + j) + ( i + " " + a) )
+fun main() {
+    val a = 5 + 2 * 2
+    for (i in 1..2) {
+        for (j in 4..6) {
+            println((i + j).toString() + (i.toString() + " " + a))
+        }
     }
 }
 ```
