@@ -50,16 +50,34 @@ Vous complétez quelques exercices de révisions.
 
 :::note Exercices de la semaine
 
-## 👨‍🎓🤖 Exercice ActionBar
+## Exercice ActionBar
 
 Créez un projet appelé **ActionBar** contenant 3 activités. Ajoutez un menu d'options dans le ActionBar (révision) permettant d'accéder à chacune des activités depuis chacune des activités.
 
-## 👨‍🎓🤖 Exercice Navigation
+## Exercice Navigation
 
 Créez un projet appelé **Navigation** contenant 2 activités.
 
 - La première activité contient un EditText et un bouton
 - Quand on appuie sur le bouton, le texte du EditText est envoyé dans un extra de l'Intent à la deuxième activité
 - La 2ème activité affiche dans un TextView le texte reçu via l'Intent
+
+## Exercice Kotlin Simple
+
+Créer un fichier **trace-kotlin-simple.kt** pour mettre la réponse à cet exercice.
+
+En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace), 
+produis la trace d'exécution du code suivant sans exécuter le code.
+
+```kotlin
+val a = 5 + 2 * 2
+for (i in 1..2){
+    for (j in 4..6) {
+        print( (i + j) + ( i + " " + a) )
+    }
+}
+```
+
+En créant un projet et en exécutant en débogage, valide ta trace. Si tu as des surprises, demande des explications à ton prof.
 
 :::
