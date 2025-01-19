@@ -111,12 +111,16 @@ Soient ces bouts de code dans ces deux fichiers :
         }
         private fun actionPlus() {
             binding.boutonPlus.setOnClickListener {
-                a += 1
+                var a = a + 1
+                afficherA()
+                this.a = a
             }
         }
         private fun actionTriple() {
             binding.boutonTriple.setOnClickListener {
-                a *= 3
+                var a = a * 3
+                afficherA()
+                this.a = a
             }
         }
         private fun actionAfficher() {
