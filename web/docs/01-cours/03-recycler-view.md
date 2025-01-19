@@ -62,7 +62,13 @@ Les 3 champs de chaque item doivent être affichés avec la mise en page de votr
 
 ## Exercice Trace Boutons
 Créez un fichier **trace-boutons.md** pour y mettre la réponse à cet exercice.  
-Soit ce bout de code :
+En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
+produisez la trace d'exécution du code suivant **sans exécuter le code** lorsque vous effectuez les opérations suivantes :
+1. cliquer sur le bouton 1
+2. cliquer sur le bouton 1
+3. cliquer sur le bouton 2
+4. cliquer sur le bouton 2
+5. cliquer sur le bouton 1
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -91,14 +97,6 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
-
-En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
-produisez la trace d'exécution (**sans exécuter le code**) lorsque vous effectuez les opérations suivantes :
-1. cliquer sur le bouton 1
-2. cliquer sur le bouton 1
-3. cliquer sur le bouton 2
-4. cliquer sur le bouton 2
-5. cliquer sur le bouton 1
 
 En créant un projet et en exécutant en débogage, validez votre trace.  
 Si vous avez des surprises, demandez des explications à votre prof.
