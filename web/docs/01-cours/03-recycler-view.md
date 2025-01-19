@@ -60,4 +60,74 @@ Par exemple, un objet pourrait avoir le nom Objet #1, la date 01/01/2001 00:00:0
 
 Les 3 champs de chaque item doivent être affichés avec la mise en page de votre choix.
 
+## Exercice Trace Boutons
+Créez un fichier **trace-boutons.md** pour y mettre la réponse à cet exercice.  
+Soient ces bouts de code dans ces deux fichiers :
+
+<Tabs queryString="recette-string">
+  <TabItem value="activity_main.xml" label="activity_main.xml">
+    ```xml
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliquez-moi"
+        android:id="@+id/bouton1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/nombreAffiche" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mettre le nombre à jour"
+        android:id="@+id/bouton2" />
+    ```
+  </TabItem>
+  <TabItem value="MainActivity.kt" label="MainActivity.kt">
+
+    ```kotlin
+    class MainActivity : AppCompatActivity() {
+        private lateinit var binding: ActivityMainBinding
+    
+        private var a: Int = 0
+    
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            binding = ActivityMainBinding.inflate(layoutInflater)
+            setContentView(binding.root)
+    
+            binding.nombreAffiche.text = a.toString()
+            actionBouton1()
+            actionBouton2()
+        }
+    
+        private fun actionBouton1() {
+            binding.bouton1.setOnClickListener {
+                a += 1
+            }
+        }
+    
+        private fun actionBouton2() {
+            binding.bouton2.setOnClickListener {
+                binding.nombreAffiche.text = a.toString()
+            }
+        }
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
+produisez la trace d'exécution (**sans exécuter le code**) pour la variable *a*,
+lorsque vous effectuez les opérations suivantes :
+1. cliquer le premier bouton
+2. cliquer le premier bouton
+3. cliquer le deuxième bouton
+4. cliquer le premier bouton
+
+En créant un projet et en exécutant en débogage, validez votre trace.  
+Si vous avez des surprises, demandez des explications à votre prof.
+
 :::

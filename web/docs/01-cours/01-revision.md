@@ -62,8 +62,8 @@ Créez un projet appelé **Navigation** contenant 2 activités.
 - Quand on appuie sur le bouton, le texte du EditText est envoyé dans un extra de l'Intent à la deuxième activité
 - La 2ème activité affiche dans un TextView le texte reçu via l'Intent
 
-## Exercice Kotlin Simple
-Créez un fichier **trace-kotlin-simple.md** pour y mettre la réponse à cet exercice.  
+## Exercice Trace Simple
+Créez un fichier **trace-simple.md** pour y mettre la réponse à cet exercice.  
 En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
 produisez la trace d'exécution du code suivant **sans exécuter le code**.
 ```kotlin

@@ -78,8 +78,8 @@ Copiez votre projet **MiseEnPageD** dans un dossier **MiseEnPageE**. Modifiez vo
 
 ![Mise en page](_02-mise-en-page/miseenpage3.png)
 
-## Exercice Kotlin Portée
-Créez un fichier **trace-kotlin-portee.md** pour y mettre la réponse à cet exercice.  
+## Exercice Trace Portée
+Créez un fichier **trace-portee.md** pour y mettre la réponse à cet exercice.  
 En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
 produisez la trace d'exécution du code suivant **sans exécuter le code**.
 ```kotlin
