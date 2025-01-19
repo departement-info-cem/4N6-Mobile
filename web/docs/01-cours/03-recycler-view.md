@@ -92,43 +92,43 @@ Soient ces bouts de code dans ces deux fichiers :
   <TabItem value="MainActivity.kt" label="MainActivity.kt">
 
     ```kotlin
-        class MainActivity : AppCompatActivity() {
-            private lateinit var binding: ActivityMainBinding
-        
-            private var a: Int = 0
-        
-            override fun onCreate(savedInstanceState: Bundle?) {
-                super.onCreate(savedInstanceState)
-                binding = ActivityMainBinding.inflate(layoutInflater)
-                setContentView(binding.root)
+    class MainActivity : AppCompatActivity() {
+        private lateinit var binding: ActivityMainBinding
+    
+        private var a: Int = 0
+    
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            binding = ActivityMainBinding.inflate(layoutInflater)
+            setContentView(binding.root)
+            afficherA()
+            actionPlus()
+            actionTriple()
+            actionAfficher()
+        }
+        private fun afficherA() {
+            binding.nombreAffiche.text = a.toString()
+        }
+        private fun actionPlus() {
+            binding.boutonPlus.setOnClickListener {
+                var a = a + 1
                 afficherA()
-                actionPlus()
-                actionTriple()
-                actionAfficher()
-            }
-            private fun afficherA() {
-                binding.nombreAffiche.text = a.toString()
-            }
-            private fun actionPlus() {
-                binding.boutonPlus.setOnClickListener {
-                    var a = a + 1
-                    afficherA()
-                    this.a = a
-                }
-            }
-            private fun actionTriple() {
-                binding.boutonTriple.setOnClickListener {
-                    var a = a * 3
-                    afficherA()
-                    this.a = a
-                }
-            }
-            private fun actionAfficher() {
-                binding.boutonAfficher.setOnClickListener {
-                    afficherA()
-                }
+                this.a = a
             }
         }
+        private fun actionTriple() {
+            binding.boutonTriple.setOnClickListener {
+                var a = a * 3
+                afficherA()
+                this.a = a
+            }
+        }
+        private fun actionAfficher() {
+            binding.boutonAfficher.setOnClickListener {
+                afficherA()
+            }
+        }
+    }
     ```
 
   </TabItem>
