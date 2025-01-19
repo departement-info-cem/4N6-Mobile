@@ -62,86 +62,43 @@ Les 3 champs de chaque item doivent être affichés avec la mise en page de votr
 
 ## Exercice Trace Boutons
 Créez un fichier **trace-boutons.md** pour y mettre la réponse à cet exercice.  
-Soient ces bouts de code dans ces deux fichiers :
+Soit ce bout de code :
 
-<Tabs queryString="recette-string">
-  <TabItem value="activity_main.xml" label="activity_main.xml">
-    ```xml
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Plus 1"
-            android:id="@+id/boutonPlus" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fois 3"
-            android:id="@+id/boutonTriple" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/nombreAffiche" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Afficher le nombre à jour"
-            android:id="@+id/boutonAfficher" />
-    ```
-  </TabItem>
-  <TabItem value="MainActivity.kt" label="MainActivity.kt">
+```kotlin
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
 
-    ```kotlin
-    class MainActivity : AppCompatActivity() {
-        private lateinit var binding: ActivityMainBinding
-    
-        private var a: Int = 0
-    
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            binding = ActivityMainBinding.inflate(layoutInflater)
-            setContentView(binding.root)
-            afficherA()
-            actionPlus()
-            actionTriple()
-            actionAfficher()
-        }
-        private fun afficherA() {
-            binding.nombreAffiche.text = a.toString()
-        }
-        private fun actionPlus() {
-            binding.boutonPlus.setOnClickListener {
-                var a = a + 1
-                afficherA()
-                this.a = a
-            }
-        }
-        private fun actionTriple() {
-            binding.boutonTriple.setOnClickListener {
-                var a = a * 3
-                afficherA()
-                this.a = a
-            }
-        }
-        private fun actionAfficher() {
-            binding.boutonAfficher.setOnClickListener {
-                afficherA()
-            }
+    private var a: Int = 0
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        actionBouton1()
+        actionBouton2()
+    }
+    private fun actionBouton1() {
+        binding.bouton1.setOnClickListener {
+            var a = this.a
+            a += 1
         }
     }
-    ```
-
-  </TabItem>
-</Tabs>
+    private fun actionBouton2() {
+        binding.bouton2.setOnClickListener {
+            this.a += 1
+        }
+    }
+}
+```
 
 En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
 produisez la trace d'exécution (**sans exécuter le code**) lorsque vous effectuez les opérations suivantes :
-1. cliquer le bouton "Plus 1"
-2. cliquer le bouton "Plus 1"
-3. cliquer le bouton "Afficher le nombre à jour"
-4. cliquer le bouton "Fois 3"
-5. cliquer le bouton "Fois 3"
-6. cliquer le bouton "Afficher le nombre à jour"
+1. cliquer sur le bouton 1
+2. cliquer sur le bouton 1
+3. cliquer sur le bouton 2
+4. cliquer sur le bouton 2
+5. cliquer sur le bouton 1
 
 En créant un projet et en exécutant en débogage, validez votre trace.  
 Si vous avez des surprises, demandez des explications à votre prof.
