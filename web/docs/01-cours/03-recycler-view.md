@@ -135,8 +135,7 @@ Soient ces bouts de code dans ces deux fichiers :
 </Tabs>
 
 En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
-produisez la trace d'exécution (**sans exécuter le code**) pour la variable *a*,
-lorsque vous effectuez les opérations suivantes :
+produisez la trace d'exécution (**sans exécuter le code**) lorsque vous effectuez les opérations suivantes :
 1. cliquer le bouton "Plus 1"
 2. cliquer le bouton "Plus 1"
 3. cliquer le bouton "Afficher le nombre à jour"
