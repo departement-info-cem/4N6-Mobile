@@ -78,4 +78,50 @@ Copiez votre projet **MiseEnPageD** dans un dossier **MiseEnPageE**. Modifiez vo
 
 ![Mise en page](_02-mise-en-page/miseenpage3.png)
 
+## Exercice Dessin
+Étant donné ce code XML, dessinez ce à quoi ressemblerait l'activité en mode portrait :
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestActivity">
+    
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Popopo !"/>
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="#0000FF"
+            android:text="" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Plop plop plop" />
+        
+    </LinearLayout>
+    
+</LinearLayout>
+```
+
 :::
