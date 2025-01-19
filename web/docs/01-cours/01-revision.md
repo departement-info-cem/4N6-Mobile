@@ -63,12 +63,9 @@ Créez un projet appelé **Navigation** contenant 2 activités.
 - La 2ème activité affiche dans un TextView le texte reçu via l'Intent
 
 ## Exercice Kotlin Simple
-
-Créer un fichier **trace-kotlin-simple.kt** pour mettre la réponse à cet exercice.
-
-En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace), 
-produis la trace d'exécution du code suivant sans exécuter le code.
-
+Créez un fichier **trace-kotlin-simple.md** pour y mettre la réponse à cet exercice.  
+En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
+produisez la trace d'exécution du code suivant **sans exécuter le code**.
 ```kotlin
 fun main() {
     val a = 5 + 2 * 2
@@ -79,7 +76,7 @@ fun main() {
     }
 }
 ```
-
-En créant un projet et en exécutant en débogage, valide ta trace. Si tu as des surprises, demande des explications à ton prof.
+En créant un projet et en exécutant en débogage, validez votre trace.  
+Si vous avez des surprises, demandez des explications à votre prof.
 
 :::
