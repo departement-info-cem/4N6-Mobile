@@ -34,7 +34,7 @@ On fera une démo pour donner des idées de mise en page.
 
 Vous complétez les exercices de mise en page ainsi que les exercices de compréhension.
 
-Vous devrez compléter les mises en page de vos différentes activités.
+Vous devrez compléter les mises en page des différentes activités de votre projet.
 
 :::
 
