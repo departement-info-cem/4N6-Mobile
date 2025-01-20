@@ -57,7 +57,9 @@ class MainActivity : AppCompatActivity() {
 
         actionBouton()
     }
+
     private fun actionBouton() {
+        
         Toast.makeText(this, "A", Toast.LENGTH_SHORT).show()
 
         binding.bouton.setOnClickListener {
