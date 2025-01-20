@@ -49,25 +49,27 @@ produisez la trace d'exécution du code suivant **sans exécuter le code** si vo
 
 ```kotlin showLineNumbers
 class MainActivity : AppCompatActivity() {
+    
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        Toast.makeText(this, "A", Toast.LENGTH_SHORT).show()
         actionBouton()
+        Toast.makeText(this, "B", Toast.LENGTH_SHORT).show()
     }
 
     private fun actionBouton() {
-
-        Toast.makeText(this, "A", Toast.LENGTH_SHORT).show()
-
+        Toast.makeText(this, "C", Toast.LENGTH_SHORT).show()
+        
         binding.bouton.setOnClickListener {
-            Toast.makeText(this, "B", Toast.LENGTH_SHORT).show()
-            Toast.makeText(this, "C", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "D", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "E", Toast.LENGTH_SHORT).show()
         }
-
-        Toast.makeText(this, "D", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "F", Toast.LENGTH_SHORT).show()
     }
 }
 ```
