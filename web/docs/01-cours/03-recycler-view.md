@@ -49,9 +49,7 @@ produisez la trace d'exécution du code suivant **sans exécuter le code** si vo
 
 ```kotlin showLineNumbers
 class MainActivity : AppCompatActivity() {
-    
     private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -59,18 +57,15 @@ class MainActivity : AppCompatActivity() {
 
         actionBouton()
     }
-
     private fun actionBouton() {
-
-        Log.d("TRACE_EXECUTION", "On installe un écouteur, on le fait une seule fois!")
+        Toast.makeText(this, "A", Toast.LENGTH_SHORT).show()
 
         binding.bouton.setOnClickListener {
-            Log.d("TRACE_EXECUTION", "ATTENTION : le bouton a été cliqué!!!")
-            var a: Int = 6 * 7
-            Log.d("TRACE_EXECUTION", "6 X 7 donne $a")
+            Toast.makeText(this, "B", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "C", Toast.LENGTH_SHORT).show()
         }
 
-        Log.d("TRACE_EXECUTION", "Voilà, l'écouteur est installé!")
+        Toast.makeText(this, "D", Toast.LENGTH_SHORT).show()
     }
 }
 ```
