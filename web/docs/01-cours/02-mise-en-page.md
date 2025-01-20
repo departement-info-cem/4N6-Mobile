@@ -32,6 +32,8 @@ Pour les révisions, vous pouvez vous référer à la séance du cours 3N5:
 
 On fera une démo pour donner des idées de mise en page.
 
+Vous complétez les exercices de mise en page ainsi que les exercices de compréhension.
+
 Vous devrez compléter les mises en page de vos différentes activités.
 
 :::
