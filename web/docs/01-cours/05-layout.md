@@ -28,6 +28,8 @@ Regardez la vidéo ci-dessous sur l'ordre des layout pour le tiroir de navigatio
 
 Nous verrons comment faire une vue scrollable au niveau du layout. On discutera du cas où on a un recyclerView dans notre mise en page principale.
 
+Nous allons regarder ensemble comment mettre en place [une appbar](https://developer.android.com/training/appbar/setting-up). Nous verrons comment faire explicitement (en l'ajoutant dans le layout) et comment faire en choisissant un thème avec appbar.
+
 Nous discuterons de la structure des Layouts dans l'activité.
 
 - DL puis CL puis AppBarLayout puis LinearLayout
