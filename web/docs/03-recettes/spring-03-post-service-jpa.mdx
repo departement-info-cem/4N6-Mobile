@@ -44,6 +44,24 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
   </TabItem>
 
+    <TabItem value="bd" label="Base de données">
+
+        Spring permet d'utiliser un fichier de propriétés pour fournir la configuration de la base de données:
+        - il y a un format de fichier spécifique
+        - le fichier se trouve dans le dossier **resources**
+
+    <GHCode
+                repo="4N6-Mobile"
+                filePath="code/serveur3-service-bd-test/src/main/resources/application.properties"
+              />
+
+        On a les infos suivantes:
+        - la base de données est H2
+        - on a le chemin du fichier de la BD
+
+
+      </TabItem>
+
   <TabItem value="Repository" label="Repository">
 
         Nous allons ensuite avoir un repository pour accéder à la base de données. Il s'agit
@@ -97,18 +115,27 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     </TabItem>
 
-    <TabItem value="Tests" label="Tests">
 
-          On va maintenant pouvoir appeler notre service depuis notre contrôleur
-          <GHCode
-                      repo="4N6-Mobile"
-                      filePath="code/serveur3-service-bd-test/src/main/java/ca/cem/Controlleur.java"
-                    />
 
-          Les éléments importants ici pour Spring Boot:
-          - on a pu injecter notre service directement dans le contrôleur
-          - on voit qu'on peut exposer la même méthode de service avec plusieurs méthodes HTT
 
-        </TabItem>
+        <TabItem value="Tests" label="Tests">
+
+                  On va voir comment écrire des tests pour notre couche de service dans notre code
+                  <GHCode
+                              repo="4N6-Mobile"
+                              filePath="code/serveur3-service-bd-test/src/test/java/ca/cem/TestsService.java"
+                            />
+
+                  Les éléments importants ici pour Spring Boot:
+                  - on peut aussi injecter notre service dans les tests, chouette
+                  - on doit partir une instance de Spring Boot avec l'annotation **@SpringBootTest** cela donne par exemple le contexte pour l'injection de dépendance
+                  - on veut tester sur une base de données qui n'est pas celle du système, ici on fournit un autre fichier de propriétés avec une BD en mémoire vive:
+
+                  <GHCode
+                                        repo="4N6-Mobile"
+                                        filePath="code/serveur3-service-bd-test/src/test/resources/application-test.properties"
+                                      />
+
+                </TabItem>
 
 </Tabs>
