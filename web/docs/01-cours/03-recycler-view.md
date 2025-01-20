@@ -49,20 +49,28 @@ produisez la trace d'exécution du code suivant **sans exécuter le code** si vo
 
 ```kotlin showLineNumbers
 class MainActivity : AppCompatActivity() {
+    
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         actionBouton()
     }
+
     private fun actionBouton() {
+
         Log.d("TRACE_EXECUTION", "On installe un écouteur, on le fait une seule fois!")
+
         binding.bouton.setOnClickListener {
             Log.d("TRACE_EXECUTION", "ATTENTION : le bouton a été cliqué!!!")
             var a: Int = 6 * 7
             Log.d("TRACE_EXECUTION", "6 X 7 donne $a")
         }
+
+        Log.d("TRACE_EXECUTION", "Voilà, l'écouteur est installé!")
     }
 }
 ```
