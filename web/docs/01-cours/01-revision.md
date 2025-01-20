@@ -50,18 +50,6 @@ Vous complétez quelques exercices de révisions ainsi que les exercices de comp
 
 :::note Exercices de la semaine
 
-## Exercice Tiroir
-
-Créez un projet appelé **Tiroir** contenant 3 activités. Ajoutez un tiroir de navigation permettant d'accéder à chacune des activités depuis chacune des activités.
-
-## Exercice Navigation
-
-Créez un projet appelé **Navigation** contenant 2 activités.
-
-- La première activité contient un EditText et un bouton
-- Quand on appuie sur le bouton, le texte du EditText est envoyé dans un extra de l'Intent à la deuxième activité
-- La 2ème activité affiche dans un TextView le texte reçu via l'Intent
-
 ## Exercice Trace Simple
 Créez un fichier **trace-simple.md** pour y mettre la réponse à cet exercice.  
 En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
@@ -79,29 +67,16 @@ fun main() {
 En créant un projet et en exécutant en débogage, validez votre trace.  
 Si vous avez des surprises, demandez des explications à votre prof.
 
-## Exercice Trace Portée
-Créez un fichier **trace-portee.md** pour y mettre la réponse à cet exercice.  
-En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
-produisez la trace d'exécution du code suivant **sans exécuter le code**.
-```kotlin
-fun main() {
-    val a = 5
-    val b = 10
-    val resultat = calcul(a, b)
-}
+## Exercice Tiroir
 
-fun calcul(x: Int, y: Int): Int {
-    val z = x + y
-    val zz = double(z)
-    return zz
-}
+Créez un projet appelé **Tiroir** contenant 3 activités. Ajoutez un tiroir de navigation permettant d'accéder à chacune des activités depuis chacune des activités.
 
-fun double(n: Int): Int {
-    val nombreDouble = n * 2
-    return nombreDouble
-}
-```
-En créant un projet et en exécutant en débogage, validez votre trace.  
-Si vous avez des surprises, demandez des explications à votre prof.
+## Exercice Navigation
+
+Créez un projet appelé **Navigation** contenant 2 activités.
+
+- La première activité contient un EditText et un bouton
+- Quand on appuie sur le bouton, le texte du EditText est envoyé dans un extra de l'Intent à la deuxième activité
+- La 2ème activité affiche dans un TextView le texte reçu via l'Intent
 
 :::
