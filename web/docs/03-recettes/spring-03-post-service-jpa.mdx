@@ -6,6 +6,9 @@ hide_table_of_contents: true
 
 On va montrer comment implanter un CRUD en Spring Boot avec JPA et une couche de service.
 
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/serveur3-service-bd-test/).
+
+
 <Tabs queryString="recette-spring-controler-get">
   <TabItem value="Spring-Initializr" label="Initialiser le projet">
 
@@ -19,8 +22,8 @@ On va montrer comment implanter un CRUD en Spring Boot avec JPA et une couche de
     - version de java 17
     - Metadata
       - Group : org.nomprenom
-      - Artifact : testget
-      - Name : testget
+      - Artifact : serveur-avec-bd
+      - Name : serveur-avec-bd
     - ajouter dans dependencies:
       - Spring Web
       - Spring Data JPA
@@ -29,27 +32,83 @@ On va montrer comment implanter un CRUD en Spring Boot avec JPA et une couche de
     En cliquant sur "Generate", tu vas télécharger un fichier zip qui contient ton projet.
 
   </TabItem>
-  <TabItem value="ide" label="Créer un contrôleur">
+  <TabItem value="ide" label="Modèle de données">
 
-    Un fois décompressé, dans ton projet:
-    1. on va créer un fichier appelé `MonControleur.java` dans le dossier `src/main/java/org/nomprenom/testget` TODO valider
-    2. dans ce fichier on va ajouter le code suivant:
+    On va commencer par le modèle de données:
+    1. on se donne une classe **Truc**
+    2. chaque truc contient un **id** et un champ texte appelé **chose**:
 <GHCode
             repo="4N6-Mobile"
-            filePath="code/serveur3-service-jpa/src/main/java/org/dupont/testget/MonControleur.java"
-            startLine="11"
-            endLine="24"
+            filePath="code/serveur3-service-bd-test/src/main/java/ca/cem/Truc.java"
           />
 
   </TabItem>
 
-  <TabItem value="PremierePage" label="Exécution et points d'arrêt">
+  <TabItem value="Repository" label="Repository">
 
-    Pour voir comment exécuter ton code en débogage:
-    1. place un point d'arrêt sur les premières lignes des fonctions **test** et **bonjour** dans le fichier MonControleur.java
-    2. pars ton serveur en mode débogage avec le bouton de débogage
-    3. ouvre un navigateur et tape l'adresse http://localhost:8080/bonjour
-    4. tu devrais voir ton point d'arrêt se déclencher
+        Nous allons ensuite avoir un repository pour accéder à la base de données. Il s'agit
+        d'un objet qui fournit des opérations dans la BD.
+
+        On appelle cela parfois également un Data Access Object ou encore DAO (comme dans la librairie du TP3 de 3N5)
+
+        Dans notre application on souhaite proposer uniquement 2 opérations aux utilisateurs:
+        1. ajouter un truc en validant qu'il n'y a pas déjà un truc avec le même chose
+        2. accéder à la liste des trucs
+        <GHCode
+                    repo="4N6-Mobile"
+                    filePath="code/serveur3-service-bd-test/src/main/java/ca/cem/TrucRepo.java"
+                  />
+
+        Les éléments importants ici pour Spring Boot:
+        - le **JpaRepository** est une interface qui fournit toutes les méthodes CRUD de base
+        - on peut ajouter des méthodes juste en les [déclarant dans l'interface](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html) (Spring Boot va les implémenter par magie)
+        - par exemple, **findByChose** est une méthode qui va chercher un truc par son champ chose
+      </TabItem>
+
+  <TabItem value="Service" label="Classe de service">
+
+    Dans notre application on souhaite proposer uniquement 2 opérations aux utilisateurs:
+    1. ajouter un truc en validant qu'il n'y a pas déjà un truc avec le même chose
+    2. accéder à la liste des trucs
+    <GHCode
+                repo="4N6-Mobile"
+                filePath="code/serveur3-service-bd-test/src/main/java/ca/cem/TrucService.java"
+              />
+
+    Les éléments importants ici pour Spring Boot:
+    - l'annotation **@Service** sur la classe indique à Spring Boot qu'il s'agit d'un composant injectable
+    - l'annotation **@Autowired** sur le repository indique à Spring Boot de fournir un objet de type TrucRepo
+    - l'objet dont le service est dépendant est injecté par Spring au lieu d'avoir à faire un **new TrucRepo**
+    - on parle d'injection de dépendance
 
   </TabItem>
+
+  <TabItem value="Controler" label="Contrôleur">
+
+      On va maintenant pouvoir appeler notre service depuis notre contrôleur
+      <GHCode
+                  repo="4N6-Mobile"
+                  filePath="code/serveur3-service-bd-test/src/main/java/ca/cem/Controlleur.java"
+                />
+
+      Les éléments importants ici pour Spring Boot:
+      - on a pu injecter notre service directement dans le contrôleur
+      - on voit qu'on peut exposer la même méthode de service avec plusieurs méthodes HTT
+
+    </TabItem>
+
+    <TabItem value="Tests" label="Tests">
+
+          On va maintenant pouvoir appeler notre service depuis notre contrôleur
+          <GHCode
+                      repo="4N6-Mobile"
+                      filePath="code/serveur3-service-bd-test/src/main/java/ca/cem/Controlleur.java"
+                    />
+
+          Les éléments importants ici pour Spring Boot:
+          - on a pu injecter notre service directement dans le contrôleur
+          - on voit qu'on peut exposer la même méthode de service avec plusieurs méthodes HTT
+
+        </TabItem>
+
 </Tabs>
