@@ -30,7 +30,7 @@ Nous verrons comment faire une vue scrollable au niveau du layout. On discutera 
 
 Nous discuterons de la structure des Layouts dans l'activité.
 
-- DL puis CL puis AppBarLayout puis LinearLayout.
+- DL puis CL puis AppBarLayout puis LinearLayout
 - CL puis DL puis AppBarLayout
 - AppBarLayout puis DL
 
