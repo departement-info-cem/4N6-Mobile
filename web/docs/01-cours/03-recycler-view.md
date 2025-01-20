@@ -42,46 +42,34 @@ Vous devez commencer la programmation du recyclerView de votre projet.
 
 :::note Exercices de la semaine
 
-## Exercice Trace Boutons
-Créez un fichier **trace-boutons.md** pour y mettre la réponse à cet exercice.  
+## Exercice Trace Bouton
+Créez un fichier **trace-bouton.md** pour y mettre la réponse à cet exercice.  
 En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
-produisez la trace d'exécution du code suivant **sans exécuter le code** lorsque vous effectuez les opérations suivantes :
-1. cliquer sur le bouton 1
-2. cliquer sur le bouton 1
-3. cliquer sur le bouton 2
-4. cliquer sur le bouton 2
-5. cliquer sur le bouton 1
+produisez la trace d'exécution du code suivant **sans exécuter le code** si vous cliqueriez 2 ou 3 fois sur le bouton.
 
 ```kotlin showLineNumbers
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-
-    private var a: Int = 0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        actionBouton1()
-        actionBouton2()
+        actionBouton()
     }
-    private fun actionBouton1() {
-        binding.bouton1.setOnClickListener {
-            var a = this.a
-            a += 1
-        }
-    }
-    private fun actionBouton2() {
-        binding.bouton2.setOnClickListener {
-            this.a += 1
+    private fun actionBouton() {
+        Log.d("TRACE_EXECUTION", "On installe un écouteur, on le fait une seule fois!")
+        binding.bouton.setOnClickListener {
+            Log.d("TRACE_EXECUTION", "ATTENTION : le bouton a été cliqué!!!")
+            var a: Int = 6 * 7
+            Log.d("TRACE_EXECUTION", "6 X 7 donne $a")
         }
     }
 }
 ```
 
-En créant un projet et en exécutant en débogage, validez votre trace.  
+En créant un projet et en exécutant en débogage, sans oublier de vider d'abord le *Logcat*, validez votre trace.  
 Si vous avez des surprises, demandez des explications à votre prof.
+Assurez-vous de comprendre quelles lignes de code sont exécutées à quel moment et pourquoi.
 
 ## Exercices de 3N5
 
