@@ -57,19 +57,19 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Toast.makeText(this, "X", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "N", Toast.LENGTH_SHORT).show()
         actionBouton()
-        Toast.makeText(this, "S", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "L", Toast.LENGTH_SHORT).show()
     }
 
     private fun actionBouton() {
-        Toast.makeText(this, "M", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "O", Toast.LENGTH_SHORT).show()
         
         binding.bouton.setOnClickListener {
             Toast.makeText(this, "H", Toast.LENGTH_SHORT).show()
             Toast.makeText(this, "O", Toast.LENGTH_SHORT).show()
         }
-        Toast.makeText(this, "A", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Ë", Toast.LENGTH_SHORT).show()
     }
 }
 ```
