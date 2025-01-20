@@ -42,6 +42,31 @@ Vous devez commencer la programmation du recyclerView de votre projet.
 
 :::note Exercices de la semaine
 
+## Exercice Trace Portée
+Créez un fichier **trace-portee.md** pour y mettre la réponse à cet exercice.  
+En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
+produisez la trace d'exécution du code suivant **sans exécuter le code**.
+```kotlin
+fun main() {
+    val a = 5
+    val b = 10
+    val resultat = calcul(a, b)
+}
+
+fun calcul(x: Int, y: Int): Int {
+    val z = x + y
+    val zz = double(z)
+    return zz
+}
+
+fun double(n: Int): Int {
+    val nombreDouble = n * 2
+    return nombreDouble
+}
+```
+En créant un projet et en exécutant en débogage, validez votre trace.  
+Si vous avez des surprises, demandez des explications à votre prof.
+
 ## Exercices de 3N5
 
 Nous vous conseillons de valider que vous êtes capables de refaire quelques exercices de 3N5.
