@@ -40,7 +40,7 @@ Nous discuterons de l'ensemble de l'application et de comment nous allons procé
 
 Nous passerons à travers les énoncés des 3 phases du projet et nous expliquerons la phase 1 en détails.
 
-Vous complétez quelques exercices de révisions.
+Vous complétez quelques exercices de révisions ainsi que des exercices de compréhension.
 
 :::
 
