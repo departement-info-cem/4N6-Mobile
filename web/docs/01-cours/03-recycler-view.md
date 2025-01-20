@@ -28,11 +28,11 @@ Revoir le contenu de 3N5 pour
 
 :::info Séance
 
-Vous devrez réaliser l'exercice ci-dessous
+Vous devez réaliser les exercices ci-dessous.
 
-Vous devrez avancer / compléter les mises en page des différentes activités du TP1
+Si ce n'est pas terminé, vous devez avancer / compléter les mises en page des différentes activités de votre projet.
 
-Vous devrez commencer la programmation du recyclerView du TP1
+Vous devez commencer la programmation du recyclerView de votre projet.
 
 :::
 
