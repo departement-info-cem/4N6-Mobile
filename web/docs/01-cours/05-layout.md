@@ -12,9 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-Vous devez vous familiariser avec le projet Layouts dans le repo du cours
-
-[Code du projet](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Layouts)
+Vous devez vous familiariser avec le [projet Layouts](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Layouts).
 
 Regardez la vidéo ci-dessous sur l'ordre des layout pour le tiroir de navigation
 
@@ -28,11 +26,7 @@ Regardez la vidéo ci-dessous sur l'ordre des layout pour le tiroir de navigatio
 
 :::info Séance
 
-Nous allons regarder ensemble comment mettre en place [une appbar](https://developer.android.com/training/appbar/setting-up). Nous verrons comment faire explicitement (en l'ajoutant dans le layout) et comment faire en choisissant un thème avec appbar.
-
 Nous verrons comment faire une vue scrollable au niveau du layout. On discutera du cas où on a un recyclerView dans notre mise en page principale.
-
-Nous verrons rapidement le code pour mettre en place un menu (révisions).
 
 Nous discuterons de la structure des Layouts dans l'activité.
 
