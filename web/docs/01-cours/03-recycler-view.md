@@ -42,49 +42,6 @@ Vous devez commencer la programmation du recyclerView de votre projet.
 
 :::note Exercices de la semaine
 
-## Exercice Trace Portée
-Créez un fichier **trace-portee.md** pour y mettre la réponse à cet exercice.  
-En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
-produisez la trace d'exécution du code suivant **sans exécuter le code**.
-```kotlin
-fun main() {
-    val a = 5
-    val b = 10
-    val resultat = calcul(a, b)
-}
-
-fun calcul(x: Int, y: Int): Int {
-    val z = x + y
-    val zz = double(z)
-    return zz
-}
-
-fun double(n: Int): Int {
-    val nombreDouble = n * 2
-    return nombreDouble
-}
-```
-En créant un projet et en exécutant en débogage, validez votre trace.  
-Si vous avez des surprises, demandez des explications à votre prof.
-
-## Exercices de 3N5
-
-Nous vous conseillons de valider que vous êtes capables de refaire quelques exercices de 3N5.
-
-## 👨‍🎓👨‍🎓 Exercice RecyclerViewA
-
-Créez un projet appelé **RecyclerViewA** qui affiche un recyclerView contenant 1000 objets que vous générerez avec une liste.
-
-Pour créer ces objets, vous devez d'abord créer une classe appelée **Secret** qui contient :
-
-- Un champ **nom** de type String
-- Un champ **date** de type java.time.LocalDateTime
-- Un champ **nbGrand** de type Long
-
-Par exemple, un objet pourrait avoir le nom Objet #1, la date 01/01/2001 00:00:00 et le nombre 1.
-
-Les 3 champs de chaque item doivent être affichés avec la mise en page de votre choix.
-
 ## Exercice Trace Boutons
 Créez un fichier **trace-boutons.md** pour y mettre la réponse à cet exercice.  
 En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
@@ -95,7 +52,7 @@ produisez la trace d'exécution du code suivant **sans exécuter le code** lorsq
 4. cliquer sur le bouton 2
 5. cliquer sur le bouton 1
 
-```kotlin
+```kotlin showLineNumbers
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
@@ -125,5 +82,23 @@ class MainActivity : AppCompatActivity() {
 
 En créant un projet et en exécutant en débogage, validez votre trace.  
 Si vous avez des surprises, demandez des explications à votre prof.
+
+## Exercices de 3N5
+
+Nous vous conseillons de valider que vous êtes capables de refaire quelques exercices de 3N5.
+
+## 👨‍🎓👨‍🎓 Exercice RecyclerViewA
+
+Créez un projet appelé **RecyclerViewA** qui affiche un recyclerView contenant 1000 objets que vous générerez avec une liste.
+
+Pour créer ces objets, vous devez d'abord créer une classe appelée **Secret** qui contient :
+
+- Un champ **nom** de type String
+- Un champ **date** de type java.time.LocalDateTime
+- Un champ **nbGrand** de type Long
+
+Par exemple, un objet pourrait avoir le nom Objet #1, la date 01/01/2001 00:00:00 et le nombre 1.
+
+Les 3 champs de chaque item doivent être affichés avec la mise en page de votre choix.
 
 :::
