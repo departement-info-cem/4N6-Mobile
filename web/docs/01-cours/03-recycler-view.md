@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun actionBouton() {
-        
+
         Toast.makeText(this, "A", Toast.LENGTH_SHORT).show()
 
         binding.bouton.setOnClickListener {
@@ -72,9 +72,9 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-En créant un projet et en exécutant en débogage, sans oublier de vider d'abord le *Logcat*, validez votre trace.  
+En créant un projet et en exécutant en débogage, validez votre trace.  
 Si vous avez des surprises, demandez des explications à votre prof.  
-Assurez-vous de comprendre quelles lignes de code sont exécutées à quel moment et pourquoi.
+Assurez-vous de bien comprendre quelles lignes de code sont exécutées à quel moment et pourquoi.
 
 ## Exercices de 3N5
 
