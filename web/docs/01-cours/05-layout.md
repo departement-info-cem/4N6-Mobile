@@ -48,7 +48,7 @@ Nous discuterons de la structure des Layouts dans l'activité.
 Créez un fichier **trace-portee.md** pour y mettre la réponse à cet exercice.  
 En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
 produisez la trace d'exécution du code suivant **sans exécuter le code**.
-```kotlin
+```kotlin showLineNumbers
 fun main() {
     val a = 5
     val b = 10

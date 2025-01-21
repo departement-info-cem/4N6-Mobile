@@ -93,7 +93,7 @@ Pour tester votre code, utiliser Postman pour déclencher le contrôleur et vali
 Dans cet exercice, on veut:
 - que tu montes un serveur dans un dossier **CalculServeur**
 - que tu écrives une classe de service qui sera injectée dans le contrôleur avec une méthode 
-```java
+```java showLineNumbers
 public BigInteger fibonacci(int n){} 
 ```
 - que tu écrives des tests unitaires pour cette méthode: on s'attend à ce que ça torche même si n est dans les 1000-2000
@@ -116,8 +116,7 @@ Dans cet exercice, on veut:
 
 Etant donné le code suivant pour un contrôleur Spring Boot
 
-```java
-
+```java showLineNumbers
 @Controller
 public class ComprehensionController {
 

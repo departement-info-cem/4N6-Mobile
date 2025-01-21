@@ -46,7 +46,7 @@ Vous devrez compléter les mises en page des différentes activités de votre pr
 
 ## Exercice Dessin
 Étant donné ce code XML, dessinez ce à quoi ressemblerait l'activité en mode portrait :
-```xml
+```xml showLineNumbers
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"

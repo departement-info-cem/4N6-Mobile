@@ -57,7 +57,7 @@ En ouvrant l'exemple [ici](https://github.com/departement-info-cem/4N6-Mobile/tr
 - selon le code cela devrait afficher le corps de la réponse HTTP (`response.errorBody().string()`)
 
 Dans un fichier **double-errorBody.md**, indique ce que tu observes, ce que tu comprends et en quoi il faut faire attention:
-```md
+```md showLineNumbers
 # comportement observé du code
 bli bla blo
 # ce que je comprends de ce qui se passe

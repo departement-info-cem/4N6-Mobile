@@ -83,7 +83,7 @@ Tu vas envoyer une requête
 - en méthode POST 
 - à l'URL [https://fourn6-mobile-prof.onrender.com/exos/truc/doubler](https://fourn6-mobile-prof.onrender.com/exos/truc/doubler) 
 - avec comme corps de la requête un objet du format suivant
-```json
+```json showLineNumbers
 {
   "a": 100,
   "b": "gndsadsa",
@@ -113,7 +113,7 @@ Dans cet exercice, on vous donne la classe de modèle et on cherche les champs q
 L'interface graphique à droite montre les informations nécessaires à l'application.
 
 Créez un fichier **dto.md** dans votre repo exercice pour garder votre réponse avec le format suivant :
-```md
+```md showLineNumbers
 # PersonneDTO
 - ID: Long
 - pipo: String (justification de pourquoi le champ est dans le DTO)
@@ -142,7 +142,7 @@ On reprend l'exercice précédent mais avec maintenant deux classes modèles. On
 
 
 Créez un fichier **dto2.md** dans votre repo pour garder votre réponse avec le format suivant :
-```md
+```md showLineNumbers
 # PersonneDTO
 - ID: Long
 - pipo: String (justification de pourquoi le champ est dans le DTO)

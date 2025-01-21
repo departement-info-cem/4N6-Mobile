@@ -27,7 +27,7 @@ On va utiliser le network inspector
 
 ### Structure du code d'un appel asynchrone
 
-```kotlin
+```kotlin showLineNumbers
 val call = service.getSomething()
 call.enqueue(object : Callback<SomeObject> {
     override fun onResponse(call: Call<SomeObject>, response: Response<SomeObject>) {

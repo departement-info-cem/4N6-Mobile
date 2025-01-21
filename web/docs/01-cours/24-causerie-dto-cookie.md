@@ -52,7 +52,7 @@ Vous décidez de créer un jeu. Vous souhaitez **réduire le nombre de requêtes
 
 Pour jouer, les participants devront se créer un héros. Voici la classe modèle :
 
-```java
+```java showLineNumbers
 public class hero {
 	Long id;
 	String nom;
