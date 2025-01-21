@@ -5,22 +5,22 @@ const sidebars = {
   docs: [
     {
       type: "doc",
-      label: "1.1 - Révision",
+      label: "1.1 - Révision 🏠",
       id: "cours/revision",
     },
     {
       type: "doc",
-      label: "1.2 - Mise en page (révision)",
+      label: "1.2 - Mise en page 📱",
       id: "cours/mise-en-page",
     },
     {
       type: "doc",
-      label: "2.1 - Nav Recycler i18n",
+      label: "2.1 - Nav Recycler i18n ♻️",
       id: "cours/recycler-view",
     },
     {
       type: "doc",
-      label: "2.2 - Nav Recycler i18n",
+      label: "2.2 - Nav Recycler i18n ♻️",
       id: "cours/recycler-view",
     },
     {
@@ -36,12 +36,12 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.1 - Réseau",
+      label: "4.1 - Réseau 🛜",
       id: "cours/http",
     },
     {
       type: "doc",
-      label: "4.2 - Réseau",
+      label: "4.2 - Réseau 🛜",
       id: "cours/http",
     },
     {
@@ -67,7 +67,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "7.1 - Débogage serveur",
+      label: "7.1 - Débogage serveur 🪲",
       id: "cours/debogage",
     },
     {
@@ -113,17 +113,17 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.2 - Attente serveur",
+      label: "11.2 - Attente serveur ⏳",
       id: "cours/attente-serveur",
     },
     {
       type: "doc",
-      label: "12.1 - Sécurité - inject., crypto",
+      label: "12.1 - Sécurité - inj., crypto 🔒",
       id: "cours/injection",
     },
     {
       type: "doc",
-      label: "12.2 - Cybersec - cont. d'accès",
+      label: "12.2 - Cybersec - c. d'accès 🔑",
       id: "cours/controle-acces",
     },
     {
@@ -133,7 +133,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.2 - 🏴‍☠️ CTF",
+      label: "13.2 - CTF 🏴‍☠️",
       id: "cours/ctf",
     },
     {
