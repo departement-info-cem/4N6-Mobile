@@ -34,9 +34,10 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
   </TabItem>
   <TabItem value="ide" label="Modèle de données">
 
-    On va commencer par le modèle de données:
-    1. on se donne une classe **Truc**
-    2. chaque truc contient un **id** et un champ texte appelé **chose**:
+    On va commencer par le modèle de données :
+    1. on crée une classe **Truc**
+    2. chaque truc contient un **id** et un champ texte appelé **chose** :
+
 <GHCode
             repo="4N6-Mobile"
             filePath="code/serveur3-service-bd-test/src/main/java/ca/cem/Truc.java"
@@ -48,16 +49,16 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
         Spring permet d'utiliser un fichier de propriétés pour fournir la configuration de la base de données :
         - il y a un format de fichier spécifique
-        - le fichier (*application.properties*) se trouve dans le dossier **resources**
+        - le fichier *application.properties* se trouve dans le dossier **resources**
 
-        Ajoute-lui les lignes de code suivantes :
+        On ajoute au fichier **application.properties** les lignes de code suivantes :
 
     <GHCode
                 repo="4N6-Mobile"
                 filePath="code/serveur3-service-bd-test/src/main/resources/application.properties"
               />
 
-        On a les infos suivantes:
+        On a les infos suivantes :
         - la base de données est H2
         - on a le chemin du fichier de la BD
 
