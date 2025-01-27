@@ -67,20 +67,22 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
   <TabItem value="Repository" label="Repository">
 
-        Nous allons ensuite avoir un repository pour accéder à la base de données. Il s'agit
+        Nous allons ensuite avoir un *repository* pour accéder à la base de données. Il s'agit
         d'un objet qui fournit des opérations dans la BD.
 
-        On appelle cela parfois également un Data Access Object ou encore DAO (comme dans la librairie du TP3 de 3N5)
+        On appelle cela parfois également un *Data Access Object* ou encore DAO (comme dans la librairie du TP3 de 3N5).
 
-        Dans notre application on souhaite proposer uniquement 2 opérations aux utilisateurs:
+        Dans notre application, on souhaite proposer uniquement 2 opérations aux utilisateurs :
         1. ajouter un truc en validant qu'il n'y a pas déjà un truc avec le même chose
         2. accéder à la liste des trucs
+
+        On crée une *interface* **TrucRepo** avec ce code :
         <GHCode
                     repo="4N6-Mobile"
                     filePath="code/serveur3-service-bd-test/src/main/java/ca/cem/TrucRepo.java"
                   />
 
-        Les éléments importants ici pour Spring Boot:
+        Les éléments importants ici pour Spring Boot :
         - le **JpaRepository** est une interface qui fournit toutes les méthodes CRUD de base
         - on peut ajouter des méthodes juste en les [déclarant dans l'interface](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html) (Spring Boot va les implémenter par magie)
         - par exemple, **findByChose** est une méthode qui va chercher un truc par son champ chose
