@@ -90,6 +90,8 @@ Vous devrez compléter les mises en page des différentes activités de votre pr
 </LinearLayout>
 ```
 
+Une fois votre dessin terminé (et pas avant), créez un projet avec cette activité pour valider votre dessin.
+
 ## 👨‍🎓🤖 Exercice MiseEnPageA
 
 Créez un projet appelé **MiseEnPageA** contenant une activité. Faites un layout avec un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
