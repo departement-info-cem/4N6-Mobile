@@ -4,9 +4,7 @@ hide_table_of_contents: true
 
 # Produire une trace d'exécution
 
-Si un as un morceau de code, on peut souhaiter savoir dans quel ordre les instructions sont exécutées. 
-
-Pour cela, on peut utiliser un outil de traçage.
+Si un as un morceau de code, on peut souhaiter savoir dans quel ordre les instructions sont exécutées.
 
 ## Principe
 
@@ -16,60 +14,91 @@ On veut accomplir 2 éléments principaux:
 
 ## Exemple simple
 
+<Row>
+
+<Column>
+
+
+### Code
+
 Si on a le code suivant:
 ```kotlin  showLineNumbers
-val a = 3 + 4
-val b = a * 2
-println("salut " + b)
+fun main() {
+    val a = 3 + 4
+    val b = a * 2
+    println("salut " + b)
+}
 ```
 
+</Column>
+<Column>
 ### Trace
 On aura la trace suivante:
 
-| ligne exécutée | effet                             |
-|-----------------|-----------------------------------|
-| val a = 3 + 4       | a: 7                             |
-| val b = a * 2       | a: 7, b: 14                     |
-| println("salut " + b) | a: 7, b: 14, affiche "salut 14" |
+| ligne exécutée | effet                             | pile d'appels |
+|-----------------|-----------------------------------|---|
+| val a = 3 + 4       | a: 7                             | main          |
+| val b = a * 2       | a: 7, b: 14                     | main          |
+| println("salut " + b) | a: 7, b: 14, affiche "salut 14" | main          |
+
+
+</Column>
+</Row>
 
 Dans le cas d'une séquence d'instructions, on peut voir que les instructions sont exécutées dans
 l'ordre de lecture du code. Simple!
 
-Le code *markdown* de ce tableau est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Trace/trace.md).
+Pour voir le code des tableaux markdown, [ICI](https://github.com/departement-info-cem/4N6-Mobile/blob/main/web/docs/03-recettes/produire-une-trace.mdx?plain=1).
+
+Note: pour chaque page de ce site, tu peux cliquer sur le bouton **Éditer cette page** en bas pour voir le code markdown.
 
 ## Exemple avec boucle
-
+<Row>
+<Column>
 Si on a le code suivant:
 ```kotlin showLineNumbers
-for (i in 1..3){
-    if (i % 2 == 0) {
-        println("c'est pair " + i)
-    }
-    else {
-        println("ah ben ah ben, c'est impair " + i)
+fun main() {
+    for (i in 1..3){
+        if (i % 2 == 0) {
+            println("c'est pair " + i)
+        }
+        else {
+            println("ah ben ah ben, c'est impair " + i)
+        }
     }
 }
 ```
-
-### Trace
-On aura la trace suivante:
-
-| ligne exécutée | effet                         |
-|-----------------|-------------------------------|
-| for (i in 1..3) | i parcourt l'interval 1, 2, 3 |
-| if (i % 2 == 0) | i: 1 <br /> i%2 vaut 1        |
-| println("ah ben ah ben, c'est impair " + i) | i: 1 <br /> affiche "ah ben ah ben, c'est impair 1" |
-| if (i % 2 == 0) | i: 2  <br /> i%2 vaut 0        |
-| println("c'est pair " + i) | i: 2 <br /> affiche "c'est pair 2" |
-| if (i % 2 == 0) | i: 3 <br /> i%2 vaut 1        |
-| println("ah ben ah ben, c'est impair " + i) | i: 3 <br /> affiche "ah ben ah ben, c'est impair 3" |
 
 On voit que:
 - on n'indique que les lignes qui s'exécutent en vrai
 - certaines lignes s'exécutent plusieurs fois, c'est le principe de la boucle!
 - on appelle ce cheminement le flot de contrôle
 
+</Column>
+<Column>
+On aura la trace suivante:
+
+| ligne exécutée    | effet                            | pile d'appels   |
+|-------------------|----------------------------------|-----------------|
+| for (i in 1..3) | i parcourt l'interval 1, 2, 3 | main      |
+| if (i % 2 == 0) | i: 1 <br /> i%2 vaut 1        | main      |
+| println("ah ben ah ben, c'est impair " + i) | i: 1 <br /> affiche "ah ben ah ben, c'est impair 1" | main |
+| for (i in 1..3) | i rendu à 2 | main      |
+| if (i % 2 == 0) | i: 2  <br /> i%2 vaut 0        | main      |
+| println("c'est pair " + i) | i: 2 <br /> affiche "c'est pair 2" | main |
+| for (i in 1..3) | i rendu à 3 | main      |
+| if (i % 2 == 0) | i: 3 <br /> i%2 vaut 1        | main      |
+| println("ah ben ah ben, c'est impair " + i) | i: 3 <br /> affiche "ah ben ah ben, c'est impair 3" | main |
+
+</Column>
+</Row>
+
+
+
 ## Exemple avec une fonction
+
+<Row>
+<Column>
 
 Si on a le code suivant:
 ```kotlin showLineNumbers
@@ -87,25 +116,32 @@ fun main() {
 }
 ```
 
-### Trace
+S'il y a des fonctions dans le code, on ajoute la pile d'appels pour indiquer
+- quand on entre dans le code d'une autre fonction
+- pour chaque ligne, quelles sont les fonctions qui sont actives
 
-S'il y a des fonctions dans le code, on doit ajouter la pile d'appels pour indiquer quelles fonctions
-ont été commencées mais pas finies.
+</Column>
+<Column>
+
+
 
 | ligne exécutée           | effet                                                      | pile d'appels |
 |--------------------------|------------------------------------------------------------|---------------|
 | var mavariable = 3                    | mavariable: 3                                                    | __main__      |
 | var tavariable = 5                    | mavariable: 3 <br /> tavariable: 5                                               | __main__      |
-| var z = ma_fonction(mavariable, tavariable) | mavariable: 3 <br /> tavariable: 5 <br /> appelle ma_fonction avec a→3 et b→5       | __main__      |
+| var z = ma_fonction(mavariable, tavariable) | mavariable: 3 <br /> tavariable: 5 <br /> appelle ma_fonction avec 3→a et 5→b       | __main__      |
 | val c = a + b                | a: 3 <br /> b: 5 <br /> c: 8                                        | __ma_fonction__ <br /> main |
-| return c                 | a: 3 <br /> b: 5 <br /> c: 8, retourne 8, z = 8                     | __ma_fonction__ <br /> main |
-| var y = ma_fonction(4, 9) | mavariable: 3 <br /> tavariable: 5 <br /> z: 8 <br />appelle ma_fonction avec a→4 et b→9 | __main__      |
+| return c                 | a: 3 <br /> b: 5 <br /> c: 8, retourne 8                     | __ma_fonction__ <br /> main |
+| var z = ma_fonction(mavariable, tavariable) | mavariable: 3 <br /> tavariable: 5 <br /> z: 8       | __main__      |
+| var y = ma_fonction(4, 9) | mavariable: 3 <br /> tavariable: 5 <br /> z: 8 <br />appelle ma_fonction avec 4→a et 9→b | __main__      |
 | val c = a + b                | a: 4 <br /> b: 9 <br /> c: 13                                       | __ma_fonction__ <br /> main |
-| return c                 | a: 4 <br /> b: 9 <br /> c: 13 <br /> retourne 13, y = 13                  | __ma_fonction__ <br /> main |
+| return c                 | a: 4 <br /> b: 9 <br /> c: 13 <br /> retourne 13                | __ma_fonction__ <br /> main |
+| var y = ma_fonction(4, 9) | mavariable: 3 <br /> tavariable: 5 <br /> z: 8 <br />y:13 | __main__      |
 | println("z vaut " + z + " et y vaut " + y) | mavariable: 3 <br /> tavariable: 5 <br /> z: 8 <br /> y = 13 <br /> affiche "z vaut 8 et y vaut 13" | __main__     |
 
+</Column>
+</Row>
 
-Dans ce cas, on doit ajouter la pile d'appels pour indiquer quelles fonctions ont été commencées mais pas finies.
 
 ## Valider ta trace
 
@@ -115,4 +151,28 @@ Afin de valider ta trace, tu vas utiliser le débogueur de ton IDE préféré.
 3. saute d'une ligne en une ligne pour voir si ta trace est correcte
 
 Si tu te rends à la fin de l'exécution et que toutes tes valeurs étaient bonnes, tu as bien compris ce que fait le code.
+
+## Procédure pour faire un exercice
+
+1. ouvre ton repo d'exercices sur github.com
+2. crée un fichier avec le nom suggéré dans l'exercice en appuyant sur le bouton **+** puis **Create new file**
+3. dès que tu indiques un nom qui finit en **.md** on aura l'onglet code et l'onglet preview
+4. copie le code de l'exercice dans le fichier, tu peux utiliser un bloc de kotlin pour avoir la syntaxe colorée. Par exemple:
+````markdown
+```kotlin
+fun main() {
+    val a = 3 + 4
+    val b = a * 2
+    println("salut " + b)
+}
+```
+````
+
+5. ajoute la trace d'exécution en dessous du code dans un tableau markdown. Par exemple:
+````markdown
+| ligne exécutée  | effet                             | pile d'appels |
+|-----------------|-----------------------------------|---------------|
+| val a = 3 + 4   | a: 7                              | __main__      |
+````
+6. Crée toi un projet kotlin ou Android pour pouvoir valider ta trace en utilisant le débogueur.
 
