@@ -8,7 +8,7 @@ Si un as un morceau de code, on peut souhaiter savoir dans quel ordre les instru
 
 ## Principe
 
-On veut accomplir 2 éléments principaux:
+On veut accomplir 2 éléments principaux :
 1. indiquer quelles lignes de code s'exécutent dans quel ordre
 2. indiquer les effets de chaque ligne de code
 
@@ -21,7 +21,7 @@ On veut accomplir 2 éléments principaux:
 
 ### Code
 
-Si on a le code suivant:
+Si on a le code suivant :
 ```kotlin  showLineNumbers
 fun main() {
     val a = 3 + 4
@@ -33,7 +33,7 @@ fun main() {
 </Column>
 <Column>
 ### Trace
-On aura la trace suivante:
+On aura la trace suivante :
 
 | ligne exécutée | effet                             | pile d'appels |
 |-----------------|-----------------------------------|---|
@@ -50,12 +50,12 @@ l'ordre de lecture du code. Simple!
 
 Pour voir le code des tableaux markdown, [ICI](https://github.com/departement-info-cem/4N6-Mobile/blob/main/web/docs/03-recettes/produire-une-trace.mdx?plain=1).
 
-Note: pour chaque page de ce site, tu peux cliquer sur le bouton **Éditer cette page** en bas pour voir le code markdown.
+Note : pour chaque page de ce site, tu peux cliquer sur le bouton **Éditer cette page** en bas pour voir le code markdown.
 
 ## Exemple avec boucle
 <Row>
 <Column>
-Si on a le code suivant:
+Si on a le code suivant :
 ```kotlin showLineNumbers
 fun main() {
     for (i in 1..3){
@@ -69,14 +69,14 @@ fun main() {
 }
 ```
 
-On voit que:
+On voit que :
 - on n'indique que les lignes qui s'exécutent en vrai
 - certaines lignes s'exécutent plusieurs fois, c'est le principe de la boucle!
 - on appelle ce cheminement le flot de contrôle
 
 </Column>
 <Column>
-On aura la trace suivante:
+On aura la trace suivante :
 
 | ligne exécutée    | effet                            | pile d'appels   |
 |-------------------|----------------------------------|-----------------|
@@ -100,7 +100,7 @@ On aura la trace suivante:
 <Row>
 <Column>
 
-Si on a le code suivant:
+Si on a le code suivant :
 ```kotlin showLineNumbers
 fun ma_fonction(a : Int, b: Int) : Int {
     val c = a + b
@@ -116,9 +116,9 @@ fun main() {
 }
 ```
 
-S'il y a des fonctions dans le code, on ajoute la pile d'appels pour indiquer
+S'il y a des fonctions dans le code, la pile d'appels permet d'indiquer :
 - quand on entre dans le code d'une autre fonction
-- pour chaque ligne, quelles sont les fonctions qui sont actives
+- quelles sont les fonctions qui sont encore actives
 
 </Column>
 <Column>
@@ -157,7 +157,7 @@ Si tu te rends à la fin de l'exécution et que toutes tes valeurs étaient bonn
 1. ouvre ton repo d'exercices sur github.com
 2. crée un fichier avec le nom suggéré dans l'exercice en appuyant sur le bouton **+** puis **Create new file**
 3. dès que tu indiques un nom qui finit en **.md** on aura l'onglet code et l'onglet preview
-4. copie le code de l'exercice dans le fichier, tu peux utiliser un bloc de kotlin pour avoir la syntaxe colorée. Par exemple:
+4. copie le code de l'exercice dans le fichier, tu peux utiliser un bloc de kotlin pour avoir la syntaxe colorée. Par exemple :
 ````markdown
 ```kotlin
 fun main() {
@@ -168,11 +168,12 @@ fun main() {
 ```
 ````
 
-5. ajoute la trace d'exécution en dessous du code dans un tableau markdown. Par exemple:
+5. ajoute la trace d'exécution en dessous du code dans un tableau markdown. Par exemple :
 ````markdown
 | ligne exécutée  | effet                             | pile d'appels |
 |-----------------|-----------------------------------|---------------|
 | val a = 3 + 4   | a: 7                              | __main__      |
 ````
-6. Crée toi un projet kotlin ou Android pour pouvoir valider ta trace en utilisant le débogueur.
+6. Tu peux utiliser des balises html `<br/>` pour faire un retour de ligne, par exemple dans la pile d'appels.
+7. Crée-toi un projet kotlin ou Android pour pouvoir [valider ta trace](#valider-ta-trace) en utilisant le débogueur.
 
