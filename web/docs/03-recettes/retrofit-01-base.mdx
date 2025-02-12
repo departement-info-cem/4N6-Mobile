@@ -35,7 +35,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
   </TabItem>
   <TabItem value="build.gradle" label="build.gradle">
 
-    Il va falloir ajouter les dépendances permettant d'utiliser Retrofit dans le  `build.gradle.kts`.
+    Il va falloir ajouter les dépendances permettant d'utiliser Retrofit dans le  `build.gradle`.
 
     <GHCode
           repo="4N6-Mobile"
@@ -43,6 +43,14 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
           startLine="43"
           endLine="46"
          />
+
+    Si votre fichier de build est en kts (`build.gradle.kts`), vous pouvez ajouter les dépendances de cette manière:
+
+    ```kotlin
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    ...
+    ```
 
   </TabItem>
   <TabItem value="Service.kt" label="Service.kt">
