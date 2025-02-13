@@ -31,8 +31,17 @@ Pas de nouveau contenu. Révisions. Examen imminent!
 
 </Row>
 
-:::note Examens passés
+:::warning Examen formatif (pour se pratiquer)
 
+### Examen intra formatif 2025
+
+<!-- **[Partie papier (1/2) 50%](pathname:///file/intra2025/H25-intra-formatif-1-papier.md)**
+
+**[Partie machine (2/2) 50%](pathname:///file/intra2025/H25-intra-formatif-1-pratique.md)** -->
+
+:::
+
+:::note Examens passés
 
 ### Examen intra 2023
 
@@ -45,6 +54,5 @@ L'examen intra de 2022 pour se pratiquer **[ici](pathname:///file/intra2022)**
 ### Examen intra 2021
 
 L'examen intra de 2021 pour se pratiquer **[ici](pathname:///file/intra2021)**
-
 
 :::
