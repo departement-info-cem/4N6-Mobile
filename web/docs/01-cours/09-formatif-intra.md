@@ -37,7 +37,7 @@ Pas de nouveau contenu. Révisions. Examen imminent!
 
 **[50% Partie papier (1/2)](pathname:///file/intra2025/H25-intra-formatif-1-papier.pdf)**
 
-**[50% Partie machine (2/2)](pathname:///file/intra2025/H25-intra-formatif-1-pratique.pdf)**
+**[50% Partie machine (2/2)](pathname:///file/intra2025/H25-intra-formatif-2-pratique.pdf)**
 
 :::
 
