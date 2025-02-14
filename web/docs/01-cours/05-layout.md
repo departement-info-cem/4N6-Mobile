@@ -53,6 +53,7 @@ fun main() {
     val a = 5
     val b = 10
     val resultat = calcul(a, b)
+    println(resultat)
 }
 
 fun calcul(x: Int, y: Int): Int {
