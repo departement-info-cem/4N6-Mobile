@@ -71,7 +71,7 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*Copilot*, 
 | [3.1 →](cours/layout)               | Layouts CL DL APL LL SV       | 75%                              |
 | [3.2 →](cours/integration)          | Intégration                   | 100% remise                      |
 | [4.1 →](cours/http)                 | Accès réseau                  | TP2 : communication serveur      |
-| [4.2 →](cours/http)                 | Accès réseau                  | 20%                              |
+| [4.2 →](cours/http)                 | Accès réseau                  | 10%                              |
 | [5.1 →](cours/formatif-intra)       | Formatif                      | --                               |
 | [5.2 →](cours/examen)               | **Examen Intra** (20%)        | --                               |
 | [6.1 →](cours/spring)               | Serveur Spring Boot           | 40%                              |
