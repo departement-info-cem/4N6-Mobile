@@ -26,6 +26,17 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 <Tabs queryString="recette-activite">
 
 
+    <TabItem value="SessionCookieJar.kt" label="SessionCookieJar.kt">
+
+        On ajoute d'abord un cookie jar (un pot à cookies) pour que le client HTTP puisse stocker les cookies d'un appel à l'autre :
+        <GHCode
+            repo="4N6-Mobile"
+            filePath="code/Retrofit/05-Cookies/app/src/main/java/org/depinfo/retrofit_demo/http/SessionCookieJar.kt"
+        />
+
+    </TabItem>
+
+
     <TabItem value="RetrofitUtil.kt" label="RetrofitUtil.kt">
 
         Au niveau de la configuration de Retrofit, on va ajouter la gestion des cookies.
