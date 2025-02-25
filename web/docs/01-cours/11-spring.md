@@ -30,7 +30,7 @@ Vous devez regarder les vidéos ci-dessous:
 
 :::info Séance
 
-Nous allons montrer comment partir le serveur, omment mettre un point d'arrêt, à quel endroit est le code correspondant aux différentes URL.
+Nous allons montrer comment partir le serveur, comment mettre un point d'arrêt, à quel endroit est le code correspondant aux différentes URL.
 
 Nous allons voir également comment envoyer des requêtes au serveur avec le logiciel Postman.
 
