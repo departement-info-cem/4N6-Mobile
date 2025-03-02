@@ -42,6 +42,8 @@ Nous allons voir également comment envoyer des requêtes au serveur avec le log
 
 <!-- ## 👨‍🎓👨‍🎓 Exercice Chic Type
 
+Exercice retiré parce que les nombres trop grands pour être reçus en Int passent quand même et ne génèrent pas d'erreur. Cause inconnue.
+
 <Row>
 
 <Column size="9">
