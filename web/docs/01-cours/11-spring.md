@@ -12,11 +12,9 @@ hide_table_of_contents: true
 
 :::tip Avant la séance
 
-Explorez le [code du serveur de l'application](https://github.com/departement-info-cem/KickMyB-Server)
-
-Vous pouvez également explorer la documentation de [Spring Boot](https://spring.io/projects/spring-boot).
-
-Vous devez regarder les vidéos ci-dessous:
+Explorez le [code du serveur de l'application](https://github.com/departement-info-cem/KickMyB-Server)  
+Vous pouvez également explorer la documentation de [Spring Boot](https://spring.io/projects/spring-boot).  
+Vous devez regarder les vidéos ci-dessous :
 
 <Video url="https://www.youtube.com/watch?v=GvvL7n0pmp0" />
 
@@ -42,7 +40,7 @@ Nous allons voir également comment envoyer des requêtes au serveur avec le log
 
 :::note Exercices de la semaine
 
-## 👨‍🎓👨‍🎓 Exercice Chic Type
+<!-- ## 👨‍🎓👨‍🎓 Exercice Chic Type
 
 <Row>
 
@@ -65,7 +63,7 @@ Lorsqu'on appuie sur le bouton "Obtenir un nombre aléatoire", l'application And
 
 </Column>
 
-</Row>
+</Row> -->
 
 ## 👨‍🎓👨‍🎓 Exercice Postman
 
