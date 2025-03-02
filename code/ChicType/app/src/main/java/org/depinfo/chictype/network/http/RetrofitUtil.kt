@@ -7,7 +7,7 @@ object RetrofitUtil {
     fun get(): Service {
         val retrofit = Retrofit.Builder()
             .addConverterFactory(ScalarsConverterFactory.create())
-            .baseUrl("https://4n6.azurewebsites.net/")
+            .baseUrl("https://fourn6-mobile-prof.onrender.com/")
             .build()
 
         return retrofit.create<Service>(Service::class.java)
