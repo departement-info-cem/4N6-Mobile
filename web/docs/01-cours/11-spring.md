@@ -34,6 +34,12 @@ Nous allons voir également comment envoyer des requêtes au serveur avec le log
 
 :::
 
+:::warning attention
+
+Contrairement à ce qui est montré dans la vidéo, pour se connecter à la base de données, il faut utiliser l'URL `jdbc:h2:file:./db/proditos`, que vous pouvez aussi trouver dans le fichier `application.properties` du serveur (dans `resources`).
+
+:::
+
 </Column>
 
 </Row>
