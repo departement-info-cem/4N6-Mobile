@@ -51,10 +51,11 @@ On parlera rapidement des options de débogage d'un serveur déployé en product
 
 Vous devez compléter le débogage du projet vu en cours afin de le rendre opérationnel. Voici la liste des requêtes à effectuer dans Postman :
 
-1. Indiquez les lignes de code causant les problèmes et pourquoi selon vous.
+1. Indiquez le problème.
    - localhost:8080/req1 en POST avec, dans le Body, un Raw JSON contenant ["Tomate", "Jambon"]
+2. Indiquez les lignes de code causant les problèmes et pourquoi selon vous.
    - localhost:8080/req2 en GET
-2. Expliquez pourquoi cette requête semble fonctionner, alors que non. Trouvez ensuite quelle méthode cause problème.
+3. Expliquez pourquoi cette requête semble fonctionner, alors que non. Trouvez ensuite quelle méthode cause problème.
    - localhost:8080/req3 en GET
 
 :::
