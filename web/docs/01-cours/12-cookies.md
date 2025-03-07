@@ -37,11 +37,3 @@ Explication de la session, stockée en mémoire sur le serveur, conservée tant 
 </Column>
 
 </Row>
-
-:::note Exercices de la semaine
-
-### Exercice Postman
-
-Créez dans Postman toutes les requêtes que votre application doit envoyer au serveur localement (signup, signin, home, etc.) et assurez-vous que tout fonctionne.
-
-:::
