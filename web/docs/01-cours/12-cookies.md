@@ -37,11 +37,3 @@ Explication de la session, stockée en mémoire sur le serveur, conservée tant 
 </Column>
 
 </Row>
-
-:::note Exercices de la semaine
-
-### Exercice A
-
-Reproduisez les manipulations de la vidéo Cookies HTTP (première vidéo) et faites une démo au prof quand vous êtes capable de reproduire ce que vous avez vu dans la video.
-
-:::
