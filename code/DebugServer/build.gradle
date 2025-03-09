@@ -31,7 +31,8 @@ dependencies {
 	implementation 'org.imgscalr:imgscalr-lib:4.2'
 
 	runtimeOnly 'org.apache.derby:derby'
-	runtimeOnly	'com.h2database:h2:+'
+//	runtimeOnly	'com.h2database:h2:+'
+	runtimeOnly 'com.h2database:h2:1.4.200' // Compatible with Java 8
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
