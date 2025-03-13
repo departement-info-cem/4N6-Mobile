@@ -24,7 +24,7 @@ Vous trouverez [plusieurs exemples](https://github.com/departement-info-cem/4N6-
 
 On discutera de la gestion des erreurs côté serveur et des différentes stratégies
 
-- Envoyer la première ou toutes les erreurs (surtout pour les long formulaires)
+- Envoyer la première ou toutes les erreurs (surtout pour les longs formulaires)
 - Utiliser le code d'erreur, le message ou le corps de la réponse
 - Dans quelle langue doit être le message d'erreur, traduit sur le serveur ou dans la langue de programmation et traduit sur le client
 
