@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'org.depinfo.retrofit_demo'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "org.depinfo.retrofit_demo"
