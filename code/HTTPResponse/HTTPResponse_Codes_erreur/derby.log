@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Mar 09 22:05:28 EDT 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0195-7dcc-ca50-000008cd15e0 
+on database directory memory:/Users/mathieudupont/Documents/GitHub/4N6-Mobile/code/HTTPResponse/HTTPResponse_Codes_erreur/b0e2888a-4df1-406e-9012-db0f20ca216a with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/Users/mathieudupont/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.14.2.0/7efad40ef52fbb1f08142f07a83b42d29e47d8ce/derby-10.14.2.0.jar
+java.vendor=Amazon.com Inc.
+java.runtime.version=1.8.0_372-b07
+user.dir=/Users/mathieudupont/Documents/GitHub/4N6-Mobile/code/HTTPResponse/HTTPResponse_Codes_erreur
+os.name=Mac OS X
+os.arch=aarch64
+os.version=15.3.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
