@@ -52,13 +52,13 @@ Tu devras avancer tes exercices sur les serveurs. Tu devrais avoir programmé au
 
 Tu complètes tes exercices. Tu devrais commencer ton 
 
+TODO
+
 :::
 
 :::info Séance 4
 
-Nous allons montrer comment partir le serveur. Comment mettre un point d'arrêt. À quel endroit est le code correspondant aux différentes URLs.
-
-Nous allons voir également comment envoyer des requêtes au serveur avec le logiciel Postman.
+TODO
 
 :::
 
