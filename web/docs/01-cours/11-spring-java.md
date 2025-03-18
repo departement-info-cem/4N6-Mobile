@@ -71,7 +71,7 @@ TODO
 ## Exercice démarrer un serveur
 
 1. Créez un projet Spring Boot avec Spring Initializr
-2. En vous inspirant de la recette XYZ ajoutez un contrôleur qui retourne une chaîne de caractères
+2. En vous inspirant de la recette [Spring Boot 2](https://info.cegepmontpetit.ca/4N6-Mobile/recettes/spring-02-controleur) ajoutez un contrôleur qui retourne une chaîne de caractères
 3. Utiliser le navigateur pour accéder à l'adresse http://localhost:8080/
 
 ## Exercice Post et PostMan
