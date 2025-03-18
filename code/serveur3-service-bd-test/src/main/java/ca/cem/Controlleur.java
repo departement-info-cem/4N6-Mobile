@@ -19,18 +19,24 @@ public class Controlleur {
 		return trucService.listerTrucs();
 	}
 
-
-	@PutMapping("/ajouterTruc")
-	public @ResponseBody String ajouterEnPut(
-			@RequestBody String chose) throws PasBonneChoseException {
-		trucService.ajouterUnTruc(chose);
-		return "ok";
-	}
-
 	@GetMapping("/ajouterTruc/{chose}")
 	public @ResponseBody String ajouterEnGet(
 			@PathVariable String chose) throws PasBonneChoseException {
 		trucService.ajouterUnTruc(chose);
+		return "ok";
+	}
+
+	@PostMapping("/ajouterTrucPost")
+	public @ResponseBody String ajouterEnPost(
+			@RequestBody Truc truc) throws PasBonneChoseException {
+		trucService.ajouterUnTruc(truc.chose);
+		return "ok";
+	}
+
+	@PutMapping("/ajouterTrucPut")
+	public @ResponseBody String ajouterEnPut(
+			@RequestBody Truc truc) throws PasBonneChoseException {
+		trucService.ajouterUnTruc(truc.chose);
 		return "ok";
 	}
 
