@@ -28,15 +28,15 @@ public class Controlleur {
 
 	@PostMapping("/ajouterTrucPost")
 	public @ResponseBody String ajouterEnPost(
-			@RequestBody Truc truc) throws PasBonneChoseException {
-		trucService.ajouterUnTruc(truc.chose);
+			@RequestBody String chose) throws PasBonneChoseException {
+		trucService.ajouterUnTruc(chose);
 		return "ok";
 	}
 
 	@PutMapping("/ajouterTrucPut")
 	public @ResponseBody String ajouterEnPut(
-			@RequestBody Truc truc) throws PasBonneChoseException {
-		trucService.ajouterUnTruc(truc.chose);
+			@RequestBody String chose) throws PasBonneChoseException {
+		trucService.ajouterUnTruc(chose);
 		return "ok";
 	}
 
