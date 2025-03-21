@@ -93,8 +93,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "9.2 - Spring Boot Java",
-      id: "cours/spring-java",
+      label: "9.2 - Attente serveur ⏳",
+      id: "cours/attente-serveur",
     },
     {
       type: "doc",
@@ -113,8 +113,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.2 - Attente serveur ⏳",
-      id: "cours/attente-serveur",
+      label: "11.2 - Spring Boot Java",
+      id: "cours/spring-java",
     },
     {
       type: "doc",

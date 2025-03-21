@@ -81,14 +81,14 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*Copilot*, 
 | [8.1 →](cours/integration)          | Intégration                   | 100% remise                      |
 | [8.2 →](cours/erreur-http)          | Erreurs: HTTP                 | TP3 : serveur erreurs et attente |
 | [9.1 →](cours/erreur-gui)          | Erreurs: GUI                  | 10%                              |
-| [9.2 →](cours/spring-java)           | Spring Boot Java              | 10%                              |
-| [10.1 →](cours/spring-java)          | Spring Boot Java              | 10%                              |
-| [10.2 →](cours/spring-java)          | Spring Boot Java              | 10%                              |
-| [11.1 →](cours/spring-java)          | Spring Boot Java              | 10%                              |
-| [11.2 →](cours/attente-serveur)     | Attente serveur               | 20%                              |
-| [12.1 →](cours/injection)           | Cybersec: injections et crypto | 30%                              |
-| [12.2 →](cours/controle-acces)      | Cybersec: access control      | 40%                              |
-| [13.1 →](cours/orientation-taille)  | Portrait/paysage              | 60%                              |
+| [9.2 →](cours/attente-serveur)     | Attente serveur               | 20%                              |
+| [10.1 →](cours/spring-java)           | Spring Boot Java              | 30%                              |
+| [10.2 →](cours/spring-java)          | Spring Boot Java              | 30%                              |
+| [11.1 →](cours/spring-java)          | Spring Boot Java              | 40%                              |
+| [11.2 →](cours/spring-java)          | Spring Boot Java              | 40%                              |
+| [12.1 →](cours/injection)           | Cybersec: injections et crypto | 50%                              |
+| [12.2 →](cours/controle-acces)      | Cybersec: access control      | 60%                              |
+| [13.1 →](cours/orientation-taille)  | Portrait/paysage              | 70%                              |
 | [13.2 →](cours/ctf)                 | Capture the flag              | 80%                              |
 | [14.1 →](cours/causerie-dto-cookie) | Causerie - DTO et Cookies     | 90%                              |
 | [14.2 →](cours/correction-tp3)      | Correction TP3                | 100% remise                      |
