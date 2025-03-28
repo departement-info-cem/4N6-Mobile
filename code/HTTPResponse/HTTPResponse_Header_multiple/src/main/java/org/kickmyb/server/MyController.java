@@ -55,6 +55,9 @@ public class MyController {
     @PostMapping("/remplirFormulaireSolo")
     public @ResponseBody Error remplirFormulaireSolo(@RequestBody MyForm form){
         List<String> usernames = new ArrayList<>();
+        usernames.add("Alice");
+        usernames.add("Bob");
+        usernames.add("Eve");
 
         /* Liste des erreurs à renvoyer :
             username is empty (400 BadRequest)
@@ -82,6 +85,9 @@ public class MyController {
     @PostMapping("/remplirFormulaireMultiple")
     public @ResponseBody List<Error> remplirFormulaireMultiple(@RequestBody MyForm form){
         List<String> usernames = new ArrayList<>();
+        usernames.add("Alice");
+        usernames.add("Bob");
+        usernames.add("Eve");
 
         /* Liste des erreurs à renvoyer :
             username is empty or null (400 BadRequest)
