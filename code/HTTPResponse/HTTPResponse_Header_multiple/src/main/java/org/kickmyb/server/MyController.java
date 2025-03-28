@@ -26,7 +26,7 @@ public class MyController {
             responseHeaders.set("Warning",
                     "199 - STATUS " + HttpStatus.UNAUTHORIZED);
 
-            return ResponseEntity.ok()
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                     .headers(responseHeaders)
                     .build();
         }
