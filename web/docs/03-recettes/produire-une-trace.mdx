@@ -151,9 +151,9 @@ On veut accomplir 2 éléments principaux :
 
     </TabItem>
 
-    <TabItem value="Requête client-serveur" label="Requête client-serveur">
+    <TabItem value="Réseau" label="Réseau">
 
-    On veut faire la trace d'exécution lorsqu'un ouvre l'application client, en assumant que le serveur roule.
+    On veut faire la trace d'exécution lorsqu'on ouvre l'application client, en assumant que le serveur roule et que tout se passe bien.
 
         <Row>
             <Column>
@@ -181,7 +181,7 @@ On veut accomplir 2 éléments principaux :
                             override fun onResponse(call: retrofit2.Call<Int>, response: retrofit2.Response<Int>) {
 
                                 if (response.isSuccessful) {
-                                    Toast.makeText(this@MainActivity, response.body()!!, Toast.LENGTH_LONG).show()
+                                    Toast.makeText(this@MainActivity, response.body()!!.toString(), Toast.LENGTH_LONG).show()
                                 }
                                 else{
                                     Toast.makeText(this@MainActivity, "Error", Toast.LENGTH_LONG).show()
@@ -215,7 +215,12 @@ On veut accomplir 2 éléments principaux :
                 ### Trace
                 | ligne exécutée           | effet                                                      | pile d'appels |
                 |--------------------------|------------------------------------------------------------|---------------|
-                ## TODO
+                |```super.onCreate(savedInstanceState)```   |appelle la fonction onCreate de la classe parente  |onCreate|
+                |```setContentView(R.layout.activity_main)```   |affiche le layout activity_main.xml    |onCreate|
+                |```retrofit.service.plus100(42).enqueue(object : retrofit2.Callback<Int> {```  |lance la requête http://10.0.2.2:8080/plus100/42 en asynchrone|onCreate|
+                |```return nombre + 100;```|retourne 142|plus100|
+                |```if (response.isSuccessful) {```|on vérifie si la réponse *response* reçue du serveur est un succès|onResponse|
+                |```Toast.makeText(this@MainActivity, response.body()!!.toString(), Toast.LENGTH_LONG).show()```|on affiche "142" dans un Toast|onResponse|
 
             </Column>
         </Row>
