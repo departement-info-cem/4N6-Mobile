@@ -12,6 +12,8 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
+Consultez la recette [Messages d'erreur](https://info.cegepmontpetit.ca/4N6-Mobile/recettes/messages-erreur).
+
 Vous pouvez lire la doc d'Android sur les différents moyens d'afficher des erreurs dans un formulaire [ici](https://material.io/archive/guidelines/patterns/errors.html#errors-user-input-errors).
 
 Vous pouvez également regarder la doc technique sur les [snackbars](https://material.io/components/snackbars/android#using-snackbars) et les [dialogues](https://material.io/components/dialogs#behavior).
