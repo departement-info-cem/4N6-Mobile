@@ -151,17 +151,61 @@ On veut accomplir 2 éléments principaux :
 
     </TabItem>
 
-    {/* <TabItem value="Requête client-serveur" label="Requête client-serveur">
+    <TabItem value="Requête client-serveur" label="Requête client-serveur">
 
-    ## TODO
+    On veut faire la trace d'exécution lorsqu'un ouvre l'application client, en assumant que le serveur roule.
 
         <Row>
             <Column>
 
-                ### Code
-
+                ### Code client
                 ```kotlin showLineNumbers
-                
+                interface Service {
+                    @GET("plus100/{nombre}")
+                    fun plus100(@Path("nombre") nombre: Int): Call<Int>
+                }
+
+                object retrofit {
+                    val service: Service = retrofit2.Retrofit.Builder()
+                        .addConverterFactory(retrofit2.converter.gson.GsonConverterFactory.create())
+                        .baseUrl("http://10.0.2.2:8080/")
+                        .build()
+                        .create(Service::class.java)
+                }
+
+                class MainActivity : AppCompatActivity() {
+                    override fun onCreate(savedInstanceState: Bundle?) {
+                        super.onCreate(savedInstanceState)
+                        setContentView(R.layout.activity_main)
+                        retrofit.service.plus100(42).enqueue(object : retrofit2.Callback<Int> {
+                            override fun onResponse(call: retrofit2.Call<Int>, response: retrofit2.Response<Int>) {
+
+                                if (response.isSuccessful) {
+                                    Toast.makeText(this@MainActivity, response.body()!!, Toast.LENGTH_LONG).show()
+                                }
+                                else{
+                                    Toast.makeText(this@MainActivity, "Error", Toast.LENGTH_LONG).show()
+                                }
+                            }
+
+                            override fun onFailure(call: retrofit2.Call<Int>, t: Throwable) {
+                                Log.i("Heille", t.message.toString())
+                            }
+                        })
+                    }
+                }
+                ```
+
+                ### Code serveur
+                ```java showLineNumbers
+                @Controller
+                public class Controlleur {
+
+                    @GetMapping("/plus100/{nombre}")
+                    public @ResponseBody Integer plus100(@PathVariable Integer nombre)  {
+                        return nombre + 100;
+                    }
+                }
                 ```
 
             </Column>
@@ -169,14 +213,14 @@ On veut accomplir 2 éléments principaux :
             <Column>
 
                 ### Trace
-
                 | ligne exécutée           | effet                                                      | pile d'appels |
                 |--------------------------|------------------------------------------------------------|---------------|
+                ## TODO
 
             </Column>
         </Row>
 
-    </TabItem> */}
+    </TabItem>
 
 
     <TabItem value="valider-une-trace" label="Valider une trace">
