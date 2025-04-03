@@ -56,7 +56,7 @@ TODO
 
 :::info Séance 4
 
-Maintenant que vous connnaissez bien la structure d'un serveur Sring Boot, vous devez implémenter la suppression de tâche dans le serveur de votre TP3.
+Maintenant que vous connnaissez bien la structure d'un serveur Spring Boot, vous devez implémenter la suppression de tâche dans le serveur de votre TP3.
 
 :::
 
