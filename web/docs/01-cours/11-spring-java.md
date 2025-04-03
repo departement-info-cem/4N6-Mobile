@@ -44,13 +44,11 @@ Nous allons voir également comment envoyer des requêtes au serveur avec le log
 
 :::info Séance 2
 
-Tu devras avancer tes exercices sur les serveurs. Tu devrais avoir programmé au moins un contrôleur.
+Vous devrez avancer vos exercices sur les serveurs. Vous devriez avoir programmé au moins un contrôleur.
 
 :::
 
-:::info Séance 3
-
-Tu complètes tes exercices. Tu devrais commencer ton 
+:::info Séance 3 
 
 TODO
 
@@ -58,7 +56,7 @@ TODO
 
 :::info Séance 4
 
-TODO
+Maintenant que vous connnaissez bien la structure d'un serveur Sring Boot, vous devez implémenter la suppression de tâche dans le serveur de votre TP3.
 
 :::
 
