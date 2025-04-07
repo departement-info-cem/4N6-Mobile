@@ -269,7 +269,7 @@ public class ControllerTask {
 ```
 
 
-Étant donné les premières étapes suivantes, produisez la trace d'exécution décrivant les principales étapes de la communication client-serveur:
+Étant données les premières étapes suivantes, produisez la trace d'exécution décrivant les principales étapes de la communication client-serveur:
 1. Le serveur Spring Boot est lancé localement;
 2. L'utilisateur démarre l'application Android;
 3. L'utilisateur s'inscrit et crée une première tâche.  De retour à l'écran d'accueil, il sélectionne la tâche nouvellement créée pour en consulter les détails.
