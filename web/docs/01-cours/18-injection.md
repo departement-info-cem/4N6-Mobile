@@ -28,6 +28,8 @@ Code avec les correctifs **[ici](https://github.com/departement-info-cem/4N6-Mob
 
 :::info Séance
 
+### Injections
+
 On parlera de la confusion entre données et commandes qui arrive par le biais de langages qui ne sont pas compilés mais interprétés et des langages qui permettent un mode interprété.
 
 Paradoxalement, les injections sont aussi les moins susceptibles d'arriver sur des systèmes récents:
@@ -40,6 +42,17 @@ Les systèmes exposés sont habituellement:
 
 - Systèmes legacy ou patrimoniaux avec un lien très direct avec SQL ou html
 - Systèmes produits par des programmeurs très juniors non sensibilisés
+
+### Encryption / hachage
+
+On discutera de différentes possibilités cryptographiques et de leurs cas d'utilisation.
+
+- SSL et encryption asymétrique
+- Encryption symétrique et champs de données sensibles (NAS, carte de crédit)
+- Fonction de hash et mots de passe
+
+Les solutions de crypto sont en général difficiles à coder et très sensibles aux erreurs. Il s'agit donc ici de les utiliser correctement, en comprenant ce qu'on fait.
+
 
 :::
 
@@ -54,6 +67,24 @@ Les systèmes exposés sont habituellement:
 Essayez d'injecter du javascript dans la base de données du serveur KickMyB et regardez si vous pouvez le déclencher sur le /index.
 
 Entrainez-vous à décrire dans un fichier texte, la FAILLE que vous avez découvert, décrivez étape par étape comment en tirer partie dans une session EXPLOIT et dans CORRECTIF, expliquez comment vous avez combler la faille.
+
+
+### Exercice EncrySym
+Sur votre serveur KickMyB, en utilisant l'url `http://localhost:8080/h2-console` dans un navigateur, 
+vous pouvez ouvrir une console qui permet d'explorer la base de données.
+
+Vous devez trouver le champ encrypté symétrique. Vous devez créer un fichier Symetrique.md dans votre repo, dans lequel vous expliquerez :
+- Quel champ dans quelle classe a été encrypté?
+- Est-ce que c'était nécessaire d'encrypter?
+- Y a-t-il un ou plusieurs champ(s) dans le projet qu'on devrait encrypter?
+
+### Exercice HacherNePasHacher
+En cherchant dans le projet KickMyB, vous devez trouver où se trouve la configuration du "password encoder". 
+Vous devez créer un fichier EncodageMotDePasse.md dans votre repo, où vous expliquerez :
+
+- Où se trouvait la configuration à modifier?
+- Qu'est-ce que ça change dans l'application?
+- Comment en pratique on peut voir la différence, avec quel outil?
 
 ### Omnisus (Optionnel) (Avancé)
 
