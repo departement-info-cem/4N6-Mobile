@@ -66,8 +66,10 @@ Les solutions de crypto sont en général difficiles à coder et très sensibles
 
 Essayez d'injecter du javascript dans la base de données du serveur KickMyB et regardez si vous pouvez le déclencher sur le /index.
 
-Entrainez-vous à décrire dans un fichier texte, la FAILLE que vous avez découvert, décrivez étape par étape comment en tirer partie dans une session EXPLOIT et dans CORRECTIF, expliquez comment vous avez combler la faille.
-
+Dans un fichier texte InjectionJavascript.md, entrainez-vous à :
+- Décrire la FAILLE que vous avez découvert.
+- Dans une session EXPLOIT, décrire étape par étape comment en tirer partie.
+- Et dans un CORRECTIF, expliquer comment vous avez comblé la faille.
 
 ### Exercice EncrySym
 Sur votre serveur KickMyB, en utilisant l'url `http://localhost:8080/h2-console` dans un navigateur, 
