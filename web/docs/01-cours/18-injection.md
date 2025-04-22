@@ -94,6 +94,9 @@ Ouvrez le projet [suivant](https://github.com/departement-info-cem/4N6-Mobile/tr
 
 Votre enseignant va exécuter le serveur sur son poste. Votre mission sera de pirater le serveur qui est sur le poste de votre enseignant pour modifier la note qui vous a été attribuée sur la plateforme de gestion de note Omnisus.
 
-Entrainez-vous à décrire dans un fichier markdown (.md), la FAILLE que vous avez découverte, décrivez étape par étape comment en tirer partie dans une session EXPLOIT et dans CORRECTIF, expliquez comment vous avez comblé la faille.
+Dans un fichier texte Omnisus.md :
+- Décrivez la FAILLE que vous avez découverte.
+- Dans une session EXPLOIT, décrivez étape par étape comment en tirer partie.
+- Et comme CORRECTIF, expliquez comment vous avez comblé la faille.
 
 :::
