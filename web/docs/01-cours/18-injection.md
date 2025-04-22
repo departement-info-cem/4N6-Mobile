@@ -66,7 +66,7 @@ Les solutions de crypto sont en général difficiles à coder et très sensibles
 
 Essayez d'injecter du javascript dans la base de données du serveur KickMyB et regardez si vous pouvez le déclencher sur le /index.
 
-Dans un fichier texte InjectionJavascript.md, entrainez-vous à :
+Dans un fichier texte **InjectionJavascript.md**, entrainez-vous à :
 - Décrire la FAILLE que vous avez découverte.
 - Dans une session EXPLOIT, décrire étape par étape comment en tirer partie.
 - Et comme CORRECTIF, expliquer comment vous avez comblé la faille.
@@ -75,14 +75,14 @@ Dans un fichier texte InjectionJavascript.md, entrainez-vous à :
 Sur votre serveur KickMyB, en utilisant l'url `http://localhost:8080/h2-console` dans un navigateur, 
 vous pouvez ouvrir une console qui permet d'explorer la base de données.
 
-Vous devez trouver le champ encrypté symétrique. Vous devez créer un fichier Symetrique.md dans votre repo, dans lequel vous expliquerez :
+Vous devez trouver le champ encrypté symétrique. Vous devez créer un fichier **Symetrique.md** dans votre repo, dans lequel vous expliquerez :
 - Quel champ dans quelle classe a été encrypté?
 - Est-ce que c'était nécessaire d'encrypter?
 - Y a-t-il un ou plusieurs champ(s) dans le projet qu'on devrait encrypter?
 
 ### Exercice HacherNePasHacher
 En cherchant dans le projet KickMyB, vous devez trouver où se trouve la configuration du "password encoder". 
-Vous devez créer un fichier EncodageMotDePasse.md dans votre repo, où vous expliquerez :
+Vous devez créer un fichier **EncodageMotDePasse.md** dans votre repo, où vous expliquerez :
 
 - Où se trouvait la configuration à modifier?
 - Qu'est-ce que ça change dans l'application?
@@ -94,7 +94,7 @@ Ouvrez le projet [suivant](https://github.com/departement-info-cem/4N6-Mobile/tr
 
 Votre enseignant va exécuter le serveur sur son poste. Votre mission sera de pirater le serveur qui est sur le poste de votre enseignant pour modifier la note qui vous a été attribuée sur la plateforme de gestion de note Omnisus.
 
-Dans un fichier texte Omnisus.md :
+Dans un fichier texte **Omnisus.md** :
 - Décrivez la FAILLE que vous avez découverte.
 - Dans une session EXPLOIT, décrivez étape par étape comment en tirer partie.
 - Et comme CORRECTIF, expliquez comment vous avez comblé la faille.
