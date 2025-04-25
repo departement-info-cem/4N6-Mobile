@@ -2,4 +2,5 @@
 **/.idea
 **/.gradle
 **/.DS_Store
+**/target
 .DS_Store
