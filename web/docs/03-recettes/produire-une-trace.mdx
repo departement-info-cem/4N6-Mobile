@@ -218,7 +218,7 @@ On veut accomplir 2 éléments principaux :
                 |```super.onCreate(savedInstanceState)```   |appelle la fonction onCreate de la classe parente  |onCreate|
                 |```setContentView(R.layout.activity_main)```   |affiche le layout activity_main.xml    |onCreate|
                 |```retrofit.service.plus100(42).enqueue(object : retrofit2.Callback<Int> {```  |appelle la méthode plus100 avec 42 -> nombre et lance en asynchrone la requête POST http://10.0.2.2:8080/plus100/ avec "42" comme corps |onCreate|
-                |```return nombre + 100;```|retourne 142 et renvoie une réponse HTTP avec "142" comme corps et le code 200 Ok|plus100|
+                |```return nombre + 100;```|nombre: 42 <br /> retourne 142 et renvoie une réponse HTTP avec "142" comme corps et le code 200 Ok|plus100|
                 |```if (response.isSuccessful) {```|vérifie si la réponse *response* reçue du serveur est un succès|onResponse|
                 |```Toast.makeText(this@MainActivity, response.body()!!.toString(), Toast.LENGTH_LONG).show()```|affiche "142" dans un Toast|onResponse|
 
