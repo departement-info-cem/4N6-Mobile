@@ -33,22 +33,12 @@ Pas de nouveau contenu. Révisions. Examen imminent!
 
 :::note Examens passés
 
+### Examen final 2025
 
-### Examen final 2023
+### Examen final 2025 formatif
 
-L'examen final de 2023 pour se pratiquer [ici](pathname:///file/final2023).
+[Partie papier](pathname:///file/final2025/H25-final-formatif-1-papier.pdf)
 
-### Examen final 2022
-
-L'examen final de 2022 pour se pratiquer [ici](pathname:///file/final2022).
-
-### Examen final 2021
-
-Cet examen a eu lieu pendant la COVID à distance, il n'y avait pas de contraintes sur les locaux et
-nous accordions 3 heures pour le compléter. 
-
-Le serveur pour le premier exercice est ici [serveur](pathname:///file/final2021/4N6_ExamenFinal_H21.zip).
-
-L'examen final de 2021 pour se pratiquer [ici](pathname:///file/final2021).
+[Partie machine](pathname:///file/final2025/H25-final-formatif-2-pratique.pdf)
 
 :::
