@@ -17,9 +17,8 @@ C'est la première séance, pas de travail avant.
 
 Révisions:
 - La base : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/cours/6.1-intro-android)
-- View Binding : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/view-binding)
-- RecyclerView : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/cours/7.1-recycler)
-- Multilingue : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/cours/13.2-multilingue)
+- Liste : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/liste1)
+- Multilingue : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/multilingue)
 
 :::
 
@@ -52,7 +51,7 @@ Vous complétez quelques exercices de révisions ainsi que les exercices de comp
 
 ## Exercice Trace Simple
 Créez un fichier **trace-simple.md** pour y mettre la réponse à cet exercice.  
-En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
+En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),
 produisez la trace d'exécution du code suivant **sans exécuter le code**.
 ```kotlin showLineNumbers
 fun main() {

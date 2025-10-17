@@ -26,7 +26,7 @@ Regardez la vidéo ci-dessous sur l'ordre des layout pour le tiroir de navigatio
 
 :::info Séance
 
-Nous verrons comment faire une vue scrollable au niveau du layout. On discutera du cas où on a un recyclerView dans notre mise en page principale.
+Nous verrons comment faire une vue scrollable au niveau du layout. On discutera du cas où on a une liste dans notre mise en page principale.
 
 Nous allons regarder ensemble comment mettre en place [une appbar](https://developer.android.com/training/appbar/setting-up). Nous verrons comment faire explicitement (en l'ajoutant dans le layout) et comment faire en choisissant un thème avec appbar.
 
@@ -46,7 +46,7 @@ Nous discuterons de la structure des Layouts dans l'activité.
 
 ## Exercice Trace Portée
 Créez un fichier **trace-portee.md** pour y mettre la réponse à cet exercice.  
-En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
+En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),
 produisez la trace d'exécution du code suivant **sans exécuter le code**.
 ```kotlin showLineNumbers
 fun main() {
@@ -69,3 +69,4 @@ fun double(n: Int): Int {
 ```
 En créant un projet et en exécutant en débogage, validez votre trace.  
 Si vous avez des surprises, demandez des explications à votre prof.
+````

@@ -1,10 +1,10 @@
 ---
-title: Révision - Recycler view
-description: Mise en page, RecyclerView
+title: Révision - Liste
+description: Mise en page, Liste
 hide_table_of_contents: true
 ---
 
-# Révisions : RecyclerView Multilingue et Navigation
+# Révisions : Liste Multilingue et Navigation
 
 <Row>
 
@@ -13,11 +13,10 @@ hide_table_of_contents: true
 :::tip Avant la séance
 
 Revoir le contenu de 3N5 pour 
-- les [recycler view](https://info.cegepmontpetit.ca/3N5-Prog3/cours/7.1-recycler) 
-- les [recettes correspondantes](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/recycler-view-01-string)
-- le [tiroir de navigation](https://info.cegepmontpetit.ca/3N5-Prog3/cours/11.1-tiroir)
-- la [recette correspondante](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/tiroir)
-- la [traduction](https://info.cegepmontpetit.ca/3N5-Prog3/cours/13.2-multilingue)
+- les [listes](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/liste1) 
+- les [recettes correspondantes](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/liste2)
+- le [tiroir de navigation](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/tiroir)
+- la [traduction](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/multilingue)
 - la [recette correspondante](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/multilingue) 
 
 :::
@@ -32,7 +31,7 @@ Vous devez réaliser les exercices ci-dessous.
 
 Si ce n'est pas terminé, vous devez avancer / compléter les mises en page des différentes activités de votre projet.
 
-Vous devez commencer la programmation du recyclerView de votre projet.
+Vous devez commencer la programmation de la liste de votre projet.
 
 :::
 
@@ -44,7 +43,7 @@ Vous devez commencer la programmation du recyclerView de votre projet.
 
 ## Exercice Trace Bouton
 Créez un fichier **trace-bouton.md** pour y mettre la réponse à cet exercice.  
-En suivant les instructions de la recette sur les [traces d'exécution](../recettes/produire-une-trace),
+En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),
 produisez la trace d'exécution du code suivant **sans exécuter le code** si vous cliqueriez 2 ou 3 fois sur le bouton.
 
 ```kotlin showLineNumbers
@@ -82,9 +81,9 @@ Assurez-vous de bien comprendre quelles lignes de code sont exécutées à quel 
 
 Nous vous conseillons de valider que vous êtes capables de refaire quelques exercices de 3N5.
 
-## 👨‍🎓👨‍🎓 Exercice RecyclerViewA
+## 👨‍🎓👨‍🎓 Exercice ListeA
 
-Créez un projet appelé **RecyclerViewA** qui affiche un recyclerView contenant 1000 objets que vous générerez avec une liste.
+Créez un projet appelé **ListeA** qui affiche une liste contenant 1000 objets que vous générerez avec une liste.
 
 Pour créer ces objets, vous devez d'abord créer une classe appelée **Secret** qui contient :
 
