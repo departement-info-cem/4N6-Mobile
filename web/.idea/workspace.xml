@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="435bd854-5536-4988-b7b0-c1d91fd41ab3" name="Changes" comment="" />
+    <list default="true" id="435bd854-5536-4988-b7b0-c1d91fd41ab3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/file/final2025/H25-final-1-papier.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/file/final2025/H25-final-2-pratique.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2021/4N6_ExamenFinal_H21.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2021/img/Projet1_Gestion_Erreurs.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2021/img/Projet2_Attente_Traduction.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2021/img/Projet2_Attente_Traduction_EN.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2021/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2022/URLs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2022/img/en.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2022/img/erreur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2022/img/fr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2022/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2023/URLs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2023/img/en.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2023/img/erreur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2023/img/fr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2023/img/portrait.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/final2023/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/act1-paysage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/act1-tiroir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/act1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/act2-paysage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/act2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/act3-paysage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/act3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/old/act1-tiroir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/old/act1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/old/act2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/img/old/act3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2021/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2022/img/a1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2022/img/a2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2022/img/atiroir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2022/img/b1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2022/img/b2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2022/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2023/Depart.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2023/images/a1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2023/images/a2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2023/images/atiroir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2023/images/b1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2023/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/intra2023/professeur.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,32 +60,33 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2wXayPYAiUC14ZRPypitaM7DXYh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/jorisdeguet/Documents/GitHub/4N6-Mobile/web/static/file/final2021",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jorisdeguet/Documents/GitHub/4N6-Mobile/web/static/file/final2025&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/file/final2025" />
       <recent name="$PROJECT_DIR$/static/file/final2021" />
     </key>
   </component>
