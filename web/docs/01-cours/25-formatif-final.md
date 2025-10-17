@@ -35,6 +35,10 @@ Pas de nouveau contenu. Révisions. Examen imminent!
 
 ### Examen final 2025
 
+[H25 — Partie 1 (papier)](pathname:///file/final2025/H25-final-1-papier.pdf)
+
+[H25 — Partie 2 (pratique)](pathname:///file/final2025/H25-final-2-pratique.pdf)
+
 ### Examen final 2025 formatif
 
 [Partie papier](pathname:///file/final2025/H25-final-formatif-1-papier.pdf)
