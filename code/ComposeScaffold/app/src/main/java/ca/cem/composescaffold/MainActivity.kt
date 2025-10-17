@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -48,9 +49,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import androidx.compose.animation.core.animateDpAsState
-import androidx.compose.foundation.layout.offset
-import androidx.compose.foundation.layout.width
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -70,12 +68,8 @@ class MainActivity : ComponentActivity() {
                 val scope = rememberCoroutineScope()
                 val snackbarHostState = remember { SnackbarHostState() }
 
-                // états pour le menu déroulant et les dialogues
+                // états pour le menu déroulant
                 var menuExpanded by remember { mutableStateOf(false) }
-                var showDeleteDialog by remember { mutableStateOf(false) }
-                var showEditDialog by remember { mutableStateOf(false) }
-                var showOtherDialog by remember { mutableStateOf(false) }
-                var snackbarVisible by remember { mutableStateOf(false) }
 
                 ModalNavigationDrawer(
                     drawerState = drawerState,
@@ -93,41 +87,17 @@ class MainActivity : ComponentActivity() {
                                 menuExpanded = menuExpanded,
                                 setMenuExpanded = { menuExpanded = it },
                                 onMenuClick = { scope.launch { drawerState.open() } },
-                                onShareClick = {
-                                    scope.launch {
-                                        snackbarVisible = true
-                                        val result = snackbarHostState.showSnackbar(
-                                            message = "Action de partage",
-                                            actionLabel = "Annuler"
-                                        )
-                                        snackbarVisible = false
-                                        if (result == SnackbarResult.ActionPerformed) {
-                                            snackbarVisible = true
-                                            snackbarHostState.showSnackbar("Action annulée")
-                                            snackbarVisible = false
-                                        }
-                                    }
-                                },
-                                onDelete = { showDeleteDialog = true },
-                                onEdit = { showEditDialog = true },
-                                onInfo = { showOtherDialog = true }
+                                snackbarHostState = snackbarHostState
                             )
                         },
                         floatingActionButton = {
                             FloatingActionButton(
                                 onClick = {
                                     scope.launch {
-                                        snackbarVisible = true
-                                        val result = snackbarHostState.showSnackbar(
+                                        snackbarHostState.showSnackbar(
                                             message = "FAB cliqué",
                                             actionLabel = "Annuler"
                                         )
-                                        snackbarVisible = false
-                                        if (result == SnackbarResult.ActionPerformed) {
-                                            snackbarVisible = true
-                                            snackbarHostState.showSnackbar("Action annulée")
-                                            snackbarVisible = false
-                                        }
                                     }
                                 }
                             ) {
@@ -138,46 +108,6 @@ class MainActivity : ComponentActivity() {
                     ) { innerPadding ->
                         MaZoneCentrale(modifier = Modifier.padding(innerPadding))
                     }
-                }
-
-                // Dialogues distincts pour chaque option
-                if (showDeleteDialog) {
-                    AlertDialog(
-                        onDismissRequest = { showDeleteDialog = false },
-                        title = { Text("Supprimer") },
-                        text = { Text("Voulez-vous vraiment supprimer cet élément ?") },
-                        confirmButton = {
-                            TextButton(onClick = { showDeleteDialog = false }) { Text("Supprimer") }
-                        },
-                        dismissButton = {
-                            TextButton(onClick = { showDeleteDialog = false }) { Text("Annuler") }
-                        }
-                    )
-                }
-
-                if (showEditDialog) {
-                    AlertDialog(
-                        onDismissRequest = { showEditDialog = false },
-                        title = { Text("Modifier") },
-                        text = { Text("Ouvrir l'éditeur pour cet élément ?") },
-                        confirmButton = {
-                            TextButton(onClick = { showEditDialog = false }) { Text("OK") }
-                        },
-                        dismissButton = {
-                            TextButton(onClick = { showEditDialog = false }) { Text("Annuler") }
-                        }
-                    )
-                }
-
-                if (showOtherDialog) {
-                    AlertDialog(
-                        onDismissRequest = { showOtherDialog = false },
-                        title = { Text("Information") },
-                        text = { Text("Informations supplémentaires sur cet élément.") },
-                        confirmButton = {
-                            TextButton(onClick = { showOtherDialog = false }) { Text("OK") }
-                        }
-                    )
                 }
             }
         }
@@ -252,12 +182,14 @@ fun MaBarreAuTop(
     menuExpanded: Boolean,
     setMenuExpanded: (Boolean) -> Unit,
     onMenuClick: () -> Unit,
-    onShareClick: () -> Unit,
-    onDelete: () -> Unit,
-    onEdit: () -> Unit,
-    onInfo: () -> Unit,
+    snackbarHostState: SnackbarHostState,
     title: String = "Mon titre"
 ) {
+    val scope = rememberCoroutineScope()
+    var showDeleteDialog by remember { mutableStateOf(false) }
+    var showEditDialog by remember { mutableStateOf(false) }
+    var showOtherDialog by remember { mutableStateOf(false) }
+
     TopAppBar(
         title = { Text(title) },
         navigationIcon = {
@@ -266,7 +198,17 @@ fun MaBarreAuTop(
             }
         },
         actions = {
-            IconButton(onClick = onShareClick) {
+            IconButton(onClick = {
+                scope.launch {
+                    val result = snackbarHostState.showSnackbar(
+                        message = "Action de partage",
+                        actionLabel = "Annuler"
+                    )
+                    if (result == SnackbarResult.ActionPerformed) {
+                        snackbarHostState.showSnackbar("Action annulée")
+                    }
+                }
+            }) {
                 Icon(Icons.Filled.Share, contentDescription = "Partager")
             }
 
@@ -280,7 +222,7 @@ fun MaBarreAuTop(
                     leadingIcon = { Icon(Icons.Filled.Delete, contentDescription = "Supprimer") },
                     onClick = {
                         setMenuExpanded(false)
-                        onDelete()
+                        showDeleteDialog = true
                     }
                 )
 
@@ -289,7 +231,7 @@ fun MaBarreAuTop(
                     leadingIcon = { Icon(Icons.Filled.Edit, contentDescription = "Modifier") },
                     onClick = {
                         setMenuExpanded(false)
-                        onEdit()
+                        showEditDialog = true
                     }
                 )
 
@@ -298,12 +240,52 @@ fun MaBarreAuTop(
                     leadingIcon = { Icon(Icons.Filled.Info, contentDescription = "Info") },
                     onClick = {
                         setMenuExpanded(false)
-                        onInfo()
+                        showOtherDialog = true
                     }
                 )
             }
         }
     )
+
+    // Dialogues gérés localement
+    if (showDeleteDialog) {
+        AlertDialog(
+            onDismissRequest = { showDeleteDialog = false },
+            title = { Text("Supprimer") },
+            text = { Text("Voulez-vous vraiment supprimer cet élément ?") },
+            confirmButton = {
+                TextButton(onClick = { showDeleteDialog = false }) { Text("Supprimer") }
+            },
+            dismissButton = {
+                TextButton(onClick = { showDeleteDialog = false }) { Text("Annuler") }
+            }
+        )
+    }
+
+    if (showEditDialog) {
+        AlertDialog(
+            onDismissRequest = { showEditDialog = false },
+            title = { Text("Modifier") },
+            text = { Text("Ouvrir l'éditeur pour cet élément ?") },
+            confirmButton = {
+                TextButton(onClick = { showEditDialog = false }) { Text("OK") }
+            },
+            dismissButton = {
+                TextButton(onClick = { showEditDialog = false }) { Text("Annuler") }
+            }
+        )
+    }
+
+    if (showOtherDialog) {
+        AlertDialog(
+            onDismissRequest = { showOtherDialog = false },
+            title = { Text("Information") },
+            text = { Text("Informations supplémentaires sur cet élément.") },
+            confirmButton = {
+                TextButton(onClick = { showOtherDialog = false }) { Text("OK") }
+            }
+        )
+    }
 }
 
 @Composable
@@ -328,20 +310,4 @@ fun MonTiroirDeNavigation(onAccueil: () -> Unit, onParametres: () -> Unit) {
 @Composable
 fun MaZoneCentrale(modifier: Modifier = Modifier) {
     ScrollableColorList(modifier = modifier)
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ComposeScaffoldTheme {
-        Greeting("Android")
-    }
 }
