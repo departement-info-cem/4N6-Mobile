@@ -14,10 +14,9 @@ hide_table_of_contents: true
 
 Revoir le contenu de 3N5 pour 
 - les [listes](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/liste1) 
-- les [recettes correspondantes](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/liste2)
+- une [liste avec navigation](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/liste2)
 - le [tiroir de navigation](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/tiroir)
 - la [traduction](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/multilingue)
-- la [recette correspondante](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/multilingue) 
 
 :::
 
@@ -48,7 +47,7 @@ produisez la trace d'exécution du code suivant **sans exécuter le code** si vo
 
 ```kotlin showLineNumbers
 class MainActivity : AppCompatActivity() {
-
+    // TODO
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

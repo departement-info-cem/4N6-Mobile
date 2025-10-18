@@ -62,38 +62,38 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*Copilot*, 
 ## Calendrier des séances
 
 
-| Semaine                             | Séquence des cours             | Avancement des TP                |
-|-------------------------------------|-------------------------------|----------------------------------|
-| [1.1 →](cours/revision)             | Plan de cours, révisions      | Projet créé TP1                                |
-| [1.2 →](cours/mise-en-page)         | Mise en page (révisions)      | 10%                  |
-| [2.1 →](cours/recycler-view)        | Navigation / RecyclerView / Multilingue    | 30%                              |
-| [2.2 →](cours/recycler-view)        | Navigation / RecyclerView / Multilingue    | 50%                           |
-| [3.1 →](cours/layout)               | Layouts CL DL APL LL SV       | 75%                              |
-| [3.2 →](cours/integration)          | Intégration                   | 100% remise                      |
-| [4.1 →](cours/http)                 | Accès réseau                  | TP2 : communication serveur      |
-| [4.2 →](cours/http)                 | Accès réseau                  | 10%                              |
-| [5.1 →](cours/formatif-intra)       | Formatif                      | --                               |
-| [5.2 →](cours/examen)               | **Examen Intra** (20%)        | --                               |
-| [6.1 →](cours/spring)               | Serveur Spring Boot           | 40%                              |
-| [6.2 →](cours/cookies)              | Cookies                       | 50%                              |
-| [7.1 →](cours/debogage)             | Débogage                      | 60%                              |
-| [7.2 →](cours/deploiement)          | Déploiement serveur           | 80%                              |
-| [8.1 →](cours/integration)          | Intégration                   | 100% remise                      |
-| [8.2 →](cours/erreur-http)          | Erreurs: HTTP                 | TP3 : serveur erreurs et attente |
-| [9.1 →](cours/erreur-gui)          | Erreurs: GUI                  | 10%                              |
-| [9.2 →](cours/attente-serveur)     | Attente serveur               | 20%                              |
-| [10.1 →](cours/spring-java)           | Spring Boot Java              | 30%                              |
-| [10.2 →](cours/spring-java)          | Spring Boot Java              | 30%                              |
-| [11.1 →](cours/spring-java)          | Spring Boot Java              | 40%                              |
-| [11.2 →](cours/spring-java)          | Spring Boot Java              | 40%                              |
-| [12.1 →](cours/injection)           | Cybersec: injections et crypto | 50%                              |
-| [12.2 →](cours/controle-acces)      | Cybersec: access control      | 60%                              |
-| [13.1 →](cours/orientation-taille)  | Portrait/paysage              | 70%                              |
-| [13.2 →](cours/ctf)                 | Capture the flag              | 80%                              |
-| [14.1 →](cours/causerie-dto-cookie) | Causerie - DTO et Cookies     | 90%                              |
-| [14.2 →](cours/correction-tp3)      | Correction TP3                | 100% remise                      |
-| [15.1 →](cours/formatif-final)      | Formatif final                |                                  |
-| [15.2 →](cours/examen)              | **Examen final** (30%)        |                                  |
+| Semaine                             | Séquence des cours                | Avancement des TP                |
+|-------------------------------------|-----------------------------------|----------------------------------|
+| [1.1 →](cours/revision)             | Plan de cours, révisions          | Projet créé TP1                                |
+| [1.2 →](cours/mise-en-page)         | Mise en page (révisions)          | 10%                  |
+| [2.1 →](cours/listes)               | Navigation / Listes / Multilingue | 30%                              |
+| [2.2 →](cours/listes)               | Navigation / Listes / Multilingue | 50%                           |
+| [3.1 →](cours/layout)               | Layouts CL DL APL LL SV           | 75%                              |
+| [3.2 →](cours/integration)          | Intégration                       | 100% remise                      |
+| [4.1 →](cours/http)                 | Accès réseau                      | TP2 : communication serveur      |
+| [4.2 →](cours/http)                 | Accès réseau                      | 10%                              |
+| [5.1 →](cours/formatif-intra)       | Formatif                          | --                               |
+| [5.2 →](cours/examen)               | **Examen Intra** (20%)            | --                               |
+| [6.1 →](cours/spring)               | Serveur Spring Boot               | 40%                              |
+| [6.2 →](cours/cookies)              | Cookies                           | 50%                              |
+| [7.1 →](cours/debogage)             | Débogage                          | 60%                              |
+| [7.2 →](cours/deploiement)          | Déploiement serveur               | 80%                              |
+| [8.1 →](cours/integration)          | Intégration                       | 100% remise                      |
+| [8.2 →](cours/erreur-http)          | Erreurs: HTTP                     | TP3 : serveur erreurs et attente |
+| [9.1 →](cours/erreur-gui)           | Erreurs: GUI                      | 10%                              |
+| [9.2 →](cours/attente-serveur)      | Attente serveur                   | 20%                              |
+| [10.1 →](cours/spring-java)         | Spring Boot Java                  | 30%                              |
+| [10.2 →](cours/spring-java)         | Spring Boot Java                  | 30%                              |
+| [11.1 →](cours/spring-java)         | Spring Boot Java                  | 40%                              |
+| [11.2 →](cours/spring-java)         | Spring Boot Java                  | 40%                              |
+| [12.1 →](cours/injection)           | Cybersec: injections et crypto    | 50%                              |
+| [12.2 →](cours/controle-acces)      | Cybersec: access control          | 60%                              |
+| [13.1 →](cours/orientation-taille)  | Portrait/paysage                  | 70%                              |
+| [13.2 →](cours/ctf)                 | Capture the flag                  | 80%                              |
+| [14.1 →](cours/causerie-dto-cookie) | Causerie - DTO et Cookies         | 90%                              |
+| [14.2 →](cours/correction-tp3)      | Correction TP3                    | 100% remise                      |
+| [15.1 →](cours/formatif-final)      | Formatif final                    |                                  |
+| [15.2 →](cours/examen)              | **Examen final** (30%)            |                                  |
 
 
 

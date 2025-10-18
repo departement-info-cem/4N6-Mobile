@@ -26,15 +26,11 @@ Regardez la vidéo ci-dessous sur l'ordre des layout pour le tiroir de navigatio
 
 :::info Séance
 
-Nous verrons comment faire une vue scrollable au niveau du layout. On discutera du cas où on a une liste dans notre mise en page principale.
-
-Nous allons regarder ensemble comment mettre en place [une appbar](https://developer.android.com/training/appbar/setting-up). Nous verrons comment faire explicitement (en l'ajoutant dans le layout) et comment faire en choisissant un thème avec appbar.
-
-Nous discuterons de la structure des Layouts dans l'activité.
-
-- DL puis CL puis AppBarLayout puis LinearLayout
-- CL puis DL puis AppBarLayout
-- AppBarLayout puis DL
+Tu regarderas la Demo [ComposeScaffold](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeScaffold) pour voir comment le scaffold fonctionne en Compose:
+- un TopBar avec un titre et des actions
+- un tiroir de navigation qui sort quand on appuie sur le bouton hamburger
+- un contenu
+- etc.
 
 :::
 

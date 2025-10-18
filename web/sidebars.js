@@ -15,13 +15,13 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "2.1 - Nav Recycler i18n ♻️",
-      id: "cours/recycler-view",
+      label: "2.1 - Nav listes i18n ♻️",
+      id: "cours/listes",
     },
     {
       type: "doc",
-      label: "2.2 - Nav Recycler i18n ♻️",
-      id: "cours/recycler-view",
+      label: "2.2 - Nav listes i18n ♻️",
+      id: "cours/listes",
     },
     {
       type: "doc",

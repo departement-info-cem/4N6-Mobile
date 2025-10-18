@@ -17,7 +17,7 @@ C'est la première séance, pas de travail avant.
 
 Révisions:
 - La base : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/cours/6.1-intro-android)
-- Liste : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/liste1)
+- Liste : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/liste1) et [ici](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/liste2)
 - Multilingue : [ici](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/multilingue)
 
 :::
