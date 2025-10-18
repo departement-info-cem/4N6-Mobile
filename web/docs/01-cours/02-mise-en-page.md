@@ -45,49 +45,43 @@ Vous devrez compléter les mises en page des différentes activités de votre pr
 :::note Exercices de la semaine
 
 ## Exercice Dessin
-Étant donné ce code XML, dessinez ce à quoi ressemblerait l'activité en mode portrait :
-```xml showLineNumbers
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".TestActivity">
-    
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Popopo !"/>
-    
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-    
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="200dp"
-            android:layout_weight="1"
-            android:background="#0000FF"
-            android:text="" />
-        
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Plop plop plop" />
-        
-    </LinearLayout>
-    
-</LinearLayout>
+Étant donné ce code, dessinez ce à quoi ressemblerait l'activité en mode portrait sur une feuille de papier.
+```kotlin showLineNumbers
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            TraceS1Theme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    Column(
+                        modifier = Modifier
+                            .padding(innerPadding)
+                            .fillMaxSize()
+                    ) {
+                        Button(
+                            onClick = { },
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Text(text = "Button")
+                        }
+                        Spacer(modifier = Modifier.weight(1f))
+                        Row() {
+                            Box(
+                                modifier = Modifier
+                                    .height(200.dp)
+                                    .weight(1f)
+                                    .background(color = Color.Blue),
+                                content = {}
+                            )
+                            Text(text= "plop plop plop", modifier = Modifier.weight(2f))
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 ```
 
 Une fois votre dessin terminé (et pas avant), créez un projet avec cette activité pour valider votre dessin.
@@ -99,6 +93,8 @@ Créez un projet appelé **MiseEnPageA** contenant une activité. Faites un layo
 La password doit être caché (avec des points), l'interface doit être claire : on sait quoi taper à quel endroit.
 
 ## 👨‍🎓👨‍🎓 Exercice MiseEnPageB
+
+TODO Voir si ce problème est pertinent avec Compose????
 
 Téléchargez et roulez ce [projet](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Proportions).
 Nous voulons générer 2 TextViews côte-à-côte, où celui de gauche occupe 1/4 et celui de droite 3/4 de la largeur de l'écran.
