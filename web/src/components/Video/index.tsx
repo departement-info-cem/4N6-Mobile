@@ -9,7 +9,7 @@ interface Props {
 export default function Video({url} : Props): JSX.Element {
   return (
     <div className={styles.videoContainer}>
-      <ReactPlayer width="100%" height="auto" controls url={url} />
+      <ReactPlayer width="100%" height="auto" controls src={url} />
     </div>
   );
 }
