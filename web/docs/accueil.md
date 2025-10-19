@@ -10,11 +10,13 @@ hide_table_of_contents: true
 
 <Column>
 
-Bienvenue au cours de 4N6 - Applications mobiles! Dans ce cours tu apprendras à créer des applications complètes effectuant des appels réseaux, i18n, compatibles avec plusieurs tailles d'écran.
+Bienvenue au cours de 4N6 - Applications mobiles! 
+
+Cette année, le cours passe à des interfaces en JetPack Compose.
+
+Tu apprendras à effectuer des appels réseaux et communiquer avec un serveur. Nous verrons aussi des enjeux de cybersec.
 
 Le contenu des cours ainsi que les énoncés de TP sont disponibles dans les onglets Cours et Travaux Pratiques.
-
-Tu peux déjà commencer à regarder les vidéos du cours 1 et prendre connaissance des informations.
 
 À chaque cours, exécute Installator. Cela ne fonctionne qu'au collège.
 

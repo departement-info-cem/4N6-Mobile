@@ -96,14 +96,11 @@ La password doit être caché (avec des points), l'interface doit être claire :
 
 TODO Voir si ce problème est pertinent avec Compose????
 
-Téléchargez et roulez ce [projet](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Proportions).
-Nous voulons générer 2 TextViews côte-à-côte, où celui de gauche occupe 1/4 et celui de droite 3/4 de la largeur de l'écran.
+Téléchargez et roulez ce [projet](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeProportions).
 
-En utilisant le débogeur graphique (dans View > Tool Windows > Layout Inspector), inspectez les largeurs de tous les TextViews.
-Lesquels ont les proportions voulues?
-
-Quelles sont les différences entre les 3 méthodes utilisées (les 3 couleurs)?
-Assurez-vous de bien comprendre ce qui se passe, par exemple pourquoi les 2 TextViews ont les bonnes proportions sur certaines lignes et pas sur d'autres.
+- Essayez le rouler le projet.
+- Trouvez des solutions pour tous les textes coupés ou qui ne s'affichent pas correctement.
+- Validez vos solutions avec votre enseignant.
 
 ## 👨‍🎓🤖 Exercice MiseEnPageC
 
