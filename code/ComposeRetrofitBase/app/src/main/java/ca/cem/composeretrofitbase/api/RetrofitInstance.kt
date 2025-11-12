@@ -1,0 +1,16 @@
+package ca.cem.composeretrofitbase.api
+
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
+
+object RetrofitInstance {
+    private const val BASE_URL = "https://api.github.com/"
+
+    private val retrofit = Retrofit.Builder()
+        .baseUrl(BASE_URL)
+        .addConverterFactory(ScalarsConverterFactory.create())
+        .build()
+
+    val api: GitHubApi = retrofit.create(GitHubApi::class.java)
+}
+
