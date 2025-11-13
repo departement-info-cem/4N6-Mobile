@@ -3,8 +3,6 @@ Un mantra, c'est une phrase qu'on répète souvent pour s'améliorer mais surtou
 Tout d'abord, comme tout cours de programmation, regarde les mantras de programmation, 
 ils sont toujours valides.
 
-### "Dans ton activité, un seul setContentView tu auras"
-
 ### "Quand ton layout déconnera, le Layout Inspector tu utiliseras"
 
 ## Retrofit
@@ -31,22 +29,10 @@ y accéder plusieurs fois.
 
 Afin de voir le traffic réseau, on doit ouvrir l'onglet Network Inspector dans la vue App Inspection
 
-## LinearLayout
-
-### "S'il n'y a qu'un seul widget, pas besoin de LinearLayout tu n'auras"
+### "S'il n'y a qu'un seul widget, pas besoin de Column/Row tu n'auras"
 Un LinearLayout sert à partager l'espace dispo, s'il n'y a qu'un seul widget, pas besoin de partager
 
 ### "Sur un widget texte, le weight sur le height, tu n'utiliseras pas"
 
-Si on met un widget Text (TextView, EditText, Button ...) il peut devenir trop petit pour afficher le texte, 
+Si on met un widget Text (Text, Button ...) il peut devenir trop petit pour afficher le texte, 
 par exemple si on le met en paysage. wrap_content est ta solution ici.
-
-### "S'il y a un weight, alors soit width soit height doit être 0dp"
-
-### "Ne fais pas confiance à la vue design quand tu édites un XML"
-Cela rejoint le mantra "Exécute souvent": quand tu modifies un layout, exécutes le code à chaque étape
-pour voir le résultat sur un vrai appareil Android
-
-
-
-
