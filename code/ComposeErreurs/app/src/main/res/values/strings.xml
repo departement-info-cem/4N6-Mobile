@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ComposeErreurs</string>
+
+    <!-- Strings utilisés par l'écran -->
+    <string name="enter_firstname">Entrez votre prénom</string>
+    <string name="instructions">Il faut appuyer sur les boutons en bas pour voir les erreurs s&apos;afficher.</string>
+    <string name="type_your_name">Tape ton nom</string>
+
+    <!-- Erreurs / messages -->
+    <string name="no_network">Pas de réseau</string>
+    <string name="retry">Réessayer</string>
+    <string name="send">Envoyer</string>
+    <string name="error_password">Mot de passe invalide</string>
+    <string name="error_example">Exemple erreur</string>
+    <string name="snack_message">Il y a une erreur — voir ci‑dessous</string>
+    <string name="go_there">Aller là</string>
+    <string name="ok">OK</string>
+</resources>
