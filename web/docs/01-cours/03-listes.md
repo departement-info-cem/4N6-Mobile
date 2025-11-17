@@ -46,15 +46,11 @@ En suivant les instructions de la recette sur les [traces d'exécution](https://
 produisez la trace d'exécution du code suivant **sans exécuter le code** si vous cliqueriez 2 ou 3 fois sur le bouton.
 
 ```kotlin showLineNumbers
-class MainActivity : AppCompatActivity() {
-    // TODO
-    private lateinit var binding: ActivityMainBinding
-
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
+        enableEdgeToEdge()
+        
         Toast.makeText(this, "N", Toast.LENGTH_SHORT).show()
         actionBouton()
         Toast.makeText(this, "L", Toast.LENGTH_SHORT).show()
@@ -63,10 +59,15 @@ class MainActivity : AppCompatActivity() {
     private fun actionBouton() {
         Toast.makeText(this, "O", Toast.LENGTH_SHORT).show()
         
-        binding.bouton.setOnClickListener {
-            Toast.makeText(this, "H", Toast.LENGTH_SHORT).show()
-            Toast.makeText(this, "O", Toast.LENGTH_SHORT).show()
+        setContent {
+            Button(onClick = {
+                Toast.makeText(this, "H", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "O", Toast.LENGTH_SHORT).show()
+            }) {
+                Text("Cliquez-moi")
+            }
         }
+        
         Toast.makeText(this, "Ë", Toast.LENGTH_SHORT).show()
     }
 }
