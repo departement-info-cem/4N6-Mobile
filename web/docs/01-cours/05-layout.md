@@ -1,10 +1,10 @@
 ---
-title: DrawerLayout, CoordinatorLayout, LinearLayout, AppBarLayout
-description: DrawerLayout CoordinatorLayout LinearLayout AppBarLayout
+title: Utilisation standard d'un Scaffold
+description: Utilisation standard d'un Scaffold
 hide_table_of_contents: true
 ---
 
-# Rencontre DrawerLayout, CoordinatorLayout, LinearLayout, AppBarLayout
+# Utilisation standard d'un Scaffold
 
 <Row>
 
@@ -12,11 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-Vous devez vous familiariser avec le [projet Layouts](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Layouts).
-
-Regardez la vidéo ci-dessous sur l'ordre des layout pour le tiroir de navigation
-
-<Video url="https://www.youtube.com/watch?v=bmIs1LAYfCc" />
+Vous devez vous familiariser avec la démo [ComposeScaffold](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeScaffold).
 
 :::
 

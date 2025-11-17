@@ -70,7 +70,7 @@ Ces symboles indiquent si vous avez le droit ou pas d'utiliser l'IA (*Copilot*, 
 | [1.2 →](cours/mise-en-page)         | Mise en page (révisions)          | 10%                  |
 | [2.1 →](cours/listes)               | Navigation / Listes / Multilingue | 30%                              |
 | [2.2 →](cours/listes)               | Navigation / Listes / Multilingue | 50%                           |
-| [3.1 →](cours/layout)               | Layouts CL DL APL LL SV           | 75%                              |
+| [3.1 →](cours/layout)               | Utilisation standard d'un Scaffold | 75%                              |
 | [3.2 →](cours/integration)          | Intégration                       | 100% remise                      |
 | [4.1 →](cours/http)                 | Accès réseau                      | TP2 : communication serveur      |
 | [4.2 →](cours/http)                 | Accès réseau                      | 10%                              |

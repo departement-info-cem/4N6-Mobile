@@ -25,7 +25,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.1 - Layouts",
+      label: "3.1 - Scaffold standard",
       id: "cours/layout",
     },
     {
