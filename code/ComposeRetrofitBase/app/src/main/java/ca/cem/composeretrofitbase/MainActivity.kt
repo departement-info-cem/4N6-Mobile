@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeRetrofitBaseTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    GitHubRepoScreen(modifier = Modifier.padding(innerPadding))
+                    EcranReposGitHub(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -35,9 +35,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun GitHubRepoScreen(modifier: Modifier = Modifier) {
-    var username by remember { mutableStateOf("") }
-    var reposData by remember { mutableStateOf("") }
+fun EcranReposGitHub(modifier: Modifier = Modifier) {
+    var nomUtilisateur by remember { mutableStateOf("") }
+    var donneesRepos by remember { mutableStateOf("") }
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -46,14 +46,14 @@ fun GitHubRepoScreen(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top
     ) {
         Text(
-            text = "GitHub Repos Viewer",
+            text = "Visualiseur de Repos GitHub",
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.padding(bottom = 24.dp)
         )
 
         OutlinedTextField(
-            value = username,
-            onValueChange = { username = it },
+            value = nomUtilisateur,
+            onValueChange = { nomUtilisateur = it },
             label = { Text("Nom d'utilisateur GitHub") },
             modifier = Modifier.fillMaxWidth(),
             singleLine = true,
@@ -63,15 +63,15 @@ fun GitHubRepoScreen(modifier: Modifier = Modifier) {
 
         Button(
             onClick = {
-                RetrofitInstance.api.listReposString(username).enqueue(object : Callback<String> {
+                RetrofitInstance.api.listReposString(nomUtilisateur).enqueue(object : Callback<String> {
                     override fun onResponse(call: Call<String>, response: Response<String>) {
                         if (response.isSuccessful) {
-                            reposData = response.body() ?: "Pas de données"
+                            donneesRepos = response.body() ?: "Pas de données"
                         }
                     }
 
                     override fun onFailure(call: Call<String>, t: Throwable) {
-                        Log.e("GitHubRepoScreen", "Error fetching repos", t)
+                        Log.e("EcranReposGitHub", "Erreur lors de la récupération des repos", t)
                     }
                 })
             },
@@ -80,14 +80,14 @@ fun GitHubRepoScreen(modifier: Modifier = Modifier) {
             Text("Récupérer les repos")
         }
         Spacer(modifier = Modifier.height(24.dp))
-        if (reposData.isNotEmpty()) {
+        if (donneesRepos.isNotEmpty()) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f)
             ) {
                 Text(
-                    text = reposData,
+                    text = donneesRepos,
                     modifier = Modifier
                         .padding(16.dp)
                         .verticalScroll(rememberScrollState())
@@ -99,8 +99,8 @@ fun GitHubRepoScreen(modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GitHubRepoScreenPreview() {
+fun EcranReposGitHubPreview() {
     ComposeRetrofitBaseTheme {
-        GitHubRepoScreen()
+        EcranReposGitHub()
     }
 }

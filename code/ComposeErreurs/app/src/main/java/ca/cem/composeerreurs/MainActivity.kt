@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposeErreursTheme {
-                MainScreen()
+                EcranPrincipal()
             }
         }
     }
@@ -41,47 +41,47 @@ class MainActivity : ComponentActivity() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainScreen() {
-    val snackbarHostState = remember { SnackbarHostState() }
+fun EcranPrincipal() {
+    val etatSnackbar = remember { SnackbarHostState() }
     val scope = rememberCoroutineScope()
-    val context = LocalContext.current
+    val contexte = LocalContext.current
 
-    val scrollState = rememberScrollState()
+    val etatDefilement = rememberScrollState()
 
-    var firstText by remember { mutableStateOf("") }
-    var firstError by remember { mutableStateOf<String?>(null) }
+    var premierTexte by remember { mutableStateOf("") }
+    var premiereErreur by remember { mutableStateOf<String?>(null) }
 
-    var nameText by remember { mutableStateOf("") }
-    var nameError by remember { mutableStateOf<String?>(null) }
+    var texteNom by remember { mutableStateOf("") }
+    var erreurNom by remember { mutableStateOf<String?>(null) }
 
-    var passwordText by remember { mutableStateOf("") }
-    var passwordError by remember { mutableStateOf<String?>(null) }
+    var texteMotDePasse by remember { mutableStateOf("") }
+    var erreurMotDePasse by remember { mutableStateOf<String?>(null) }
 
-    val firstFocusRequester = remember { FocusRequester() }
-    val passwordFocusRequester = remember { FocusRequester() }
+    val demandeFocusPremier = remember { FocusRequester() }
+    val demandeFocusMotDePasse = remember { FocusRequester() }
 
-    var showDialog by remember { mutableStateOf(false) }
+    var afficherDialogue by remember { mutableStateOf(false) }
 
     Scaffold(
         modifier = Modifier
             .fillMaxSize(),
-        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+        snackbarHost = { SnackbarHost(hostState = etatSnackbar) },
         floatingActionButton = {
             FloatingActionButton(onClick = {
                 scope.launch {
-                    val result = snackbarHostState.showSnackbar(
-                        message = context.getString(R.string.no_network),
-                        actionLabel = context.getString(R.string.retry),
+                    val resultat = etatSnackbar.showSnackbar(
+                        message = contexte.getString(R.string.no_network),
+                        actionLabel = contexte.getString(R.string.retry),
                         duration = SnackbarDuration.Long
                     )
-                    if (result == SnackbarResult.ActionPerformed) {
-                        Toast.makeText(context, "Retrying", Toast.LENGTH_SHORT).show()
+                    if (resultat == SnackbarResult.ActionPerformed) {
+                        Toast.makeText(contexte, "Nouvel essai", Toast.LENGTH_SHORT).show()
                     }
                 }
             }) {
                 Icon(
                     imageVector = Icons.Filled.Send,
-                    contentDescription = "send"
+                    contentDescription = "envoyer"
                 )
             }
         }
@@ -89,27 +89,27 @@ fun MainScreen() {
         Column(
             modifier = Modifier
                 .padding(innerPadding)
-                .verticalScroll(scrollState)
+                .verticalScroll(etatDefilement)
                 .fillMaxWidth()
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             OutlinedTextField(
-                value = firstText,
+                value = premierTexte,
                 onValueChange = {
-                    firstText = it
-                    if (firstError != null) firstError = null
+                    premierTexte = it
+                    if (premiereErreur != null) premiereErreur = null
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .focusRequester(firstFocusRequester),
+                    .focusRequester(demandeFocusPremier),
                 label = { Text(text = stringResource(id = R.string.enter_firstname)) },
-                isError = firstError != null,
+                isError = premiereErreur != null,
                 singleLine = true
             )
-            if (firstError != null) {
+            if (premiereErreur != null) {
                 Text(
-                    text = firstError!!,
+                    text = premiereErreur!!,
                     color = MaterialTheme.colorScheme.error,
                     style = MaterialTheme.typography.bodySmall,
                     modifier = Modifier.padding(start = 16.dp)
@@ -124,22 +124,22 @@ fun MainScreen() {
             )
 
             OutlinedTextField(
-                value = passwordText,
+                value = texteMotDePasse,
                 onValueChange = {
-                    passwordText = it
-                    if (passwordError != null) passwordError = null
+                    texteMotDePasse = it
+                    if (erreurMotDePasse != null) erreurMotDePasse = null
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .focusRequester(passwordFocusRequester),
-                label = { Text(text = "Password") },
+                    .focusRequester(demandeFocusMotDePasse),
+                label = { Text(text = "Mot de passe") },
                 visualTransformation = PasswordVisualTransformation(),
-                isError = passwordError != null,
+                isError = erreurMotDePasse != null,
                 singleLine = true
             )
-            if (passwordError != null) {
+            if (erreurMotDePasse != null) {
                 Text(
-                    text = passwordError!!,
+                    text = erreurMotDePasse!!,
                     color = MaterialTheme.colorScheme.error,
                     style = MaterialTheme.typography.bodySmall,
                     modifier = Modifier.padding(start = 16.dp)
@@ -161,19 +161,19 @@ fun MainScreen() {
             }
 
             OutlinedTextField(
-                value = nameText,
+                value = texteNom,
                 onValueChange = {
-                    nameText = it
-                    if (nameError != null) nameError = null
+                    texteNom = it
+                    if (erreurNom != null) erreurNom = null
                 },
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(text = stringResource(id = R.string.type_your_name)) },
-                isError = nameError != null,
+                isError = erreurNom != null,
                 singleLine = true
             )
-            if (nameError != null) {
+            if (erreurNom != null) {
                 Text(
-                    text = nameError!!,
+                    text = erreurNom!!,
                     color = MaterialTheme.colorScheme.error,
                     style = MaterialTheme.typography.bodySmall,
                     modifier = Modifier.padding(start = 16.dp)
@@ -189,36 +189,36 @@ fun MainScreen() {
 
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                 Button(onClick = {
-                    // showMessageSurChamp equivalent: set error on password and focus + scroll
-                    passwordError = context.getString(R.string.error_password)
+                    // Afficher message sur champ: définir erreur sur mot de passe et focus + défilement
+                    erreurMotDePasse = contexte.getString(R.string.error_password)
                     scope.launch {
-                        passwordFocusRequester.requestFocus()
-                        // crude scroll to bottom area where password is likely located
-                        scrollState.animateScrollTo(scrollState.maxValue)
+                        demandeFocusMotDePasse.requestFocus()
+                        // Défilement vers la zone où se trouve le mot de passe
+                        etatDefilement.animateScrollTo(etatDefilement.maxValue)
                     }
                 }) {
                     Text(text = stringResource(id = R.string.send))
                 }
                 Button(onClick = {
-                    // showASnackBar equivalent: set error on first field and show snackbar with action
-                    firstError = context.getString(R.string.error_example)
+                    // Afficher snackbar: définir erreur sur premier champ et afficher snackbar avec action
+                    premiereErreur = contexte.getString(R.string.error_example)
                     scope.launch {
-                        val result = snackbarHostState.showSnackbar(
-                            message = context.getString(R.string.snack_message),
-                            actionLabel = context.getString(R.string.go_there),
+                        val resultat = etatSnackbar.showSnackbar(
+                            message = contexte.getString(R.string.snack_message),
+                            actionLabel = contexte.getString(R.string.go_there),
                             duration = SnackbarDuration.Long
                         )
-                        if (result == SnackbarResult.ActionPerformed) {
-                            firstFocusRequester.requestFocus()
-                            scope.launch { scrollState.animateScrollTo(0) }
+                        if (resultat == SnackbarResult.ActionPerformed) {
+                            demandeFocusPremier.requestFocus()
+                            scope.launch { etatDefilement.animateScrollTo(0) }
                         }
                     }
                 }) {
                     Text(text = "E 2")
                 }
                 Button(onClick = {
-                    // showADialog equivalent
-                    showDialog = true
+                    // Afficher dialogue
+                    afficherDialogue = true
                 }) {
                     Text(text = "E 3")
                 }
@@ -227,19 +227,19 @@ fun MainScreen() {
             Spacer(modifier = Modifier.height(40.dp))
         }
 
-        if (showDialog) {
+        if (afficherDialogue) {
             AlertDialog(
-                onDismissRequest = { showDialog = false },
+                onDismissRequest = { afficherDialogue = false },
                 title = { Text(text = stringResource(id = R.string.no_network)) },
                 confirmButton = {
-                    TextButton(onClick = { showDialog = false }) {
+                    TextButton(onClick = { afficherDialogue = false }) {
                         Text(text = stringResource(id = R.string.ok))
                     }
                 },
                 dismissButton = {
                     TextButton(onClick = {
-                        Toast.makeText(context, "Retrying", Toast.LENGTH_SHORT).show()
-                        showDialog = false
+                        Toast.makeText(contexte, "Nouvel essai", Toast.LENGTH_SHORT).show()
+                        afficherDialogue = false
                     }) {
                         Text(text = stringResource(id = R.string.retry))
                     }
