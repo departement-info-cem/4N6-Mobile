@@ -21,14 +21,14 @@ Dans cette recette, nous allons voir comment :
 - Récupérer une liste d'objets complexes depuis un service web.
 - TODO
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/03-ListeObjets).
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeRetrofitObjets).
 
 <Tabs queryString="recette-activite">
 
 
-    <TabItem value="transfer" label="transfer">
+    <TabItem value="Repo.kt" label="Repo.kt">
 
-        Dans le package transfer, nous allons créer des classes pour facilement accéder aux données.
+        Dans le package api, nous allons créer des classes pour facilement accéder aux données.
 
 
         Si on récupères du JSON, on va avoir les correspondances suivantes:
@@ -38,22 +38,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - si le JSON commence par  une suite de chiffes on va avoir un **Call\<Long\>**
         - etc.
 
-        #### Premier exemple
-
-        Si on ouvre la page
-        [https://api.github.com/users/octocat](https://api.github.com/users/octocat)
-
-        - le JSON commence par `{` donc on va créer une classe Utilisateur
-        - dans l'objet dans le JSON, on voit la clé **"login"**, on ajoute dans la classe Utilisateur un champ login
-        - il faut que le nom soit exactement le même pour que Retrofit / Gson puisse faire la correspondance
-        - il est conseillé d'ajouter un champ à la fois et de tester le fonctionnement
-
-        <GHCode
-            repo="4N6-Mobile"
-            filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/transfer/Utilisateur.kt"
-        />
-
-        #### Exemple 2
+        #### Exemple
         [https://api.github.com/users/octocat/repos](https://api.github.com/users/octocat/repos)
 
         - on voit que le JSON classe avec `[` donc on veut récupérer une liste d'objets.
@@ -63,25 +48,24 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
         <GHCode
             repo="4N6-Mobile"
-            filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/transfer/Repo.kt"
+            filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/api/Repo.kt"
         />
 
     </TabItem>
 
-    <TabItem value="Service.kt" label="Service.kt">
+    <TabItem value="GitHubApi.kt" label="GitHubApi.kt">
 
         Au niveau du service, nous allons modifier les signatures des méthodes:
-        - un accès récupère un objet complexe
         - un accès récupère une liste d'objets complexes
 
         <GHCode
               repo="4N6-Mobile"
-              filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/http/Service.kt"
+              filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/api/GitHubApi.kt"
              />
 
 
     </TabItem>
-    <TabItem value="RetrofitUtil.kt" label="RetrofitUtil.kt">
+    <TabItem value="RetrofitInstance.kt" label="RetrofitInstance.kt">
 
         Nous allons modifier notre Retrofit pour utiliser une librairie:
         - Gson est une librairie codée par Google
@@ -90,32 +74,41 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
         <GHCode
           repo="4N6-Mobile"
-          filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/http/RetrofitUtil.kt"
+          filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/api/RetrofitInstance.kt"
          />
 
 
 
     </TabItem>
     <TabItem value="appels_gui" label="Appel depuis l'interface graphique">
-        Dans l'interface graphique:
+        Dans l'interface graphique avec Compose:
          1. on va toujours avoir un appel à **enqueue**
          2. le Callback est adapté au nouveau type ici **List\<Repo\>**
-         3. ici on envoie la liste au recyclerView pour affichage
+         3. ici on envoie la liste à une variable d'état pour affichage dans une LazyColumn
 
         <GHCode
             repo="4N6-Mobile"
-            filePath="code/Retrofit/03-ListeObjets/app/src/main/java/org/depinfo/retrofit_demo/MainActivity.kt"
-            startLine="30"
-            endLine="39"
+            filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/MainActivity.kt"
+            startLine="64"
+            endLine="76"
+        />
+
+        Pour afficher la liste, on utilise une LazyColumn avec des Cards:
+
+        <GHCode
+            repo="4N6-Mobile"
+            filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/MainActivity.kt"
+            startLine="84"
+            endLine="106"
         />
 
     </TabItem>
     
     <TabItem value="appels_tests" label="Appel dans les tests">
-        On montre ici comment appeler les 2 nouvelles méthodes depuis des tests automatiques
+        On montre ici comment appeler la méthode depuis des tests automatiques
         <GHCode
             repo="4N6-Mobile"
-            filePath="code/Retrofit/03-ListeObjets/app/src/androidTest/java/org/depinfo/retrofit_demo/TestsHTTP.kt"
+            filePath="code/ComposeRetrofitObjets/app/src/androidTest/java/ca/cem/composeretrofitbase/api/GitHubApiInstrumentationTest.kt"
         />
 
     </TabItem>

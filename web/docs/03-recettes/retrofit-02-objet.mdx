@@ -15,10 +15,10 @@ ATTENTION : L'outil principal de débogage pour les appels réseaux est le netwo
 Regarder la recette de base pour les étapes:
 - [AndroidManifest.xml](retrofit-01-base?recette-string=AndroidManifest.xml)
 - [build.gradle](retrofit-01-base?recette-string=build.gradle)
-- [Service.kt](retrofit-01-base?recette-string=Service.kt)
-- [RetrofitUtil.kt](retrofit-01-base?recette-string=RetrofitUtil.kt)
+- [GitHubApi.kt](retrofit-01-base?recette-string=GitHubApi.kt)
+- [RetrofitInstance.kt](retrofit-01-base?recette-string=RetrofitInstance.kt)
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/02-GuiAsync).
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeRetrofitBase).
 
 Nous allons voir comment faire un appel à notre fonction depuis une activité:
 - il va s'agir d'un appel asynchrone, autrement dit on n'attend pas la réponse pour continuer l'exécution
@@ -31,14 +31,13 @@ Nous allons voir comment faire un appel à notre fonction depuis une activité:
 <Tabs queryString="recette-objet">
   <TabItem value="MainActivity.kt" label="MainActivity.kt">
 
-    L'activité suivante utilise le [ViewBinding](https://developer.android.com/topic/libraries/view-binding#kts).
-
-    Si les souvenirs sont loins, revenez à la recette du cours 3N5.
+    L'activité suivante utilise Jetpack Compose pour l'interface graphique.
 
     <GHCode
             repo="4N6-Mobile"
-            filePath="code/Retrofit/02-GuiAsync/app/src/main/java/org/depinfo/retrofit_demo/MainActivity.kt"
-            startLine="11"
+            filePath="code/ComposeRetrofitBase/app/src/main/java/ca/cem/composeretrofitbase/MainActivity.kt"
+            startLine="64"
+            endLine="76"
           />
 
   </TabItem>

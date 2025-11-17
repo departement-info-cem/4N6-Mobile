@@ -16,7 +16,7 @@ ATTENTION : L'outil principal de débogage pour les appels réseaux est le *Netw
 
 Elle est recommandée par la doc standard d'Android pour faire des appels réseaux [source](https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet?hl=fr#0).
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/01-Depart/).
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeRetrofitBase/).
 
 <Tabs queryString="recette-string">
   <TabItem value="AndroidManifest.xml" label="AndroidManifest.xml">
@@ -27,7 +27,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     <GHCode
               repo="4N6-Mobile"
-              filePath="code/Retrofit/01-Depart/app/src/main/AndroidManifest.xml"
+              filePath="code/ComposeRetrofitBase/app/src/main/AndroidManifest.xml"
               startLine="2"
               endLine="7"
              />
@@ -39,7 +39,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     <GHCode
           repo="4N6-Mobile"
-          filePath="code/Retrofit/01-Depart/app/build.gradle"
+          filePath="code/ComposeRetrofitBase/app/build.gradle.kts"
           startLine="43"
           endLine="46"
          />
@@ -53,11 +53,11 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     ```
 
   </TabItem>
-  <TabItem value="Service.kt" label="Service.kt">
-    Le service indique à retrofit quelles actions on souhaite permettre:
+  <TabItem value="GitHubApi.kt" label="GitHubApi.kt">
+    L'interface API indique à retrofit quelles actions on souhaite permettre:
     <GHCode
       repo="4N6-Mobile"
-      filePath="code/Retrofit/01-Depart/app/src/main/java/org/depinfo/retrofit_demo/http/Service.kt"
+      filePath="code/ComposeRetrofitBase/app/src/main/java/ca/cem/composeretrofitbase/api/GitHubApi.kt"
      />
 
      Regardons en détail:
@@ -68,13 +68,13 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 4. Le **Call\<String\>** indique que la réponse sera lue comme un String.
 
   </TabItem>
-  <TabItem value="RetrofitUtil.kt" label="RetrofitUtil.kt">
+  <TabItem value="RetrofitInstance.kt" label="RetrofitInstance.kt">
 
     La prochaine étape est de construire un objet pour envoyer les requêtes concrètes de Retrofit:
 
     <GHCode
           repo="4N6-Mobile"
-          filePath="code/Retrofit/01-Depart/app/src/main/java/org/depinfo/retrofit_demo//http/RetrofitUtil.kt"
+          filePath="code/ComposeRetrofitBase/app/src/main/java/ca/cem/composeretrofitbase/api/RetrofitInstance.kt"
          />
 
 
@@ -82,7 +82,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     Dans l'exemple, on pointe vers l'API de Github.
 
   </TabItem>
-  <TabItem value="TestsHTTP.kt" label="TestsHTTP.kt">
+  <TabItem value="GitHubApiInstrumentationTest.kt" label="GitHubApiInstrumentationTest.kt">
 
     Une fois qu'on a tout ça on peut appeler notre fonction.
 
@@ -90,7 +90,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     <GHCode
       repo="4N6-Mobile"
-      filePath="code/Retrofit/01-Depart/app/src/androidTest/java/org/depinfo/retrofit_demo/TestsHTTP.kt"
+      filePath="code/ComposeRetrofitBase/app/src/androidTest/java/ca/cem/composeretrofitbase/api/GitHubApiInstrumentationTest.kt"
     />
 
   </TabItem>
