@@ -20,6 +20,8 @@ Vous devez pensez à la mise en page des différents écrans de votre applicatio
 - Création d'une nouvelle tâche
 - Consultation du détail d'une tâche
 
+Regardez la démo [ComposeProportions](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeProportions) pour comprendre comment gérer les proportions en Compose.
+
 Pour les révisions, vous pouvez vous référer à la séance du cours 3N5:
 [Mise en page](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/b-mise-en-page)
 :::
@@ -92,30 +94,20 @@ Créez un projet appelé **MiseEnPageA** contenant une activité. Faites un layo
 
 La password doit être caché (avec des points), l'interface doit être claire : on sait quoi taper à quel endroit.
 
-## 👨‍🎓👨‍🎓 Exercice MiseEnPageB
-
-TODO Voir si ce problème est pertinent avec Compose????
-
-Téléchargez et roulez ce [projet](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeProportions).
-
-- Essayez le rouler le projet.
-- Trouvez des solutions pour tous les textes coupés ou qui ne s'affichent pas correctement.
-- Validez vos solutions avec votre enseignant.
-
-## 👨‍🎓🤖 Exercice MiseEnPageC
+## 👨‍🎓🤖 Exercice MiseEnPageB
 
 Créez un projet appelé **MiseEnPageC** contenant 1 seule activité.
 Reproduisez la mise en page suivante en mode paysage : (n'utilisez pas de valeurs absolues, sauf pour du *padding* et des *margins*)
 
 ![Mise en page](_02-mise-en-page/miseenpage1.png)
 
-## 👨‍🎓🤖 Exercice MiseEnPageD
+## 👨‍🎓🤖 Exercice MiseEnPageC
 
 Copiez votre projet **MiseEnPageC** dans un dossier **MiseEnPageD**. Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
 
 ![Mise en page](_02-mise-en-page/miseenpage2.png)
 
-## 👨‍🎓🤖 Exercice MiseEnPageE
+## 👨‍🎓🤖 Exercice MiseEnPageD
 
 Copiez votre projet **MiseEnPageD** dans un dossier **MiseEnPageE**. Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
 
