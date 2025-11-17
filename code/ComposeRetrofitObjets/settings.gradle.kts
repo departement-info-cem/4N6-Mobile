@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ComposeRetrofitBase"
+rootProject.name = "ComposeRetrofitObjets"
 include(":app")
- 

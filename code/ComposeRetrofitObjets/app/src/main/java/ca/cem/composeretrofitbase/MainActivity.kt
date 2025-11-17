@@ -16,7 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import ca.cem.composeretrofitbase.api.Repo
 import ca.cem.composeretrofitbase.api.RetrofitInstance
-import ca.cem.composeretrofitbase.ui.theme.ComposeRetrofitBaseTheme
+import ca.cem.composeretrofitbase.ui.theme.ComposeRetrofitObjetsTheme
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ComposeRetrofitBaseTheme {
+            ComposeRetrofitObjetsTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     EcranReposGitHub(modifier = Modifier.padding(innerPadding))
                 }
@@ -113,7 +113,7 @@ fun EcranReposGitHub(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun EcranReposGitHubPreview() {
-    ComposeRetrofitBaseTheme {
+    ComposeRetrofitObjetsTheme {
         EcranReposGitHub()
     }
 }
