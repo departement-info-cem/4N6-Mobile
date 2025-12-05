@@ -28,12 +28,12 @@ Code avec les correctifs **[ici](https://github.com/departement-info-cem/4N6-Mob
 
 :::info Séance
 
-### Encryption / hachage
+### Chiffrement / hachage
 
 On discutera de différentes possibilités cryptographiques et de leurs cas d'utilisation.
 
-- SSL et encryption asymétrique
-- Encryption symétrique et champs de données sensibles (NAS, carte de crédit)
+- SSL et chiffrement asymétrique
+- Chiffrement symétrique et champs de données sensibles (NAS, carte de crédit)
 - Fonction de hash et mots de passe
 
 Les solutions de crypto sont en général difficiles à coder et très sensibles aux erreurs. Il s'agit donc ici de les utiliser correctement, en comprenant ce qu'on fait.
@@ -46,7 +46,7 @@ Paradoxalement, les injections sont aussi les moins susceptibles d'arriver sur d
 
 - La plupart des frameworks récents contiennent des protections
 - Pour injection SQL, quand on utilise un ORM comme Hibernate, SpringData ou EntityFramework, on est protégés
-- Pour l'injection Javascript, Angular Vue ou encore React vont par défaut désactiver les commandes JS avant de les inclure dans la page.
+- Pour l'injection Javascript, Angular, Vue ou encore React vont par défaut désactiver les commandes JS avant de les inclure dans la page.
 
 Les systèmes exposés sont habituellement:
 
@@ -67,17 +67,17 @@ Essayez d'injecter du javascript dans la base de données du serveur KickMyB et 
 
 Dans un fichier texte **InjectionJavascript.md**, entrainez-vous à :
 - Décrire la FAILLE que vous avez découverte.
-- Dans une session EXPLOIT, décrire étape par étape comment en tirer partie.
+- Dans une session EXPLOIT, décrire étape par étape comment en tirer parti.
 - Et comme CORRECTIF, expliquer comment vous avez comblé la faille.
 
-### Exercice EncrySym
+### Exercice ChiffSym
 Sur votre serveur KickMyB, en utilisant l'url `http://localhost:8080/h2-console` dans un navigateur, 
 vous pouvez ouvrir une console qui permet d'explorer la base de données.
 
-Vous devez trouver le champ encrypté symétrique. Vous devez créer un fichier **Symetrique.md** dans votre repo, dans lequel vous expliquerez :
-- Quel champ dans quelle classe a été encrypté?
-- Est-ce que c'était nécessaire d'encrypter?
-- Y a-t-il un ou plusieurs champ(s) dans le projet qu'on devrait encrypter?
+Vous devez trouver le champ chiffré symétrique. Vous devez créer un fichier **Symetrique.md** dans votre repo, dans lequel vous expliquerez :
+- Quel champ dans quelle classe a été chiffré?
+- Est-ce que c'était nécessaire de chiffrer?
+- Y a-t-il un ou plusieurs champ(s) dans le projet qu'on devrait chiffrer?
 
 ### Exercice HacherNePasHacher
 En cherchant dans le projet KickMyB, vous devez trouver où se trouve la configuration du "password encoder". 
@@ -95,7 +95,7 @@ Votre enseignant va exécuter le serveur sur son poste. Votre mission sera de pi
 
 Dans un fichier texte **Omnisus.md** :
 - Décrivez la FAILLE que vous avez découverte.
-- Dans une session EXPLOIT, décrivez étape par étape comment en tirer partie.
+- Dans une session EXPLOIT, décrivez étape par étape comment en tirer parti.
 - Et comme CORRECTIF, expliquez comment vous avez comblé la faille.
 
 :::

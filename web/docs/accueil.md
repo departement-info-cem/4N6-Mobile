@@ -23,7 +23,7 @@ Le contenu des cours ainsi que les énoncés de TP sont disponibles dans les ong
 
 :::tip Avant chaque séance :
 
-Tu as du travail préparatoire pour découvrir la matière par toi-même. Il s'agira d'une page web à lire, d'une video à suivre et/ou d'exercices à faire. Cela représente environ 2 heures de travail.
+Tu as du travail préparatoire pour découvrir la matière par toi-même. Il s'agira d'une page web à lire, d'une vidéo à suivre et/ou d'exercices à faire. Cela représente environ 2 heures de travail.
 
 :::
 

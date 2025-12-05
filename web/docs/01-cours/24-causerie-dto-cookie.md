@@ -32,7 +32,7 @@ Essayez de répondre aux questions suivantes en utilisant ce que vous avez compr
 
 Nous aurons une discussion pour répondre aux questions ci-contre. Le but est de consolider votre compréhension de ces deux concepts clés de programmation :
 
-- Comment sont gérés les cookies avec Springboot Security?
+- Comment sont gérés les cookies avec Spring Boot Security?
 - Qu'est-ce que cela a comme conséquence avec les sessions d'un usager?
 - En quoi est-ce différent ou pareil à la procédure utilisée en .net?
 
@@ -114,7 +114,7 @@ Votre troisième tâche est de créer un ou des DTO de façon à réduire au max
 
 </Row>
 
-Vous avez eu une idée de génie : coder un compétiteur à Instagram, mais pour les gens *bien groomés* uniquement.
+Vous avez eu une idée de génie : coder un concurrent d'Instagram, mais pour les gens *bien groomés* uniquement.
 
 Voici votre classe de modèle :
 

@@ -22,7 +22,7 @@ Préparation au début de l’examen :
    - <Highlight color="tip">Ok</Highlight> : je suis sûr d’être capable d’y répondre
    - <Highlight color="caution">Bof</Highlight> : je ne suis pas sûr mais en y réfléchissant c’est peut-être possible
    - <Highlight color="danger">Ko</Highlight>: aucune chance que je sois capable de répondre à ça
-2. Déterminer le ratio minutes par point, par exemple pour un examen sur 13 points qui dure 120 minutes, tu devrais passer environ 9 minutes par points. Donc pour une question à 3 points environ 27 minutes.
+2. Déterminer le ratio minutes par point, par exemple pour un examen sur 13 points qui dure 120 minutes, tu devrais passer environ 9 minutes par point. Donc pour une question à 3 points environ 27 minutes.
 3. Décider de l’ordre dans lequel tu vas faire l’examen
 
 :::
@@ -43,7 +43,7 @@ Tu devrais plutôt commencer par ce qui augmente le plus vite ta note.
 2. Répète jusqu’à épuisement des questions <Highlight color="tip">Ok</Highlight>.
 3. S’il reste des questions <Highlight color="tip">Ok</Highlight> non finies, il faut réévaluer si :
    - tu reviens dessus pour gagner des points
-   - tu tentes ta chance avec les <Highlight color="caution">Ok</Highlight>
+   - tu tentes ta chance avec les <Highlight color="caution">Bof</Highlight>
 4. Continuer jusqu’à épuisement du temps de l’examen moins <Highlight color="info">5 minutes</Highlight>.
 5. Utilise les 5 dernières minutes pour réviser rapidement que tout fonctionne, que tu n’as rien cassé par erreur.
 

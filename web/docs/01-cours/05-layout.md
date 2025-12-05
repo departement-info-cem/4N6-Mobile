@@ -22,7 +22,7 @@ Vous devez vous familiariser avec la démo [ComposeScaffold](https://github.com/
 
 :::info Séance
 
-Tu regarderas la Demo [ComposeScaffold](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeScaffold) pour voir comment le scaffold fonctionne en Compose:
+Tu regarderas la Démo [ComposeScaffold](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeScaffold) pour voir comment le Scaffold fonctionne en Compose:
 - un TopBar avec un titre et des actions
 - un tiroir de navigation qui sort quand on appuie sur le bouton hamburger
 - un contenu

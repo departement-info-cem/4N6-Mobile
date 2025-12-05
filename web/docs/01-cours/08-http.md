@@ -39,7 +39,7 @@ Souvent, les classes de modèle ont beaucoup de champs, car la base de données 
 
 On utilise alors des classes de transfert (**DTO**) qui permettent de transférer seulement l'information utile entre le client et le serveur.
 
-On expliquera à quoi servent les différentes classes de transfert dans la **[librairie de DTO ou classes de transfert](https://github.com/departement-info-cem/KickMyB-Library)**. On montrera comment inclure la librairie dans votre projet:
+On expliquera à quoi servent les différentes classes de transfert dans la **[bibliothèque de DTO ou classes de transfert](https://github.com/departement-info-cem/KickMyB-Library)**. On montrera comment inclure la bibliothèque dans votre projet:
 
 - Ajout du repository [Jitpack](https://jitpack.io/) (permet d'accéder à un projet Github sans qu'il soit déployé sur un repo Maven)
 - Ajout de la librairie et format de la dépendance : 'com.github.**compte-github**:**repo-github:hash-du-commit**'
@@ -70,7 +70,7 @@ Par exemple, une activité avec un TextView qui affiche les données retournées
 
 ## 👨‍🎓👨‍🎓 Exercice RetrofitListes
 
-Créez un projet appelé **RetrofitListes**. Le projet doit partir une activité coupée en 2 dans le sens de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplé par les appels suivants :
+Créez un projet appelé **RetrofitListes**. Le projet doit démarrer une activité coupée en 2 dans le sens de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplé par les appels suivants :
 
 - [Webservice 1](https://fourn6-mobile-prof.onrender.com/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
 - [Webservice 2](https://fourn6-mobile-prof.onrender.com/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
@@ -104,7 +104,7 @@ Il n'est pas nécessaire de créer une interface graphique pour cet exercice. Tu
 
 Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service simple en GET sur l'URL [https://api.github.com/users/departement-info-cem/repos](https://api.github.com/users/departement-info-cem/repos).
 
-Chaque élément du recyclerView doit afficher les champs "name" et "description" ainsi qu'un bouton qui mène à l'"html_url" (doit fonctionner).
+Chaque élément du recyclerView doit afficher les champs "name" et "description" ainsi qu'un bouton qui mène à l'URL (champ html_url) (doit fonctionner).
 
 Une fois que ça fonctionne, appuyez sur votre bouton pour accéder à la page du cours 4N6-Mobile, cliquez sur le lien bleu `info.cegepmontpetit.ca/4N6-Mobile/` et naviguez le site pour retrouver cet exercice-ci! ♻️
 

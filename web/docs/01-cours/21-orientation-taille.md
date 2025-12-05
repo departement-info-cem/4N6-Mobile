@@ -1,10 +1,10 @@
 ---
 title: Orientation et Taille
-description: Compatibilité - Portrait paysage, taille ecran et interface scrollable
+description: Compatibilité - Portrait paysage, taille écran et interface scrollable
 hide_table_of_contents: true
 ---
 
-# Compatibilite, taille et orientation
+# Compatibilité, taille et orientation
 
 <Row>
 

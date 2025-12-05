@@ -38,7 +38,7 @@ On parlera de la possibilité d'ajouter un logo ou des images pour distinguer so
 
 ## 👨‍🎓👨‍🎓 Exercice Multilingue
 
-Vous devez faire une application avec un titre (dans le ActionBar) et un TextView dans l'activité.
+Vous devez faire une application avec un titre (dans l'ActionBar) et un TextView dans l'activité.
 
 - En anglais, le titre est "SupaDupa app" et le TextView est "expensive"
 - En français, le titre est "App en français" et le TextView est "cher"

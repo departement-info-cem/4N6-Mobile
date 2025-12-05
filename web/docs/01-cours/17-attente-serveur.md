@@ -1,6 +1,6 @@
 ---
 title: Attente serveur
-description: Gestion de l'attente serveur - dialogues d'attentes
+description: Gestion de l'attente serveur - dialogues d'attente
 hide_table_of_contents: true
 ---
 
@@ -48,4 +48,4 @@ Faites la programmation nécessaire pour que quand on appuie sur le bouton, le t
 
 Créez un projet appelé **AttenteB**.
 
-Implantez un "tirer pour rafraichir" et modifier le contenu de la liste à chaque fois avec un ensemble de 100 nombres entiers tirés au hasard entre 333 et 444.
+Implantez un "tirer pour rafraîchir" et modifier le contenu de la liste à chaque fois avec un ensemble de 100 nombres entiers tirés au hasard entre 333 et 444.

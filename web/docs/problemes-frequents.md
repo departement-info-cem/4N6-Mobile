@@ -97,7 +97,7 @@ Aller dans le Manifest, ajouter `android:exported="true"` pour votre Activity d'
 
 ## Les archetypes maven ne s'affichent pas lors de la création du projet
 
-Essaie `File > Invalide caches > Invalide and Restart`
+Essaie `File > Invalidate caches > Invalidate and Restart`
 
 ## Les tests ne sont pas déboguables (affiche "terminated unexpectedly")
 
@@ -111,7 +111,7 @@ Forcez un gradle sync. [ici pour les différentes versions](https://stackoverflo
 
 Essaie `Build > Clean Project`.
 
-Essaie `File > Invalidate Cache / Restart puis `Invalidate Cache / Restart.
+Essaie `File > Invalidate Cache / Restart` puis `Invalidate Cache / Restart`.
 
 Dans le dossier du projet, entre dans le dossier app, ensuite supprime le dossier `build`. Cela supprime tous les fichiers compilés et force à recompiler l'ensemble de l'application.
 
@@ -123,7 +123,7 @@ Essaie `File > Invalidate Cache / Restart` puis `Invalidate Cache / Restart`.
 
 ## AndroidX
 
-Si on utilise une librairie androidX, il faut toutes les migrer. Je ne peux plus utiliser les support v7 et v4, voir [ici](https://developer.android.com/jetpack/androidx/migrate)
+Si on utilise une bibliothèque androidX, il faut toutes les migrer. Je ne peux plus utiliser les support v7 et v4, voir [ici](https://developer.android.com/jetpack/androidx/migrate)
 
 On doit mettre le *compileSdkVersion* à 28 dans le build.gradle (celui du dossier app)
 
@@ -144,7 +144,7 @@ Redémarrer la machine de développement
 ## Ça marche en run, ça ne marche pas en debug
 
 1. Aller dans `File > Settings`
-2. Tape instant run dans le champs de recherche
+2. Tape instant run dans le champ de recherche
 3. Décocher Enable Instant Run to hot swap ...
 
 ## *Cannot sync project with gradle files*
@@ -179,7 +179,7 @@ Exemple : Module 'app': platform 'android-28' not found. Gradle sync failed: jav
 1. Clic droit sur le dossier `java`
 2. Mark Directory As -> Source Root.
 
-## Je n'arrive pas à faire fonctionner la librairie MPChart
+## Je n'arrive pas à faire fonctionner la bibliothèque MPChart
 
 Assurez-vous d'avoir ajouté les deux lignes de code suivantes :
 

@@ -4,7 +4,7 @@ description: Cookies, fonctionnement dans un navigateur, dans Postman, dans okht
 hide_table_of_contents: true
 ---
 
-# Cookies : navigateur, postman, retrofit
+# Cookies : navigateur, Postman, retrofit
 
 <Row>
 
@@ -16,7 +16,7 @@ Regardez les vidéos suivantes :
 
 <Video url="https://www.youtube.com/watch?v=ok2jGIKiDwo" />
 
-URl de la video mise à jour : https://fourn6-mobile-prof.onrender.com/exos/cookie/echo
+URL de la vidéo mise à jour : https://fourn6-mobile-prof.onrender.com/exos/cookie/echo
 
 <Video url="https://www.youtube.com/watch?v=81456M4v1eI" />
 

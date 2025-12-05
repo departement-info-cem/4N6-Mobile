@@ -53,8 +53,8 @@ Vous devez modifier votre application pour afficher soit le résultat si ça a f
 ### Exercice un errorBody mais pas deux
 
 En ouvrant l'exemple [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofit), vous devez:
-- partir le projet
-- regarder la trace d'exécution dans LogCat
+- démarrer le projet
+- regarder la trace d'exécution dans Logcat
 - on devrait trouver une ligne qui commence par "le corps encore "
 - selon le code cela devrait afficher le corps de la réponse HTTP (`response.errorBody().string()`)
 

@@ -14,13 +14,13 @@ hide_table_of_contents: true
 
 Si on regarde le [top 10](https://owasp.org/www-project-top-ten/) des problèmes de sécurité dans les applis web, on trouve le [contrôle d'accès défaillant](https://owasp.org/Top10/A01_2021-Broken_Access_Control/) en position 1.
 
-C'est aussi la source de failles qu'on observe le plus souvent dans les projet des finissants.
+C'est aussi la source de failles qu'on observe le plus souvent dans les projets des finissants.
 
 La raison principale est que le contrôle d'accès nécessite souvent du travail sans apporter de nouvelles fonctionnalités.
 
 <Video url="https://www.youtube.com/watch?v=xKUarGFeDyo" />
 
-Vous trouverez ici les différentes branches du code du serveur de démo ici:
+Vous trouverez ici les différentes branches du code du serveur de démo :
 
 - Aucun contrôle d'accès [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar)
 - Spring Security et authentification [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic)
