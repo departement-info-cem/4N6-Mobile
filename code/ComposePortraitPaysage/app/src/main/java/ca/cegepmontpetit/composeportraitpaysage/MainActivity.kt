@@ -1,4 +1,4 @@
-package ca.cegepmontpetit.4n6.composeportraitpaysage
+package ca.cegepmontpetit.composeportraitpaysage
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MainScreen()
+                    Navigation()
                 }
             }
         }
@@ -50,24 +50,11 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun MainScreen() {
-    val configuration = LocalConfiguration.current
-    val isLandscape = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
-
-    if (isLandscape) {
-        LandscapeLayout()
-    } else {
-        PortraitLayout()
-    }
-}
-
-@Composable
-fun PortraitLayout() {
+fun Navigation() {
     val navController = rememberNavController()
-
-    NavHost(navController = navController, startDestination = "list") {
-        composable("list") {
-            CourseListScreen(
+    NavHost(navController = navController, startDestination = "main") {
+        composable("main") {
+            MainScreen(
                 onCourseClick = { course ->
                     navController.navigate("detail/${course.no}")
                 }
@@ -81,6 +68,17 @@ fun PortraitLayout() {
             val course = CoursProvider.coursList.find { it.no == courseId }
             CourseDetailScreen(course)
         }
+    }
+}
+
+@Composable
+fun MainScreen(onCourseClick: (Cours) -> Unit) {
+    val configuration = LocalConfiguration.current
+    val isLandscape = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
+    if (isLandscape) {
+        LandscapeLayout()
+    } else {
+        CourseListScreen(onCourseClick = onCourseClick)
     }
 }
 

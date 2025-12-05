@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "ca.cegepmontpetit.4n6.composeportraitpaysage"
+    namespace = "ca.cegepmontpetit.composeportraitpaysage"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "ca.cegepmontpetit.4n6.composeportraitpaysage"
+        applicationId = "ca.cegepmontpetit.composeportraitpaysage"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

@@ -1,4 +1,4 @@
-package ca.cegepmontpetit.4n6.composeportraitpaysage
+package ca.cegepmontpetit.composeportraitpaysage
 
 data class Cours(
     val nom: String,
