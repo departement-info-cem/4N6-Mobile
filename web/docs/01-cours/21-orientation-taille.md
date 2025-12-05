@@ -27,6 +27,8 @@ Vous pouvez essayer une tablette de 10 pouces en portrait/paysage ainsi qu'un pe
 
 :::info Séance
 
+Nous commencerons par un examen papier de 20 minutes (27 minutes si 1/3 temps supplémentaire, 30 si 1/2 temps supplémentaire).
+
 On discutera d'une combinaison de tests qui est minimale : un téléphone, une tablette et des tailles d'écran assez standards.
 
 On discutera des 2 grandes familles de mise en page : scrollable ou pas.
@@ -36,6 +38,10 @@ On discutera des 2 grandes familles de mise en page : scrollable ou pas.
 </Column>
 
 </Row>
+
+## Démo
+
+Vous pouvez consulter le projet de démonstration [ComposePortraitPaysage](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposePortraitPaysage) qui montre comment gérer l'orientation portrait/paysage avec Jetpack Compose.
 
 :::note Exercices
 

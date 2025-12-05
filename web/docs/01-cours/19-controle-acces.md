@@ -35,6 +35,8 @@ Vous trouverez ici les différentes branches du code du serveur de démo ici:
 
 :::info Séance
 
+Nous commencerons par un examen papier de 20 minutes (27 minutes si 1/3 temps supplémentaire, 30 si 1/2 temps supplémentaire).
+
 Nous discuterons des différences entre les différents projets.
 
 Nous verrons également comment rédiger une FAILLE, un EXPLOIT et un CORRECTIF sur l'exemple [aucune sécurité](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar).

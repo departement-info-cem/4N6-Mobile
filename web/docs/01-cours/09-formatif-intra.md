@@ -22,6 +22,8 @@ Pas de nouveau contenu. Révisions. Examen imminent!
 
 :::info En classe
 
+Nous commencerons par un examen papier de 20 minutes (27 minutes si 1/3 temps supplémentaire, 30 si 1/2 temps supplémentaire).
+
 - Formatif
 - Stratégie pour passer un examen [ici](truc-examen)
 

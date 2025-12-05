@@ -22,6 +22,10 @@ Code avec les correctifs **[ici](https://github.com/departement-info-cem/4N6-Mob
 
 :::
 
+</Column>
+
+<Column>
+
 :::info Séance
 
 ### Encryption / hachage
@@ -33,13 +37,6 @@ On discutera de différentes possibilités cryptographiques et de leurs cas d'ut
 - Fonction de hash et mots de passe
 
 Les solutions de crypto sont en général difficiles à coder et très sensibles aux erreurs. Il s'agit donc ici de les utiliser correctement, en comprenant ce qu'on fait.
-:::
-
-</Column>
-
-<Column>
-
-:::info Séance
 
 ### Injections
 
@@ -55,7 +52,7 @@ Les systèmes exposés sont habituellement:
 
 - Systèmes legacy ou patrimoniaux avec un lien très direct avec SQL ou html
 - Systèmes produits par des programmeurs très juniors non sensibilisés
-- 
+
 :::
 
 </Column>

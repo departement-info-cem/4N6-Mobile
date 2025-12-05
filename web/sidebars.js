@@ -5,22 +5,22 @@ const sidebars = {
   docs: [
     {
       type: "doc",
-      label: "1.1 - Révision 🏠",
+      label: "1.1 - Révision",
       id: "cours/revision",
     },
     {
       type: "doc",
-      label: "1.2 - Mise en page 📱",
+      label: "1.2 - Mise en page",
       id: "cours/mise-en-page",
     },
     {
       type: "doc",
-      label: "2.1 - Nav listes i18n ♻️",
+      label: "2.1 - Nav listes i18n",
       id: "cours/listes",
     },
     {
       type: "doc",
-      label: "2.2 - Nav listes i18n ♻️",
+      label: "2.2 - Nav listes i18n",
       id: "cours/listes",
     },
     {
@@ -30,7 +30,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.2 - Orientation et Taille",
+      label: "3.2 - Orientation et Taille 📝",
       id: "cours/orientation-taille",
     },
     {
@@ -41,27 +41,27 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.2 - Réseau 🛜",
+      label: "4.2 - Réseau",
       id: "cours/http",
     },
     {
       type: "doc",
-      label: "5.1 - Réseau 🛜",
+      label: "5.1 - Réseau",
       id: "cours/http",
     },
     {
       type: "doc",
-      label: "5.2 - Réseau 🛜",
+      label: "5.2 - Réseau",
       id: "cours/http",
     },
     {
       type: "doc",
-      label: "6.1 - Formatif (intra)",
+      label: "6.1 - Formatif (intra) 📝",
       id: "cours/formatif-intra",
     },
     {
       type: "doc",
-      label: "6.2 - Examen intra (20%)",
+      label: "6.2 - Examen intra (20%) 💻",
       id: "cours/examen",
       className: "examen",
     },
@@ -72,7 +72,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "7.2 - Cookies 🍪",
+      label: "7.2 - Cookies",
       id: "cours/cookies",
     },
     {
@@ -92,13 +92,13 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "9.2 - Intégration client-server",
+      label: "9.2 - Intégration client-server 📝",
       id: "cours/integration",
       className: "remise-tp2",
     },
     {
       type: "doc",
-      label: "10.1 - Débogage serveur 🪲",
+      label: "10.1 - Débogage serveur",
       id: "cours/debogage",
     },
     {
@@ -113,22 +113,22 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.2 - Attente serveur ⏳",
+      label: "11.2 - Attente serveur",
       id: "cours/attente-serveur",
     },
     {
       type: "doc",
-      label: "12.1 - Sécurité - inj., crypto 🔒",
+      label: "12.1 - Sécurité - inj., crypto",
       id: "cours/injection",
     },
     {
       type: "doc",
-      label: "12.2 - Cybersec - c. d'accès 🔑",
+      label: "12.2 - Cybersec - c. d'accès 📝",
       id: "cours/controle-acces",
     },
     {
       type: "doc",
-      label: "13.1 - CTF 🏴‍☠️",
+      label: "13.1 - CTF",
       id: "cours/ctf",
     },
     {
@@ -149,12 +149,12 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "15.1 - Formatif (final)",
+      label: "15.1 - Formatif (final) 📝",
       id: "cours/formatif-final",
     },
     {
       type: "doc",
-      label: "15.2 - Examen final (30%)",
+      label: "15.2 - Examen final (30%) 💻",
       id: "cours/examen",
       className: "examen",
     },
