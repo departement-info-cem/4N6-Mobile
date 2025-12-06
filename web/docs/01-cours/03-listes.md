@@ -81,7 +81,7 @@ Assurez-vous de bien comprendre quelles lignes de code sont exécutées à quel 
 
 Nous vous conseillons de valider que vous êtes capables de refaire quelques exercices de 3N5.
 
-## 👨‍🎓👨‍🎓 Exercice ListeA
+##  Exercice ListeA
 
 Créez un projet appelé **ListeA** qui affiche une liste contenant 1000 objets que vous générerez.
 

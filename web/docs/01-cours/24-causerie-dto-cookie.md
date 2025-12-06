@@ -44,6 +44,10 @@ Nous aurons une discussion pour répondre aux questions ci-contre. Le but est de
 
 :::note Exercice interactif
 
+##  Exercice formatif
+
+En préparation de l'examen de la prochaine séance, assurez-vous de bien comprendre l'utilité des DTO et le fonctionnement des cookies pour la gestion de session.
+
 En équipe de 3 ou 4, étudiez les mises en situation et formulez une solution potentielle au problème.
 
 ## Krypt'Eau Raideur
@@ -143,5 +147,7 @@ On veut afficher la liste de nos comptes favoris, c'est-à-dire tous ceux que l'
 Écrivez le ou les DTO pour permettre cet affichage.
 
 ![boss](_24-causerie-dto-cookie/Instagroom1.png)
+
+
 
 :::

@@ -46,7 +46,7 @@ Contrairement à ce qui est montré dans la vidéo, pour se connecter à la base
 
 :::note Exercices de la semaine
 
-<!-- ## 👨‍🎓👨‍🎓 Exercice Chic Type
+<!-- ##  Exercice Chic Type
 
 Exercice retiré parce que les nombres trop grands pour être reçus en Int passent quand même et ne génèrent pas d'erreur. Cause inconnue.
 
@@ -73,7 +73,7 @@ Lorsqu'on appuie sur le bouton "Obtenir un nombre aléatoire", l'application And
 
 </Row> -->
 
-## 👨‍🎓👨‍🎓 Exercice Postman
+##  Exercice Postman
 
 En roulant le serveur [KickMyB](https://github.com/departement-info-cem/KickMyB-Server), vous devez préparer un ensemble de requêtes avec Postman pour créer un compte, accéder à la liste des tâches de l'utilisateur, créer une tâche et mettre à jour une tâche.
 

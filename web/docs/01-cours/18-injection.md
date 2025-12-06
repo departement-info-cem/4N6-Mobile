@@ -61,6 +61,10 @@ Les systèmes exposés sont habituellement:
 
 :::note Exercices
 
+##  Exercice formatif
+
+En préparation de l'examen de la prochaine séance, assurez-vous de savoir identifier et corriger les failles d'injection SQL et Javascript.
+
 ### Injection Javascript
 
 Essayez d'injecter du javascript dans la base de données du serveur KickMyB et regardez si vous pouvez le déclencher sur le /index.
@@ -97,5 +101,7 @@ Dans un fichier texte **Omnisus.md** :
 - Décrivez la FAILLE que vous avez découverte.
 - Dans une session EXPLOIT, décrivez étape par étape comment en tirer parti.
 - Et comme CORRECTIF, expliquez comment vous avez comblé la faille.
+
+
 
 :::

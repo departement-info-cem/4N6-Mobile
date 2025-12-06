@@ -88,26 +88,26 @@ class MainActivity : ComponentActivity() {
 
 Une fois votre dessin terminé (et pas avant), créez un projet avec cette activité pour valider votre dessin.
 
-## 👨‍🎓🤖 Exercice MiseEnPageA
+## Exercice MiseEnPageA
 
 Créez un projet appelé **MiseEnPageA** contenant une activité. Faites un layout avec un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
 
 Le mot de passe doit être caché (avec des points), l'interface doit être claire : on sait quoi taper à quel endroit.
 
-## 👨‍🎓🤖 Exercice MiseEnPageB
+## Exercice MiseEnPageB
 
 Créez un projet appelé **MiseEnPageB** contenant 1 seule activité.
 Reproduisez la mise en page suivante en mode paysage : (n'utilisez pas de valeurs absolues, sauf pour du *padding* et des *margins*)
 
 ![Mise en page](_02-mise-en-page/miseenpage1.png)
 
-## 👨‍🎓🤖 Exercice MiseEnPageC
+## Exercice MiseEnPageC
 
 Copiez votre projet **MiseEnPageB** dans un dossier **MiseEnPageC**. Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
 
 ![Mise en page](_02-mise-en-page/miseenpage2.png)
 
-## 👨‍🎓🤖 Exercice MiseEnPageD
+## Exercice MiseEnPageD
 
 Copiez votre projet **MiseEnPageC** dans un dossier **MiseEnPageD**. Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
 

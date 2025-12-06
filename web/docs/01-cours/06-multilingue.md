@@ -36,7 +36,11 @@ On parlera de la possibilité d'ajouter un logo ou des images pour distinguer so
 
 :::note Exercices de la semaine
 
-## 👨‍🎓👨‍🎓 Exercice Multilingue
+## Exercice formatif
+
+En préparation de l'examen de la prochaine séance, assurez-vous de bien comprendre comment gérer les ressources multilingues et les images dans Android.
+
+## Exercice Multilingue
 
 Vous devez faire une application avec un titre (dans l'ActionBar) et un TextView dans l'activité.
 
@@ -46,8 +50,10 @@ Vous devez faire une application avec un titre (dans l'ActionBar) et un TextView
 
 Votre application doit avoir un logo différent de celui par défaut.
 
-## 👨‍🎓👨‍🎓 Exercice Logo
+## Exercice Logo
 
 Vous devez ajouter le logo [suivant](_06-multilingue/logo.jpeg) à votre projet ci-dessus.
+
+
 
 :::

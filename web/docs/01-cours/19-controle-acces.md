@@ -53,6 +53,10 @@ Nous verrons également comment rédiger une FAILLE, un EXPLOIT et un CORRECTIF 
 
 :::note Exercices
 
+##  Exercice formatif
+
+En préparation de l'examen de la prochaine séance, assurez-vous de savoir identifier et corriger les problèmes de contrôle d'accès dans une application Spring Boot.
+
 ### Exercice 1
 
 Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche [Authentification](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic).
@@ -62,3 +66,7 @@ Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche [Authentificati
 Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche [Extraction de l'usager authentifié](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth).
 
 Attention, deux failles existent dans le projet ci-dessus.
+
+
+
+:::
