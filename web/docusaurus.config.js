@@ -14,7 +14,7 @@ const config = {
   url: "https://info.cegepmontpetit.ca/",
   baseUrl: `/${siteConfig.nomUrl}/`,
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  markdown: { hooks: { onBrokenMarkdownLinks: "warn" } },
   favicon: "img/favicon.ico",
 
   organizationName: "departement-info-cem",
