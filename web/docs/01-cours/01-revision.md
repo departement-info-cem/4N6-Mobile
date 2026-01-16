@@ -1,10 +1,10 @@
 ---
 title: Révision
-description: Premier cours, révisions activités, intent, extras
+description: Premier cours, révisions écrans, navigation, i18n
 hide_table_of_contents: true
 ---
 
-# Premier cours, révisions activités
+# Premier cours, révisions écrans
 
 
 <Row>
@@ -28,18 +28,12 @@ Révisions:
 
 :::info Séance
 
-Plan de cours, évaluations et calendrier.
-
-Nous discuterons de l'ensemble de l'application et de comment nous allons procéder.
-
-- Le serveur sera fourni : [repo ici](https://github.com/departement-info-cem/KickMyB-Server)
-- Vous devrez programmer l'application Android pour s'y connecter
-- Vous programmerez l'interface graphique
-- Vous programmerez les appels réseaux pour envoyer / recevoir les infos du serveur
-
-Nous passerons à travers les énoncés des 3 phases du projet et nous expliquerons la phase 1 en détails.
-
-Vous compléterez quelques exercices de révisions ainsi que les exercices de compréhension.
+- **20 min** : examen diagnostic.
+- **10 min** : correction par les pairs.
+- **5 min** : objectifs du cours.
+- **5 min** : présentation du plan de cours: examens papier, examens ordi, TP.
+- **5 min** : présentation du [TP1](../tp/tp1). 
+- reste de la séance : exercices de révision
 
 :::
 
@@ -68,14 +62,14 @@ Si vous avez des surprises, demandez des explications à votre prof.
 
 ## Exercice Tiroir
 
-Créez un projet appelé **Tiroir** contenant 3 activités. Ajoutez un tiroir de navigation permettant d'accéder à chacune des activités depuis chacune des activités.
+Créez un projet appelé **Tiroir** contenant 3 écrans. Ajoutez un tiroir de navigation permettant d'accéder à chacun des écrans depuis chacun des écrans.
 
 ## Exercice Navigation
 
-Créez un projet appelé **Navigation** contenant 2 activités.
+Créez un projet appelé **Navigation** contenant 2 écrans.
 
-- La première activité contient un EditText et un bouton
-- Quand on appuie sur le bouton, le texte du EditText est envoyé dans un extra de l'Intent à la deuxième activité
-- La 2ème activité affiche dans un TextView le texte reçu via l'Intent
+- Le premier écran contient un champ texte et un bouton
+- Quand on appuie sur le bouton, le texte du champ est envoyé vers le 2ème écran
+- Le 2ème écran affiche le texte reçu
 
 :::
