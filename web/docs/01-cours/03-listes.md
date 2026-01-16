@@ -41,34 +41,31 @@ Vous devez commencer la programmation de la liste de votre projet.
 :::note Exercices de la semaine
 
 ## Exercice Trace Bouton
-Créez un fichier **trace-bouton.md** pour y mettre la réponse à cet exercice.  
-En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),
-produisez la trace d'exécution du code suivant **sans exécuter le code** si vous cliquiez 2 ou 3 fois sur le bouton.
+- Créez un fichier **trace-bouton.md** pour y mettre la réponse à cet exercice.  
+- En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),
+- Produisez la trace d'exécution du code suivant **sans exécuter le code** si vous cliquiez 2 fois sur le bouton.
+- Qu'est ce qui serait affiché dans logcat après avoir parti l'application et cliqué le bouton 2 fois?
 
 ```kotlin showLineNumbers
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        
-        Toast.makeText(this, "N", Toast.LENGTH_SHORT).show()
+        println("N")
         actionBouton()
-        Toast.makeText(this, "L", Toast.LENGTH_SHORT).show()
+        println("L")
     }
-
     private fun actionBouton() {
-        Toast.makeText(this, "O", Toast.LENGTH_SHORT).show()
-        
+        println("O")
         setContent {
             Button(onClick = {
-                Toast.makeText(this, "H", Toast.LENGTH_SHORT).show()
-                Toast.makeText(this, "O", Toast.LENGTH_SHORT).show()
+                println("H")
+                println("O")
             }) {
                 Text("Cliquez-moi")
             }
         }
-        
-        Toast.makeText(this, "Ë", Toast.LENGTH_SHORT).show()
+        println("Ë")
     }
 }
 ```
