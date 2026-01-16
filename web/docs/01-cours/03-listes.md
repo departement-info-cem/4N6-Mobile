@@ -28,7 +28,7 @@ Revoir le contenu de 3N5 pour
 
 Vous devez réaliser les exercices ci-dessous.
 
-Si ce n'est pas terminé, vous devez avancer / compléter les mises en page des différentes activités de votre projet.
+Si ce n'est pas terminé, vous devez avancer / compléter les mises en page des différents écrans de votre projet.
 
 Vous devez commencer la programmation de la liste de votre projet.
 

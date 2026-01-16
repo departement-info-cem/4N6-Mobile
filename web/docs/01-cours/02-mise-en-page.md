@@ -36,7 +36,7 @@ On fera une démo pour donner des idées de mise en page.
 
 Vous complétez les exercices de mise en page ainsi que les exercices de compréhension.
 
-Vous devrez compléter les mises en page des différentes activités de votre projet.
+Vous devrez compléter les mises en page des différents écrans de votre projet.
 
 :::
 
@@ -47,7 +47,7 @@ Vous devrez compléter les mises en page des différentes activités de votre pr
 :::note Exercices de la semaine
 
 ## Exercice Dessin
-Étant donné ce code, dessinez ce à quoi ressemblerait l'activité en mode portrait sur une feuille de papier.
+Étant donné ce code, dessinez ce à quoi ressemblerait l'écran en mode portrait sur une feuille de papier.
 ```kotlin showLineNumbers
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -86,17 +86,17 @@ class MainActivity : ComponentActivity() {
 }
 ```
 
-Une fois votre dessin terminé (et pas avant), créez un projet avec cette activité pour valider votre dessin.
+Une fois votre dessin terminé (et pas avant), créez un projet avec cet écran pour valider votre dessin.
 
 ## Exercice MiseEnPageA
 
-Créez un projet appelé **MiseEnPageA** contenant une activité. Faites un layout avec un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
+Créez un projet appelé **MiseEnPageA** contenant un écran. Faites un layout avec un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
 
 Le mot de passe doit être caché (avec des points), l'interface doit être claire : on sait quoi taper à quel endroit.
 
 ## Exercice MiseEnPageB
 
-Créez un projet appelé **MiseEnPageB** contenant 1 seule activité.
+Créez un projet appelé **MiseEnPageB** contenant 1 seul écran.
 Reproduisez la mise en page suivante en mode paysage : (n'utilisez pas de valeurs absolues, sauf pour du *padding* et des *margins*)
 
 ![Mise en page](_02-mise-en-page/miseenpage1.png)

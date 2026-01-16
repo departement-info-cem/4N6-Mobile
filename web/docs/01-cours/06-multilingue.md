@@ -42,7 +42,7 @@ En préparation de l'examen de la prochaine séance, assurez-vous de bien compre
 
 ## Exercice Multilingue
 
-Vous devez faire une application avec un titre (dans l'ActionBar) et un TextView dans l'activité.
+Vous devez faire une application avec un titre (dans le topBar) et un TextView dans l'écran.
 
 - En anglais, le titre est "SupaDupa app" et le TextView est "expensive"
 - En français, le titre est "App en français" et le TextView est "cher"

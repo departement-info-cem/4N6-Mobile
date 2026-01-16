@@ -62,7 +62,7 @@ Créez un projet appelé **RetrofitSimple**. Le web service [ici](https://fourn6
 
 Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
-Par exemple, une activité avec un EditText pour le nombre et un bouton pour déclencher l'appel. Au retour de la valeur (doublée), celle-ci est affichée dans un Toast.
+Par exemple, un écran avec un EditText pour le nombre et un bouton pour déclencher l'appel. Au retour de la valeur (doublée), celle-ci est affichée dans un Toast.
 
 ## Exercice RetrofitComplexe
 
@@ -70,11 +70,11 @@ Créez un projet appelé **RetrofitComplexe**. Le web service [ici](https://four
 
 Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
-Par exemple, une activité avec un TextView qui affiche les données retournées par l'appel.
+Par exemple, un écran avec un TextView qui affiche les données retournées par l'appel.
 
 ##  Exercice RetrofitListes
 
-Créez un projet appelé **RetrofitListes**. Le projet doit démarrer une activité coupée en 2 dans le sens de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplé par les appels suivants :
+Créez un projet appelé **RetrofitListes**. Le projet doit démarrer un écran coupé en 2 dans le sens de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplé par les appels suivants :
 
 - [Webservice 1](https://fourn6-mobile-prof.onrender.com/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
 - [Webservice 2](https://fourn6-mobile-prof.onrender.com/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
@@ -170,7 +170,6 @@ Créez un fichier **dto2.md** dans votre repo pour garder votre réponse avec le
 </Column>
 
 </Row>
-
 
 
 :::
