@@ -6,12 +6,13 @@ Révisions : l'occasion de valider la capacité à produire des exemples simples
 
 Les examens sont produits avec typst qui génère des PDF. Pour les étudiants aveugles, on distribue l'examen en format PDF, ils peuvent répondre dans un fichier texte?
 
+Essayer de les passer en Word ou autre format. Répondre dans le document. Les passer au CSA puis revenir en cours.
+
 # Examens pratiques
 
 Les examens pratiques se font:
 - sur le poste de l'étudiant (laptop)
 - hors groupe pour permettre une assistance un à un
-
 
 # Accès réseau
 Nécessite de déboguer client serveur en les exécutant en parallèle. Aussi nécessite de pouvoir tracer les appels:
