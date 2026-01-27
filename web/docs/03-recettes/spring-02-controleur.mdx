@@ -8,8 +8,7 @@ Le but est d'ajouter un premier contrôleur sur un serveur Spring Boot.
 
 Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/serveur2-controleur-get/).
 
-<Tabs queryString="recette-spring-controler-get">
-  <TabItem value="Spring-Initializr" label="Initialiser le projet">
+## Initialiser le projet
 
     https://start.spring.io
 
@@ -28,8 +27,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     En cliquant sur "Generate", tu vas télécharger un fichier zip qui contient ton projet.
 
-  </TabItem>
-  <TabItem value="ide" label="Créer un contrôleur">
+## Créer un contrôleur
 
     Un fois décompressé, dans ton projet :
     1. Créer une classe Java `MonControleur` dans le dossier `src/main/java/org/nomprenom/testget`.
@@ -41,15 +39,10 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
             endLine="26"
           />
 
-  </TabItem>
-
-  <TabItem value="PremierePage" label="Exécution et points d'arrêt">
+## Exécution et points d'arrêt
 
     Pour voir comment exécuter ton code en débogage :
     1. Place un point d'arrêt sur les premières lignes des fonctions **test** et **bonjour** dans la classe MonControleur.
     2. Pars ton serveur (*TestgetApplication*) en mode débogage avec le bouton de débogage.
     3. Ouvre un navigateur et tape l'adresse http://localhost:8080/bonjour.
     4. Tu devrais voir ton point d'arrêt se déclencher.
-
-  </TabItem>
-</Tabs>
