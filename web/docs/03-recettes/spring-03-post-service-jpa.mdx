@@ -9,8 +9,7 @@ On va montrer comment implanter un CRUD en Spring Boot avec JPA et une couche de
 Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/serveur3-service-bd-test/).
 
 
-<Tabs queryString="recette-spring-controler-get">
-  <TabItem value="Spring-Initializr" label="Initialiser le projet">
+## Spring-Initializr
 
     https://start.spring.io
 
@@ -31,8 +30,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     En cliquant sur "Generate", tu vas télécharger un fichier zip qui contient ton projet.
 
-  </TabItem>
-  <TabItem value="ide" label="Modèle de données">
+## Modèle de données
 
     On va commencer par le modèle de données :
     1. on crée une classe **Truc**
@@ -43,9 +41,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
             filePath="code/serveur3-service-bd-test/src/main/java/ca/cem/Truc.java"
           />
 
-  </TabItem>
-
-    <TabItem value="bd" label="Base de données">
+## Base de données
 
         Spring permet d'utiliser un fichier de propriétés pour fournir la configuration de la base de données :
         - il y a un format de fichier spécifique
@@ -63,9 +59,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - on a le chemin du fichier de la BD
 
 
-      </TabItem>
-
-  <TabItem value="Repository" label="Repository">
+## Repository
 
         Nous allons ensuite avoir un *repository* pour accéder à la base de données. Il s'agit
         d'un objet qui fournit des opérations dans la BD.
@@ -86,9 +80,8 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - le **JpaRepository** est une interface qui fournit toutes les méthodes CRUD de base
         - on peut ajouter des méthodes juste en les [déclarant dans l'interface](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html) (Spring Boot va les implémenter par magie)
         - par exemple, **findByChose** est une méthode qui va chercher un truc par son champ chose
-      </TabItem>
 
-  <TabItem value="Service" label="Classe de service">
+## Classe de service
 
     Dans notre application on souhaite proposer uniquement 2 opérations aux utilisateurs :
     1. ajouter un truc en validant qu'il n'y a pas déjà un truc avec le même chose
@@ -106,9 +99,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     - l'objet dont le service est dépendant est injecté par Spring au lieu d'avoir à faire un **new TrucRepo**
     - on parle d'injection de dépendance
 
-  </TabItem>
-
-  <TabItem value="Controler" label="Contrôleur">
+## Contrôleur
 
       On va maintenant pouvoir appeler notre service depuis notre ***TrucController*** :
       <GHCode
@@ -120,12 +111,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
       - on a pu injecter notre service directement dans le contrôleur
       - on voit qu'on peut exposer la même méthode de service avec plusieurs méthodes HTTP
 
-    </TabItem>
-
-
-
-
-        <TabItem value="Tests" label="Tests">
+## Tests
 
                   On va voir comment écrire des tests pour notre couche de service dans notre code
                   <GHCode
@@ -142,7 +128,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
                   <Row>
                   <Column>
 
-                  ![Description de l'image](/img/application-test.png)
+                  ![chemin de application-test.properties est src test resources application-test.properties](/img/application-test.png)
 
                   </Column>
                   <Column>
@@ -155,6 +141,3 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
                   </Column>
                   </Row>
 
-                </TabItem>
-
-</Tabs>
