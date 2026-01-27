@@ -18,8 +18,7 @@ Elle est recommandée par la doc standard d'Android pour faire des appels résea
 
 Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeRetrofitBase/).
 
-<Tabs queryString="recette-string">
-  <TabItem value="AndroidManifest.xml" label="AndroidManifest.xml">
+## AndroidManifest.xml
 
     Le premier élément est d'accorder à notre application la permission d'utiliser internet.
 
@@ -32,8 +31,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
               endLine="7"
              />
 
-  </TabItem>
-  <TabItem value="build.gradle" label="build.gradle">
+## build.gradle
 
     Il va falloir ajouter les dépendances permettant d'utiliser Retrofit dans le  `build.gradle`.
 
@@ -52,8 +50,8 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     ...
     ```
 
-  </TabItem>
-  <TabItem value="GitHubApi.kt" label="GitHubApi.kt">
+## GitHubApi.kt
+
     L'interface API indique à retrofit quelles actions on souhaite permettre:
     <GHCode
       repo="4N6-Mobile"
@@ -67,8 +65,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 3. Le paramètre **utilisateur** va être inséré dans l'URL.
 4. Le **Call\<String\>** indique que la réponse sera lue comme un String.
 
-  </TabItem>
-  <TabItem value="RetrofitInstance.kt" label="RetrofitInstance.kt">
+## RetrofitInstance.kt
 
     La prochaine étape est de construire un objet pour envoyer les requêtes concrètes de Retrofit:
 
@@ -81,8 +78,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     Ici on va surtout s'assurer d'avoir l'url de départ qui pointe sur le bon serveur.
     Dans l'exemple, on pointe vers l'API de Github.
 
-  </TabItem>
-  <TabItem value="GitHubApiInstrumentationTest.kt" label="GitHubApiInstrumentationTest.kt">
+## GitHubApiInstrumentationTest.kt
 
     Une fois qu'on a tout ça on peut appeler notre fonction.
 
@@ -92,6 +88,3 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
       repo="4N6-Mobile"
       filePath="code/ComposeRetrofitBase/app/src/androidTest/java/ca/cem/composeretrofitbase/api/GitHubApiInstrumentationTest.kt"
     />
-
-  </TabItem>
-</Tabs>

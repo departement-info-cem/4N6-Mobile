@@ -23,10 +23,7 @@ Nous allons donc voir comment enchaîner une inscription/connexion et un appel �
 
 Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeRetrofitPostEtCookies/).
 
-<Tabs queryString="recette-ecran">
-
-
-    <TabItem value="SessionCookieJar.kt" label="SessionCookieJar.kt">
+## SessionCookieJar.kt
 
         On ajoute d'abord un cookie jar (un pot à cookies) pour que le client HTTP puisse stocker les cookies d'un appel à l'autre :
         <GHCode
@@ -34,10 +31,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
             filePath="code/ComposeRetrofitPostEtCookies/app/src/main/java/ca/cem/composeretrofitbase/api/SessionCookieJar.kt"
         />
 
-    </TabItem>
-
-
-    <TabItem value="RetrofitInstance.kt" label="RetrofitInstance.kt">
+## RetrofitInstance.kt
 
         Au niveau de la configuration de Retrofit, on va ajouter la gestion des cookies.
         <GHCode
@@ -50,9 +44,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - on configure le client OkHttp avec le cookie jar
         - on utilise à la fois ScalarsConverterFactory et GsonConverterFactory pour gérer différents types de réponses
 
-    </TabItem>
-
-    <TabItem value="KickMyBApi.kt" label="KickMyBApi.kt">
+## KickMyBApi.kt
 
         Au niveau de l'API, nous allons définir les méthodes:
         - **inscription** qui envoie en POST un objet RequeteInscription
@@ -65,25 +57,21 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
              />
 
 
-    </TabItem>
-    
-    <TabItem value="RequeteInscription.kt" label="RequeteInscription.kt">
+## RequeteInscription.kt
         On aura besoin de cette classe pour envoyer une requête d'inscription :
         <GHCode
           repo="4N6-Mobile"
           filePath="code/ComposeRetrofitPostEtCookies/app/src/main/java/ca/cem/composeretrofitbase/api/RequeteInscription.kt"
          />
-    </TabItem>
 
-    <TabItem value="RequeteConnexion.kt" label="RequeteConnexion.kt">
+## RequeteConnexion.kt
         De même pour la connexion :
         <GHCode
           repo="4N6-Mobile"
           filePath="code/ComposeRetrofitPostEtCookies/app/src/main/java/ca/cem/composeretrofitbase/api/RequeteConnexion.kt"
          />
-    </TabItem>
-    
-    <TabItem value="MainActivity.kt" label="MainActivity.kt">
+
+## MainActivity.kt
 
         Dans l'interface Compose, on va pouvoir tester les trois appels:
 
@@ -100,9 +88,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - Le bouton "Accueil Tâches" fait un GET qui utilise automatiquement le cookie de session
         - Les réponses sont affichées dans des Cards séparées grâce à un composant réutilisable
 
-    </TabItem>
-    
-    <TabItem value="KickMyBApiInstrumentationTest.kt" label="KickMyBApiInstrumentationTest.kt">
+## KickMyBApiInstrumentationTest.kt
 
         **IMPORTANT** il faut envoyer au moins une requête à https://kickmyb-server.onrender.com/ avant de rouler
         le test pour "réveiller" le serveur.
@@ -125,6 +111,3 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
           - On crée d'abord un compte avec inscription
           - On se connecte avec ce compte
           - On peut ensuite accéder à l'accueil grâce au cookie de session obtenu lors de la connexion
-    </TabItem>
-
-</Tabs>

@@ -23,10 +23,7 @@ Dans cette recette, nous allons voir comment :
 
 Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeRetrofitObjets).
 
-<Tabs queryString="recette-ecran">
-
-
-    <TabItem value="Repo.kt" label="Repo.kt">
+## Repo.kt
 
         Dans le package api, nous allons créer des classes pour facilement accéder aux données.
 
@@ -51,9 +48,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
             filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/api/Repo.kt"
         />
 
-    </TabItem>
-
-    <TabItem value="GitHubApi.kt" label="GitHubApi.kt">
+## GitHubApi.kt
 
         Au niveau du service, nous allons modifier les signatures des méthodes:
         - un accès récupère une liste d'objets complexes
@@ -64,8 +59,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
              />
 
 
-    </TabItem>
-    <TabItem value="RetrofitInstance.kt" label="RetrofitInstance.kt">
+## RetrofitInstance.kt
 
         Nous allons modifier notre Retrofit pour utiliser une librairie:
         - Gson est une librairie codée par Google
@@ -79,8 +73,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
 
 
-    </TabItem>
-    <TabItem value="appels_gui" label="Appel depuis l'interface graphique">
+## Appel depuis l'interface graphique
         Dans l'interface graphique avec Compose:
          1. on va toujours avoir un appel à **enqueue**
          2. le Callback est adapté au nouveau type ici **List\<Repo\>**
@@ -102,14 +95,9 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
             endLine="106"
         />
 
-    </TabItem>
-    
-    <TabItem value="appels_tests" label="Appel dans les tests">
+## Appel dans les tests
         On montre ici comment appeler la méthode depuis des tests automatiques
         <GHCode
             repo="4N6-Mobile"
             filePath="code/ComposeRetrofitObjets/app/src/androidTest/java/ca/cem/composeretrofitbase/api/GitHubApiInstrumentationTest.kt"
         />
-
-    </TabItem>
-</Tabs>
