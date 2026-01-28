@@ -16,10 +16,11 @@ Cette année, le cours passe à des interfaces en JetPack Compose.
 
 Tu apprendras à effectuer des appels réseaux et communiquer avec un serveur. Nous verrons aussi des enjeux de cybersec.
 
-Le contenu des cours ainsi que les énoncés de TP sont disponibles dans les onglets Cours et Travaux Pratiques.
+Le contenu des cours ainsi que les énoncés de TP sont disponibles dans les onglets [Cours](cours/revision) et [Travaux Pratiques](tp/tp1).
+
+Nous utiliserons aussi des [recettes](recettes/messages-erreur) pour des tâches spécifiques.
 
 À chaque cours, exécute Installator. Cela ne fonctionne qu'au collège.
-
 
 :::tip Avant chaque séance :
 
