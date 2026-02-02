@@ -4,7 +4,7 @@ description: Formatif
 hide_table_of_contents: true
 ---
 
-# Formatif examen papier 1
+# Formatif examen papier 3
 
 :::info Modalités
 
@@ -17,6 +17,6 @@ hide_table_of_contents: true
 
 ### Examen formatif 2026
 
-[H26 formatif](pathname:///h26-e1-formatif.pdf)
+TODO
 
 :::

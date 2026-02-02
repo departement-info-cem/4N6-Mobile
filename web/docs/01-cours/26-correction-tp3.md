@@ -10,9 +10,11 @@ hide_table_of_contents: true
 
 <Column>
 
-:::tip Correction
+:::tip Correction / formatif
 
 Terminez votre TP3
+
+C'est aussi le moment de regarder le [formatif de l'examen 5](../cours/formatif-examen-papier-5)
 
 :::
 

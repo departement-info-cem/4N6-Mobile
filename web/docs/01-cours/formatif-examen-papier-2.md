@@ -4,9 +4,10 @@ description: Formatif
 hide_table_of_contents: true
 ---
 
-# Formatif examen papier 1
+# Formatif examen papier 2
 
 :::info Modalités
+
 
 - Durée 20 minutes, 26 si 1/3 temps supplémentaire, 30 si 50% temps supplémentaire
 - Droit à une feuille de notes personnelles recto-verso (à remettre avec ta copie)
@@ -17,6 +18,6 @@ hide_table_of_contents: true
 
 ### Examen formatif 2026
 
-[H26 formatif](pathname:///h26-e1-formatif.pdf)
+TODO
 
 :::

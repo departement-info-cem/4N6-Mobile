@@ -60,6 +60,11 @@ const sidebars = {
     },
     {
       type: "doc",
+      label: "Formatif examen 2",
+      id: "cours/formatif-examen-papier-2",
+    },
+    {
+      type: "doc",
       label: "6.1 - Formatif (intra) 📝",
       id: "cours/formatif-intra",
     },
@@ -95,6 +100,11 @@ const sidebars = {
     },
     {
       type: "doc",
+      label: "Formatif examen 3",
+      id: "cours/formatif-examen-papier-3",
+    },
+    {
+      type: "doc",
       label: "9.2 - Intégration client-server 📝",
       id: "cours/integration",
     },
@@ -122,6 +132,11 @@ const sidebars = {
       type: "doc",
       label: "12.1 - Sécurité - inj., crypto",
       id: "cours/injection",
+    },
+    {
+      type: "doc",
+      label: "Formatif examen 4",
+      id: "cours/formatif-examen-papier-4",
     },
     {
       type: "doc",
