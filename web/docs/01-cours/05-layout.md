@@ -36,6 +36,10 @@ Tu regarderas la Démo [ComposeScaffold](https://github.com/departement-info-cem
 
 :::note Exercices de la semaine
 
+## Formatif examen papier 1
+
+[Le formatif](../cours/formatif-examen-papier-1) est disponible pour se préparer.
+
 ## Exercice Trace Portée
 Créez un fichier **trace-portee.md** pour y mettre la réponse à cet exercice.  
 En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),

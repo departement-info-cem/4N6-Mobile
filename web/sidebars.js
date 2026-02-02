@@ -30,6 +30,11 @@ const sidebars = {
     },
     {
       type: "doc",
+      label: "Formatif examen 1",
+      id: "cours/formatif-examen-papier-1",
+    },
+    {
+      type: "doc",
       label: "3.2 - Orientation et Taille 📝",
       id: "cours/orientation-taille",
     },

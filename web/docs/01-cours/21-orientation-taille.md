@@ -31,6 +31,8 @@ Vous pouvez consulter le projet de démonstration [ComposePortraitPaysage](https
 
 Nous commencerons par un examen papier de 20 minutes (27 minutes si 1/3 temps supplémentaire, 30 si 1/2 temps supplémentaire).
 
+Le formatif est [ici](../cours/formatif-examen-papier-1)
+
 On discutera d'une combinaison de tests qui est minimale : un téléphone, une tablette et des tailles d'écran assez standards.
 
 On discutera des 2 grandes familles de mise en page : scrollable ou pas.
