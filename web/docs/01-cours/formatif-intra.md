@@ -8,15 +8,7 @@ hide_table_of_contents: true
 
 <Row>
 
-<Column>
 
-:::tip Avant la séance (2h)
-
-Pas de nouveau contenu. Révisions. Examen imminent!
-
-:::
-
-</Column>
 
 <Column>
 
@@ -33,15 +25,28 @@ Nous commencerons par un examen papier de 20 minutes (27 minutes si 1/3 temps su
 
 </Row>
 
-:::warning Examen formatif (pour se pratiquer)
 
-### Examen intra formatif 2026 (intra 2025)
+
+### Examen intra formatif 2026 
+
+- accès à tous les exercices et TP de l'étudiant
+- accès au repo cloné du cours sur le bureau
+- pas d'accès à internet
+- pas d'accès à l'IA générative, pas de copilot
+
+**[Formatif hiver 2026](pathname:///file/intra2025/H25-intra-2-pratique.pdf)**
+
+Note : ce formatif est en fait l'examen pratique de l'hiver 2025.
 
 ### Examen intra formatif 2025
 
-**[50% Partie papier (1/2)](pathname:///file/intra2025/H25-intra-formatif-1-papier.pdf)**
+Note : en 2025, l'examen était divisé en 1 partie papier et 1 partie machine. Le fichier suivant était la partie machine.
+- accès à tous les exercices et TP de l'étudiant
+- accès au repo cloné du cours sur le bureau
+- pas d'accès à internet
+- pas d'accès à l'IA générative, pas de copilot
 
-**[50% Partie machine (2/2)](pathname:///file/intra2025/H25-intra-formatif-2-pratique.pdf)**
+**[Formatif hiver 2025](pathname:///file/intra2025/H25-intra-formatif-2-pratique.pdf)**
 
-:::
+
 
