@@ -1,6 +1,7 @@
 package ca.cem.composeretrofitbase.api
 
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
@@ -12,8 +13,14 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 object RetrofitInstance {
     private const val BASE_URL = "https://kickmyb-server.onrender.com/"
 
-    // Client HTTP avec gestion des cookies de session
+    // Configuration du logging interceptor pour voir les requêtes/réponses HTTP
+    private val loggingInterceptor = HttpLoggingInterceptor().apply {
+        level = HttpLoggingInterceptor.Level.BODY
+    }
+
+    // Client HTTP avec gestion des cookies de session et logging
     private val okHttpClient = OkHttpClient.Builder()
+        .addInterceptor(loggingInterceptor)
         .cookieJar(SessionCookieJar)
         .build()
 

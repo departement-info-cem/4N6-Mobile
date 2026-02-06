@@ -1,0 +1,199 @@
+---
+hide_table_of_contents: true
+---
+
+# Guide curl pour l'API KickMyB
+
+Ce guide explique comment utiliser `curl` pour tester l'API KickMyB depuis la ligne de commande.
+
+Ce guide est monté avec l'URL `https://kickmyb-server.onrender.com` que tu pourras remplacer par:
+- `http://localhost:8080` quand tu exécutes le serveur en local
+- l'URL de ton instance render quand tu auras complété ton déploiement
+
+## Introduction à curl
+
+`curl` est un outil en ligne de commande pour faire des requêtes HTTP. Il est très utile pour:
+- Tester une API sans écrire de code
+- Déboguer des problèmes de réseau
+- Comprendre comment fonctionnent les requêtes HTTP
+
+### Options curl importantes
+
+- `-X POST` : Spécifie la méthode HTTP (POST, GET, etc.)
+- `-H "Content-Type: application/json"` : Ajoute un en-tête HTTP
+- `-d '{"clé":"valeur"}'` : Envoie des données (body de la requête)
+- `-c cookies.txt` : Sauvegarde les cookies dans un fichier
+- `-b cookies.txt` : Utilise les cookies d'un fichier
+- `-v` : Mode verbose (affiche tous les détails)
+- `-i` : Affiche les en-têtes de réponse
+
+## Prérequis
+
+L'API KickMyB utilise des **cookies de session** pour maintenir la connexion. Il faut donc:
+1. D'abord s'inscrire ou se connecter
+2. Sauvegarder le cookie de session
+3. Utiliser ce cookie pour les requêtes suivantes
+
+## Scénario complet d'utilisation
+
+### 1. Inscription d'un nouvel utilisateur
+
+```bash
+curl -X POST https://kickmyb-server.onrender.com/id/inscription \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nom": "test@example.com",
+    "motDePasse": "123456",
+    "confirmationMotDePasse": "123456"
+  }' \
+  -c cookies.txt
+```
+
+**Explication:**
+- `-X POST` : Requête POST
+- `-H "Content-Type: application/json"` : Indique qu'on envoie du JSON
+- `-d '{...}'` : Les données JSON à envoyer
+- `-c cookies.txt` : **Sauvegarde le cookie de session** dans le fichier `cookies.txt`
+- `-v` : Affiche les détails de la requête/réponse
+
+**Réponse attendue:**
+```json
+{
+  "nomUtilisateur": "test@example.com"
+}
+```
+
+### 2. Connexion (si déjà inscrit)
+
+```bash
+curl -X POST https://kickmyb-server.onrender.com/id/connexion \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nom": "test@example.com",
+    "motDePasse": "123456"
+  }' \
+  -c cookies.txt
+```
+
+**Important:** Utilise toujours `-c cookies.txt` pour sauvegarder le cookie de session!
+
+### 3. Accéder à l'accueil des tâches
+
+Une fois connecté, on peut accéder aux endpoints protégés en utilisant le cookie:
+
+```bash
+curl https://kickmyb-server.onrender.com/tache/accueil \
+  -b cookies.txt
+```
+
+**Explication:**
+- `-b cookies.txt` : **Utilise le cookie** sauvegardé lors de l'inscription/connexion
+- Pas besoin de `-X GET` car GET est la méthode par défaut
+
+**Réponse attendue:**
+```json
+[
+  {
+    "id": 1,
+    "nom": "Ma première tâche",
+    "pourcentageAvancement": 0,
+    "pourcentageTemps": 50,
+    "dateLimite": "2026-03-01T12:00:00"
+  }
+]
+```
+
+### 4. Ajouter une tâche
+
+```bash
+curl -X POST https://kickmyb-server.onrender.com/tache/ajout \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nom": "Finir le TP2",
+    "dateLimite": "2026-03-15T23:59:00"
+  }' \
+  -b cookies.txt
+```
+
+**Important:** 
+- Toujours utiliser `-b cookies.txt` pour les endpoints protégés
+- La date doit être au format `YYYY-MM-DDTHH:MM:SS`
+
+### 5. Voir le détail d'une tâche
+
+```bash
+curl https://kickmyb-server.onrender.com/tache/detail/1 \
+  -b cookies.txt \
+  -v
+```
+
+**Réponse attendue:**
+```json
+{
+  "id": 1,
+  "nom": "Finir le TP2",
+  "dateLimite": "2026-03-15T23:59:00",
+  "changements": [
+    {
+      "valeur": 0,
+      "dateChangement": "2026-02-05T19:00:00"
+    }
+  ],
+  "pourcentageAvancement": 0,
+  "pourcentageTemps": 15.5
+}
+```
+
+### 6. Mettre à jour le progrès d'une tâche
+
+```bash
+curl https://kickmyb-server.onrender.com/tache/progres/1/50 \
+  -b cookies.txt \
+  -v
+```
+
+**Explication:**
+- `/tache/progres/{idTache}/{valeur}`
+- `1` = ID de la tâche
+- `50` = Nouvelle valeur de progression (50%)
+
+### 7. Déconnexion
+
+```bash
+curl -X POST https://kickmyb-server.onrender.com/id/deconnexion \
+  -b cookies.txt \
+  -v
+```
+
+Après la déconnexion, le cookie n'est plus valide.
+
+
+### Sauvegarder la réponse dans un fichier
+
+```bash
+curl https://kickmyb-server.onrender.com/tache/accueil \
+  -b cookies.txt \
+  -o reponse.json
+```
+
+### 403 Unauthorized
+
+Si vous obtenez une erreur 401, cela signifie que:
+- Vous n'êtes pas connecté
+- Le cookie a expiré
+- Vous avez oublié d'utiliser `-b cookies.txt`
+
+**Solution:** Refaire l'inscription ou la connexion avec `-c cookies.txt`
+
+### 400 Bad Request
+
+Si vous obtenez une erreur 400, vérifiez:
+- Le format JSON de vos données
+- Les guillemets (simples vs doubles)
+- Le format de la date
+
+### Le serveur ne répond pas
+
+Le serveur KickMyB est hébergé sur Render avec un plan gratuit. Il se met en veille après 15 minutes d'inactivité.
+
+**Solution:** Ouvrir https://kickmyb-server.onrender.com/index dans un navigateur pour le réveiller (ça peut prendre 30-60 secondes).
