@@ -29,7 +29,9 @@ Nous allons utiliser les recettes suivantes :
 
 On expliquera comment envoyer une requête HTTP aux web services des exercices et réceptionner le résultat. On utilisera **RETROFIT**.
 
-On réitérera l'importance des tests et des points d'arrêt en appels synchrones et asynchrones
+On réitérera l'importance des tests et des points d'arrêt en appels synchrones et asynchrones.
+
+On parlera des cas où on a besoin de récupérer des données une seule fois à l'ouverture de la page ou si on a besoin de faire des mises à jour régulièrement. 
 
 :::
 
@@ -74,10 +76,10 @@ Par exemple, un écran avec un TextView qui affiche les données retournées par
 
 ##  Exercice RetrofitListes
 
-Créez un projet appelé **RetrofitListes**. Le projet doit démarrer un écran coupé en 2 dans le sens de la hauteur. Chaque moitié est occupée par un recyclerView qui sera peuplé par les appels suivants :
+Créez un projet appelé **RetrofitListes**. Le projet doit démarrer un écran coupé en 2 dans le sens de la hauteur. Chaque moitié est occupée par un LazyColumn qui sera peuplé par les appels suivants :
 
-- [Webservice 1](https://fourn6-mobile-prof.onrender.com/exos/long/list) renvoie une liste de Long. Chaque élément dans le recyclerView est un simple champ texte où vous affichez la valeur du nombre.
-- [Webservice 2](https://fourn6-mobile-prof.onrender.com/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du recyclerView doit afficher les 2 champs simples ainsi que la taille de la liste.
+- [Webservice 1](https://fourn6-mobile-prof.onrender.com/exos/long/list) renvoie une liste de Long. Chaque élément dans le LazyColumn est un simple champ texte où vous affichez la valeur du nombre.
+- [Webservice 2](https://fourn6-mobile-prof.onrender.com/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du LazyColumn doit afficher les 2 champs simples ainsi que la taille de la liste.
 
 ##  Exercice RetrofitEnvoiPost
 
@@ -108,7 +110,7 @@ Il n'est pas nécessaire de créer une interface graphique pour cet exercice. Tu
 
 Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service simple en GET sur l'URL [https://api.github.com/users/departement-info-cem/repos](https://api.github.com/users/departement-info-cem/repos).
 
-Chaque élément du recyclerView doit afficher les champs "name" et "description" ainsi qu'un bouton qui mène à l'URL (champ html_url) (doit fonctionner).
+Chaque élément du LazyColumn doit afficher les champs "name" et "description" ainsi qu'un bouton qui mène à l'URL (champ html_url) (doit fonctionner).
 
 Une fois que ça fonctionne, appuyez sur votre bouton pour accéder à la page du cours 4N6-Mobile, cliquez sur le lien bleu `info.cegepmontpetit.ca/4N6-Mobile/` et naviguez le site pour retrouver cet exercice-ci! ♻️
 
