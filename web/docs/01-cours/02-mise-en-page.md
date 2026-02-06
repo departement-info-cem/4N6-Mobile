@@ -4,7 +4,7 @@ description: LinearLayout match_parent wrap_content et weight
 hide_table_of_contents: true
 ---
 
-# Mise en page, LinearLayout
+# Mise en page
 
 <Row>
 
@@ -90,7 +90,7 @@ Une fois votre dessin terminé (et pas avant), créez un projet avec cet écran 
 
 ## Exercice MiseEnPageA
 
-Créez un projet appelé **MiseEnPageA** contenant un écran. Faites un layout avec un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
+Créez un projet appelé **MiseEnPageA** contenant un écran. Faites un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
 
 Le mot de passe doit être caché (avec des points), l'interface doit être claire : on sait quoi taper à quel endroit.
 
