@@ -33,22 +33,16 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
 ## build.gradle
 
-    Il va falloir ajouter les dépendances permettant d'utiliser Retrofit dans le  `build.gradle`.
+    Il va falloir ajouter les dépendances permettant d'utiliser Retrofit dans le  `build.gradle.kts`.
 
     <GHCode
           repo="4N6-Mobile"
           filePath="code/ComposeRetrofitBase/app/build.gradle.kts"
-          startLine="43"
-          endLine="46"
+          startLine="53"
+          endLine="59"
          />
 
-    Si votre fichier de build est en kts (`build.gradle.kts`), vous pouvez ajouter les dépendances de cette manière:
 
-    ```kotlin
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    ...
-    ```
 
 ## GitHubApi.kt
 
@@ -77,6 +71,12 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     Ici on va surtout s'assurer d'avoir l'url de départ qui pointe sur le bon serveur.
     Dans l'exemple, on pointe vers l'API de Github.
+
+    Points importants:
+    - Le **loggingInterceptor** permet de voir toutes les requêtes et réponses HTTP dans le logcat
+    - Le niveau **BODY** affiche les en-têtes ET le contenu complet des requêtes/réponses
+    - On ajoute l'interceptor au client OkHttp avec `.addInterceptor(loggingInterceptor)`
+    - Cet outil est essentiel pour déboguer les problèmes d'API
 
 ## GitHubApiInstrumentationTest.kt
 
