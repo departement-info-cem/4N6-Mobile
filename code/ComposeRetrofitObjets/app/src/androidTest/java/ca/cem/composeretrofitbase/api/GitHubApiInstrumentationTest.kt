@@ -1,5 +1,6 @@
 package ca.cem.composeretrofitbase.api
 
+import android.util.Log
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -9,6 +10,8 @@ import org.junit.Assert.*
 class GitHubApiInstrumentationTest {
     @Test
     fun testListReposContains5a5() {
+        Log.d("TEST", "Entrée dans la fonction testListReposContains5a5")
+        
         // Appel synchrone au service Retrofit existant
         val call = RetrofitInstance.api.listRepos("jorisdeguet")
         val response = call.execute()
@@ -20,6 +23,8 @@ class GitHubApiInstrumentationTest {
 
         // Vérifier que la liste contient un repo nommé "5a5"
         assertTrue("Repo list did not contain '5a5'", repos.any { it.name.contains("5a5") })
+        
+        Log.d("TEST", "Sortie de la fonction testListReposContains5a5")
     }
 }
 

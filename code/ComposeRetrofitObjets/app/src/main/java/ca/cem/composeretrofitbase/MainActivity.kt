@@ -39,6 +39,19 @@ class MainActivity : ComponentActivity() {
 fun EcranReposGitHub(modifier: Modifier = Modifier) {
     var nomUtilisateur by remember { mutableStateOf("") }
     var repos by remember { mutableStateOf<List<Repo>>(emptyList()) }
+    LaunchedEffect(Unit) {
+        RetrofitInstance.api.listRepos("jorisdeguet").enqueue(object : Callback<List<Repo>> {
+            override fun onResponse(call: Call<List<Repo>>, response: Response<List<Repo>>) {
+                if (response.isSuccessful) {
+                    repos = response.body() ?: emptyList()
+                }
+            }
+
+            override fun onFailure(call: Call<List<Repo>>, t: Throwable) {
+                Log.e("EcranReposGitHub", "Erreur lors de la récupération des repos", t)
+            }
+        })
+    }
     Column(
         modifier = modifier
             .fillMaxSize()

@@ -63,17 +63,23 @@ fun EcranReposGitHub(modifier: Modifier = Modifier) {
 
         Button(
             onClick = {
+                Log.d("EcranReposGitHub", "Entrée dans la fonction onClick : utilisateur=$nomUtilisateur")
                 RetrofitInstance.api.listReposString(nomUtilisateur).enqueue(object : Callback<String> {
                     override fun onResponse(call: Call<String>, response: Response<String>) {
+                        Log.d("EcranReposGitHub", "Entrée dans la fonction onResponse : code=${response.code()}")
                         if (response.isSuccessful) {
                             donneesRepos = response.body() ?: "Pas de données"
                         }
+                        Log.d("EcranReposGitHub", "Sortie de la fonction onResponse")
                     }
 
                     override fun onFailure(call: Call<String>, t: Throwable) {
+                        Log.d("EcranReposGitHub", "Entrée dans la fonction onFailure : ${t.message}")
                         Log.e("EcranReposGitHub", "Erreur lors de la récupération des repos", t)
+                        Log.d("EcranReposGitHub", "Sortie de la fonction onFailure")
                     }
                 })
+                Log.d("EcranReposGitHub", "Sortie de la fonction onClick")
             },
             modifier = Modifier.fillMaxWidth(),
         ) {

@@ -80,21 +80,27 @@ fun EcranKickMyB(modifier: Modifier = Modifier) {
         // Bouton Inscription
         Button(
             onClick = {
+                Log.d("EcranKickMyB", "Entrée dans la fonction onClick inscription : utilisateur=$nomUtilisateur")
                 val requete = RequeteInscription(nomUtilisateur, motDePasse)
                 RetrofitInstance.api.inscription(requete).enqueue(object : Callback<String> {
                     override fun onResponse(call: Call<String>, response: Response<String>) {
+                        Log.d("EcranKickMyB", "Entrée dans la fonction onResponse inscription : code=${response.code()}")
                         if (response.isSuccessful) {
                             reponseInscription = response.body() ?: "Pas de données"
                         } else {
                             reponseInscription = "Erreur HTTP: ${response.code()}"
                         }
+                        Log.d("EcranKickMyB", "Sortie de la fonction onResponse inscription")
                     }
 
                     override fun onFailure(call: Call<String>, t: Throwable) {
+                        Log.d("EcranKickMyB", "Entrée dans la fonction onFailure inscription : ${t.message}")
                         Log.e("EcranKickMyB", "Erreur inscription", t)
                         reponseInscription = "Erreur: ${t.message}"
+                        Log.d("EcranKickMyB", "Sortie de la fonction onFailure inscription")
                     }
                 })
+                Log.d("EcranKickMyB", "Sortie de la fonction onClick inscription")
             },
             modifier = Modifier.fillMaxWidth(),
         ) {
@@ -106,21 +112,27 @@ fun EcranKickMyB(modifier: Modifier = Modifier) {
         // Bouton Connexion
         Button(
             onClick = {
+                Log.d("EcranKickMyB", "Entrée dans la fonction onClick connexion : utilisateur=$nomUtilisateur")
                 val requete = RequeteConnexion(nomUtilisateur, motDePasse)
                 RetrofitInstance.api.connexion(requete).enqueue(object : Callback<String> {
                     override fun onResponse(call: Call<String>, response: Response<String>) {
+                        Log.d("EcranKickMyB", "Entrée dans la fonction onResponse connexion : code=${response.code()}")
                         if (response.isSuccessful) {
                             reponseConnexion = response.body() ?: "Pas de données"
                         } else {
                             reponseConnexion = "Erreur HTTP: ${response.code()}"
                         }
+                        Log.d("EcranKickMyB", "Sortie de la fonction onResponse connexion")
                     }
 
                     override fun onFailure(call: Call<String>, t: Throwable) {
+                        Log.d("EcranKickMyB", "Entrée dans la fonction onFailure connexion : ${t.message}")
                         Log.e("EcranKickMyB", "Erreur connexion", t)
                         reponseConnexion = "Erreur: ${t.message}"
+                        Log.d("EcranKickMyB", "Sortie de la fonction onFailure connexion")
                     }
                 })
+                Log.d("EcranKickMyB", "Sortie de la fonction onClick connexion")
             },
             modifier = Modifier.fillMaxWidth(),
         ) {
@@ -132,20 +144,26 @@ fun EcranKickMyB(modifier: Modifier = Modifier) {
         // Bouton Accueil
         Button(
             onClick = {
+                Log.d("EcranKickMyB", "Entrée dans la fonction onClick accueil")
                 RetrofitInstance.api.accueilTache().enqueue(object : Callback<String> {
                     override fun onResponse(call: Call<String>, response: Response<String>) {
+                        Log.d("EcranKickMyB", "Entrée dans la fonction onResponse accueil : code=${response.code()}")
                         if (response.isSuccessful) {
                             reponseAccueil = response.body() ?: "Pas de données"
                         } else {
                             reponseAccueil = "Erreur HTTP: ${response.code()}"
                         }
+                        Log.d("EcranKickMyB", "Sortie de la fonction onResponse accueil")
                     }
 
                     override fun onFailure(call: Call<String>, t: Throwable) {
+                        Log.d("EcranKickMyB", "Entrée dans la fonction onFailure accueil : ${t.message}")
                         Log.e("EcranKickMyB", "Erreur accueil", t)
                         reponseAccueil = "Erreur: ${t.message}"
+                        Log.d("EcranKickMyB", "Sortie de la fonction onFailure accueil")
                     }
                 })
+                Log.d("EcranKickMyB", "Sortie de la fonction onClick accueil")
             },
             modifier = Modifier.fillMaxWidth(),
         ) {
