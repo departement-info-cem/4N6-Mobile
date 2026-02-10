@@ -167,7 +167,7 @@ Ensuite tu peux programmer un serveur avec ce contrôleur pour valider tes répo
 
 Code client :
 
-```kotlin
+```kotlin showLineNumbers
 public class TaskDetailResponse {
     public Long id;
     public String name;
@@ -252,7 +252,7 @@ class DetailsActivity : AppCompatActivity() {
 
 Code serveur :
 
-```java
+```java showLineNumbers
 @Controller
 public class ControllerTask {
 
