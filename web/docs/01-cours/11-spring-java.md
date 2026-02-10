@@ -64,7 +64,7 @@ Maintenant que vous connnaissez bien la structure d'un serveur Spring Boot, vous
 
 </Row>
 
-:::note Exercices de la semaine
+::::note Exercices de la semaine
 
 ## Exercice démarrer un serveur
 
@@ -73,6 +73,12 @@ Maintenant que vous connnaissez bien la structure d'un serveur Spring Boot, vous
 3. Utiliser le navigateur pour accéder à l'adresse http://localhost:8080/
 
 ## Exercice Post et PostMan
+
+:::tip
+
+Vous n'avez pas besoin de déclarer de service, de repo, ni de modèle de données dans cet exercice. 
+
+:::
 
 - en suivant la recette [Spring Boot 3](https://info.cegepmontpetit.ca/4N6-Mobile/recettes/spring-03-post-service-jpa), ajoutez un controleur sur l'url "/prout/envoyer" en méthode Post
 - on souhaite récupérer un paramètre **taille** entier dans la query ("/prout/envoyer?taille=150") optionnel
@@ -83,7 +89,9 @@ Le tout renvoie **texte** répété autant de fois que nécessaire pour atteindr
 - taille vaut 10
 - le contrôleur renvoie la string "pipopipopi"
 
-Pour tester votre code, utiliser Postman pour déclencher le contrôleur et valider votre code
+Pour tester votre code, utiliser Postman pour déclencher le contrôleur et valider votre code.
+
+
 
 
 ## Exercice calcul et tests 
@@ -277,4 +285,4 @@ public class ControllerTask {
 | ligne exécutée | effet                             | pile d'appels |
 |-----------------|-----------------------------------|--------|
 
-:::
+::::
