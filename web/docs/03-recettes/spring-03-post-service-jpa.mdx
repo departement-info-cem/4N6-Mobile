@@ -4,7 +4,7 @@ hide_table_of_contents: true
 
 # Spring Boot 3 - POST service et JPA
 
-On va montrer comment implanter un CRUD en Spring Boot avec JPA et une couche de service.
+On va montrer comment implémenter un CRUD en Spring Boot avec JPA et une couche de service.
 
 Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/serveur3-service-bd-test/).
 
@@ -67,7 +67,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         On appelle cela parfois également un *Data Access Object* ou encore DAO (comme dans la librairie du TP3 de 3N5).
 
         Dans notre application, on souhaite proposer uniquement 2 opérations aux utilisateurs :
-        1. ajouter un truc en validant qu'il n'y a pas déjà un truc avec le même chose
+        1. ajouter un truc en validant qu'il n'y a pas déjà un truc avec la même chose
         2. accéder à la liste des trucs
 
         On crée une *interface* **TrucRepo** avec ce code :
@@ -84,7 +84,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 ## Classe de service
 
     Dans notre application on souhaite proposer uniquement 2 opérations aux utilisateurs :
-    1. ajouter un truc en validant qu'il n'y a pas déjà un truc avec le même chose
+    1. ajouter un truc en validant qu'il n'y a pas déjà un truc avec la même chose
     2. accéder à la liste des trucs
 
     On crée une classe **TrucService** avec ce code :
@@ -96,7 +96,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     Les éléments importants ici pour Spring Boot:
     - l'annotation **@Service** sur la classe indique à Spring Boot qu'il s'agit d'un composant injectable
     - l'annotation **@Autowired** sur le repository indique à Spring Boot de fournir un objet de type TrucRepo
-    - l'objet dont le service est dépendant est injecté par Spring au lieu d'avoir à faire un **new TrucRepo**
+    - l'objet dont le service dépend est injecté par Spring au lieu d'avoir à faire un **new TrucRepo**
     - on parle d'injection de dépendance
 
 ## Contrôleur

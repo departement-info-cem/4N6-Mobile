@@ -17,10 +17,10 @@ Explorez le [code du serveur de l'application](https://github.com/departement-in
 Vous pouvez également explorer la documentation de [Spring Boot](https://spring.io/projects/spring-boot).
 
 - utiliser spring initializr pour créer un projet
-- ajouter un controleur
+- ajouter un contrôleur
 - regarder les recettes
 - démarrer le serveur
-- déboquer le serveur
+- déboguer le serveur
 
 Recettes à faire:
 - créer un serveur
@@ -56,7 +56,7 @@ Complétez l'exercice préparatoire: Trace client-serveur. Développez la trace 
 
 :::info Séance 4
 
-Maintenant que vous connnaissez bien la structure d'un serveur Spring Boot, vous devez implémenter la suppression de tâche dans le serveur de votre TP3.
+Maintenant que vous connaissez bien la structure d'un serveur Spring Boot, vous devez implémenter la suppression de tâche dans le serveur de votre TP3.
 
 :::
 
@@ -80,7 +80,7 @@ Vous n'avez pas besoin de déclarer de service, de repo, ni de modèle de donné
 
 :::
 
-- en suivant la recette [Spring Boot 3](https://info.cegepmontpetit.ca/4N6-Mobile/recettes/spring-03-post-service-jpa), ajoutez un controleur sur l'url "/prout/envoyer" en méthode Post
+- en suivant la recette [Spring Boot 3](https://info.cegepmontpetit.ca/4N6-Mobile/recettes/spring-03-post-service-jpa), ajoutez un contrôleur sur l'url "/prout/envoyer" en méthode Post
 - on souhaite récupérer un paramètre **taille** entier dans la query ("/prout/envoyer?taille=150") optionnel
 - une string **texte** est envoyée dans le corps (**body**) de la requête
 
@@ -103,7 +103,7 @@ Dans cet exercice, on veut:
 public BigInteger fibonacci(int n){} 
 ```
 - que tu écrives des tests unitaires pour cette méthode: on s'attend à ce que ça torche même si n est dans les 1000-2000
-- que tu implantes un contrôleur qui prend **n** en paramètre et renvoie le nième nombre de Fibonacci (tu chercheras comment calculer ce nombre)
+- que tu implémentes un contrôleur qui prend **n** en paramètre et renvoie le nième nombre de Fibonacci (tu chercheras comment calculer ce nombre)
 - que tu testes ton contrôleur avec Postman
 - l'url doit être **/fibo/10** pour 10 par exemple
 
@@ -111,7 +111,7 @@ public BigInteger fibonacci(int n){}
 
 Dans cet exercice, on veut:
 - que tu montes un serveur dans un dossier **CalculMethodes**
-- que tu implantes une méthode dans ton contrôleur pour chaque méthode HTTP
+- que tu implémentes une méthode dans ton contrôleur pour chaque méthode HTTP
   - un GET sur l'url "/api/chose" qui renvoit une liste de 10 choses (10 string)
   - un POST sur l'url "/api/chose" qui ajoute une chose à la liste
   - un PUT sur l'url "/api/chose/\{id\}" qui ne fait rien

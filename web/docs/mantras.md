@@ -8,7 +8,7 @@ ils sont toujours valides.
 ## Retrofit
 
 ### "avec ce qu'il y a dans la réponse, le type de ton Call correspondra "
-Si Retrofit ne peut pas détricoter la réponse HTTP dans le type specifié, ça va casser
+Si Retrofit ne peut pas désérialiser la réponse HTTP dans le type spécifié, ça va casser
 - ```Call<String>``` la réponse doit être **"sdkajsk"**
 - ```Call<Integer>``` la réponse doit être **9890**
 - ```Call<List<...>>``` la réponse JSON doit ressembler à **[    ]**
@@ -16,7 +16,7 @@ Si Retrofit ne peut pas détricoter la réponse HTTP dans le type specifié, ça
 
 ### "Pour déboguer un appel Retrofit, 3 points d'arrêt tu poseras"
 Il faut :
-- un point d'arrêt sur la ligne du enqueue: juste avant le départ de la requête
+- un point d'arrêt sur la ligne de l'enqueue: juste avant le départ de la requête
 - un point d'arrêt sur la première ligne du onResponse: c'est le retour de la réponse si tout est beau
 - un point d'arrêt sur la première ligne du onFailure: au cas où ça pète, pour voir ce qui casse
 

@@ -6,7 +6,7 @@ L’examen 1 a vraiment mal été pour les étudiants, j’espère qu’ils ne 
 
 ## Pour l’étudiant
 
-Un compte a été créé pour vous dans le système. Si vous n’avez pas reçu votre nom d’utilisateur et votre mot de passe, demandez-le à votre enseignant.
+Un compte a été créé pour vous dans le système. Si vous n'avez pas reçu votre nom d'utilisateur et votre mot de passe, demandez-les à votre enseignant.
 
 1. Commencez par modifier le nom d’affichage de votre utilisateur. Votre nouveau nom devrait s’afficher dans le tableau des scores en avant de la classe.
 2. Votre objectif est de modifier votre note de l’Examen 1 pour vous donner 100 %. Vous devez la modifier sur le serveur déployé.
@@ -24,17 +24,17 @@ Un compte a été créé pour vous dans le système. Si vous n’avez pas reçu 
 
 ## Pour l’enseignant
 
-Le serveur doit s'exécuter sur votre machine, de sorte que les étudiants s'y connecte, et les comptes utilisateur des étudiants doivent être créés. Les comptes utilisateur peuvent être créés à l’aide de la requête Postman «Create students». Un script python permet de générer rapidement le json pour la création des comptes étudiant. Il faut définir un header nommé `admin-password` ayant pour valeur un mot de passe prédéterminé lors du déploiement du serveur (dans application. properties).
+Le serveur doit s'exécuter sur votre machine, de sorte que les étudiants s'y connectent, et les comptes utilisateur des étudiants doivent être créés. Les comptes utilisateur peuvent être créés à l'aide de la requête Postman «Create students». Un script python permet de générer rapidement le json pour la création des comptes étudiant. Il faut définir un header nommé `admin-password` ayant pour valeur un mot de passe prédéterminé lors du déploiement du serveur (dans application.properties).
 
-Affichez la page principale principale de l’URL  en avant de la classe (ex: http://nom-de-votre-machine/). C’est un tableau des scores qui affiche qui a réussi l’exercice en premier pour qu’il y ait un peu de compétition entre les étudiants.
+Affichez la page principale de l'URL en avant de la classe (ex: http://nom-de-votre-machine/). C'est un tableau des scores qui affiche qui a réussi l'exercice en premier pour qu'il y ait un peu de compétition entre les étudiants.
 
 > Cliquez quelque part sur la page du tableau des scores et allumez le son de l’ordinateur. Il devrait y avoir un signal sonore lorsqu’un étudiant réussit un exercice.
 
 ### Déroulement de l'exercice
 
-Puisque l'exercice est assez complexe, il est recommendé de donner environs une heure aux étudiants pour tenter de compléter l'exercice, pour ensuite le compléter avec eux.
+Puisque l'exercice est assez complexe, il est recommandé de donner environ une heure aux étudiants pour tenter de compléter l'exercice, pour ensuite le compléter avec eux.
 
-De plus, il est recommendé de dessiner un schéma de la base de données au tableau pour les aider à progresser plus rapidement dans la création de leur requête.
+De plus, il est recommandé de dessiner un schéma de la base de données au tableau pour les aider à progresser plus rapidement dans la création de leur requête.
 
 ### Utilisation du script
 

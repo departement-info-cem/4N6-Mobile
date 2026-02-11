@@ -75,7 +75,7 @@ rootProject.name = "My Application" include ':app'
 
 1. Vous devez mettre le projet sur le Bureau et non sur votre clé USB ou sur un disque dur externe
 2. Aller dans `Help > About` et regarder le numéro de version (ex : 4.2.1)
-3. Aller dans build.grable (niveau projet) et vérifier que le numéro de cette ligne correspond au numéro de version
+3. Aller dans build.gradle (niveau projet) et vérifier que le numéro de cette ligne correspond au numéro de version
 
 ```java
 dependencies {
