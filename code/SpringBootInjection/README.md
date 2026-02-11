@@ -88,6 +88,14 @@ Ce qui donne 2 commandes SQL :
 
 Dans quel état est la BD maintenant?
 
+### Point d'arrêt
+
+N'hésite pas à placer un point d'arrêt sur la ligne qui effectue la requête au serveur pour évaluer le code SQL concret qui est envoyé au moment de la requête.
+
+### Trace d'exécution
+
+Si tu es motivé ça peut aussi être le bon moment de faire la trace d'exécution de ce qui se passe quand tu envoies ton injection.
+
 ### Exercice
 
 Essaie d'adapter l'injection SQL pour:ç
@@ -143,6 +151,10 @@ La plupart des solutions consistent plutôt à désarmer le code au moment du ch
 - etc.
 
 La leçon essentielle est de ne pas générer ton code HTML à la main. 
+
+## Exercices de validation
+
+Assures toi que les attaques réussies sur le projet fragile ne fonctionnent plus sur le projet solide.
 
 
 
