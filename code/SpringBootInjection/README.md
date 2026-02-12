@@ -1,11 +1,19 @@
 # Spring Boot Injection
 
+⚠️ **AVERTISSEMENT DE SÉCURITÉ** ⚠️
+
+Ce projet est strictement à des fins éducatives pour démontrer les vulnérabilités d'injection XSS et SQL. 
+**NE JAMAIS** utiliser ces techniques sur des systèmes que vous ne possédez pas ou sans autorisation explicite.
+L'utilisation malveillante de ces connaissances est illégale et contraire à l'éthique.
+
+---
+
 On peut démarrer le serveur depuis le dossier du projet en faisant :
 ```
 ./mvnw spring-boot:run
 ```
 
-On accède à l'application sur http://localhost:8080/ et on peut se connecter avec les identifiants suivants :
+On accède à l'application sur http://localhost:8080/
 
 La page http://localhost:8080/home devrait afficher 2 éléments sur l'écran au chargement:
 ```
@@ -98,11 +106,42 @@ Si tu es motivé ça peut aussi être le bon moment de faire la trace d'exécuti
 
 ### Exercice
 
-Essaie d'adapter l'injection SQL pour:ç
+Essaie d'adapter l'injection SQL pour:
 - ne pas supprimer les messages
 - modifier tous les messages existant pour ton nom
 
-### Correctif
+### Comparaison code vulnérable vs sécurisé
+
+#### Injection SQL
+
+**Code vulnérable (projet fragile):**
+```java
+// ❌ VULNÉRABLE - Concaténation directe de l'input utilisateur
+jdbcTemplate.update("INSERT INTO APPMESSAGE VALUES (NULL ,'"+message+"')");
+```
+
+**Code sécurisé (projet solide):**
+```java
+// ✅ SÉCURISÉ - Utilisation de paramètres préparés
+jdbcTemplate.update("INSERT INTO APPMESSAGE VALUES (? ,?)", null, message);
+```
+
+#### Injection Javascript
+
+**Code vulnérable (projet fragile):**
+```java
+// ❌ VULNÉRABLE - Stockage direct sans validation
+String message = request.getParameter("message");
+// ... insertion directe dans la BD
+```
+
+**Code sécurisé (projet solide):**
+```java
+// ✅ SÉCURISÉ - Nettoyage avec Jsoup avant stockage
+String message = request.getParameter("message");
+message = Jsoup.clean(message, Whitelist.simpleText());
+// ... insertion dans la BD
+```
 
 
 ### Pour votre carrière
