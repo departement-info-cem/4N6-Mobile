@@ -1,26 +1,120 @@
-# Spring Boot Access Control
-Sert de démo pour illustrer des failles de contrôle d'accès pour Spring Boot et les solutions
+# 01-OpenBar - Application de Profils Sans Contrôle d'Accès
 
-Illustrer avec 5 versions d'une application identiques en terme de fonctionnalités.
+## ⚠️ Niveau de Sécurité : AUCUN
 
+Cette version du serveur **ne possède aucun contrôle d'accès**. N'importe qui peut :
+- Modifier le profil de n'importe qui
+- Consulter tous les profils
+- Accéder aux informations de tous les utilisateurs
 
-Pas de sécurité du tout, envoie l'id de l'utilisateur pour créer
-EXPLOIT > envoyer une requête avec son ID
+**C'est une démonstration de vulnérabilité à des fins pédagogiques uniquement.**
 
-Token oui mais on utilise l'ID de l'utilisateur dans classe
-EXPLOIT > mettre l'ID De qqun d'autre pour créer un Quiz dans son compte
+Le serveur doit être démarrée :
+```bash
+mvn spring-boot:run
+```
 
-Token et id pris dans l'utilisateur mais pas de test de propriété
-EXPLOIT > envoie un ajout de question dans un quiz mais un quiz qui n'est pas à moi
-Lecture écriture > vérifier propriétaire
+Ou depuis le dossier du projet:
+```bash
+./mvnw spring-boot:run
+```
 
-Token, id du token, test de propriété au create mais pas au update
-EXPLOIT > envoie une modif de question dans un quiz pas à moi.
+## Endpoints API
 
+### Inscription
+```bash
+curl -X POST http://localhost:8080/api/id/signup \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nomUtilisateur": "alice",
+    "motDePasse": "password123"
+  }'
+```
 
+### Connexion
+```bash
+curl -X POST http://localhost:8080/api/id/signin \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nomUtilisateur": "alice",
+    "motDePasse": "password123"
+  }'
+```
 
-Conclusion :  le contrôle d'accès ne change rien ... pour les gentils utilisateurs.
-Ce qu'il change, c'est la protection des gentils contre les méchants, le côté obscur
+### Obtenir un profil
+```bash
+curl -X GET http://localhost:8080/api/profile/alice
+```
+
+### Modifier la bio
+```bash
+curl -X POST http://localhost:8080/api/profil/bio \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nomUtilisateur": "alice",
+    "bio": "Passionnée de randonnée et de photographie"
+  }'
+```
+
+### Modifier l'orientation
+```bash
+curl -X POST http://localhost:8080/api/profil/orientation \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nomUtilisateur": "alice",
+    "orientation": "femmes"
+  }'
+```
+
+### Lister les profils par orientation
+```bash
+curl -X GET http://localhost:8080/api/profils/femmes
+```
+
+## Scénario de Test Complet
+
+```bash
+# 1. Créer trois utilisateurs
+curl -X POST http://localhost:8080/api/id/signup \
+  -H "Content-Type: application/json" \
+  -d '{"nomUtilisateur": "alice", "motDePasse": "pass123"}'
+
+curl -X POST http://localhost:8080/api/id/signup \
+  -H "Content-Type: application/json" \
+  -d '{"nomUtilisateur": "bob", "motDePasse": "pass123"}'
+
+curl -X POST http://localhost:8080/api/id/signup \
+  -H "Content-Type: application/json" \
+  -d '{"nomUtilisateur": "claire", "motDePasse": "pass123"}'
+
+# 2. Configurer les profils
+curl -X POST http://localhost:8080/api/profil/bio \
+  -H "Content-Type: application/json" \
+  -d '{"nomUtilisateur": "alice", "bio": "Passionnée de randonnée"}'
+
+curl -X POST http://localhost:8080/api/profil/orientation \
+  -H "Content-Type: application/json" \
+  -d '{"nomUtilisateur": "alice", "orientation": "femmes"}'
+
+curl -X POST http://localhost:8080/api/profil/bio \
+  -H "Content-Type: application/json" \
+  -d '{"nomUtilisateur": "bob", "bio": "Amateur de cinéma"}'
+
+curl -X POST http://localhost:8080/api/profil/orientation \
+  -H "Content-Type: application/json" \
+  -d '{"nomUtilisateur": "bob", "orientation": "hommes"}'
+
+curl -X POST http://localhost:8080/api/profil/bio \
+  -H "Content-Type: application/json" \
+  -d '{"nomUtilisateur": "claire", "bio": "Chef cuisinière"}'
+
+curl -X POST http://localhost:8080/api/profil/orientation \
+  -H "Content-Type: application/json" \
+  -d '{"nomUtilisateur": "claire", "orientation": "femmes"}'
+
+# 3. Rechercher les profils intéressés par les femmes
+curl -X GET http://localhost:8080/api/profils/femmes
+```
 
 
 

@@ -1,8 +1,6 @@
 package org.sbac.model;
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import jakarta.persistence.*;
 
 @Entity
 public class MUtilisateur {
@@ -11,8 +9,7 @@ public class MUtilisateur {
     @Id     public Long id;
     @Basic  public String nomUtilisateur;
     @Basic  public String motDePasse;
-
-    @OneToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL)
-    public List<MQuiz> quizs = new ArrayList<>();
+    @Basic  public String bio;
+    @Basic  public String orientation;
 
 }
