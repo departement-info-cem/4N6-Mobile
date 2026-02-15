@@ -27,6 +27,19 @@ Vous trouverez ici les différentes branches du code du serveur de démo :
 - Spring Security, authentification et extraction de l'utilisateur authentifié courant [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth)
 - Spring Security, authentification et extraction de l'utilisateur authentifié courant et test de propriété [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/04-TestProprio)
 
+### Contrôle d'accès (le plus important)
+
+TODO remplacer la video par une page à suivre :
+- controle acces 1 passoire
+- controle acces 2 avec compte
+- controle acces 3 avec code de validation
+
+
+Code avec les vulnérabilités en mode passoire **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/02-Passoire)**.
+
+Code avec les correctifs **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/03-SansInjection)**.
+
+
 :::
 
 </Column>
