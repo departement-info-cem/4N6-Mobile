@@ -14,11 +14,9 @@ hide_table_of_contents: true
 
 Les injections (SQL et javascript) sont souvent les failles de sécurité qui viennent les premières en tête.
 
-<Video url="https://www.youtube.com/watch?v=je2xjYPOqZU" />
+20 minutes : suivez le fichier [sur les injections](https://github.com/departement-info-cem/4N6-Mobile/blob/main/code/SpringBootInjection/README.md) pour pratiquer les injections. 
 
-Code avec les vulnérabilités en mode passoire **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/02-Passoire)**.
-
-Code avec les correctifs **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/03-SansInjection)**.
+Le code [fragile](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/fragile) et le code [solide](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/solide).   
 
 :::
 
