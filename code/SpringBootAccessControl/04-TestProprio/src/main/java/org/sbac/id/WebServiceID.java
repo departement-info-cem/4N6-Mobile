@@ -1,6 +1,7 @@
 package org.sbac.id;
 
-import org.sbac.transfert.ConnexionReq;
+import org.sbac.transfert.ReqConnexion;
+import org.sbac.transfert.RepProfil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.Authentication;
@@ -15,7 +16,7 @@ public class WebServiceID {
     @Autowired      private ServiceID userService;
 
     @PostMapping("/api/id/signin")
-    public @ResponseBody String signin(@RequestBody ConnexionReq s) throws ServiceID.BadCredentials {
+    public @ResponseBody RepProfil signin(@RequestBody ReqConnexion s) throws ServiceID.BadCredentials {
         System.out.println("ID : demande de connexion " + s);
         s.nomUtilisateur = s.nomUtilisateur.trim().toLowerCase();
         try {
@@ -23,14 +24,14 @@ public class WebServiceID {
             authManager.authenticate(auth);
             SecurityContextHolder.getContext().setAuthentication(auth);
             System.out.println("Logged as " + s.nomUtilisateur);
-            return s.nomUtilisateur;
+            return userService.profil(s.nomUtilisateur);
         } catch (BadCredentialsException bce) {
             throw new ServiceID.BadCredentials();
         }
     }
 
     @PostMapping("/api/id/signup")
-    public @ResponseBody String signup(@RequestBody ConnexionReq s) throws ServiceID.BadCredentials {
+    public @ResponseBody RepProfil signup(@RequestBody ReqConnexion s) throws ServiceID.BadCredentials {
         System.out.println("ID : demande inscription " + s);
         userService.sinscrire(s);
         return signin(s);

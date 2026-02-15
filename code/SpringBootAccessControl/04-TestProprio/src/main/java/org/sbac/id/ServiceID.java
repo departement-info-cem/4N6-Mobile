@@ -3,8 +3,10 @@ package org.sbac.id;
 import org.sbac.model.MUtilisateur;
 import org.sbac.model.DepotUtilisateur;
 
-import org.sbac.transfert.InscriptionReq;
+import org.sbac.transfert.ReqInscription;
+import org.sbac.transfert.RepProfil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -22,7 +24,7 @@ public class ServiceID implements UserDetailsService {
 
     public static class BadCredentials extends Exception { }
 
-    @Autowired private PasswordEncoder passwordEncoder;
+    @Autowired @Lazy private PasswordEncoder passwordEncoder;
     @Autowired private DepotUtilisateur userRepository;
 
     @Override
@@ -32,8 +34,17 @@ public class ServiceID implements UserDetailsService {
         return u;
     }
 
+    public RepProfil profil(String nomUtilisateur) {
+        MUtilisateur utilisateur = userRepository.findByNomUtilisateur(nomUtilisateur).get();
+        RepProfil rep = new RepProfil();
+        rep.id = utilisateur.id;
+        rep.nomUtilisateur = utilisateur.nomUtilisateur;
+        rep.bio = utilisateur.bio;
+        rep.orientation = utilisateur.orientation;
+        return rep;
+    }
 
-    public void sinscrire(InscriptionReq req) throws BadCredentials {
+    public void sinscrire(ReqInscription req) throws BadCredentials {
         String nom = req.nomUtilisateur.toLowerCase().trim();
         try{
             userRepository.findByNomUtilisateur(nom).get();
