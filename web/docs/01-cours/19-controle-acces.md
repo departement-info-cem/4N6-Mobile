@@ -20,6 +20,7 @@ La raison principale est que le contrôle d'accès nécessite souvent du travail
 
 (30 minutes) : passer à travers [l'activité sur le contrôle d'accès](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/README.md).
 
+On fournit 4 version plus ou moins sécurisées d'une même application de messagerie:
 - Aucun contrôle d'accès [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar)
 - Spring Security et authentification [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic)
 - Spring Security, authentification et extraction de l'utilisateur authentifié courant [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth)
@@ -55,11 +56,18 @@ Nous verrons également comment rédiger une FAILLE, un EXPLOIT et un CORRECTIF 
 
 En préparation de l'examen de la prochaine séance, assurez-vous de savoir identifier et corriger les problèmes de contrôle d'accès dans une application Spring Boot.
 
-### Exercice 1
+### Exercice Curl / postman
+
+Essaie de reproduire les requêtes décrite en curl dans l'activité avec Postman.
+- création de 3 comptes utilisateurs alice bobo charlie
+- création de 2 messages entre alice et bob
+- requête de l'exploit de 01-OpenBar pour lire les messages de bob et charlie
+
+### Exercice Exploit
 
 Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la banche 01-OpenBar de l'activité dans un fichier `01-exploit.md`.
 
-### (Optionnel) Exercice 2
+### (Optionnel) Exercice Exploit2
 
 Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche 02-SpringSecurityBasic de l'activité dans un fichier `02-exploit.md`.
 
