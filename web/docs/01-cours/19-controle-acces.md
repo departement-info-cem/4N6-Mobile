@@ -18,27 +18,12 @@ C'est aussi la source de failles qu'on observe le plus souvent dans les projets 
 
 La raison principale est que le contrôle d'accès nécessite souvent du travail sans apporter de nouvelles fonctionnalités.
 
-<Video url="https://www.youtube.com/watch?v=xKUarGFeDyo" />
-
-Vous trouverez ici les différentes branches du code du serveur de démo :
+(30 minutes) : passer à travers [l'activité sur le contrôle d'accès](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/README.md).
 
 - Aucun contrôle d'accès [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar)
 - Spring Security et authentification [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic)
 - Spring Security, authentification et extraction de l'utilisateur authentifié courant [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth)
 - Spring Security, authentification et extraction de l'utilisateur authentifié courant et test de propriété [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/04-TestProprio)
-
-### Contrôle d'accès (le plus important)
-
-TODO remplacer la video par une page à suivre :
-- controle acces 1 passoire
-- controle acces 2 avec compte
-- controle acces 3 avec code de validation
-
-
-Code avec les vulnérabilités en mode passoire **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/02-Passoire)**.
-
-Code avec les correctifs **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/03-SansInjection)**.
-
 
 :::
 
@@ -72,13 +57,15 @@ En préparation de l'examen de la prochaine séance, assurez-vous de savoir iden
 
 ### Exercice 1
 
-Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche [Authentification](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic).
+Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la banche 01-OpenBar de l'activité dans un fichier `01-exploit.md`.
 
 ### (Optionnel) Exercice 2
 
-Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche [Extraction de l'usager authentifié](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth).
+Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche 02-SpringSecurityBasic de l'activité dans un fichier `02-exploit.md`.
 
-Attention, deux failles existent dans le projet ci-dessus.
+Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche 03 de l'activité dans `03-exploit.md`.
+
+
 
 
 

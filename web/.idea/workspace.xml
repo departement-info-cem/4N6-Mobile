@@ -5,59 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="435bd854-5536-4988-b7b0-c1d91fd41ab3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/DepotQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/DepotQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/DepotQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/DepotQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/DepotUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/DepotUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/MQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/MQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/MQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/MQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/MUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/01-OpenBar/src/main/java/org/sbac/model/MUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/ConfigurationSecurite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/ConfigurationSecurite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/DepotQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/DepotQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/DepotQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/DepotQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/DepotUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/DepotUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/MQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/MQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/MQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/MQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/MUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/02-SpringSecurityBasic/src/main/java/org/sbac/model/MUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/ConfigurationSecurite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/ConfigurationSecurite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/DepotQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/DepotQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/DepotQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/DepotQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/DepotUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/DepotUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/MQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/MQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/MQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/MQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/MUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/03-SpringSecurityAuth/src/main/java/org/sbac/model/MUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/ConfigurationSecurite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/ConfigurationSecurite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/DepotQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/DepotQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/DepotQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/DepotQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/DepotUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/DepotUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/MQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/MQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/MQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/MQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/MUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../code/SpringBootAccessControl/04-TestProprio/src/main/java/org/sbac/model/MUtilisateur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/01-cours/18-injection.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/01-cours/18-injection.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/01-cours/19-controle-acces.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/01-cours/19-controle-acces.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,27 +32,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/jo/Documents/GitHub/4N6-Mobile/web",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jo/Documents/GitHub/4N6-Mobile/web&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/file/intra2025" />
