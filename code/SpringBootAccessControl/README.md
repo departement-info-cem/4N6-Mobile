@@ -22,6 +22,10 @@ Ce dossier présente différents niveaux d'implémentation du contrôle d'accès
 | **03-SpringSecurityAuth** | ✅ Session | ✅ SecurityContext | ⚠️ Boîte OK, mais `GET /messages/{id}` fuite (IDOR) |
 | **04-TestProprio** | ✅ Session | ✅ SecurityContext | ✅ Vérification complète (403) |
 
+Pour partir une version :
+- se placer dans le dossier du projet (ex: `cd 01-OpenBar`)
+- lancer l'application (ex: `./mvnw spring-boot:run`)
+
 ## API (identique dans les 4 projets)
 
 ### Identité
