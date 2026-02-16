@@ -44,86 +44,63 @@ Ce dossier présente différents niveaux d'implémentation du contrôle d'accès
 
 ### Étape 1 : Préparer les données (dans chaque projet)
 
-```bash
-# Inscrire 3 utilisateurs
-curl -c cookies_alice.txt -X POST http://localhost:8080/api/id/signup \
-  -H "Content-Type: application/json" \
-  -d '{"nomUtilisateur": "alice", "motDePasse": "MotDePasse123!"}'
+On va inscrire 3 utilisateurs (Bob, Alice, Charlie) et envoyer des messages privés entre eux pour avoir des données à exploiter.
 
-curl -c cookies_bob.txt -X POST http://localhost:8080/api/id/signup \
-  -H "Content-Type: application/json" \
-  -d '{"nomUtilisateur": "bob", "motDePasse": "MotDePasse123!"}'
-
-curl -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signup \
-  -H "Content-Type: application/json" \
-  -d '{"nomUtilisateur": "charlie", "motDePasse": "MotDePasse123!"}'
-
-# Alice envoie un message privé à Bob
-curl -b cookies_alice.txt -X POST http://localhost:8080/api/messages \
-  -H "Content-Type: application/json" \
-  -d '{"expediteur": "alice", "destinataire": "bob", "contenu": "Salut Bob, ça va?"}'
+```powershell
+curl.exe -c cookies_bob.txt -X POST http://localhost:8080/api/id/signup -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"bob\", \"motDePasse\": \"MotDePasse123!\"}'
+curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signup -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"charlie\", \"motDePasse\": \"MotDePasse123!\"}'
+curl.exe -c cookies_alice.txt -X POST http://localhost:8080/api/id/signup -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"alice\", \"motDePasse\": \"MotDePasse123!\"}'
+curl.exe -b cookies_bob.txt -X POST http://localhost:8080/api/messages -H "Content-Type: application/json" -d '{\"expediteur\": \"bob\", \"destinataire\": \"alice\", \"contenu\": \"Salut Alice, on se voit ce soir pour Netflix and chill, ma femme a son club lecture?\"}'
+curl.exe -b cookies_alice.txt -X POST http://localhost:8080/api/messages -H "Content-Type: application/json" -d '{\"expediteur\": \"alice\", \"destinataire\": \"bob\", \"contenu\": \"Ou la la! CT chaud caliente hier soir? Pas trop de problème avec ta femme!!\"}'
+curl.exe -b cookies_alice.txt -X GET http://localhost:8080/api/messages?utilisateur=alice 
 ```
 
 ### Étape 2 : Tester les vulnérabilités
 
 #### 01-OpenBar — Aucune authentification requise
-```bash
+```powershell
 # N'importe qui peut lire n'importe quel message, sans connexion
-curl http://localhost:8080/api/messages/1
-# → Retourne le message privé Alice→Bob
-
-curl "http://localhost:8080/api/messages?utilisateur=bob"
-# → Retourne toute la boîte de réception de Bob
+curl.exe "http://localhost:8080/api/messages?utilisateur=bob"
+# → Retourne toute la boîte de réception de Bob devrait être privée, mais elle est publique !
 ```
 
 #### 02-SpringSecurityBasic — Identité basée sur le paramètre requête
-```bash
+```powershell
 # Se connecter en tant que Charlie
-curl -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin \
-  -H "Content-Type: application/json" \
-  -d '{"nomUtilisateur": "charlie", "motDePasse": "MotDePasse123!"}'
+curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"charlie\", \"motDePasse\": \"MotDePasse123!\"}'
 
 # Charlie lit la boîte de Bob en changeant le paramètre URL
-curl -b cookies_charlie.txt "http://localhost:8080/api/messages?utilisateur=bob"
-# → Retourne les messages de Bob ! (Charlie est connecté mais lit la boîte de Bob)
+curl.exe -b cookies_charlie.txt "http://localhost:8080/api/messages?utilisateur=bob"
 
 # Charlie envoie un message en se faisant passer pour Alice
-curl -b cookies_charlie.txt -X POST http://localhost:8080/api/messages \
-  -H "Content-Type: application/json" \
-  -d '{"expediteur": "alice", "destinataire": "bob", "contenu": "Faux message de Alice"}'
-# → Le message est envoyé comme si c'était Alice
+curl.exe -b cookies_charlie.txt -X POST http://localhost:8080/api/messages -H "Content-Type: application/json" -d '{\"expediteur\": \"alice\", \"destinataire\": \"bob\", \"contenu\": \"Tout est fini entre nous lol!!!\"}'
 ```
 
 #### 03-SpringSecurityAuth — IDOR (Insecure Direct Object Reference)
-```bash
+```powershell
 # Se connecter en tant que Charlie
-curl -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin \
-  -H "Content-Type: application/json" \
-  -d '{"nomUtilisateur": "charlie", "motDePasse": "MotDePasse123!"}'
+curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"charlie\", \"motDePasse\": \"MotDePasse123!\"}'
 
 # La boîte de réception est correcte — Charlie ne voit que ses messages
-curl -b cookies_charlie.txt http://localhost:8080/api/messages
-# → Liste vide (Charlie n'a pas de messages)
+curl.exe -b cookies_charlie.txt http://localhost:8080/api/messages
 
 # MAIS Charlie peut lire n'importe quel message par ID
-curl -b cookies_charlie.txt http://localhost:8080/api/messages/1
-# → Retourne le message privé Alice→Bob ! (IDOR)
+curl.exe -b cookies_charlie.txt http://localhost:8080/api/messages/1
 ```
 
 #### 04-TestProprio — Sécurisé
-```bash
+
+Tous les exploits précédents sont corrigés.
+
+```powershell
 # Se connecter en tant que Charlie
-curl -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin \
-  -H "Content-Type: application/json" \
-  -d '{"nomUtilisateur": "charlie", "motDePasse": "MotDePasse123!"}'
+curl.exe -c cookies_charlie.txt -X POST http://localhost:8080/api/id/signin -H "Content-Type: application/json" -d '{\"nomUtilisateur\": \"charlie\", \"motDePasse\": \"MotDePasse123!\"}'
 
 # Charlie tente de lire le message privé Alice→Bob
-curl -b cookies_charlie.txt http://localhost:8080/api/messages/1
-# → 403 Forbidden — Accès refusé ✅
+curl.exe -b cookies_charlie.txt http://localhost:8080/api/messages/1
 
 # Alice peut lire son propre message
-curl -b cookies_alice.txt http://localhost:8080/api/messages/1
-# → Retourne le message (Alice est expéditrice) ✅
+curl.exe -b cookies_alice.txt http://localhost:8080/api/messages/1
 ```
 
 ## Objectifs Pédagogiques
@@ -134,14 +111,3 @@ curl -b cookies_alice.txt http://localhost:8080/api/messages/1
 2. **Le danger de faire confiance à l'identité fournie par la requête** (02-SpringSecurityBasic) — JSESSIONID existe mais ignoré
 3. **L'IDOR (Insecure Direct Object Reference)** (03-SpringSecurityAuth) — Identité correcte, mais pas de vérification de propriété
 4. **Le contrôle d'accès complet** (04-TestProprio) — Identité + propriété vérifiées
-
-## Prérequis
-
-- Java 21
-- Maven
-- cURL pour tester les API
-- Connaissance de base de Spring Boot
-
-## Licence
-
-Ce matériel est fourni à des fins éducatives uniquement.
