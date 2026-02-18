@@ -5,7 +5,127 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="435bd854-5536-4988-b7b0-c1d91fd41ab3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/01-cours/19-controle-acces.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/01-cours/19-controle-acces.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/androidTest/java/org/depinfo/clientmobileomnisus/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/EditUserActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/GradeActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/GradeAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/SignInActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/http/RetrofitUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/http/Service.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/http/SessionCookieJar.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/http/dto/GradeResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/http/dto/SigninRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/http/dto/SigninResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/java/org/depinfo/clientmobileomnisus/http/dto/UserDetailsResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/res/layout/activity_edit_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/res/layout/activity_grade.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/res/layout/activity_signin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/res/layout/grade_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/app/src/test/java/org/depinfo/clientmobileomnisus/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ClientMobileOmnisus/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/generate_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/generate_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/omnisus.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/omnisus.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/omnisus.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/omnisus.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../code/Omnisus/ServeurOmnisus/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/androidTest/java/org/depinfo/omnisus/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/ic_launcher-playstore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/EditUserActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/GradeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/GradeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/SignInActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/http/RetrofitUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/http/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/http/SessionCookieJar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/http/dto/GradeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/http/dto/SigninRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/http/dto/SigninResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/java/org/depinfo/omnisus/http/dto/UserDetailsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/drawable/capture_d_cran__le_2023_03_16___15_45_08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/layout/activity_edit_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/layout/activity_grade.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/layout/activity_signin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/layout/grade_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/app/src/test/java/org/depinfo/omnisus/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/mobile/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/generate_users.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/ConfigHTTP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/ConfigJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/ConfigSecurity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/CustomGson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/OmnisusApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/admin/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/admin/AdminMiddleware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/grade/GradeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/grade/GradeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/grade/GradeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/grade/MGrade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/grade/MGradeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/grade/dto/GradeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/grade/dto/ScoreBoardResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/grade/dto/UserDetailsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/user/MUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/user/MUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/user/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/user/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/user/dto/SigninRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/user/dto/SigninResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/user/dto/SignupRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/java/org/depinfo/omnisus/user/exception/BadCredentialsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/Omnisus/archives/serveur/src/test/java/org/depinfo/omnisus/OmnisusApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
