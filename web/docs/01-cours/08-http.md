@@ -72,7 +72,7 @@ Créez un projet appelé **RetrofitComplexe**. Le web service [ici](https://four
 
 Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
-Par exemple, un écran avec un TextView qui affiche les données retournées par l'appel.
+Par exemple, un écran avec un Text qui affiche les données retournées par l'appel.
 
 ##  Exercice RetrofitListes
 
