@@ -104,7 +104,7 @@ Tu vas envoyer une requête
 ```
 - le type de retour sera le même format que celui envoyé.
 
-Il n'est pas nécessaire de créer une interface graphique pour cet exercice. Tu peux afficher le résultat dans le logcat ou programmer directement un test unitaire synchrone.
+Tu peux afficher le résultat sur l'interface graphique du téléphone ou programmer directement un test unitaire synchrone.
 
 ## Exercice RetrofitGithub
 
