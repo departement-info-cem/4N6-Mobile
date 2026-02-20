@@ -64,7 +64,7 @@ Créez un projet appelé **RetrofitSimple**. Le web service [ici](https://fourn6
 
 Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
-Par exemple, un écran avec un EditText pour le nombre et un bouton pour déclencher l'appel. Au retour de la valeur (doublée), celle-ci est affichée dans un Toast.
+Par exemple, un écran avec un OutlinedTextField pour le nombre et un bouton pour déclencher l'appel. Au retour de la valeur (doublée), celle-ci est affichée soit dans un texte sur l'écran, soit dans un SnackBar.
 
 ## Exercice RetrofitComplexe
 
