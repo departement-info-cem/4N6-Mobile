@@ -23,10 +23,10 @@ Vous pouvez également explorer la documentation de [Spring Boot](https://spring
 - déboguer le serveur
 
 Recettes à faire:
-- créer un serveur
-- ajouter un contrôleur en get
-- définir un service et l'injecter
-- écrire des tests
+- créer un serveur  TODO lien
+- ajouter un contrôleur en get TODO lien
+- définir un service et l'injecter TODO lien
+- écrire des tests TODO lien
 
 :::
 
@@ -52,9 +52,6 @@ Vous devrez avancer vos exercices sur les serveurs. Vous devriez avoir programm�
 
 Complétez l'exercice préparatoire: Trace client-serveur. Développez la trace dans un fichier .md et montrez-la au professeur avant de quitter! Au besoin, référez-vous à la recette "Produire une trace d'exécution".
 
-:::
-
-:::info Séance 4
 
 Maintenant que vous connaissez bien la structure d'un serveur Spring Boot, vous devez implémenter la suppression de tâche dans le serveur de votre TP3.
 
