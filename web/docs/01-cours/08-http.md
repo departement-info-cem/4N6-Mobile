@@ -40,6 +40,8 @@ On parlera des cas où on a besoin de récupérer des données une seule fois à
 On expliquera comment démarrer le serveur du TP2:
 - dans IntelliJ, ouvrir le projet **KickMyB-Server**
 - depuis powershell, se placer dans le dossier du projet puis `.\mvnw spring-boot:run`
+- accéder au serveur à l'URL `http://localhost:8080/` depuis le poste de travail
+- accéder à l'URL `http://10.0.2.2:8080/` depuis l'émulateur Android
 
 On expliquera à quoi servent les différentes classes de transfert dans la **[bibliothèque de DTO ou classes de transfert](https://github.com/departement-info-cem/KickMyB-Library)**. On montrera comment inclure la bibliothèque dans votre projet:
 
