@@ -35,17 +35,27 @@ On parlera des cas où on a besoin de récupérer des données une seule fois à
 
 :::
 
-:::warning Séance 2
+:::info Séance 2
 
-Souvent, les classes de modèle ont beaucoup de champs, car la base de données garde énormément d'information. Mais pour plusieurs raisons (sécurité, espace, etc.), le client n'a pas besoin de toutes ces informations.
-
-On utilise alors des classes de transfert (**DTO**) qui permettent de transférer seulement l'information utile entre le client et le serveur.
+On expliquera comment démarrer le serveur du TP2:
+- dans IntelliJ, ouvrir le projet **KickMyB-Server**
+- depuis powershell, se placer dans le dossier du projet puis `.\mvnw spring-boot:run`
 
 On expliquera à quoi servent les différentes classes de transfert dans la **[bibliothèque de DTO ou classes de transfert](https://github.com/departement-info-cem/KickMyB-Library)**. On montrera comment inclure la bibliothèque dans votre projet:
 
 - Ajout du repository [Jitpack](https://jitpack.io/) (permet d'accéder à un projet Github sans qu'il soit déployé sur un repo Maven)
 - Ajout de la librairie et format de la dépendance : 'com.github.**compte-github**:**repo-github:hash-du-commit**'
 - Exemple à la ligne 31 [ici](https://github.com/departement-info-cem/KickMyB-Server/blob/e0ac94e8d75921f83fd1302ac415cb4c81cb9794/build.gradle#L31)
+
+:::
+
+:::warning Séance 3
+
+Souvent, les classes de modèle ont beaucoup de champs, car la base de données garde énormément d'information. 
+
+Mais pour plusieurs raisons (sécurité, espace, etc.), le client n'a pas besoin de toutes ces informations.
+
+On utilise alors des classes de transfert (**DTO**) qui permettent de transférer seulement l'information utile entre le client et le serveur.
 
 :::
 
