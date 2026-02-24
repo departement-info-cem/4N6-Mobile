@@ -81,7 +81,7 @@ fun EcranKickMyB(modifier: Modifier = Modifier) {
         Button(
             onClick = {
                 Log.d("EcranKickMyB", "Entrée dans la fonction onClick inscription : utilisateur=$nomUtilisateur")
-                val requete = RequeteInscription(nomUtilisateur, motDePasse)
+                val requete = RequeteInscription(nomUtilisateur, motDePasse, motDePasse)
                 RetrofitInstance.api.inscription(requete).enqueue(object : Callback<String> {
                     override fun onResponse(call: Call<String>, response: Response<String>) {
                         Log.d("EcranKickMyB", "Entrée dans la fonction onResponse inscription : code=${response.code()}")
