@@ -18,6 +18,6 @@ hide_table_of_contents: true
 
 ### Examen formatif 2026
 
-TODO
+[H26 formatif](pathname:///h26-e2-formatif.pdf)
 
 :::
