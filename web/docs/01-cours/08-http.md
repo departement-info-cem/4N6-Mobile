@@ -47,7 +47,7 @@ On expliquera à quoi servent les différentes classes de transfert dans la **[b
 
 - Ajout du repository [Jitpack](https://jitpack.io/) (permet d'accéder à un projet Github sans qu'il soit déployé sur un repo Maven)
 - Ajout de la librairie et format de la dépendance : 'com.github.**compte-github**:**repo-github:hash-du-commit**'
-- Exemple à la ligne 31 [ici](https://github.com/departement-info-cem/KickMyB-Server/blob/e0ac94e8d75921f83fd1302ac415cb4c81cb9794/build.gradle#L31)
+- Exemple :  implementation 'com.github.departement-info-cem:KickMyB-Library:9298b57'  
 
 :::
 
