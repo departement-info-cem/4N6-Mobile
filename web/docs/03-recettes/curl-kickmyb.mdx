@@ -16,6 +16,7 @@ Ce guide est monté avec l'URL `https://kickmyb-server.onrender.com` que tu pour
 - Tester une API sans écrire de code
 - Déboguer des problèmes de réseau
 - Comprendre comment fonctionnent les requêtes HTTP
+- Exécuter dans PowerShell
 
 ### Options curl importantes
 
@@ -39,14 +40,7 @@ L'API KickMyB utilise des **cookies de session** pour maintenir la connexion. Il
 ### 1. Inscription d'un nouvel utilisateur
 
 ```bash
-curl -X POST https://kickmyb-server.onrender.com/id/inscription \
-  -H "Content-Type: application/json" \
-  -d '{
-    "nom": "test@example.com",
-    "motDePasse": "123456",
-    "confirmationMotDePasse": "123456"
-  }' \
-  -c cookies.txt
+curl.exe -X POST "https://kickmyb-server.onrender.com/id/inscription"   -H "Content-Type: application/json"  -d '{ "nom": "test@example.com", "motDePasse": "123456",  "confirmationMotDePasse": "123456" }'   -c cookies.txt
 ```
 
 **Explication:**
@@ -66,13 +60,7 @@ curl -X POST https://kickmyb-server.onrender.com/id/inscription \
 ### 2. Connexion (si déjà inscrit)
 
 ```bash
-curl -X POST https://kickmyb-server.onrender.com/id/connexion \
-  -H "Content-Type: application/json" \
-  -d '{
-    "nom": "test@example.com",
-    "motDePasse": "123456"
-  }' \
-  -c cookies.txt
+curl.exe -X POST "https://kickmyb-server.onrender.com/id/connexion" -H "Content-Type: application/json" -d '{ "nom": "test@example.com", "motDePasse": "123456" }' -c cookies.txt
 ```
 
 **Important:** Utilise toujours `-c cookies.txt` pour sauvegarder le cookie de session!
@@ -82,8 +70,7 @@ curl -X POST https://kickmyb-server.onrender.com/id/connexion \
 Une fois connecté, on peut accéder aux endpoints protégés en utilisant le cookie:
 
 ```bash
-curl https://kickmyb-server.onrender.com/tache/accueil \
-  -b cookies.txt
+curl.exe "https://kickmyb-server.onrender.com/tache/accueil" -b cookies.txt
 ```
 
 **Explication:**
@@ -106,13 +93,7 @@ curl https://kickmyb-server.onrender.com/tache/accueil \
 ### 4. Ajouter une tâche
 
 ```bash
-curl -X POST https://kickmyb-server.onrender.com/tache/ajout \
-  -H "Content-Type: application/json" \
-  -d '{
-    "nom": "Finir le TP2",
-    "dateLimite": "2026-03-15T23:59:00"
-  }' \
-  -b cookies.txt
+curl.exe -X POST "https://kickmyb-server.onrender.com/tache/ajout" -H "Content-Type: application/json" -d '{ "nom": "Finir le TP2", "dateLimite": "2026-03-15T23:59:00" }' -b cookies.txt
 ```
 
 **Important:** 
@@ -122,9 +103,7 @@ curl -X POST https://kickmyb-server.onrender.com/tache/ajout \
 ### 5. Voir le détail d'une tâche
 
 ```bash
-curl https://kickmyb-server.onrender.com/tache/detail/1 \
-  -b cookies.txt \
-  -v
+curl.exe "https://kickmyb-server.onrender.com/tache/detail/1" -b cookies.txt -v
 ```
 
 **Réponse attendue:**
@@ -147,9 +126,7 @@ curl https://kickmyb-server.onrender.com/tache/detail/1 \
 ### 6. Mettre à jour le progrès d'une tâche
 
 ```bash
-curl https://kickmyb-server.onrender.com/tache/progres/1/50 \
-  -b cookies.txt \
-  -v
+curl.exe "https://kickmyb-server.onrender.com/tache/progres/1/50" -b cookies.txt -v
 ```
 
 **Explication:**
@@ -160,9 +137,7 @@ curl https://kickmyb-server.onrender.com/tache/progres/1/50 \
 ### 7. Déconnexion
 
 ```bash
-curl -X POST https://kickmyb-server.onrender.com/id/deconnexion \
-  -b cookies.txt \
-  -v
+curl.exe -X POST "https://kickmyb-server.onrender.com/id/deconnexion" -b cookies.txt -v
 ```
 
 Après la déconnexion, le cookie n'est plus valide.
@@ -171,9 +146,7 @@ Après la déconnexion, le cookie n'est plus valide.
 ### Sauvegarder la réponse dans un fichier
 
 ```bash
-curl https://kickmyb-server.onrender.com/tache/accueil \
-  -b cookies.txt \
-  -o reponse.json
+curl.exe "https://kickmyb-server.onrender.com/tache/accueil" -b cookies.txt -o reponse.json
 ```
 
 ### 403 Unauthorized
