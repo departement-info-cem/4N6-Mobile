@@ -37,21 +37,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun EcranReposGitHub(modifier: Modifier = Modifier) {
-    var nomUtilisateur by remember { mutableStateOf("") }
-    var repos by remember { mutableStateOf<List<Repo>>(emptyList()) }
-    LaunchedEffect(Unit) {
-        RetrofitInstance.api.listRepos("jorisdeguet").enqueue(object : Callback<List<Repo>> {
-            override fun onResponse(call: Call<List<Repo>>, response: Response<List<Repo>>) {
-                if (response.isSuccessful) {
-                    repos = response.body() ?: emptyList()
-                }
-            }
+    var lowLimit by remember { mutableStateOf("") }
+    var highLimit by remember { mutableStateOf("") }
+    var personnages by remember { mutableStateOf<List<Repo>>(emptyList())}
 
-            override fun onFailure(call: Call<List<Repo>>, t: Throwable) {
-                Log.e("EcranReposGitHub", "Erreur lors de la récupération des repos", t)
-            }
-        })
-    }
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -59,28 +48,31 @@ fun EcranReposGitHub(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top
     ) {
-        Text(
-            text = "Visualiseur de Repos GitHub",
-            style = MaterialTheme.typography.headlineMedium,
-            modifier = Modifier.padding(bottom = 24.dp)
-        )
-
-        OutlinedTextField(
-            value = nomUtilisateur,
-            onValueChange = { nomUtilisateur = it },
-            label = { Text("Nom d'utilisateur GitHub") },
-            modifier = Modifier.fillMaxWidth(),
-            singleLine = true,
-        )
+        Row() {
+            OutlinedTextField(
+                value = lowLimit,
+                onValueChange = { lowLimit = it },
+                label = { Text("Limite de puissance basse") },
+                modifier = Modifier.fillMaxWidth().weight(1f),
+                singleLine = true,
+            )
+            OutlinedTextField(
+                value = highLimit,
+                onValueChange = { highLimit = it },
+                label = { Text("Limite de puissance haute") },
+                modifier = Modifier.fillMaxWidth().weight(1f),
+                singleLine = true,
+            )
+        }
 
         Spacer(modifier = Modifier.height(16.dp))
 
         Button(
             onClick = {
-                RetrofitInstance.api.listRepos(nomUtilisateur).enqueue(object : Callback<List<Repo>> {
+                RetrofitInstance.api.listRepos(lowLimit.toDouble(), highLimit.toDouble()).enqueue(object : Callback<List<Repo>> {
                     override fun onResponse(call: Call<List<Repo>>, response: Response<List<Repo>>) {
                         if (response.isSuccessful) {
-                            repos = response.body() ?: emptyList()
+                            personnages = response.body() ?: emptyList()
                         }
                     }
 
@@ -94,27 +86,39 @@ fun EcranReposGitHub(modifier: Modifier = Modifier) {
             Text("Récupérer les repos")
         }
         Spacer(modifier = Modifier.height(24.dp))
-        if (repos.isNotEmpty()) {
+        if (personnages.isNotEmpty()) {
             LazyColumn(
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f)
             ) {
-                items(repos) { repo ->
+                items(personnages) { perso ->
                     Card(
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(vertical = 4.dp)
                     ) {
                         Column(modifier = Modifier.padding(16.dp)) {
-                            Text(
-                                text = repo.name,
-                                style = MaterialTheme.typography.titleMedium
-                            )
-                            Text(
-                                text = "ID: ${repo.id}",
-                                style = MaterialTheme.typography.bodyMedium
-                            )
+                            Row() {
+                                Text(
+                                    text = perso.nom,
+                                    style = MaterialTheme.typography.titleMedium
+                                )
+                                Text(
+                                    text = "ID: ${perso.classe}",
+                                    style = MaterialTheme.typography.bodyMedium
+                                )
+                            }
+                            Row(){
+                                Text(
+                                    text = perso.puissance.toString(),
+                                    style = MaterialTheme.typography.bodyMedium
+                                )
+                                Text(
+                                    text = perso.equipement.toString(),
+                                    style = MaterialTheme.typography.bodyMedium
+                                )
+                            }
                         }
                     }
                 }
