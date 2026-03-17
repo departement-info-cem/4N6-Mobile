@@ -53,7 +53,7 @@ Vous devrez avancer vos exercices sur les serveurs. Vous devriez avoir programm�
 Complétez l'exercice préparatoire: Trace client-serveur. Développez la trace dans un fichier .md et montrez-la au professeur avant de quitter! Au besoin, référez-vous à la recette "Produire une trace d'exécution".
 
 
-Maintenant que vous connaissez bien la structure d'un serveur Spring Boot, vous devez implémenter la suppression de tâche dans le serveur de votre TP3.
+Maintenant que vous connaissez bien la structure d'un serveur Spring Boot, vous êtes desormais en mesure d'implémenter la suppression de tâche dans le serveur dans le cadre du TP3.
 
 :::
 
