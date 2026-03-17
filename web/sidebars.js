@@ -106,7 +106,7 @@ const sidebars = {
     {
       type: "doc",
       label: "9.2 - Intégration client-server 📝",
-      id: "cours/integration",
+      id: "cours/integration2",
     },
     {
       type: "doc",

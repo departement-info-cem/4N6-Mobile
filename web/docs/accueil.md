@@ -80,7 +80,7 @@ Ensuite, travail sur :
 | [8.1 Spring Boot Java ](cours/spring-java)                          | 50%                                                                             |
 | [8.2 Spring Boot Java ](cours/spring-java)                          | 70%                                                                             |
 | [9.1 Spring Boot Java](cours/spring-java)                           | 90%                                                                             |
-| [9.2 Intégration](cours/integration)                                | TP2 remise (poids 20%) <br/> 📝 [Examen papier](cours/formatif-examen-papier-3) |
+| [9.2 Intégration](cours/integration2)                               | TP2 remise (poids 20%) <br/> 📝 [Examen papier](cours/formatif-examen-papier-3) |
 | [10.1 Débogage](cours/debogage)                                     | TP3 : serveur erreurs et attente                                                |
 | [10.2 Erreurs: HTTP](cours/erreur-http)                             | TP3 à 10%                                                                       |
 | [11.1 Erreurs: GUI ](cours/erreur-gui)                              | TP3 à 20%                                                                       |
