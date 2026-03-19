@@ -8,7 +8,7 @@ L'utilisation malveillante de ces connaissances est illégale et contraire à l'
 
 ---
 
-On peut démarrer le serveur depuis le dossier du projet en faisant :
+On peut démarrer le serveur depuis le dossier du projet (%USER%\Desktop\4N6-Mobile-main\code\SpringBootInjection\fragile) en faisant :
 ```
 ./mvnw spring-boot:run
 ```
