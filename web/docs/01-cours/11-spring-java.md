@@ -158,128 +158,82 @@ Ensuite tu peux programmer un serveur avec ce contrôleur pour valider tes répo
 - demander au prof s'il reste des éléments mystérieux
 
 
-## Exercice préparatoire : Trace client-serveur
+## Trace côté réseau
 
-**Contexte** : Le code suivant met en place une interaction client-serveur entre une application Android et un serveur Spring Boot. L’objectif est de permettre l’affichage des détails d’une tâche à partir de son identifiant (id). L’interaction est initiée lorsque l’utilisateur sélectionne une tâche dans l'application.
-
-Code client :
-
-```kotlin showLineNumbers
-public class TaskDetailResponse {
-    public Long id;
-    public String name;
-    public Date deadline;
-    public List<ProgressEvent> events;
-    public int percentageDone;
-    public double percentageTimeSpent;
-}
-
-
-interface Service {
-  @GET("/api/detail/{id}")
-  fun detail(@Path("id") id: Long) : Call<TaskDetailResponse>
-}
-
-
-object RetrofitUtil {
-    private var instance: Service? = null
-    fun get(): Service {
-        if (instance == null) {
-            val retrofit = Retrofit.Builder()
-                .addConverterFactory(ScalarsConverterFactory.create())
-                .addConverterFactory(GsonConverterFactory.create(CustomGson.getIt()))
-                .client(client())
-                .baseUrl("http://10.0.2.2:8080/")
-                .build()
-            instance = retrofit.create<Service>(Service::class.java)
-            return instance!!
-        } else{
-            return instance!!
-        }
-    }
-
-    private fun client(): OkHttpClient {
-        return OkHttpClient.Builder()
-            .cookieJar(SessionCookieJar)
-            .build()
-    }
-
-}
-
-
-class DetailsActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityDetailsBinding
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityDetailsBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        var id = intent.getLongExtra("id", 0)
-
-        displayDetails(id)
-    }
-
-
-    private fun displayDetails(id : Long){
-
-        val service: Service = RetrofitUtil.get() // Décrire uniquement l'effet global de cette ligne
-
-        service.detail(id).enqueue(object : Callback<TaskDetailResponse> {
-            override fun onResponse(call: Call<TaskDetailResponse>, response: Response<TaskDetailResponse>) {
-
-                if (response.isSuccessful) {
-                    binding.tvTaskName.text = response.body()!!.name
-                } else {
-                    Log.i("REPONSE CODE", response.code().toString())
-                    Log.i("REPONSE ERREUR", response.errorBody().toString())
-                }
-            }
-            override fun onFailure(call: Call<TaskDetailResponse>, t: Throwable) {
-                Snackbar.make(binding.root, R.string.network_error, Snackbar.LENGTH_LONG).show()
-            }
-        })
-
-    }
-
-}
-
-```
-
-Code serveur :
+Voici le code d'un contrôleur : 
 
 ```java showLineNumbers
+public class RequeteLivres {
+    public String auteur;
+    public Integer anneeDebut;
+    public Integer anneeFin;
+}
+
+public class Livre {
+    public String titre;
+    public String auteur;
+    public Integer anneePublication;
+
+     public Livre(String titre, String auteur, Integer anneePublication) {
+        this.titre = titre;
+        this.auteur = auteur;
+        this.anneePublication = anneePublication;
+    }
+}
+
 @Controller
-public class ControllerTask {
+public class TraceControlleur {
 
-    @Autowired
-    private ServiceTask serviceTask;
+    public ServiceLivre serviceLivre;
 
-    @GetMapping("/api/detail/{id}")
-    public @ResponseBody TaskDetailResponse detail(@PathVariable long id) {
-        System.out.println("KICKB SERVER : Detail  with cookie ");
-        MUser user = currentUser(); // Décrire uniquement l'effet global de cette ligne
-        return serviceTask.detail(id, user);
+    @GetMapping(value = "/bonjour/{nom}")
+    public @ResponseBody String bonjour(@PathVariable String nom){
+        return "Bonjour " + nom;
     }
 
-    private MUser currentUser() {
-        Authentication authentication =  SecurityContextHolder.getContext().getAuthentication();
-        String username = authentication.getName();
-        System.out.println("Le nom utilisateur est " + username);
-        UserDetails ud = (UserDetails) authentication.getPrincipal();
-        return serviceTask.userFromUsername(ud.getUsername());
+    @GetMapping(value="/suitepaire/{n}")
+    public @ResponseBody List<Long> suitePaire(@PathVariable int n){
+        List<Long> suite = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            suite.add((long) (i * 2));
+        }
+        return suite;
+    }
+
+    @GetMapping(value="/suitenombre/{n}")
+    public @ResponseBody List<Long> suiteNombre(
+            @PathVariable int n,
+            @RequestParam long premierTerme,
+            @RequestParam long deuxiemeTerme){
+        List<Long> suite = new ArrayList<>();
+
+        for(int i = 0; i < n; i++){
+            if(i == 0){
+                suite.add(premierTerme);
+            } else if(i == 1){
+                suite.add(deuxiemeTerme);
+            } else {
+                long termeSuivant = suite.get(i-1) + suite.get(i-2);
+                suite.add(termeSuivant);
+            }
+        }
+
+        return suite;
+    }
+
+    @PostMapping(value="/livres")
+    public @ResponseBody List<Livre> envoyerLivres(@RequestBody RequeteLivres requete) {
+
+        List<Livre> livres =serviceLivre.recupererLivres(requete.auteur, requete.anneeDebut, requete.anneeFin); // Décrire ce que fait cette ligne dans sa globablité
+
+        return livres;
     }
 }
 ```
 
-
-Étant données les premières étapes suivantes, produisez la trace d'exécution décrivant les principales étapes de la communication client-serveur:
-1. Le serveur Spring Boot est lancé localement;
-2. L'utilisateur démarre l'application Android;
-3. L'utilisateur s'inscrit et crée une première tâche.  De retour à l'écran d'accueil, il sélectionne la tâche nouvellement créée pour en consulter les détails.
-
-| ligne exécutée | effet                             | pile d'appels |
-|-----------------|-----------------------------------|--------|
+Faites la trace pour chacun des cas suivants : 
+ * On reçoit une requête avec l'URL suivante : *http://monsiteweb.com/bonjour/theophile*
+ * On reçoit une requête avec l'URL suivante : *http://monsiteweb.com/suitepaire/4*
+ * On reçoit une requête avec l'URL suivante : *http://monsiteweb.com/suitenombre/3/premierTerme=3&deuxiemeTerme=5*
 
 ::::
