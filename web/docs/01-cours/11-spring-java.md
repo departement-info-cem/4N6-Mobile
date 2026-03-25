@@ -71,12 +71,6 @@ Maintenant que vous connaissez bien la structure d'un serveur Spring Boot, vous 
 
 ## Exercice Post et PostMan
 
-:::tip
-
-Vous n'avez pas besoin de déclarer de service, de repo, ni de modèle de données dans cet exercice. 
-
-:::
-
 - en suivant la recette [Spring Boot 3](https://info.cegepmontpetit.ca/4N6-Mobile/recettes/spring-03-post-service-jpa), ajoutez un contrôleur sur l'url "/prout/envoyer" en méthode Post
 - on souhaite récupérer un paramètre **taille** entier dans la query ("/prout/envoyer?taille=150") optionnel
 - une string **texte** est envoyée dans le corps (**body**) de la requête
