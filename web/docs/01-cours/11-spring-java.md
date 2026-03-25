@@ -23,10 +23,10 @@ Vous pouvez également explorer la documentation de [Spring Boot](https://spring
 - déboguer le serveur
 
 Recettes à faire:
-- créer un serveur  TODO lien
-- ajouter un contrôleur en get TODO lien
-- définir un service et l'injecter TODO lien
-- écrire des tests TODO lien
+- créer un serveur  ([Recette](../03-recettes/spring-01-base.mdx))
+- ajouter un contrôleur en get ([Recette](../03-recettes/spring-02-controleur.mdx))
+- définir un service et l'injecter ([Recette](../03-recettes/spring-03-post-service-jpa.mdx))
+- écrire des tests ([Recette](../03-recettes/spring-03-post-service-jpa.mdx))
 
 :::
 
