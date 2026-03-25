@@ -236,4 +236,11 @@ Faites la trace pour chacun des cas suivants :
  * On reçoit une requête avec l'URL suivante : *http://monsiteweb.com/suitepaire/4*
  * On reçoit une requête avec l'URL suivante : *http://monsiteweb.com/suitenombre/3/premierTerme=3&deuxiemeTerme=5*
 
+Enfin, faites la trace du prochain cas en tenant compte des éléments suivants : 
+* On envoie une requête avec l'URL suivante : *http://monsiteweb.com/livres*
+* On interroge le serveur pour obtenir l'ensemble des publications de Franck Herbert entre 1970 et 1972
+* Les publications correspondantes sont les suivantes :
+    * "Dune" publiée aux Éditions Robert Laffont en 1970 
+    * "Le Messie de Dune" publié aux Éditions Robert Laffont en 1972
+
 ::::
