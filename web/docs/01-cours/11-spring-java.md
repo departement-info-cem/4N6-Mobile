@@ -228,7 +228,7 @@ public class TraceControlleur {
 Faites la trace pour chacun des cas suivants : 
  * On reçoit une requête avec l'URL suivante : *http://monsiteweb.com/bonjour/theophile*
  * On reçoit une requête avec l'URL suivante : *http://monsiteweb.com/suitepaire/4*
- * On reçoit une requête avec l'URL suivante : *http://monsiteweb.com/suitenombre/3/premierTerme=3&deuxiemeTerme=5*
+ * On reçoit une requête avec l'URL suivante : *http://monsiteweb.com/suitenombre/3?premierTerme=3&deuxiemeTerme=5*
 
 Enfin, faites la trace du prochain cas en tenant compte des éléments suivants : 
 * On envoie une requête avec l'URL suivante : *http://monsiteweb.com/livres*
