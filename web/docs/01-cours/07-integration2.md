@@ -22,14 +22,14 @@ Tu dois compléter le TP2.
 Code client :
 
 ```kotlin showLineNumbers
-public class TaskDetailResponse {
-    public Long id;
-    public String name;
-    public Date deadline;
-    public List<ProgressEvent> events;
-    public int percentageDone;
-    public double percentageTimeSpent;
-}
+data class TaskDetailResponse(
+    val id: Long,
+    val name: String,
+    val deadline: Date,
+    val events: List<ProgressEvent>,
+    val percentageDone: Int,
+    val percentageTimeSpent: Double
+)
 
 
 interface Service {
@@ -63,43 +63,71 @@ object RetrofitUtil {
 
 }
 
-
-class DetailsActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityDetailsBinding
+class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDetailsBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
-        var id = intent.getLongExtra("id", 0)
-
-        displayDetails(id)
+        setContent {
+            AppNavigation()
+        }
     }
+}
 
+@Composable
+fun AppNavigation() {
+    val navController = rememberNavController()
 
-    private fun displayDetails(id : Long){
+    NavHost(
+        navController = navController,
+        startDestination = "home"
+    ) {
 
-        val service: Service = RetrofitUtil.get() // Décrire uniquement l'effet global de cette ligne
+        composable("home") {
+            HomeScreen(navController)
+        }
+
+        composable("details/{id}") { backStackEntry ->
+            val id = backStackEntry.arguments?.getString("id")?.toLong() ?: 0
+            DetailsScreen(id)
+        }
+    }
+}
+
+@Composable
+fun DetailsScreen(id: Long) {
+
+    var task by remember { mutableStateOf<TaskDetailResponse?>(null) }
+
+    val snackbarHostState = remember { SnackbarHostState() }
+    val scope = rememberCoroutineScope()
+
+    LaunchedEffect(id) {
+
+        val service: Service = RetrofitUtil.get()
 
         service.detail(id).enqueue(object : Callback<TaskDetailResponse> {
-            override fun onResponse(call: Call<TaskDetailResponse>, response: Response<TaskDetailResponse>) {
 
+            override fun onResponse(
+                call: Call<TaskDetailResponse>,
+                response: Response<TaskDetailResponse>
+            ) {
                 if (response.isSuccessful) {
-                    binding.tvTaskName.text = response.body()!!.name
+                    task = response.body()
                 } else {
-                    Log.i("REPONSE CODE", response.code().toString())
-                    Log.i("REPONSE ERREUR", response.errorBody().toString())
+                    scope.launch {
+                        snackbarHostState.showSnackbar("Erreur serveur : ${response.code()}")
+                    }
                 }
             }
+
             override fun onFailure(call: Call<TaskDetailResponse>, t: Throwable) {
-                Snackbar.make(binding.root, R.string.network_error, Snackbar.LENGTH_LONG).show()
+                scope.launch {
+                    snackbarHostState.showSnackbar("Erreur réseau")
+                }
             }
         })
-
     }
-
 }
 
 ```
