@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AffichageErreurCompose</string>
+    <string name="Errors">Errors</string>
+    <string name="EnterFirstName">Enter your firstname</string>
+    <string name="PutPassword">Enter your password</string>
+    <string name="EnterName">Enter your name</string>
+</resources>

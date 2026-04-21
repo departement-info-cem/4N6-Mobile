@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AffichageErreurCompose</string>
+    <string name="Errors">Erreurs</string>
+    <string name="EnterFirstName">Entrez votre prénom</string>
+    <string name="PutPassword">Entrez votre mot de passe</string>
+    <string name="EnterName">Entrez votre nom</string>
+</resources>
