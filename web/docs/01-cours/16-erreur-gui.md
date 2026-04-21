@@ -18,7 +18,7 @@ Vous pouvez lire la doc d'Android sur les différents moyens d'afficher des erre
 
 Vous pouvez également regarder la doc technique sur les [snackbars](https://material.io/components/snackbars/android#using-snackbars) et les [dialogues](https://material.io/components/dialogs#behavior).
 
-Vous vous familiariserez avec les démos de la semaine [affichage d'erreurs](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/AffichageErreurCompose) et [erreurs dans retrofit](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofit).
+Vous vous familiariserez avec les démos de la semaine [affichage d'erreurs](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/AffichageErreurCompose) et [erreurs dans retrofit](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofitCompose).
 
 :::
 
