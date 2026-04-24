@@ -25,6 +25,7 @@ import androidx.compose.ui.window.DialogProperties
 import ca.cem.composeerreurs.ui.theme.ComposeErreursTheme
 import kotlinx.coroutines.launch
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.Send
 
 class MainActivity : ComponentActivity() {
@@ -80,7 +81,7 @@ fun EcranPrincipal() {
                 }
             }) {
                 Icon(
-                    imageVector = Icons.Filled.Send,
+                    imageVector = Icons.AutoMirrored.Filled.Send,
                     contentDescription = "envoyer"
                 )
             }
