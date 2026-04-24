@@ -28,7 +28,7 @@ On discutera du besoin d'indiquer à l'utilisateur qu'un accès réseau est en c
 
 On discutera les besoins d'avoir une action de rafraîchissement, en particulier si les informations d'une page peuvent être modifiées par un tiers.
 
-On regardera le code des exemples **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SwipeRefresh)** en cours. En particulier, on prendra l'exemple  et on identifiera les éléments importants pour un swipe to refresh.
+On regardera le code des exemples **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeWaitRefresh)** en cours. En particulier, on prendra l'exemple  et on identifiera les éléments importants pour un swipe to refresh.
 
 :::
 
