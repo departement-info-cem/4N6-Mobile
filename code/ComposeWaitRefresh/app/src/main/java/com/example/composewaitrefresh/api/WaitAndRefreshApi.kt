@@ -6,6 +6,6 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface WaitAndRefreshApi {
-    @GET("exos/truc/complexe")
-    fun listReposString(@Query("name") nom: String): Call<Truc>
+    @GET("exos/truc/list")
+    fun listReposString(): Call<List<Truc>>
 }
