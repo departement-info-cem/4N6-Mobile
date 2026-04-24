@@ -52,7 +52,7 @@ Vous devez modifier votre application pour afficher soit le résultat si ça a f
 
 ### Exercice un errorBody mais pas deux
 
-En ouvrant l'exemple [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofit), vous devez:
+En ouvrant l'exemple [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofitCompose), vous devez:
 - démarrer le projet
 - regarder la trace d'exécution dans Logcat
 - on devrait trouver une ligne qui commence par "le corps encore "
