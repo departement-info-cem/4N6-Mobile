@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-Vous devrez regarder l'exemple d'application fournie pour les indicateurs de progression **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Progress)**. Il s'agit du projet Progress dans le repository du cours.
+Vous devrez regarder l'exemple d'application fournie pour les indicateurs de progression **[ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeWaitRefresh)**. 
 
 OPTIONNEL : Regardez l'exemple de Google concernant les listes avec [swipe to refresh](https://developer.android.com/training/swipe/add-swipe-interface) **[ici](https://github.com/android/views-widgets-samples/tree/main/SwipeRefreshLayoutBasic)**. Vous pouvez le lancer dans Android Studio, aller à `File > New > Import sample` et taper "swipe" dans le champ de recherche.
 
