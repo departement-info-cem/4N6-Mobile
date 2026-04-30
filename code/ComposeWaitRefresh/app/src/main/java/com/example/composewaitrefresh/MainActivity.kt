@@ -179,6 +179,7 @@ fun EcranPrincipal() {
                                     call: Call<List<Truc>>,
                                     response: Response<List<Truc>>
                                 ) {
+                                    isAlternateLoadingTexteCache = false
                                     Log.d(
                                         "EcranReposGitHub",
                                         "Entrée dans la fonction onResponse : code=${response.code()}"
@@ -187,10 +188,11 @@ fun EcranPrincipal() {
                                         donneesRepos = response.body() ?: emptyList()
                                     }
                                     Log.d("EcranReposGitHub", "Sortie de la fonction onResponse")
-                                    isAlternateLoadingTexteCache = false
+                                    
                                 }
 
                                 override fun onFailure(call: Call<List<Truc>>, t: Throwable) {
+                                    isAlternateLoadingTexteCache = false
                                     Log.d(
                                         "EcranReposGitHub",
                                         "Entrée dans la fonction onFailure : ${t.message}"
@@ -201,7 +203,6 @@ fun EcranPrincipal() {
                                         t
                                     )
                                     Log.d("EcranReposGitHub", "Sortie de la fonction onFailure")
-                                    isAlternateLoadingTexteCache = false
                                 }
                             })
                         Log.d("EcranReposGitHub", "Sortie de la fonction onClick")
