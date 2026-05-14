@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 :::info Modalités
 
-- Durée 20 minutes, 26 si 1/3 temps supplémentaire, 30 si 50% temps supplémentaire
+- Durée 40 minutes, 50 si 1/4 temps supplémentaire, 54 si 1/3 temps supplémentaire, 60 si 50% temps supplémentaire
 - Droit à une feuille de notes personnelles recto-verso (à remettre avec ta copie)
 
 :::
@@ -17,5 +17,6 @@ hide_table_of_contents: true
 
 ### Examen formatif 2026
 
-TODO
+[H26 formatif](pathname:///h26-e5-formatif.pdf)
+
 :::

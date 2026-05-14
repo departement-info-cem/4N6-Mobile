@@ -165,6 +165,11 @@ const sidebars = {
     },
     {
       type: "doc",
+      label: "Formatif examen 5",
+      id: "cours/formatif-examen-papier-5",
+    },
+    {
+      type: "doc",
       label: "15.1 - Formatif (final) 📝",
       id: "cours/formatif-final",
     },
